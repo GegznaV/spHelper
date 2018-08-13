@@ -146,7 +146,7 @@ has_too_few_IDs <- function(OBJ,
 
     DF <- OBJ[, c(ID, Var)]$..
     if (na.rm) DF <- tidyr::drop_na(DF)
-    DF <- distinct(DF, .keep_all = TRUE)
+    DF <- dplyr::distinct(DF, .keep_all = TRUE)
     gr_ <- table(DF[,2], useNA = "ifany")
     names(gr_[gr_ < n_min])
 
@@ -183,7 +183,7 @@ has_enough_IDs <- function(OBJ,
 
     DF <- OBJ[, c(ID, Var)]$..
     if (na.rm) DF <- tidyr::drop_na(DF)
-    DF <- distinct(DF, .keep_all = TRUE)
+    DF <- dplyr::distinct(DF, .keep_all = TRUE)
     gr_ <- table(DF[,2], useNA = "ifany")
     names(gr_[gr_ >= n_min])
 

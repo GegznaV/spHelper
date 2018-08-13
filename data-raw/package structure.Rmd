@@ -1,0 +1,39 @@
+---
+title: "Structure of Package `spHelper`"
+author: "Vilmantas Gėgžna"
+date: '`r Sys.Date()`'
+output: html_document
+---
+
+```{r setup, include=FALSE, warning=FALSE,message=FALSE}
+knitr::opts_chunk$set(echo = FALSE, collapse = TRUE, comment = "#>")
+
+require(mvbutils, quietly = TRUE)
+require(sna, quietly = TRUE)
+require(spHelper, quietly = TRUE)
+```
+
+```{r plot, fig.align='center',fig.height= 8, fig.width=8}
+Package <- "spHelper"
+
+# Plot structure of a package:
+    pkgFW <- mvbutils::foodweb(where = paste0("package:", Package),plotting = F)
+    sna::gplot(pkgFW$funmat,
+               g = 2,
+               jitter = T,
+               # mode = "kamadakawai",
+                diag = TRUE,
+               vertex.cex = 1:2,
+               displaylabels = TRUE,
+               label.bg = "gray90",
+               label.cex = .9,
+               pad = 5)
+```    
+```{r print}    
+pander::pander(listFunctions())
+```
+
+
+
+
+

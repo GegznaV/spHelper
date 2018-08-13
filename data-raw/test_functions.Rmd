@@ -1,0 +1,173 @@
+---
+title: "Test"
+author: ""
+date: ""
+output: html_document
+---
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(spHelper)
+library(spPlot)
+library(spMisc)
+library(pander)
+
+
+# sp  <- readRDS(file = "D:/Dokumentai/R/spHelper/demo_data.RDS")
+
+```
+
+```{r, include = FALSE}
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+i = 1
+
+# Sugeneruoti mažą hyperSpec ir su juo patikrinti
+set.seed(5)
+
+data(Spectra2)
+choose_rows <- Spectra2$gr %in% c("A","B")
+sp <- Spectra2[choose_rows, , seq(1, 501, 100), wl.index = TRUE]
+labels(sp) <- list(.wavelength = "Wavelength, nm", spc = "I, a.u.")
+sp <- sample(sp , size =  10)
+
+sp$gr %<>% droplevels
+
+by  <- "gr"
+cvo <- cvo_create_folds(sp, by, k = 2, times = 5, seeds = 100)
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
+
+```{r, include=FALSE}
+    # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    i = 1
+    
+    # Sugeneruoti mažą hyperSpec ir su juo patikrinti
+    set.seed(5)
+    
+    data(Spectra2)
+    choose_rows <- Spectra2$gr  %in% c("A","B")
+    sp <- Spectra2[choose_rows, , c(300,400,500)]
+    # sp <- sample(sp, size =  40)
+    
+    sp$gr %<>% droplevels
+    
+    by  <- "gr"
+    cvo <- cvo_create_folds(sp, by, k = 3, times = 5, seeds = 100)
+    # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
+
+```{r}
+sp <- Spectra2
+sp$gr %<>% droplevels
+```
+
+
+```{r}
+sp 
+summary_hyData(sp[,by])  %>% pander
+
+```
+
+```{r}
+obj <- sp_class_perform_cv(sp, by, "SeSp", cvo)
+```
+
+
+```{r}
+theme_set(theme_bw())
+
+sub_plot <-
+    function(...,
+             shareX = T, shareY = T,
+             titleX = T, titleY = T,
+             title = ""){
+        
+    subplot(...,
+            shareX = shareX, shareY = shareY,
+            titleX = titleX, titleY = titleY) %>%
+    plotly_tidy0()  %>% 
+    plotly::layout(title = title)
+}
+
+sub_plot_range <- function(obj){
+    sub_plot(
+        qplot_spDistrib(obj$train, "Compared") + 
+                ggtitle("Training") + 
+                set_ggLims(c(0.2, 1)),
+        
+        qplot_spDistrib(obj$test, "Compared") + 
+                ggtitle("Testing") + 
+                set_ggLims(c(0.2, 1)),
+        title = "Distributions of classification performance"
+    )
+}
+
+sub_plot_means <- function(obj){
+    sub_plot(
+        qplot_spStat(obj$train,"Compared", mean) +
+            ggtitle("Training") +
+            set_ggLims(c(0.2, 1)), 
+        qplot_spStat(obj$test,    "Compared", mean) +
+            ggtitle("Testing") +
+            set_ggLims(c(0.2, 1)),
+        title = "Means of classification performance"
+    )
+}
+
+sub_plot_range(obj)
+sub_plot_means(obj)
+# sub_plot(
+#     qplot_sp(obj$train, by = "Compared")  +
+#         ggtitle("Training") +
+#         set_ggLims(c(0.2, 1)),
+#     
+#     qplot_sp(obj$test,  by = "Compared")  +
+#         ggtitle("Testing") +
+#         set_ggLims(c(0.2, 1)),
+#     
+#     title = "Individual values of classification performance" 
+# )
+```
+
+```{r}
+
+U = 1
+
+plot_folds <- function(U){
+    D_tr <- obj$data_train[[U]]
+    D_te <- obj$data_test[[U]]
+    D_cf <- obj$obj[[U]]$cutoffs
+    
+    gg1 <- ggplot(hyperSpec()) +
+        geom_ribbon(data = ldf(D_tr),aes(fill = gr)) +
+        geom_line(data = ldf(D_cf),aes(color = Compared),
+                  size = 1)
+    
+    gg2 <- ggplot(hyperSpec()) +
+        geom_point(data = ldf(D_te),aes(color = gr)) +
+        geom_line(data = ldf(D_cf),aes(color = Compared),
+                  size = 1)
+    
+    qplot_spDistrib(D_te, "gr")
+        
+    sub_plot(gg1, gg2, title = paste("Spectra in Fold",U))
+}
+
+
+plot_folds(1)
+plot_folds(2)
+```
+
+
+```{r, eval=FALSE}
+
+o <- capture.output(print(subplot(gg1, gg2)))
+writeLines(o,
+           paste("plotly",
+                 packageVersion("plotly"),
+                 "(subplot 2 plots).txt")
+)
+```
+

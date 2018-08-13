@@ -1,0 +1,73 @@
+spHelper v0.1.094 (2016-05-05)
+==============================
+
+Many bugs were fixed.
+
+
+
+spHelper v0.1.081 (2016-04-19)
+==============================
+
+Datasets "Scores", "Loadings" and "Spectra" renamed to
+"Scores2", "Loadings2" and "Spectra2" respectively
+
+Unfortunately, examples are not yet updated accordingly.
+
+spHelper v0.1.077 (2016-04-05)
+==============================
+Many functions were renamed.
+
+
+spHelper v0.1.060 (2016-03-12)
+==============================
+RStudio addins added.
+
+Renamed functions:
+ (NEW name)         <- (old name)
+
+ - reconstructSp    <- getReconstructed
+
+
+
+spHelper v0.1.045 (2016-03-02)
+==============================
+Renamed functions:
+For consistency, renamed `ggplot2` based plotting functions from "plot_..." to "qplot_..." (here "..." is an unchanged part of functions name).
+
+
+spHelper v0.1.038 (2016-03-01)
+==============================
+
+Renamed functions:
+ (NEW name)         <- (old name)
+
+ - unipeak          <- uniPeak
+ - infoDim          <- InfoDim
+ - qplot_infoDim    <- InfoDim_plot
+ - qplot_spStat     <- plotStat
+ - qplot_spStat     <- qplotStat
+ - plot_spDiff      <- plot_SpDiff
+ - hyDrop.NA        <- dropCol
+ - list.functions   <- listFunctions
+
+
+Other changes:
+
+- Improved documentation
+
+- In `plot_kAmp` removed:
+    # If unique values in `gr`
+    if (length(unique(scores$gr)) == 1) {p <- p + scale_fill_grey()}
+
+
+spHelper v0.1.029 (2016-02-22)
+==============================
+
+Changes:
+
+- Added functions for data simmulation.
+
+- Functions formated in accordance with [Hadley Wickham’s style guide](http://adv-r.had.co.nz/Style.html).
+
+
+

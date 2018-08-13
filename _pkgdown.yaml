@@ -1,0 +1,25 @@
+favicon: "favicon.png"
+
+template:
+  params:
+    bootswatch: cerulean
+
+navbar:
+  title: "spHelper | R package"
+  type: inverse
+  left:
+  - icon: fa-home fa-lg
+    href: /index.html
+  - text: Functions
+    href: reference/index.html
+  - text: Examples and Tutorials
+    menu:
+    - text: '`spHelper` Plotting Examples'
+      href: articles/v1_spHelper_Plotting.html
+    - text: Other `spHelper` examples
+      href: articles/v2_Other_Examples.html
+    - text: '`hyperSpec` Plotting Examples with `ggplot2`'
+      href: articles/v3_Plotting_Examples_gg_hy.html
+  right:
+  - icon: fa-github fa-lg
+    href: https://github.com/GegznaV/spHelper

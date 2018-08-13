@@ -1,0 +1,70 @@
+Package: spHelper
+Type: Package
+Title: Extension of Package `hyperSpec` and Various Convenience Functions
+Description: Functions that extend capabilities of package `hyperSpec` (e.g.,
+            plotting, preprocessing, simulation). Functions to visualize
+            spectroscopic differences and classification results. Various
+            convenience and wrapper functions, R operators as well as
+            RStudio addins.
+Version: 0.1.189
+Date: 2018-08-13
+Encoding: UTF-8
+Authors@R: person("Vilmantas", "Gegzna", email = "GegznaV@gmail.com", role = c("aut", "cre"))
+License: GPL (>= 3)
+LazyData: yes
+LazyLoad: yes
+RoxygenNote: 6.1.0
+VignetteBuilder: knitr
+Depends:
+    R (>= 3.2),
+    magrittr,
+    hyperSpec,
+    grDevices,
+    ggplot2 (>= 2.2.0),
+    ggspectra,
+    plotly,
+    ROCR,
+    spMisc,
+    checkmate
+Remotes:
+    github::GegznaV/spMisc
+Imports:
+    ALS,
+    ChemometricsWithR,
+    MASS,
+    RColorBrewer,
+    RColorBrewer,
+    alsace,
+    chemometrics,
+    compositions,
+    cowplot,
+    data.table,
+    devtools,
+    dplyr,
+    forcats,
+    glue,
+    graphics,
+    lubridate,
+    pander,
+    parallelMap,
+    photobiology,
+    photobiologyWavebands,
+    pkgmaker,
+    pracma,
+    prospectr,
+    psych,
+    purrr,
+    resemble,
+    reshape2,
+    rstudioapi,
+    scales,
+    simsalapar,
+    tidyr
+Suggests:
+    knitr,
+    rmarkdown,
+    lattice,
+    latticeExtra,
+    mvbutils,
+    sna,
+    testthat

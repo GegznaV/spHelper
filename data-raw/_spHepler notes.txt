@@ -1,0 +1,87 @@
+#' @import hyperSpec
+#' @import ggplot2
+#' @import hyperSpec
+
+#' @family \pkg{spHelper} functions for \pkg{ggplot2}
+#' @family \pkg{spPlot} functions for \pkg{ggplot2}
+
+
+#' @family \pkg{spHelper} functions for \pkg{plotly}
+#' @family \pkg{spHelper} functions for spectroscopy and \pkg{hyperSpec}
+#' @family \pkg{spHelper} \code{clear} family functions
+#' @family \pkg{spHelper} fold creation functions
+#' @family \pkg{spHelper} utilities
+#' @family \pkg{spHelper} plots
+#' @family  RStudio addins in \pkg{spHelper}
+
+#' @family component analysis / factorisation related functions in \pkg{spHelper} 
+#' @family matrix operations in \pkg{spHelper} 
+#' @family simmulation functions in \pkg{spHelper} 
+#' @family curves in \pkg{spHelper} 
+#' @family row-wise transformations
+
+#' @family methods for \code{\link[=hyperSpec-class]{hyperSpec}} in \pkg{spHelper}
+#' @family \pkg{prospectr} function for \pkg{hyperSpec}
+#' \donttest{
+#' \dontrun{
+
+#' @family SOM and hexagon related functions in \pkg{spHelper} 
+#' @author Vilmantas Gegzna
+
+
+
+#' @author Vilmantas Gegzna
+#' @family \code{knitr_container} functions
+
+#' @author Ignas Ciplys
+#' @family functions by Ignas Ciplys
+
+\code{\link[=hyperSpec-class]{hyperSpec}}
+
+--------------------------------------------
+https://gist.github.com/hadley/5576263
+paprašyt, kad debugintų per "stack overflow"
+
+
+
+
+expression(list(lambda, nm))
+
+
+
+interval_cut -> interval_analysed
+medFilt_k
+
+lowest_intensity -> low_intensity_limit
+medFilt_k -> filtMedian_k
+sgFilt_   -> filtSG_
+
+interval_background -> rm_yoffset_interval
+
+
+
+http://stackoverflow.com/a/28370943/4783029
+
+
+
+RENAME
+
+
+clear_except  <- clear.except
+
+clear_class <- clear.class
+clear_except_class <- clear.except.class 
+
+clear_fun <- clear.fun
+
+list_functions <- list.functions
+list_AddRm <- listAddRm
+
+make_firstCapitals <- make.firstCapitals
+newMatrix <- new.matrix
+
+plot_hyPalette <- plot_hy.palette
+
+
+indMatrix <- ind.matrix
+

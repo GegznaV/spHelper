@@ -1,0 +1,2685 @@
+$x
+$x$data
+$x$data[[1]]
+$x$data[[1]]$x
+  [1] 300 350 400 450 500 550 600 650 700 750 800  NA 300 350 400 450 500 550
+ [19] 600 650 700 750 800  NA 300 350 400 450 500 550 600 650 700 750 800  NA
+ [37] 300 350 400 450 500 550 600 650 700 750 800  NA 300 350 400 450 500 550
+ [55] 600 650 700 750 800  NA 300 350 400 450 500 550 600 650 700 750 800  NA
+ [73] 300 350 400 450 500 550 600 650 700 750 800  NA 300 350 400 450 500 550
+ [91] 600 650 700 750 800  NA 300 350 400 450 500 550 600 650 700 750 800  NA
+[109] 300 350 400 450 500 550 600 650 700 750 800  NA 300 350 400 450 500 550
+[127] 600 650 700 750 800  NA 300 350 400 450 500 550 600 650 700 750 800  NA
+[145] 300 350 400 450 500 550 600 650 700 750 800  NA 300 350 400 450 500 550
+[163] 600 650 700 750 800  NA 300 350 400 450 500 550 600 650 700 750 800  NA
+[181] 300 350 400 450 500 550 600 650 700 750 800  NA 300 350 400 450 500 550
+[199] 600 650 700 750 800  NA 300 350 400 450 500 550 600 650 700 750 800  NA
+[217] 300 350 400 450 500 550 600 650 700 750 800  NA 300 350 400 450 500 550
+[235] 600 650 700 750 800  NA 300 350 400 450 500 550 600 650 700 750 800  NA
+[253] 300 350 400 450 500 550 600 650 700 750 800  NA 300 350 400 450 500 550
+[271] 600 650 700 750 800  NA 300 350 400 450 500 550 600 650 700 750 800  NA
+[289] 300 350 400 450 500 550 600 650 700 750 800  NA 300 350 400 450 500 550
+[307] 600 650 700 750 800
+
+$x$data[[1]]$y
+  [1] 167.845802 185.406869 272.661457 326.958278 388.671901 217.102064
+  [7] 160.005141 121.969472  80.989824  42.546118  18.160632         NA
+ [13] 167.376188 176.721853 249.010773 275.642618 311.853501 125.885871
+ [19]  80.714958  50.299578  32.097229  15.985168   6.001425         NA
+ [25] 187.037631 203.271392 278.178053 334.569743 408.918129 218.883261
+ [31] 155.254247 115.146246  79.872440  39.203329  21.006234         NA
+ [37] 135.839822 159.021024 263.874803 300.702268 316.121918 180.095592
+ [43] 132.323668  99.643500  63.642845  33.651809  14.801620         NA
+ [49] 187.092510 200.361428 273.146647 325.081237 393.999806 205.028260
+ [55] 143.873673 107.038822  66.715347  38.272947  18.173425         NA
+ [61] 118.135928 143.027087 255.224067 299.522601 316.406995 195.317605
+ [67] 145.689856 110.112869  73.804329  38.009506  14.927445         NA
+ [73] 148.599404 169.314899 268.387343 307.873814 338.914920 186.852285
+ [79] 130.969700  98.058917  60.938884  34.668363  14.097633         NA
+ [85] 185.876908 201.573654 290.642861 348.543825 401.370475 236.531224
+ [91] 179.604361 139.332398  88.778098  45.802525  17.939763         NA
+ [97] 141.825778 158.996220 246.604031 276.130809 286.896140 154.682108
+[103] 109.844891  79.590206  50.390675  25.631205  11.017836         NA
+[109] 171.940953 179.992976 251.016653 276.329167 304.263093 126.581072
+[115]  65.810741  50.229316  35.954077  14.166226   6.743253         NA
+[121] 171.680310 190.336268 279.291147 318.565589 355.745022 218.750276
+[127] 168.768863 130.229598  81.151606  44.863415  18.579388         NA
+[133] 119.560250 145.868795 273.719126 312.056270 315.804658 180.389323
+[139] 137.345109  99.079803  61.425380  30.243199  17.230608         NA
+[145] 157.516549 178.158987 268.634073 298.586213 317.676821 158.976407
+[151] 110.082363  80.449497  50.713149  27.699564  14.226100         NA
+[157] 152.002922 178.076283 274.564887 334.260709 394.105722 247.024741
+[163] 194.520504 148.874665  97.017045  52.464164  22.483621         NA
+[169] 152.995149 171.228072 260.748237 308.505439 337.735732 207.717056
+[175] 166.198742 123.776171  84.924565  44.776994  16.554674         NA
+[181] 168.590023 183.023377 267.847492 304.458402 352.261986 181.375324
+[187] 128.763387  94.269689  59.550263  29.936177  13.757924         NA
+[193] 168.435562 188.343518 290.438867 340.383496 384.633307 212.929684
+[199] 157.265314 118.435278  75.858940  39.216396  17.414031         NA
+[205] 158.590635 171.126338 254.214144 297.078364 338.140326 171.027795
+[211] 119.882659  89.061721  56.463461  30.461007  12.382269         NA
+[217] 139.613130 152.600342 228.474034 244.094709 232.828044 106.712308
+[223]  54.195546  29.954261  16.973114  12.125746   6.581896         NA
+[229] 152.050256 171.381844 269.340916 308.978931 340.825732 205.427508
+[235] 152.458075 116.361484  74.837024  40.147563  18.621533         NA
+[241] 129.903378 147.608950 257.302652 282.150303 288.079704 161.492501
+[247] 125.688939  94.209588  57.819488  31.041758  14.276395         NA
+[253] 122.178313 150.031036 273.432315 311.485464 317.852377 199.095362
+[259] 155.916423 119.313663  77.158517  41.154558  17.887550         NA
+[265] 169.791192 182.840189 259.516776 300.859975 342.663703 189.310010
+[271] 136.627207 103.242733  65.917029  34.885554  15.483868         NA
+[277] 137.893790 162.745461 262.091576 300.279108 319.643828 186.819551
+[283] 131.960296 100.702696  67.701694  33.500260  12.115581         NA
+[289] 129.991922 154.283070 257.736486 301.226483 329.252723 208.953664
+[295] 158.658084 122.423797  78.829278  43.246627  19.005399         NA
+[301] 137.781923 163.352696 267.419879 320.913545 355.822379 227.391104
+[307] 180.735962 145.335541  90.752000  49.163124  22.367326
+
+$x$data[[1]]$text
+  [1] "gr: A<br>.rownames: 25<br>.wavelength: 300<br>spc: 167.85" 
+  [2] "gr: A<br>.rownames: 28<br>.wavelength: 350<br>spc: 185.41" 
+  [3] "gr: A<br>.rownames: 31<br>.wavelength: 400<br>spc: 272.66" 
+  [4] "gr: A<br>.rownames: 32<br>.wavelength: 450<br>spc: 326.96" 
+  [5] "gr: A<br>.rownames: 33<br>.wavelength: 500<br>spc: 388.67" 
+  [6] "gr: A<br>.rownames: 39<br>.wavelength: 550<br>spc: 217.1"  
+  [7] "gr: A<br>.rownames: 42<br>.wavelength: 600<br>spc: 160.01" 
+  [8] "gr: A<br>.rownames: 44<br>.wavelength: 650<br>spc: 121.97" 
+  [9] "gr: A<br>.rownames: 46<br>.wavelength: 700<br>spc: 80.99"  
+ [10] "gr: A<br>.rownames: 48<br>.wavelength: 750<br>spc: 42.55"  
+ [11] "gr: A<br>.rownames: 50<br>.wavelength: 800<br>spc: 18.16"  
+ [12] NA                                                          
+ [13] "gr: A<br>.rownames: 59<br>.wavelength: 300<br>spc: 167.38" 
+ [14] "gr: A<br>.rownames: 61<br>.wavelength: 350<br>spc: 176.72" 
+ [15] "gr: A<br>.rownames: 65<br>.wavelength: 400<br>spc: 249.01" 
+ [16] "gr: A<br>.rownames: 73<br>.wavelength: 450<br>spc: 275.64" 
+ [17] "gr: A<br>.rownames: 87<br>.wavelength: 500<br>spc: 311.85" 
+ [18] "gr: A<br>.rownames: 90<br>.wavelength: 550<br>spc: 125.89" 
+ [19] "gr: A<br>.rownames: 91<br>.wavelength: 600<br>spc: 80.71"  
+ [20] "gr: A<br>.rownames: 99<br>.wavelength: 650<br>spc: 50.3"   
+ [21] "gr: A<br>.rownames: 102<br>.wavelength: 700<br>spc: 32.1"  
+ [22] "gr: A<br>.rownames: 103<br>.wavelength: 750<br>spc: 15.99" 
+ [23] "gr: A<br>.rownames: 104<br>.wavelength: 800<br>spc: 6"     
+ [24] NA                                                          
+ [25] "gr: A<br>.rownames: 106<br>.wavelength: 300<br>spc: 187.04"
+ [26] "gr: A<br>.rownames: 109<br>.wavelength: 350<br>spc: 203.27"
+ [27] "gr: A<br>.rownames: 110<br>.wavelength: 400<br>spc: 278.18"
+ [28] "gr: A<br>.rownames: 112<br>.wavelength: 450<br>spc: 334.57"
+ [29] "gr: A<br>.rownames: 117<br>.wavelength: 500<br>spc: 408.92"
+ [30] "gr: A<br>.rownames: 120<br>.wavelength: 550<br>spc: 218.88"
+ [31] "gr: A<br>.rownames: 121<br>.wavelength: 600<br>spc: 155.25"
+ [32] "gr: A<br>.rownames: 129<br>.wavelength: 650<br>spc: 115.15"
+ [33] "gr: A<br>.rownames: 133<br>.wavelength: 700<br>spc: 79.87" 
+ [34] "gr: A<br>.rownames: 136<br>.wavelength: 750<br>spc: 39.2"  
+ [35] "gr: A<br>.rownames: 137<br>.wavelength: 800<br>spc: 21.01" 
+ [36] NA                                                          
+ [37] "gr: A<br>.rownames: 138<br>.wavelength: 300<br>spc: 135.84"
+ [38] "gr: A<br>.rownames: 139<br>.wavelength: 350<br>spc: 159.02"
+ [39] "gr: A<br>.rownames: 141<br>.wavelength: 400<br>spc: 263.87"
+ [40] "gr: A<br>.rownames: 142<br>.wavelength: 450<br>spc: 300.7" 
+ [41] "gr: A<br>.rownames: 143<br>.wavelength: 500<br>spc: 316.12"
+ [42] "gr: A<br>.rownames: 144<br>.wavelength: 550<br>spc: 180.1" 
+ [43] "gr: A<br>.rownames: 146<br>.wavelength: 600<br>spc: 132.32"
+ [44] "gr: A<br>.rownames: 148<br>.wavelength: 650<br>spc: 99.64" 
+ [45] "gr: A<br>.rownames: 149<br>.wavelength: 700<br>spc: 63.64" 
+ [46] "gr: A<br>.rownames: 150<br>.wavelength: 750<br>spc: 33.65" 
+ [47] "gr: A<br>.rownames: 4<br>.wavelength: 800<br>spc: 14.8"    
+ [48] NA                                                          
+ [49] "gr: A<br>.rownames: 6<br>.wavelength: 300<br>spc: 187.09"  
+ [50] "gr: A<br>.rownames: 8<br>.wavelength: 350<br>spc: 200.36"  
+ [51] "gr: A<br>.rownames: 9<br>.wavelength: 400<br>spc: 273.15"  
+ [52] "gr: A<br>.rownames: 10<br>.wavelength: 450<br>spc: 325.08" 
+ [53] "gr: A<br>.rownames: 15<br>.wavelength: 500<br>spc: 394"    
+ [54] "gr: A<br>.rownames: 16<br>.wavelength: 550<br>spc: 205.03" 
+ [55] "gr: A<br>.rownames: 18<br>.wavelength: 600<br>spc: 143.87" 
+ [56] "gr: A<br>.rownames: 22<br>.wavelength: 650<br>spc: 107.04" 
+ [57] "gr: A<br>.rownames: 23<br>.wavelength: 700<br>spc: 66.72"  
+ [58] "gr: A<br>.rownames: 24<br>.wavelength: 750<br>spc: 38.27"  
+ [59] "gr: A<br>.rownames: 25<br>.wavelength: 800<br>spc: 18.17"  
+ [60] NA                                                          
+ [61] "gr: A<br>.rownames: 28<br>.wavelength: 300<br>spc: 118.14" 
+ [62] "gr: A<br>.rownames: 31<br>.wavelength: 350<br>spc: 143.03" 
+ [63] "gr: A<br>.rownames: 32<br>.wavelength: 400<br>spc: 255.22" 
+ [64] "gr: A<br>.rownames: 33<br>.wavelength: 450<br>spc: 299.52" 
+ [65] "gr: A<br>.rownames: 39<br>.wavelength: 500<br>spc: 316.41" 
+ [66] "gr: A<br>.rownames: 42<br>.wavelength: 550<br>spc: 195.32" 
+ [67] "gr: A<br>.rownames: 44<br>.wavelength: 600<br>spc: 145.69" 
+ [68] "gr: A<br>.rownames: 46<br>.wavelength: 650<br>spc: 110.11" 
+ [69] "gr: A<br>.rownames: 48<br>.wavelength: 700<br>spc: 73.8"   
+ [70] "gr: A<br>.rownames: 50<br>.wavelength: 750<br>spc: 38.01"  
+ [71] "gr: A<br>.rownames: 59<br>.wavelength: 800<br>spc: 14.93"  
+ [72] NA                                                          
+ [73] "gr: A<br>.rownames: 61<br>.wavelength: 300<br>spc: 148.6"  
+ [74] "gr: A<br>.rownames: 65<br>.wavelength: 350<br>spc: 169.31" 
+ [75] "gr: A<br>.rownames: 73<br>.wavelength: 400<br>spc: 268.39" 
+ [76] "gr: A<br>.rownames: 87<br>.wavelength: 450<br>spc: 307.87" 
+ [77] "gr: A<br>.rownames: 90<br>.wavelength: 500<br>spc: 338.91" 
+ [78] "gr: A<br>.rownames: 91<br>.wavelength: 550<br>spc: 186.85" 
+ [79] "gr: A<br>.rownames: 99<br>.wavelength: 600<br>spc: 130.97" 
+ [80] "gr: A<br>.rownames: 102<br>.wavelength: 650<br>spc: 98.06" 
+ [81] "gr: A<br>.rownames: 103<br>.wavelength: 700<br>spc: 60.94" 
+ [82] "gr: A<br>.rownames: 104<br>.wavelength: 750<br>spc: 34.67" 
+ [83] "gr: A<br>.rownames: 106<br>.wavelength: 800<br>spc: 14.1"  
+ [84] NA                                                          
+ [85] "gr: A<br>.rownames: 109<br>.wavelength: 300<br>spc: 185.88"
+ [86] "gr: A<br>.rownames: 110<br>.wavelength: 350<br>spc: 201.57"
+ [87] "gr: A<br>.rownames: 112<br>.wavelength: 400<br>spc: 290.64"
+ [88] "gr: A<br>.rownames: 117<br>.wavelength: 450<br>spc: 348.54"
+ [89] "gr: A<br>.rownames: 120<br>.wavelength: 500<br>spc: 401.37"
+ [90] "gr: A<br>.rownames: 121<br>.wavelength: 550<br>spc: 236.53"
+ [91] "gr: A<br>.rownames: 129<br>.wavelength: 600<br>spc: 179.6" 
+ [92] "gr: A<br>.rownames: 133<br>.wavelength: 650<br>spc: 139.33"
+ [93] "gr: A<br>.rownames: 136<br>.wavelength: 700<br>spc: 88.78" 
+ [94] "gr: A<br>.rownames: 137<br>.wavelength: 750<br>spc: 45.8"  
+ [95] "gr: A<br>.rownames: 138<br>.wavelength: 800<br>spc: 17.94" 
+ [96] NA                                                          
+ [97] "gr: A<br>.rownames: 139<br>.wavelength: 300<br>spc: 141.83"
+ [98] "gr: A<br>.rownames: 141<br>.wavelength: 350<br>spc: 159"   
+ [99] "gr: A<br>.rownames: 142<br>.wavelength: 400<br>spc: 246.6" 
+[100] "gr: A<br>.rownames: 143<br>.wavelength: 450<br>spc: 276.13"
+[101] "gr: A<br>.rownames: 144<br>.wavelength: 500<br>spc: 286.9" 
+[102] "gr: A<br>.rownames: 146<br>.wavelength: 550<br>spc: 154.68"
+[103] "gr: A<br>.rownames: 148<br>.wavelength: 600<br>spc: 109.84"
+[104] "gr: A<br>.rownames: 149<br>.wavelength: 650<br>spc: 79.59" 
+[105] "gr: A<br>.rownames: 150<br>.wavelength: 700<br>spc: 50.39" 
+[106] "gr: A<br>.rownames: 4<br>.wavelength: 750<br>spc: 25.63"   
+[107] "gr: A<br>.rownames: 6<br>.wavelength: 800<br>spc: 11.02"   
+[108] NA                                                          
+[109] "gr: A<br>.rownames: 8<br>.wavelength: 300<br>spc: 171.94"  
+[110] "gr: A<br>.rownames: 9<br>.wavelength: 350<br>spc: 179.99"  
+[111] "gr: A<br>.rownames: 10<br>.wavelength: 400<br>spc: 251.02" 
+[112] "gr: A<br>.rownames: 15<br>.wavelength: 450<br>spc: 276.33" 
+[113] "gr: A<br>.rownames: 16<br>.wavelength: 500<br>spc: 304.26" 
+[114] "gr: A<br>.rownames: 18<br>.wavelength: 550<br>spc: 126.58" 
+[115] "gr: A<br>.rownames: 22<br>.wavelength: 600<br>spc: 65.81"  
+[116] "gr: A<br>.rownames: 23<br>.wavelength: 650<br>spc: 50.23"  
+[117] "gr: A<br>.rownames: 24<br>.wavelength: 700<br>spc: 35.95"  
+[118] "gr: A<br>.rownames: 25<br>.wavelength: 750<br>spc: 14.17"  
+[119] "gr: A<br>.rownames: 28<br>.wavelength: 800<br>spc: 6.74"   
+[120] NA                                                          
+[121] "gr: A<br>.rownames: 31<br>.wavelength: 300<br>spc: 171.68" 
+[122] "gr: A<br>.rownames: 32<br>.wavelength: 350<br>spc: 190.34" 
+[123] "gr: A<br>.rownames: 33<br>.wavelength: 400<br>spc: 279.29" 
+[124] "gr: A<br>.rownames: 39<br>.wavelength: 450<br>spc: 318.57" 
+[125] "gr: A<br>.rownames: 42<br>.wavelength: 500<br>spc: 355.75" 
+[126] "gr: A<br>.rownames: 44<br>.wavelength: 550<br>spc: 218.75" 
+[127] "gr: A<br>.rownames: 46<br>.wavelength: 600<br>spc: 168.77" 
+[128] "gr: A<br>.rownames: 48<br>.wavelength: 650<br>spc: 130.23" 
+[129] "gr: A<br>.rownames: 50<br>.wavelength: 700<br>spc: 81.15"  
+[130] "gr: A<br>.rownames: 59<br>.wavelength: 750<br>spc: 44.86"  
+[131] "gr: A<br>.rownames: 61<br>.wavelength: 800<br>spc: 18.58"  
+[132] NA                                                          
+[133] "gr: A<br>.rownames: 65<br>.wavelength: 300<br>spc: 119.56" 
+[134] "gr: A<br>.rownames: 73<br>.wavelength: 350<br>spc: 145.87" 
+[135] "gr: A<br>.rownames: 87<br>.wavelength: 400<br>spc: 273.72" 
+[136] "gr: A<br>.rownames: 90<br>.wavelength: 450<br>spc: 312.06" 
+[137] "gr: A<br>.rownames: 91<br>.wavelength: 500<br>spc: 315.8"  
+[138] "gr: A<br>.rownames: 99<br>.wavelength: 550<br>spc: 180.39" 
+[139] "gr: A<br>.rownames: 102<br>.wavelength: 600<br>spc: 137.35"
+[140] "gr: A<br>.rownames: 103<br>.wavelength: 650<br>spc: 99.08" 
+[141] "gr: A<br>.rownames: 104<br>.wavelength: 700<br>spc: 61.43" 
+[142] "gr: A<br>.rownames: 106<br>.wavelength: 750<br>spc: 30.24" 
+[143] "gr: A<br>.rownames: 109<br>.wavelength: 800<br>spc: 17.23" 
+[144] NA                                                          
+[145] "gr: A<br>.rownames: 110<br>.wavelength: 300<br>spc: 157.52"
+[146] "gr: A<br>.rownames: 112<br>.wavelength: 350<br>spc: 178.16"
+[147] "gr: A<br>.rownames: 117<br>.wavelength: 400<br>spc: 268.63"
+[148] "gr: A<br>.rownames: 120<br>.wavelength: 450<br>spc: 298.59"
+[149] "gr: A<br>.rownames: 121<br>.wavelength: 500<br>spc: 317.68"
+[150] "gr: A<br>.rownames: 129<br>.wavelength: 550<br>spc: 158.98"
+[151] "gr: A<br>.rownames: 133<br>.wavelength: 600<br>spc: 110.08"
+[152] "gr: A<br>.rownames: 136<br>.wavelength: 650<br>spc: 80.45" 
+[153] "gr: A<br>.rownames: 137<br>.wavelength: 700<br>spc: 50.71" 
+[154] "gr: A<br>.rownames: 138<br>.wavelength: 750<br>spc: 27.7"  
+[155] "gr: A<br>.rownames: 139<br>.wavelength: 800<br>spc: 14.23" 
+[156] NA                                                          
+[157] "gr: A<br>.rownames: 141<br>.wavelength: 300<br>spc: 152"   
+[158] "gr: A<br>.rownames: 142<br>.wavelength: 350<br>spc: 178.08"
+[159] "gr: A<br>.rownames: 143<br>.wavelength: 400<br>spc: 274.56"
+[160] "gr: A<br>.rownames: 144<br>.wavelength: 450<br>spc: 334.26"
+[161] "gr: A<br>.rownames: 146<br>.wavelength: 500<br>spc: 394.11"
+[162] "gr: A<br>.rownames: 148<br>.wavelength: 550<br>spc: 247.02"
+[163] "gr: A<br>.rownames: 149<br>.wavelength: 600<br>spc: 194.52"
+[164] "gr: A<br>.rownames: 150<br>.wavelength: 650<br>spc: 148.87"
+[165] "gr: A<br>.rownames: 4<br>.wavelength: 700<br>spc: 97.02"   
+[166] "gr: A<br>.rownames: 6<br>.wavelength: 750<br>spc: 52.46"   
+[167] "gr: A<br>.rownames: 8<br>.wavelength: 800<br>spc: 22.48"   
+[168] NA                                                          
+[169] "gr: A<br>.rownames: 9<br>.wavelength: 300<br>spc: 153"     
+[170] "gr: A<br>.rownames: 10<br>.wavelength: 350<br>spc: 171.23" 
+[171] "gr: A<br>.rownames: 15<br>.wavelength: 400<br>spc: 260.75" 
+[172] "gr: A<br>.rownames: 16<br>.wavelength: 450<br>spc: 308.51" 
+[173] "gr: A<br>.rownames: 18<br>.wavelength: 500<br>spc: 337.74" 
+[174] "gr: A<br>.rownames: 22<br>.wavelength: 550<br>spc: 207.72" 
+[175] "gr: A<br>.rownames: 23<br>.wavelength: 600<br>spc: 166.2"  
+[176] "gr: A<br>.rownames: 24<br>.wavelength: 650<br>spc: 123.78" 
+[177] "gr: A<br>.rownames: 25<br>.wavelength: 700<br>spc: 84.92"  
+[178] "gr: A<br>.rownames: 28<br>.wavelength: 750<br>spc: 44.78"  
+[179] "gr: A<br>.rownames: 31<br>.wavelength: 800<br>spc: 16.55"  
+[180] NA                                                          
+[181] "gr: A<br>.rownames: 32<br>.wavelength: 300<br>spc: 168.59" 
+[182] "gr: A<br>.rownames: 33<br>.wavelength: 350<br>spc: 183.02" 
+[183] "gr: A<br>.rownames: 39<br>.wavelength: 400<br>spc: 267.85" 
+[184] "gr: A<br>.rownames: 42<br>.wavelength: 450<br>spc: 304.46" 
+[185] "gr: A<br>.rownames: 44<br>.wavelength: 500<br>spc: 352.26" 
+[186] "gr: A<br>.rownames: 46<br>.wavelength: 550<br>spc: 181.38" 
+[187] "gr: A<br>.rownames: 48<br>.wavelength: 600<br>spc: 128.76" 
+[188] "gr: A<br>.rownames: 50<br>.wavelength: 650<br>spc: 94.27"  
+[189] "gr: A<br>.rownames: 59<br>.wavelength: 700<br>spc: 59.55"  
+[190] "gr: A<br>.rownames: 61<br>.wavelength: 750<br>spc: 29.94"  
+[191] "gr: A<br>.rownames: 65<br>.wavelength: 800<br>spc: 13.76"  
+[192] NA                                                          
+[193] "gr: A<br>.rownames: 73<br>.wavelength: 300<br>spc: 168.44" 
+[194] "gr: A<br>.rownames: 87<br>.wavelength: 350<br>spc: 188.34" 
+[195] "gr: A<br>.rownames: 90<br>.wavelength: 400<br>spc: 290.44" 
+[196] "gr: A<br>.rownames: 91<br>.wavelength: 450<br>spc: 340.38" 
+[197] "gr: A<br>.rownames: 99<br>.wavelength: 500<br>spc: 384.63" 
+[198] "gr: A<br>.rownames: 102<br>.wavelength: 550<br>spc: 212.93"
+[199] "gr: A<br>.rownames: 103<br>.wavelength: 600<br>spc: 157.27"
+[200] "gr: A<br>.rownames: 104<br>.wavelength: 650<br>spc: 118.44"
+[201] "gr: A<br>.rownames: 106<br>.wavelength: 700<br>spc: 75.86" 
+[202] "gr: A<br>.rownames: 109<br>.wavelength: 750<br>spc: 39.22" 
+[203] "gr: A<br>.rownames: 110<br>.wavelength: 800<br>spc: 17.41" 
+[204] NA                                                          
+[205] "gr: A<br>.rownames: 112<br>.wavelength: 300<br>spc: 158.59"
+[206] "gr: A<br>.rownames: 117<br>.wavelength: 350<br>spc: 171.13"
+[207] "gr: A<br>.rownames: 120<br>.wavelength: 400<br>spc: 254.21"
+[208] "gr: A<br>.rownames: 121<br>.wavelength: 450<br>spc: 297.08"
+[209] "gr: A<br>.rownames: 129<br>.wavelength: 500<br>spc: 338.14"
+[210] "gr: A<br>.rownames: 133<br>.wavelength: 550<br>spc: 171.03"
+[211] "gr: A<br>.rownames: 136<br>.wavelength: 600<br>spc: 119.88"
+[212] "gr: A<br>.rownames: 137<br>.wavelength: 650<br>spc: 89.06" 
+[213] "gr: A<br>.rownames: 138<br>.wavelength: 700<br>spc: 56.46" 
+[214] "gr: A<br>.rownames: 139<br>.wavelength: 750<br>spc: 30.46" 
+[215] "gr: A<br>.rownames: 141<br>.wavelength: 800<br>spc: 12.38" 
+[216] NA                                                          
+[217] "gr: A<br>.rownames: 142<br>.wavelength: 300<br>spc: 139.61"
+[218] "gr: A<br>.rownames: 143<br>.wavelength: 350<br>spc: 152.6" 
+[219] "gr: A<br>.rownames: 144<br>.wavelength: 400<br>spc: 228.47"
+[220] "gr: A<br>.rownames: 146<br>.wavelength: 450<br>spc: 244.09"
+[221] "gr: A<br>.rownames: 148<br>.wavelength: 500<br>spc: 232.83"
+[222] "gr: A<br>.rownames: 149<br>.wavelength: 550<br>spc: 106.71"
+[223] "gr: A<br>.rownames: 150<br>.wavelength: 600<br>spc: 54.2"  
+[224] "gr: A<br>.rownames: 4<br>.wavelength: 650<br>spc: 29.95"   
+[225] "gr: A<br>.rownames: 6<br>.wavelength: 700<br>spc: 16.97"   
+[226] "gr: A<br>.rownames: 8<br>.wavelength: 750<br>spc: 12.13"   
+[227] "gr: A<br>.rownames: 9<br>.wavelength: 800<br>spc: 6.58"    
+[228] NA                                                          
+[229] "gr: A<br>.rownames: 10<br>.wavelength: 300<br>spc: 152.05" 
+[230] "gr: A<br>.rownames: 15<br>.wavelength: 350<br>spc: 171.38" 
+[231] "gr: A<br>.rownames: 16<br>.wavelength: 400<br>spc: 269.34" 
+[232] "gr: A<br>.rownames: 18<br>.wavelength: 450<br>spc: 308.98" 
+[233] "gr: A<br>.rownames: 22<br>.wavelength: 500<br>spc: 340.83" 
+[234] "gr: A<br>.rownames: 23<br>.wavelength: 550<br>spc: 205.43" 
+[235] "gr: A<br>.rownames: 24<br>.wavelength: 600<br>spc: 152.46" 
+[236] "gr: A<br>.rownames: 25<br>.wavelength: 650<br>spc: 116.36" 
+[237] "gr: A<br>.rownames: 28<br>.wavelength: 700<br>spc: 74.84"  
+[238] "gr: A<br>.rownames: 31<br>.wavelength: 750<br>spc: 40.15"  
+[239] "gr: A<br>.rownames: 32<br>.wavelength: 800<br>spc: 18.62"  
+[240] NA                                                          
+[241] "gr: A<br>.rownames: 33<br>.wavelength: 300<br>spc: 129.9"  
+[242] "gr: A<br>.rownames: 39<br>.wavelength: 350<br>spc: 147.61" 
+[243] "gr: A<br>.rownames: 42<br>.wavelength: 400<br>spc: 257.3"  
+[244] "gr: A<br>.rownames: 44<br>.wavelength: 450<br>spc: 282.15" 
+[245] "gr: A<br>.rownames: 46<br>.wavelength: 500<br>spc: 288.08" 
+[246] "gr: A<br>.rownames: 48<br>.wavelength: 550<br>spc: 161.49" 
+[247] "gr: A<br>.rownames: 50<br>.wavelength: 600<br>spc: 125.69" 
+[248] "gr: A<br>.rownames: 59<br>.wavelength: 650<br>spc: 94.21"  
+[249] "gr: A<br>.rownames: 61<br>.wavelength: 700<br>spc: 57.82"  
+[250] "gr: A<br>.rownames: 65<br>.wavelength: 750<br>spc: 31.04"  
+[251] "gr: A<br>.rownames: 73<br>.wavelength: 800<br>spc: 14.28"  
+[252] NA                                                          
+[253] "gr: A<br>.rownames: 87<br>.wavelength: 300<br>spc: 122.18" 
+[254] "gr: A<br>.rownames: 90<br>.wavelength: 350<br>spc: 150.03" 
+[255] "gr: A<br>.rownames: 91<br>.wavelength: 400<br>spc: 273.43" 
+[256] "gr: A<br>.rownames: 99<br>.wavelength: 450<br>spc: 311.49" 
+[257] "gr: A<br>.rownames: 102<br>.wavelength: 500<br>spc: 317.85"
+[258] "gr: A<br>.rownames: 103<br>.wavelength: 550<br>spc: 199.1" 
+[259] "gr: A<br>.rownames: 104<br>.wavelength: 600<br>spc: 155.92"
+[260] "gr: A<br>.rownames: 106<br>.wavelength: 650<br>spc: 119.31"
+[261] "gr: A<br>.rownames: 109<br>.wavelength: 700<br>spc: 77.16" 
+[262] "gr: A<br>.rownames: 110<br>.wavelength: 750<br>spc: 41.15" 
+[263] "gr: A<br>.rownames: 112<br>.wavelength: 800<br>spc: 17.89" 
+[264] NA                                                          
+[265] "gr: A<br>.rownames: 117<br>.wavelength: 300<br>spc: 169.79"
+[266] "gr: A<br>.rownames: 120<br>.wavelength: 350<br>spc: 182.84"
+[267] "gr: A<br>.rownames: 121<br>.wavelength: 400<br>spc: 259.52"
+[268] "gr: A<br>.rownames: 129<br>.wavelength: 450<br>spc: 300.86"
+[269] "gr: A<br>.rownames: 133<br>.wavelength: 500<br>spc: 342.66"
+[270] "gr: A<br>.rownames: 136<br>.wavelength: 550<br>spc: 189.31"
+[271] "gr: A<br>.rownames: 137<br>.wavelength: 600<br>spc: 136.63"
+[272] "gr: A<br>.rownames: 138<br>.wavelength: 650<br>spc: 103.24"
+[273] "gr: A<br>.rownames: 139<br>.wavelength: 700<br>spc: 65.92" 
+[274] "gr: A<br>.rownames: 141<br>.wavelength: 750<br>spc: 34.89" 
+[275] "gr: A<br>.rownames: 142<br>.wavelength: 800<br>spc: 15.48" 
+[276] NA                                                          
+[277] "gr: A<br>.rownames: 15<br>.wavelength: 300<br>spc: 137.89" 
+[278] "gr: A<br>.rownames: 16<br>.wavelength: 350<br>spc: 162.75" 
+[279] "gr: A<br>.rownames: 18<br>.wavelength: 400<br>spc: 262.09" 
+[280] "gr: A<br>.rownames: 22<br>.wavelength: 450<br>spc: 300.28" 
+[281] "gr: A<br>.rownames: 23<br>.wavelength: 500<br>spc: 319.64" 
+[282] "gr: A<br>.rownames: 24<br>.wavelength: 550<br>spc: 186.82" 
+[283] "gr: A<br>.rownames: 25<br>.wavelength: 600<br>spc: 131.96" 
+[284] "gr: A<br>.rownames: 28<br>.wavelength: 650<br>spc: 100.7"  
+[285] "gr: A<br>.rownames: 31<br>.wavelength: 700<br>spc: 67.7"   
+[286] "gr: A<br>.rownames: 32<br>.wavelength: 750<br>spc: 33.5"   
+[287] "gr: A<br>.rownames: 33<br>.wavelength: 800<br>spc: 12.12"  
+[288] NA                                                          
+[289] "gr: A<br>.rownames: 103<br>.wavelength: 300<br>spc: 129.99"
+[290] "gr: A<br>.rownames: 104<br>.wavelength: 350<br>spc: 154.28"
+[291] "gr: A<br>.rownames: 106<br>.wavelength: 400<br>spc: 257.74"
+[292] "gr: A<br>.rownames: 109<br>.wavelength: 450<br>spc: 301.23"
+[293] "gr: A<br>.rownames: 110<br>.wavelength: 500<br>spc: 329.25"
+[294] "gr: A<br>.rownames: 112<br>.wavelength: 550<br>spc: 208.95"
+[295] "gr: A<br>.rownames: 117<br>.wavelength: 600<br>spc: 158.66"
+[296] "gr: A<br>.rownames: 120<br>.wavelength: 650<br>spc: 122.42"
+[297] "gr: A<br>.rownames: 121<br>.wavelength: 700<br>spc: 78.83" 
+[298] "gr: A<br>.rownames: 129<br>.wavelength: 750<br>spc: 43.25" 
+[299] "gr: A<br>.rownames: 133<br>.wavelength: 800<br>spc: 19.01" 
+[300] NA                                                          
+[301] "gr: A<br>.rownames: 50<br>.wavelength: 300<br>spc: 137.78" 
+[302] "gr: A<br>.rownames: 59<br>.wavelength: 350<br>spc: 163.35" 
+[303] "gr: A<br>.rownames: 61<br>.wavelength: 400<br>spc: 267.42" 
+[304] "gr: A<br>.rownames: 65<br>.wavelength: 450<br>spc: 320.91" 
+[305] "gr: A<br>.rownames: 73<br>.wavelength: 500<br>spc: 355.82" 
+[306] "gr: A<br>.rownames: 87<br>.wavelength: 550<br>spc: 227.39" 
+[307] "gr: A<br>.rownames: 90<br>.wavelength: 600<br>spc: 180.74" 
+[308] "gr: A<br>.rownames: 91<br>.wavelength: 650<br>spc: 145.34" 
+[309] "gr: A<br>.rownames: 99<br>.wavelength: 700<br>spc: 90.75"  
+[310] "gr: A<br>.rownames: 102<br>.wavelength: 750<br>spc: 49.16" 
+[311] "gr: A<br>.rownames: 103<br>.wavelength: 800<br>spc: 22.37" 
+
+$x$data[[1]]$key
+[1] NA
+
+$x$data[[1]]$type
+[1] "scatter"
+
+$x$data[[1]]$mode
+[1] "lines"
+
+$x$data[[1]]$name
+[1] "A"
+
+$x$data[[1]]$line
+$x$data[[1]]$line$width
+[1] 1.889764
+
+$x$data[[1]]$line$color
+[1] "rgba(248,118,109,1)"
+
+$x$data[[1]]$line$dash
+[1] "solid"
+
+
+$x$data[[1]]$hoveron
+[1] "points"
+
+$x$data[[1]]$legendgroup
+[1] "A"
+
+$x$data[[1]]$showlegend
+[1] TRUE
+
+$x$data[[1]]$xaxis
+[1] "x"
+
+$x$data[[1]]$yaxis
+[1] "y"
+
+$x$data[[1]]$hoverinfo
+[1] "text"
+
+
+$x$data[[2]]
+$x$data[[2]]$x
+  [1] 300 350 400 450 500 550 600 650 700 750 800  NA 300 350 400 450 500 550
+ [19] 600 650 700 750 800  NA 300 350 400 450 500 550 600 650 700 750 800  NA
+ [37] 300 350 400 450 500 550 600 650 700 750 800  NA 300 350 400 450 500 550
+ [55] 600 650 700 750 800  NA 300 350 400 450 500 550 600 650 700 750 800  NA
+ [73] 300 350 400 450 500 550 600 650 700 750 800  NA 300 350 400 450 500 550
+ [91] 600 650 700 750 800  NA 300 350 400 450 500 550 600 650 700 750 800  NA
+[109] 300 350 400 450 500 550 600 650 700 750 800  NA 300 350 400 450 500 550
+[127] 600 650 700 750 800  NA 300 350 400 450 500 550 600 650 700 750 800  NA
+[145] 300 350 400 450 500 550 600 650 700 750 800  NA 300 350 400 450 500 550
+[163] 600 650 700 750 800  NA 300 350 400 450 500 550 600 650 700 750 800  NA
+[181] 300 350 400 450 500 550 600 650 700 750 800  NA 300 350 400 450 500 550
+[199] 600 650 700 750 800  NA 300 350 400 450 500 550 600 650 700 750 800  NA
+[217] 300 350 400 450 500 550 600 650 700 750 800  NA 300 350 400 450 500 550
+[235] 600 650 700 750 800  NA 300 350 400 450 500 550 600 650 700 750 800  NA
+[253] 300 350 400 450 500 550 600 650 700 750 800  NA 300 350 400 450 500 550
+[271] 600 650 700 750 800  NA 300 350 400 450 500 550 600 650 700 750 800  NA
+[289] 300 350 400 450 500 550 600 650 700 750 800  NA 300 350 400 450 500 550
+[307] 600 650 700 750 800  NA 300 350 400 450 500 550 600 650 700 750 800  NA
+[325] 300 350 400 450 500 550 600 650 700 750 800
+
+$x$data[[2]]$y
+  [1] 154.255914 162.528265 212.925030 254.422503 306.222696 166.974144
+  [7] 119.708402  89.115471  55.697100  28.094218  10.712003         NA
+ [13] 132.945443 145.798409 203.989927 244.574314 287.427295 143.356054
+ [19]  99.462853  68.711139  45.050472  22.410960   9.388331         NA
+ [25] 150.838867 160.372162 218.106409 267.905467 329.810168 188.820718
+ [31] 139.723861 107.281636  65.237354  35.882770  18.461816         NA
+ [37] 143.786022 158.594852 214.705264 246.423526 285.217323 160.337122
+ [43] 115.525707  84.516956  52.250912  28.836925  11.207688         NA
+ [49] 157.139667 172.937008 221.678655 271.078594 339.364804 182.489105
+ [55] 124.145947  93.756910  58.924735  31.846563  11.291671         NA
+ [61] 149.388902 161.197788 206.363772 259.206904 341.043724 164.839788
+ [67] 106.889770  78.328031  48.203020  25.969022  10.933738         NA
+ [73] 152.776422 162.208871 218.777890 261.925232 334.647683 187.059193
+ [79] 138.379320 103.638710  64.775123  34.819850  17.380966         NA
+ [85] 130.768825 153.612505 225.106100 263.723707 302.550732 159.091989
+ [91] 112.229878  78.406682  51.628082  26.175979  12.979990         NA
+ [97] 195.366387 196.701553 230.762893 299.629638 401.649756 218.325989
+[103] 163.655761 121.439313  75.906208  44.267957  17.872082         NA
+[109] 147.187982 174.394924 222.450765 272.239604 337.834299 192.818763
+[115] 141.270128 107.978004  72.382298  33.942581  13.902931         NA
+[121] 174.612830 186.381617 218.964407 270.631070 340.673513 178.565561
+[127] 116.065390  86.018526  55.690794  34.100216  14.512456         NA
+[133] 149.334512 155.427709 224.832465 270.308703 333.572165 205.791633
+[139] 164.745011 122.186999  79.306273  49.329952  14.159582         NA
+[145] 123.631488 136.747422 197.367914 221.135044 253.360468 117.245760
+[151]  61.964086  45.867315  30.026867  11.399201  10.502168         NA
+[157] 143.891226 158.204282 216.737819 271.191358 335.612487 204.772691
+[163] 156.349253 121.530379  77.708094  40.966339  18.851726         NA
+[169] 131.172633 149.356901 213.170954 254.225870 300.201581 179.176662
+[175] 134.091513 101.210639  64.172428  33.939749  15.049983         NA
+[181] 167.748646 179.237680 217.428024 280.918075 360.255585 210.685290
+[187] 157.173861 113.879173  77.329567  34.818885  15.772625         NA
+[193] 168.378780 172.278706 214.024972 284.311367 376.744493 203.941053
+[199] 152.843955 109.714490  70.707588  30.655480  10.802911         NA
+[205] 147.335310 162.125822 227.540667 284.906893 342.757509 195.074667
+[211] 141.156515 112.042571  63.296154  30.307731  18.186255         NA
+[217] 195.306096 200.074978 242.667499 302.740153 403.695431 216.582884
+[223] 154.909663 118.134615  77.401891  40.422783  17.351113         NA
+[229] 147.152486 169.960209 233.221176 277.756278 321.092002 201.690613
+[235] 155.114670 122.017092  79.074405  37.614921  14.726835         NA
+[241] 139.842938 153.563671 205.828908 244.782988 295.235390 155.483952
+[247] 106.034264  77.360592  52.888205  31.202406  14.816485         NA
+[253] 159.793044 159.820505 215.306677 254.701476 296.976036 161.115402
+[259] 120.622537  87.791627  50.122638  27.191652  10.914672         NA
+[265] 162.349891 172.463504 224.104051 266.431536 319.419561 177.314865
+[271] 127.806457  95.233399  60.187113  31.583384  14.620881         NA
+[277] 134.496659 157.408741 230.948051 286.484545 348.103283 207.208621
+[283] 159.489855 122.918168  73.014349  42.823385  21.778294         NA
+[289] 166.098951 173.025312 218.387176 249.223855 294.208105 129.564961
+[295]  75.808772  52.120044  30.844567  15.703743   6.521817         NA
+[301] 159.529061 171.749984 225.176584 271.403706 334.196557 185.549606
+[307] 133.820589 100.357740  63.768000  33.841351  14.746131         NA
+[313] 165.345791 171.980535 231.946122 272.677791 327.974425 182.672961
+[319] 132.615531 100.111763  60.616519  31.085337  14.957662         NA
+[325] 134.809871 152.269480 219.459944 265.252779 312.476549 164.403187
+[331] 116.882216  87.512903  51.001594  27.546688  10.286056
+
+$x$data[[2]]$text
+  [1] "gr: B<br>.rownames: 4<br>.wavelength: 300<br>spc: 154.26"  
+  [2] "gr: B<br>.rownames: 6<br>.wavelength: 350<br>spc: 162.53"  
+  [3] "gr: B<br>.rownames: 8<br>.wavelength: 400<br>spc: 212.93"  
+  [4] "gr: B<br>.rownames: 9<br>.wavelength: 450<br>spc: 254.42"  
+  [5] "gr: B<br>.rownames: 10<br>.wavelength: 500<br>spc: 306.22" 
+  [6] "gr: B<br>.rownames: 15<br>.wavelength: 550<br>spc: 166.97" 
+  [7] "gr: B<br>.rownames: 16<br>.wavelength: 600<br>spc: 119.71" 
+  [8] "gr: B<br>.rownames: 18<br>.wavelength: 650<br>spc: 89.12"  
+  [9] "gr: B<br>.rownames: 22<br>.wavelength: 700<br>spc: 55.7"   
+ [10] "gr: B<br>.rownames: 23<br>.wavelength: 750<br>spc: 28.09"  
+ [11] "gr: B<br>.rownames: 24<br>.wavelength: 800<br>spc: 10.71"  
+ [12] NA                                                          
+ [13] "gr: B<br>.rownames: 143<br>.wavelength: 300<br>spc: 132.95"
+ [14] "gr: B<br>.rownames: 144<br>.wavelength: 350<br>spc: 145.8" 
+ [15] "gr: B<br>.rownames: 146<br>.wavelength: 400<br>spc: 203.99"
+ [16] "gr: B<br>.rownames: 148<br>.wavelength: 450<br>spc: 244.57"
+ [17] "gr: B<br>.rownames: 149<br>.wavelength: 500<br>spc: 287.43"
+ [18] "gr: B<br>.rownames: 150<br>.wavelength: 550<br>spc: 143.36"
+ [19] "gr: B<br>.rownames: 4<br>.wavelength: 600<br>spc: 99.46"   
+ [20] "gr: B<br>.rownames: 6<br>.wavelength: 650<br>spc: 68.71"   
+ [21] "gr: B<br>.rownames: 8<br>.wavelength: 700<br>spc: 45.05"   
+ [22] "gr: B<br>.rownames: 9<br>.wavelength: 750<br>spc: 22.41"   
+ [23] "gr: B<br>.rownames: 10<br>.wavelength: 800<br>spc: 9.39"   
+ [24] NA                                                          
+ [25] "gr: B<br>.rownames: 39<br>.wavelength: 300<br>spc: 150.84" 
+ [26] "gr: B<br>.rownames: 42<br>.wavelength: 350<br>spc: 160.37" 
+ [27] "gr: B<br>.rownames: 44<br>.wavelength: 400<br>spc: 218.11" 
+ [28] "gr: B<br>.rownames: 46<br>.wavelength: 450<br>spc: 267.91" 
+ [29] "gr: B<br>.rownames: 48<br>.wavelength: 500<br>spc: 329.81" 
+ [30] "gr: B<br>.rownames: 50<br>.wavelength: 550<br>spc: 188.82" 
+ [31] "gr: B<br>.rownames: 59<br>.wavelength: 600<br>spc: 139.72" 
+ [32] "gr: B<br>.rownames: 61<br>.wavelength: 650<br>spc: 107.28" 
+ [33] "gr: B<br>.rownames: 65<br>.wavelength: 700<br>spc: 65.24"  
+ [34] "gr: B<br>.rownames: 73<br>.wavelength: 750<br>spc: 35.88"  
+ [35] "gr: B<br>.rownames: 87<br>.wavelength: 800<br>spc: 18.46"  
+ [36] NA                                                          
+ [37] "gr: B<br>.rownames: 90<br>.wavelength: 300<br>spc: 143.79" 
+ [38] "gr: B<br>.rownames: 91<br>.wavelength: 350<br>spc: 158.59" 
+ [39] "gr: B<br>.rownames: 99<br>.wavelength: 400<br>spc: 214.71" 
+ [40] "gr: B<br>.rownames: 102<br>.wavelength: 450<br>spc: 246.42"
+ [41] "gr: B<br>.rownames: 103<br>.wavelength: 500<br>spc: 285.22"
+ [42] "gr: B<br>.rownames: 104<br>.wavelength: 550<br>spc: 160.34"
+ [43] "gr: B<br>.rownames: 106<br>.wavelength: 600<br>spc: 115.53"
+ [44] "gr: B<br>.rownames: 109<br>.wavelength: 650<br>spc: 84.52" 
+ [45] "gr: B<br>.rownames: 110<br>.wavelength: 700<br>spc: 52.25" 
+ [46] "gr: B<br>.rownames: 112<br>.wavelength: 750<br>spc: 28.84" 
+ [47] "gr: B<br>.rownames: 117<br>.wavelength: 800<br>spc: 11.21" 
+ [48] NA                                                          
+ [49] "gr: B<br>.rownames: 120<br>.wavelength: 300<br>spc: 157.14"
+ [50] "gr: B<br>.rownames: 121<br>.wavelength: 350<br>spc: 172.94"
+ [51] "gr: B<br>.rownames: 129<br>.wavelength: 400<br>spc: 221.68"
+ [52] "gr: B<br>.rownames: 133<br>.wavelength: 450<br>spc: 271.08"
+ [53] "gr: B<br>.rownames: 136<br>.wavelength: 500<br>spc: 339.36"
+ [54] "gr: B<br>.rownames: 137<br>.wavelength: 550<br>spc: 182.49"
+ [55] "gr: B<br>.rownames: 138<br>.wavelength: 600<br>spc: 124.15"
+ [56] "gr: B<br>.rownames: 139<br>.wavelength: 650<br>spc: 93.76" 
+ [57] "gr: B<br>.rownames: 141<br>.wavelength: 700<br>spc: 58.92" 
+ [58] "gr: B<br>.rownames: 142<br>.wavelength: 750<br>spc: 31.85" 
+ [59] "gr: B<br>.rownames: 143<br>.wavelength: 800<br>spc: 11.29" 
+ [60] NA                                                          
+ [61] "gr: B<br>.rownames: 144<br>.wavelength: 300<br>spc: 149.39"
+ [62] "gr: B<br>.rownames: 146<br>.wavelength: 350<br>spc: 161.2" 
+ [63] "gr: B<br>.rownames: 148<br>.wavelength: 400<br>spc: 206.36"
+ [64] "gr: B<br>.rownames: 149<br>.wavelength: 450<br>spc: 259.21"
+ [65] "gr: B<br>.rownames: 150<br>.wavelength: 500<br>spc: 341.04"
+ [66] "gr: B<br>.rownames: 4<br>.wavelength: 550<br>spc: 164.84"  
+ [67] "gr: B<br>.rownames: 6<br>.wavelength: 600<br>spc: 106.89"  
+ [68] "gr: B<br>.rownames: 8<br>.wavelength: 650<br>spc: 78.33"   
+ [69] "gr: B<br>.rownames: 9<br>.wavelength: 700<br>spc: 48.2"    
+ [70] "gr: B<br>.rownames: 10<br>.wavelength: 750<br>spc: 25.97"  
+ [71] "gr: B<br>.rownames: 15<br>.wavelength: 800<br>spc: 10.93"  
+ [72] NA                                                          
+ [73] "gr: B<br>.rownames: 16<br>.wavelength: 300<br>spc: 152.78" 
+ [74] "gr: B<br>.rownames: 18<br>.wavelength: 350<br>spc: 162.21" 
+ [75] "gr: B<br>.rownames: 22<br>.wavelength: 400<br>spc: 218.78" 
+ [76] "gr: B<br>.rownames: 23<br>.wavelength: 450<br>spc: 261.93" 
+ [77] "gr: B<br>.rownames: 24<br>.wavelength: 500<br>spc: 334.65" 
+ [78] "gr: B<br>.rownames: 25<br>.wavelength: 550<br>spc: 187.06" 
+ [79] "gr: B<br>.rownames: 28<br>.wavelength: 600<br>spc: 138.38" 
+ [80] "gr: B<br>.rownames: 31<br>.wavelength: 650<br>spc: 103.64" 
+ [81] "gr: B<br>.rownames: 32<br>.wavelength: 700<br>spc: 64.78"  
+ [82] "gr: B<br>.rownames: 33<br>.wavelength: 750<br>spc: 34.82"  
+ [83] "gr: B<br>.rownames: 39<br>.wavelength: 800<br>spc: 17.38"  
+ [84] NA                                                          
+ [85] "gr: B<br>.rownames: 42<br>.wavelength: 300<br>spc: 130.77" 
+ [86] "gr: B<br>.rownames: 44<br>.wavelength: 350<br>spc: 153.61" 
+ [87] "gr: B<br>.rownames: 46<br>.wavelength: 400<br>spc: 225.11" 
+ [88] "gr: B<br>.rownames: 48<br>.wavelength: 450<br>spc: 263.72" 
+ [89] "gr: B<br>.rownames: 50<br>.wavelength: 500<br>spc: 302.55" 
+ [90] "gr: B<br>.rownames: 59<br>.wavelength: 550<br>spc: 159.09" 
+ [91] "gr: B<br>.rownames: 61<br>.wavelength: 600<br>spc: 112.23" 
+ [92] "gr: B<br>.rownames: 65<br>.wavelength: 650<br>spc: 78.41"  
+ [93] "gr: B<br>.rownames: 73<br>.wavelength: 700<br>spc: 51.63"  
+ [94] "gr: B<br>.rownames: 87<br>.wavelength: 750<br>spc: 26.18"  
+ [95] "gr: B<br>.rownames: 90<br>.wavelength: 800<br>spc: 12.98"  
+ [96] NA                                                          
+ [97] "gr: B<br>.rownames: 91<br>.wavelength: 300<br>spc: 195.37" 
+ [98] "gr: B<br>.rownames: 99<br>.wavelength: 350<br>spc: 196.7"  
+ [99] "gr: B<br>.rownames: 102<br>.wavelength: 400<br>spc: 230.76"
+[100] "gr: B<br>.rownames: 103<br>.wavelength: 450<br>spc: 299.63"
+[101] "gr: B<br>.rownames: 104<br>.wavelength: 500<br>spc: 401.65"
+[102] "gr: B<br>.rownames: 106<br>.wavelength: 550<br>spc: 218.33"
+[103] "gr: B<br>.rownames: 109<br>.wavelength: 600<br>spc: 163.66"
+[104] "gr: B<br>.rownames: 110<br>.wavelength: 650<br>spc: 121.44"
+[105] "gr: B<br>.rownames: 112<br>.wavelength: 700<br>spc: 75.91" 
+[106] "gr: B<br>.rownames: 117<br>.wavelength: 750<br>spc: 44.27" 
+[107] "gr: B<br>.rownames: 120<br>.wavelength: 800<br>spc: 17.87" 
+[108] NA                                                          
+[109] "gr: B<br>.rownames: 121<br>.wavelength: 300<br>spc: 147.19"
+[110] "gr: B<br>.rownames: 129<br>.wavelength: 350<br>spc: 174.39"
+[111] "gr: B<br>.rownames: 133<br>.wavelength: 400<br>spc: 222.45"
+[112] "gr: B<br>.rownames: 136<br>.wavelength: 450<br>spc: 272.24"
+[113] "gr: B<br>.rownames: 137<br>.wavelength: 500<br>spc: 337.83"
+[114] "gr: B<br>.rownames: 138<br>.wavelength: 550<br>spc: 192.82"
+[115] "gr: B<br>.rownames: 139<br>.wavelength: 600<br>spc: 141.27"
+[116] "gr: B<br>.rownames: 141<br>.wavelength: 650<br>spc: 107.98"
+[117] "gr: B<br>.rownames: 142<br>.wavelength: 700<br>spc: 72.38" 
+[118] "gr: B<br>.rownames: 143<br>.wavelength: 750<br>spc: 33.94" 
+[119] "gr: B<br>.rownames: 144<br>.wavelength: 800<br>spc: 13.9"  
+[120] NA                                                          
+[121] "gr: B<br>.rownames: 146<br>.wavelength: 300<br>spc: 174.61"
+[122] "gr: B<br>.rownames: 148<br>.wavelength: 350<br>spc: 186.38"
+[123] "gr: B<br>.rownames: 149<br>.wavelength: 400<br>spc: 218.96"
+[124] "gr: B<br>.rownames: 150<br>.wavelength: 450<br>spc: 270.63"
+[125] "gr: B<br>.rownames: 4<br>.wavelength: 500<br>spc: 340.67"  
+[126] "gr: B<br>.rownames: 6<br>.wavelength: 550<br>spc: 178.57"  
+[127] "gr: B<br>.rownames: 8<br>.wavelength: 600<br>spc: 116.07"  
+[128] "gr: B<br>.rownames: 9<br>.wavelength: 650<br>spc: 86.02"   
+[129] "gr: B<br>.rownames: 10<br>.wavelength: 700<br>spc: 55.69"  
+[130] "gr: B<br>.rownames: 15<br>.wavelength: 750<br>spc: 34.1"   
+[131] "gr: B<br>.rownames: 16<br>.wavelength: 800<br>spc: 14.51"  
+[132] NA                                                          
+[133] "gr: B<br>.rownames: 18<br>.wavelength: 300<br>spc: 149.33" 
+[134] "gr: B<br>.rownames: 22<br>.wavelength: 350<br>spc: 155.43" 
+[135] "gr: B<br>.rownames: 23<br>.wavelength: 400<br>spc: 224.83" 
+[136] "gr: B<br>.rownames: 24<br>.wavelength: 450<br>spc: 270.31" 
+[137] "gr: B<br>.rownames: 25<br>.wavelength: 500<br>spc: 333.57" 
+[138] "gr: B<br>.rownames: 28<br>.wavelength: 550<br>spc: 205.79" 
+[139] "gr: B<br>.rownames: 31<br>.wavelength: 600<br>spc: 164.75" 
+[140] "gr: B<br>.rownames: 32<br>.wavelength: 650<br>spc: 122.19" 
+[141] "gr: B<br>.rownames: 33<br>.wavelength: 700<br>spc: 79.31"  
+[142] "gr: B<br>.rownames: 39<br>.wavelength: 750<br>spc: 49.33"  
+[143] "gr: B<br>.rownames: 42<br>.wavelength: 800<br>spc: 14.16"  
+[144] NA                                                          
+[145] "gr: B<br>.rownames: 44<br>.wavelength: 300<br>spc: 123.63" 
+[146] "gr: B<br>.rownames: 46<br>.wavelength: 350<br>spc: 136.75" 
+[147] "gr: B<br>.rownames: 48<br>.wavelength: 400<br>spc: 197.37" 
+[148] "gr: B<br>.rownames: 50<br>.wavelength: 450<br>spc: 221.14" 
+[149] "gr: B<br>.rownames: 59<br>.wavelength: 500<br>spc: 253.36" 
+[150] "gr: B<br>.rownames: 61<br>.wavelength: 550<br>spc: 117.25" 
+[151] "gr: B<br>.rownames: 65<br>.wavelength: 600<br>spc: 61.96"  
+[152] "gr: B<br>.rownames: 73<br>.wavelength: 650<br>spc: 45.87"  
+[153] "gr: B<br>.rownames: 87<br>.wavelength: 700<br>spc: 30.03"  
+[154] "gr: B<br>.rownames: 90<br>.wavelength: 750<br>spc: 11.4"   
+[155] "gr: B<br>.rownames: 91<br>.wavelength: 800<br>spc: 10.5"   
+[156] NA                                                          
+[157] "gr: B<br>.rownames: 99<br>.wavelength: 300<br>spc: 143.89" 
+[158] "gr: B<br>.rownames: 102<br>.wavelength: 350<br>spc: 158.2" 
+[159] "gr: B<br>.rownames: 103<br>.wavelength: 400<br>spc: 216.74"
+[160] "gr: B<br>.rownames: 104<br>.wavelength: 450<br>spc: 271.19"
+[161] "gr: B<br>.rownames: 106<br>.wavelength: 500<br>spc: 335.61"
+[162] "gr: B<br>.rownames: 109<br>.wavelength: 550<br>spc: 204.77"
+[163] "gr: B<br>.rownames: 110<br>.wavelength: 600<br>spc: 156.35"
+[164] "gr: B<br>.rownames: 112<br>.wavelength: 650<br>spc: 121.53"
+[165] "gr: B<br>.rownames: 117<br>.wavelength: 700<br>spc: 77.71" 
+[166] "gr: B<br>.rownames: 120<br>.wavelength: 750<br>spc: 40.97" 
+[167] "gr: B<br>.rownames: 121<br>.wavelength: 800<br>spc: 18.85" 
+[168] NA                                                          
+[169] "gr: B<br>.rownames: 129<br>.wavelength: 300<br>spc: 131.17"
+[170] "gr: B<br>.rownames: 133<br>.wavelength: 350<br>spc: 149.36"
+[171] "gr: B<br>.rownames: 136<br>.wavelength: 400<br>spc: 213.17"
+[172] "gr: B<br>.rownames: 137<br>.wavelength: 450<br>spc: 254.23"
+[173] "gr: B<br>.rownames: 138<br>.wavelength: 500<br>spc: 300.2" 
+[174] "gr: B<br>.rownames: 139<br>.wavelength: 550<br>spc: 179.18"
+[175] "gr: B<br>.rownames: 141<br>.wavelength: 600<br>spc: 134.09"
+[176] "gr: B<br>.rownames: 142<br>.wavelength: 650<br>spc: 101.21"
+[177] "gr: B<br>.rownames: 143<br>.wavelength: 700<br>spc: 64.17" 
+[178] "gr: B<br>.rownames: 144<br>.wavelength: 750<br>spc: 33.94" 
+[179] "gr: B<br>.rownames: 146<br>.wavelength: 800<br>spc: 15.05" 
+[180] NA                                                          
+[181] "gr: B<br>.rownames: 148<br>.wavelength: 300<br>spc: 167.75"
+[182] "gr: B<br>.rownames: 149<br>.wavelength: 350<br>spc: 179.24"
+[183] "gr: B<br>.rownames: 150<br>.wavelength: 400<br>spc: 217.43"
+[184] "gr: B<br>.rownames: 4<br>.wavelength: 450<br>spc: 280.92"  
+[185] "gr: B<br>.rownames: 6<br>.wavelength: 500<br>spc: 360.26"  
+[186] "gr: B<br>.rownames: 8<br>.wavelength: 550<br>spc: 210.69"  
+[187] "gr: B<br>.rownames: 9<br>.wavelength: 600<br>spc: 157.17"  
+[188] "gr: B<br>.rownames: 10<br>.wavelength: 650<br>spc: 113.88" 
+[189] "gr: B<br>.rownames: 15<br>.wavelength: 700<br>spc: 77.33"  
+[190] "gr: B<br>.rownames: 16<br>.wavelength: 750<br>spc: 34.82"  
+[191] "gr: B<br>.rownames: 18<br>.wavelength: 800<br>spc: 15.77"  
+[192] NA                                                          
+[193] "gr: B<br>.rownames: 22<br>.wavelength: 300<br>spc: 168.38" 
+[194] "gr: B<br>.rownames: 23<br>.wavelength: 350<br>spc: 172.28" 
+[195] "gr: B<br>.rownames: 24<br>.wavelength: 400<br>spc: 214.02" 
+[196] "gr: B<br>.rownames: 25<br>.wavelength: 450<br>spc: 284.31" 
+[197] "gr: B<br>.rownames: 28<br>.wavelength: 500<br>spc: 376.74" 
+[198] "gr: B<br>.rownames: 31<br>.wavelength: 550<br>spc: 203.94" 
+[199] "gr: B<br>.rownames: 32<br>.wavelength: 600<br>spc: 152.84" 
+[200] "gr: B<br>.rownames: 33<br>.wavelength: 650<br>spc: 109.71" 
+[201] "gr: B<br>.rownames: 39<br>.wavelength: 700<br>spc: 70.71"  
+[202] "gr: B<br>.rownames: 42<br>.wavelength: 750<br>spc: 30.66"  
+[203] "gr: B<br>.rownames: 44<br>.wavelength: 800<br>spc: 10.8"   
+[204] NA                                                          
+[205] "gr: B<br>.rownames: 46<br>.wavelength: 300<br>spc: 147.34" 
+[206] "gr: B<br>.rownames: 48<br>.wavelength: 350<br>spc: 162.13" 
+[207] "gr: B<br>.rownames: 50<br>.wavelength: 400<br>spc: 227.54" 
+[208] "gr: B<br>.rownames: 59<br>.wavelength: 450<br>spc: 284.91" 
+[209] "gr: B<br>.rownames: 61<br>.wavelength: 500<br>spc: 342.76" 
+[210] "gr: B<br>.rownames: 65<br>.wavelength: 550<br>spc: 195.07" 
+[211] "gr: B<br>.rownames: 73<br>.wavelength: 600<br>spc: 141.16" 
+[212] "gr: B<br>.rownames: 87<br>.wavelength: 650<br>spc: 112.04" 
+[213] "gr: B<br>.rownames: 90<br>.wavelength: 700<br>spc: 63.3"   
+[214] "gr: B<br>.rownames: 91<br>.wavelength: 750<br>spc: 30.31"  
+[215] "gr: B<br>.rownames: 99<br>.wavelength: 800<br>spc: 18.19"  
+[216] NA                                                          
+[217] "gr: B<br>.rownames: 102<br>.wavelength: 300<br>spc: 195.31"
+[218] "gr: B<br>.rownames: 103<br>.wavelength: 350<br>spc: 200.07"
+[219] "gr: B<br>.rownames: 104<br>.wavelength: 400<br>spc: 242.67"
+[220] "gr: B<br>.rownames: 106<br>.wavelength: 450<br>spc: 302.74"
+[221] "gr: B<br>.rownames: 109<br>.wavelength: 500<br>spc: 403.7" 
+[222] "gr: B<br>.rownames: 110<br>.wavelength: 550<br>spc: 216.58"
+[223] "gr: B<br>.rownames: 112<br>.wavelength: 600<br>spc: 154.91"
+[224] "gr: B<br>.rownames: 117<br>.wavelength: 650<br>spc: 118.13"
+[225] "gr: B<br>.rownames: 120<br>.wavelength: 700<br>spc: 77.4"  
+[226] "gr: B<br>.rownames: 121<br>.wavelength: 750<br>spc: 40.42" 
+[227] "gr: B<br>.rownames: 129<br>.wavelength: 800<br>spc: 17.35" 
+[228] NA                                                          
+[229] "gr: B<br>.rownames: 133<br>.wavelength: 300<br>spc: 147.15"
+[230] "gr: B<br>.rownames: 136<br>.wavelength: 350<br>spc: 169.96"
+[231] "gr: B<br>.rownames: 137<br>.wavelength: 400<br>spc: 233.22"
+[232] "gr: B<br>.rownames: 138<br>.wavelength: 450<br>spc: 277.76"
+[233] "gr: B<br>.rownames: 139<br>.wavelength: 500<br>spc: 321.09"
+[234] "gr: B<br>.rownames: 141<br>.wavelength: 550<br>spc: 201.69"
+[235] "gr: B<br>.rownames: 142<br>.wavelength: 600<br>spc: 155.11"
+[236] "gr: B<br>.rownames: 143<br>.wavelength: 650<br>spc: 122.02"
+[237] "gr: B<br>.rownames: 144<br>.wavelength: 700<br>spc: 79.07" 
+[238] "gr: B<br>.rownames: 146<br>.wavelength: 750<br>spc: 37.61" 
+[239] "gr: B<br>.rownames: 148<br>.wavelength: 800<br>spc: 14.73" 
+[240] NA                                                          
+[241] "gr: B<br>.rownames: 149<br>.wavelength: 300<br>spc: 139.84"
+[242] "gr: B<br>.rownames: 150<br>.wavelength: 350<br>spc: 153.56"
+[243] "gr: B<br>.rownames: 4<br>.wavelength: 400<br>spc: 205.83"  
+[244] "gr: B<br>.rownames: 6<br>.wavelength: 450<br>spc: 244.78"  
+[245] "gr: B<br>.rownames: 8<br>.wavelength: 500<br>spc: 295.24"  
+[246] "gr: B<br>.rownames: 9<br>.wavelength: 550<br>spc: 155.48"  
+[247] "gr: B<br>.rownames: 10<br>.wavelength: 600<br>spc: 106.03" 
+[248] "gr: B<br>.rownames: 15<br>.wavelength: 650<br>spc: 77.36"  
+[249] "gr: B<br>.rownames: 16<br>.wavelength: 700<br>spc: 52.89"  
+[250] "gr: B<br>.rownames: 18<br>.wavelength: 750<br>spc: 31.2"   
+[251] "gr: B<br>.rownames: 22<br>.wavelength: 800<br>spc: 14.82"  
+[252] NA                                                          
+[253] "gr: B<br>.rownames: 23<br>.wavelength: 300<br>spc: 159.79" 
+[254] "gr: B<br>.rownames: 24<br>.wavelength: 350<br>spc: 159.82" 
+[255] "gr: B<br>.rownames: 25<br>.wavelength: 400<br>spc: 215.31" 
+[256] "gr: B<br>.rownames: 28<br>.wavelength: 450<br>spc: 254.7"  
+[257] "gr: B<br>.rownames: 31<br>.wavelength: 500<br>spc: 296.98" 
+[258] "gr: B<br>.rownames: 32<br>.wavelength: 550<br>spc: 161.12" 
+[259] "gr: B<br>.rownames: 33<br>.wavelength: 600<br>spc: 120.62" 
+[260] "gr: B<br>.rownames: 39<br>.wavelength: 650<br>spc: 87.79"  
+[261] "gr: B<br>.rownames: 42<br>.wavelength: 700<br>spc: 50.12"  
+[262] "gr: B<br>.rownames: 44<br>.wavelength: 750<br>spc: 27.19"  
+[263] "gr: B<br>.rownames: 46<br>.wavelength: 800<br>spc: 10.91"  
+[264] NA                                                          
+[265] "gr: B<br>.rownames: 48<br>.wavelength: 300<br>spc: 162.35" 
+[266] "gr: B<br>.rownames: 50<br>.wavelength: 350<br>spc: 172.46" 
+[267] "gr: B<br>.rownames: 59<br>.wavelength: 400<br>spc: 224.1"  
+[268] "gr: B<br>.rownames: 61<br>.wavelength: 450<br>spc: 266.43" 
+[269] "gr: B<br>.rownames: 65<br>.wavelength: 500<br>spc: 319.42" 
+[270] "gr: B<br>.rownames: 73<br>.wavelength: 550<br>spc: 177.31" 
+[271] "gr: B<br>.rownames: 87<br>.wavelength: 600<br>spc: 127.81" 
+[272] "gr: B<br>.rownames: 90<br>.wavelength: 650<br>spc: 95.23"  
+[273] "gr: B<br>.rownames: 91<br>.wavelength: 700<br>spc: 60.19"  
+[274] "gr: B<br>.rownames: 99<br>.wavelength: 750<br>spc: 31.58"  
+[275] "gr: B<br>.rownames: 102<br>.wavelength: 800<br>spc: 14.62" 
+[276] NA                                                          
+[277] "gr: B<br>.rownames: 136<br>.wavelength: 300<br>spc: 134.5" 
+[278] "gr: B<br>.rownames: 137<br>.wavelength: 350<br>spc: 157.41"
+[279] "gr: B<br>.rownames: 138<br>.wavelength: 400<br>spc: 230.95"
+[280] "gr: B<br>.rownames: 139<br>.wavelength: 450<br>spc: 286.48"
+[281] "gr: B<br>.rownames: 141<br>.wavelength: 500<br>spc: 348.1" 
+[282] "gr: B<br>.rownames: 142<br>.wavelength: 550<br>spc: 207.21"
+[283] "gr: B<br>.rownames: 143<br>.wavelength: 600<br>spc: 159.49"
+[284] "gr: B<br>.rownames: 144<br>.wavelength: 650<br>spc: 122.92"
+[285] "gr: B<br>.rownames: 146<br>.wavelength: 700<br>spc: 73.01" 
+[286] "gr: B<br>.rownames: 148<br>.wavelength: 750<br>spc: 42.82" 
+[287] "gr: B<br>.rownames: 149<br>.wavelength: 800<br>spc: 21.78" 
+[288] NA                                                          
+[289] "gr: B<br>.rownames: 150<br>.wavelength: 300<br>spc: 166.1" 
+[290] "gr: B<br>.rownames: 4<br>.wavelength: 350<br>spc: 173.03"  
+[291] "gr: B<br>.rownames: 6<br>.wavelength: 400<br>spc: 218.39"  
+[292] "gr: B<br>.rownames: 8<br>.wavelength: 450<br>spc: 249.22"  
+[293] "gr: B<br>.rownames: 9<br>.wavelength: 500<br>spc: 294.21"  
+[294] "gr: B<br>.rownames: 10<br>.wavelength: 550<br>spc: 129.56" 
+[295] "gr: B<br>.rownames: 15<br>.wavelength: 600<br>spc: 75.81"  
+[296] "gr: B<br>.rownames: 16<br>.wavelength: 650<br>spc: 52.12"  
+[297] "gr: B<br>.rownames: 18<br>.wavelength: 700<br>spc: 30.84"  
+[298] "gr: B<br>.rownames: 22<br>.wavelength: 750<br>spc: 15.7"   
+[299] "gr: B<br>.rownames: 23<br>.wavelength: 800<br>spc: 6.52"   
+[300] NA                                                          
+[301] "gr: B<br>.rownames: 24<br>.wavelength: 300<br>spc: 159.53" 
+[302] "gr: B<br>.rownames: 25<br>.wavelength: 350<br>spc: 171.75" 
+[303] "gr: B<br>.rownames: 28<br>.wavelength: 400<br>spc: 225.18" 
+[304] "gr: B<br>.rownames: 31<br>.wavelength: 450<br>spc: 271.4"  
+[305] "gr: B<br>.rownames: 32<br>.wavelength: 500<br>spc: 334.2"  
+[306] "gr: B<br>.rownames: 33<br>.wavelength: 550<br>spc: 185.55" 
+[307] "gr: B<br>.rownames: 39<br>.wavelength: 600<br>spc: 133.82" 
+[308] "gr: B<br>.rownames: 42<br>.wavelength: 650<br>spc: 100.36" 
+[309] "gr: B<br>.rownames: 44<br>.wavelength: 700<br>spc: 63.77"  
+[310] "gr: B<br>.rownames: 46<br>.wavelength: 750<br>spc: 33.84"  
+[311] "gr: B<br>.rownames: 48<br>.wavelength: 800<br>spc: 14.75"  
+[312] NA                                                          
+[313] "gr: B<br>.rownames: 104<br>.wavelength: 300<br>spc: 165.35"
+[314] "gr: B<br>.rownames: 106<br>.wavelength: 350<br>spc: 171.98"
+[315] "gr: B<br>.rownames: 109<br>.wavelength: 400<br>spc: 231.95"
+[316] "gr: B<br>.rownames: 110<br>.wavelength: 450<br>spc: 272.68"
+[317] "gr: B<br>.rownames: 112<br>.wavelength: 500<br>spc: 327.97"
+[318] "gr: B<br>.rownames: 117<br>.wavelength: 550<br>spc: 182.67"
+[319] "gr: B<br>.rownames: 120<br>.wavelength: 600<br>spc: 132.62"
+[320] "gr: B<br>.rownames: 121<br>.wavelength: 650<br>spc: 100.11"
+[321] "gr: B<br>.rownames: 129<br>.wavelength: 700<br>spc: 60.62" 
+[322] "gr: B<br>.rownames: 133<br>.wavelength: 750<br>spc: 31.09" 
+[323] "gr: B<br>.rownames: 136<br>.wavelength: 800<br>spc: 14.96" 
+[324] NA                                                          
+[325] "gr: B<br>.rownames: 137<br>.wavelength: 300<br>spc: 134.81"
+[326] "gr: B<br>.rownames: 138<br>.wavelength: 350<br>spc: 152.27"
+[327] "gr: B<br>.rownames: 139<br>.wavelength: 400<br>spc: 219.46"
+[328] "gr: B<br>.rownames: 141<br>.wavelength: 450<br>spc: 265.25"
+[329] "gr: B<br>.rownames: 142<br>.wavelength: 500<br>spc: 312.48"
+[330] "gr: B<br>.rownames: 143<br>.wavelength: 550<br>spc: 164.4" 
+[331] "gr: B<br>.rownames: 144<br>.wavelength: 600<br>spc: 116.88"
+[332] "gr: B<br>.rownames: 146<br>.wavelength: 650<br>spc: 87.51" 
+[333] "gr: B<br>.rownames: 148<br>.wavelength: 700<br>spc: 51"    
+[334] "gr: B<br>.rownames: 149<br>.wavelength: 750<br>spc: 27.55" 
+[335] "gr: B<br>.rownames: 150<br>.wavelength: 800<br>spc: 10.29" 
+
+$x$data[[2]]$key
+[1] NA
+
+$x$data[[2]]$type
+[1] "scatter"
+
+$x$data[[2]]$mode
+[1] "lines"
+
+$x$data[[2]]$name
+[1] "B"
+
+$x$data[[2]]$line
+$x$data[[2]]$line$width
+[1] 1.889764
+
+$x$data[[2]]$line$color
+[1] "rgba(97,156,255,1)"
+
+$x$data[[2]]$line$dash
+[1] "solid"
+
+
+$x$data[[2]]$hoveron
+[1] "points"
+
+$x$data[[2]]$legendgroup
+[1] "B"
+
+$x$data[[2]]$showlegend
+[1] TRUE
+
+$x$data[[2]]$xaxis
+[1] "x"
+
+$x$data[[2]]$yaxis
+[1] "y"
+
+$x$data[[2]]$hoverinfo
+[1] "text"
+
+
+$x$data[[3]]
+$x$data[[3]]$x
+ [1] 300 350 400 450 500 550 600 650 700 750 800
+
+$x$data[[3]]$y
+ [1] 166.09895 174.39492 242.66750 286.48455 348.10328 204.77269 141.27013
+ [8] 113.87917  79.30627  37.61492  15.04998
+
+$x$data[[3]]$text
+ [1] "Compared: A vs. B<br>.rownames: 1<br>.wavelength: 300<br>spc: 166.1" 
+ [2] "Compared: A vs. B<br>.rownames: 1<br>.wavelength: 350<br>spc: 174.39"
+ [3] "Compared: A vs. B<br>.rownames: 1<br>.wavelength: 400<br>spc: 242.67"
+ [4] "Compared: A vs. B<br>.rownames: 1<br>.wavelength: 450<br>spc: 286.48"
+ [5] "Compared: A vs. B<br>.rownames: 1<br>.wavelength: 500<br>spc: 348.1" 
+ [6] "Compared: A vs. B<br>.rownames: 1<br>.wavelength: 550<br>spc: 204.77"
+ [7] "Compared: A vs. B<br>.rownames: 1<br>.wavelength: 600<br>spc: 141.27"
+ [8] "Compared: A vs. B<br>.rownames: 1<br>.wavelength: 650<br>spc: 113.88"
+ [9] "Compared: A vs. B<br>.rownames: 1<br>.wavelength: 700<br>spc: 79.31" 
+[10] "Compared: A vs. B<br>.rownames: 1<br>.wavelength: 750<br>spc: 37.61" 
+[11] "Compared: A vs. B<br>.rownames: 1<br>.wavelength: 800<br>spc: 15.05" 
+
+$x$data[[3]]$key
+[1] NA
+
+$x$data[[3]]$type
+[1] "scatter"
+
+$x$data[[3]]$mode
+[1] "lines"
+
+$x$data[[3]]$name
+[1] "A vs. B"
+
+$x$data[[3]]$line
+$x$data[[3]]$line$width
+[1] 7.559055
+
+$x$data[[3]]$line$color
+[1] "rgba(0,186,56,1)"
+
+$x$data[[3]]$line$dash
+[1] "solid"
+
+
+$x$data[[3]]$hoveron
+[1] "points"
+
+$x$data[[3]]$legendgroup
+[1] "A vs. B"
+
+$x$data[[3]]$showlegend
+[1] TRUE
+
+$x$data[[3]]$xaxis
+[1] "x"
+
+$x$data[[3]]$yaxis
+[1] "y"
+
+$x$data[[3]]$hoverinfo
+[1] "text"
+
+
+$x$data[[4]]
+$x$data[[4]]$x
+  [1] 300 350 400 450 500 550 600 650 700 750 800  NA 300 350 400 450 500 550
+ [19] 600 650 700 750 800  NA 300 350 400 450 500 550 600 650 700 750 800  NA
+ [37] 300 350 400 450 500 550 600 650 700 750 800  NA 300 350 400 450 500 550
+ [55] 600 650 700 750 800  NA 300 350 400 450 500 550 600 650 700 750 800  NA
+ [73] 300 350 400 450 500 550 600 650 700 750 800  NA 300 350 400 450 500 550
+ [91] 600 650 700 750 800  NA 300 350 400 450 500 550 600 650 700 750 800  NA
+[109] 300 350 400 450 500 550 600 650 700 750 800  NA 300 350 400 450 500 550
+[127] 600 650 700 750 800  NA 300 350 400 450 500 550 600 650 700 750 800  NA
+[145] 300 350 400 450 500 550 600 650 700 750 800  NA 300 350 400 450 500 550
+[163] 600 650 700 750 800  NA 300 350 400 450 500 550 600 650 700 750 800  NA
+[181] 300 350 400 450 500 550 600 650 700 750 800  NA 300 350 400 450 500 550
+[199] 600 650 700 750 800  NA 300 350 400 450 500 550 600 650 700 750 800  NA
+[217] 300 350 400 450 500 550 600 650 700 750 800  NA 300 350 400 450 500 550
+[235] 600 650 700 750 800  NA 300 350 400 450 500 550 600 650 700 750 800  NA
+[253] 300 350 400 450 500 550 600 650 700 750 800  NA 300 350 400 450 500 550
+[271] 600 650 700 750 800  NA 300 350 400 450 500 550 600 650 700 750 800  NA
+[289] 300 350 400 450 500 550 600 650 700 750 800  NA 300 350 400 450 500 550
+[307] 600 650 700 750 800
+
+$x$data[[4]]$y
+  [1] 167.845802 185.406869 272.661457 326.958278 388.671901 217.102064
+  [7] 160.005141 121.969472  80.989824  42.546118  18.160632         NA
+ [13] 167.376188 176.721853 249.010773 275.642618 311.853501 125.885871
+ [19]  80.714958  50.299578  32.097229  15.985168   6.001425         NA
+ [25] 187.037631 203.271392 278.178053 334.569743 408.918129 218.883261
+ [31] 155.254247 115.146246  79.872440  39.203329  21.006234         NA
+ [37] 135.839822 159.021024 263.874803 300.702268 316.121918 180.095592
+ [43] 132.323668  99.643500  63.642845  33.651809  14.801620         NA
+ [49] 187.092510 200.361428 273.146647 325.081237 393.999806 205.028260
+ [55] 143.873673 107.038822  66.715347  38.272947  18.173425         NA
+ [61] 118.135928 143.027087 255.224067 299.522601 316.406995 195.317605
+ [67] 145.689856 110.112869  73.804329  38.009506  14.927445         NA
+ [73] 148.599404 169.314899 268.387343 307.873814 338.914920 186.852285
+ [79] 130.969700  98.058917  60.938884  34.668363  14.097633         NA
+ [85] 185.876908 201.573654 290.642861 348.543825 401.370475 236.531224
+ [91] 179.604361 139.332398  88.778098  45.802525  17.939763         NA
+ [97] 141.825778 158.996220 246.604031 276.130809 286.896140 154.682108
+[103] 109.844891  79.590206  50.390675  25.631205  11.017836         NA
+[109] 171.940953 179.992976 251.016653 276.329167 304.263093 126.581072
+[115]  65.810741  50.229316  35.954077  14.166226   6.743253         NA
+[121] 171.680310 190.336268 279.291147 318.565589 355.745022 218.750276
+[127] 168.768863 130.229598  81.151606  44.863415  18.579388         NA
+[133] 119.560250 145.868795 273.719126 312.056270 315.804658 180.389323
+[139] 137.345109  99.079803  61.425380  30.243199  17.230608         NA
+[145] 157.516549 178.158987 268.634073 298.586213 317.676821 158.976407
+[151] 110.082363  80.449497  50.713149  27.699564  14.226100         NA
+[157] 152.002922 178.076283 274.564887 334.260709 394.105722 247.024741
+[163] 194.520504 148.874665  97.017045  52.464164  22.483621         NA
+[169] 152.995149 171.228072 260.748237 308.505439 337.735732 207.717056
+[175] 166.198742 123.776171  84.924565  44.776994  16.554674         NA
+[181] 168.590023 183.023377 267.847492 304.458402 352.261986 181.375324
+[187] 128.763387  94.269689  59.550263  29.936177  13.757924         NA
+[193] 168.435562 188.343518 290.438867 340.383496 384.633307 212.929684
+[199] 157.265314 118.435278  75.858940  39.216396  17.414031         NA
+[205] 158.590635 171.126338 254.214144 297.078364 338.140326 171.027795
+[211] 119.882659  89.061721  56.463461  30.461007  12.382269         NA
+[217] 139.613130 152.600342 228.474034 244.094709 232.828044 106.712308
+[223]  54.195546  29.954261  16.973114  12.125746   6.581896         NA
+[229] 152.050256 171.381844 269.340916 308.978931 340.825732 205.427508
+[235] 152.458075 116.361484  74.837024  40.147563  18.621533         NA
+[241] 129.903378 147.608950 257.302652 282.150303 288.079704 161.492501
+[247] 125.688939  94.209588  57.819488  31.041758  14.276395         NA
+[253] 122.178313 150.031036 273.432315 311.485464 317.852377 199.095362
+[259] 155.916423 119.313663  77.158517  41.154558  17.887550         NA
+[265] 169.791192 182.840189 259.516776 300.859975 342.663703 189.310010
+[271] 136.627207 103.242733  65.917029  34.885554  15.483868         NA
+[277] 137.893790 162.745461 262.091576 300.279108 319.643828 186.819551
+[283] 131.960296 100.702696  67.701694  33.500260  12.115581         NA
+[289] 129.991922 154.283070 257.736486 301.226483 329.252723 208.953664
+[295] 158.658084 122.423797  78.829278  43.246627  19.005399         NA
+[301] 137.781923 163.352696 267.419879 320.913545 355.822379 227.391104
+[307] 180.735962 145.335541  90.752000  49.163124  22.367326
+
+$x$data[[4]]$text
+  [1] "gr: A<br>.rownames: 25<br>.wavelength: 300<br>spc: 167.85" 
+  [2] "gr: A<br>.rownames: 28<br>.wavelength: 350<br>spc: 185.41" 
+  [3] "gr: A<br>.rownames: 31<br>.wavelength: 400<br>spc: 272.66" 
+  [4] "gr: A<br>.rownames: 32<br>.wavelength: 450<br>spc: 326.96" 
+  [5] "gr: A<br>.rownames: 33<br>.wavelength: 500<br>spc: 388.67" 
+  [6] "gr: A<br>.rownames: 39<br>.wavelength: 550<br>spc: 217.1"  
+  [7] "gr: A<br>.rownames: 42<br>.wavelength: 600<br>spc: 160.01" 
+  [8] "gr: A<br>.rownames: 44<br>.wavelength: 650<br>spc: 121.97" 
+  [9] "gr: A<br>.rownames: 46<br>.wavelength: 700<br>spc: 80.99"  
+ [10] "gr: A<br>.rownames: 48<br>.wavelength: 750<br>spc: 42.55"  
+ [11] "gr: A<br>.rownames: 50<br>.wavelength: 800<br>spc: 18.16"  
+ [12] NA                                                          
+ [13] "gr: A<br>.rownames: 59<br>.wavelength: 300<br>spc: 167.38" 
+ [14] "gr: A<br>.rownames: 61<br>.wavelength: 350<br>spc: 176.72" 
+ [15] "gr: A<br>.rownames: 65<br>.wavelength: 400<br>spc: 249.01" 
+ [16] "gr: A<br>.rownames: 73<br>.wavelength: 450<br>spc: 275.64" 
+ [17] "gr: A<br>.rownames: 87<br>.wavelength: 500<br>spc: 311.85" 
+ [18] "gr: A<br>.rownames: 90<br>.wavelength: 550<br>spc: 125.89" 
+ [19] "gr: A<br>.rownames: 91<br>.wavelength: 600<br>spc: 80.71"  
+ [20] "gr: A<br>.rownames: 99<br>.wavelength: 650<br>spc: 50.3"   
+ [21] "gr: A<br>.rownames: 102<br>.wavelength: 700<br>spc: 32.1"  
+ [22] "gr: A<br>.rownames: 103<br>.wavelength: 750<br>spc: 15.99" 
+ [23] "gr: A<br>.rownames: 104<br>.wavelength: 800<br>spc: 6"     
+ [24] NA                                                          
+ [25] "gr: A<br>.rownames: 106<br>.wavelength: 300<br>spc: 187.04"
+ [26] "gr: A<br>.rownames: 109<br>.wavelength: 350<br>spc: 203.27"
+ [27] "gr: A<br>.rownames: 110<br>.wavelength: 400<br>spc: 278.18"
+ [28] "gr: A<br>.rownames: 112<br>.wavelength: 450<br>spc: 334.57"
+ [29] "gr: A<br>.rownames: 117<br>.wavelength: 500<br>spc: 408.92"
+ [30] "gr: A<br>.rownames: 120<br>.wavelength: 550<br>spc: 218.88"
+ [31] "gr: A<br>.rownames: 121<br>.wavelength: 600<br>spc: 155.25"
+ [32] "gr: A<br>.rownames: 129<br>.wavelength: 650<br>spc: 115.15"
+ [33] "gr: A<br>.rownames: 133<br>.wavelength: 700<br>spc: 79.87" 
+ [34] "gr: A<br>.rownames: 136<br>.wavelength: 750<br>spc: 39.2"  
+ [35] "gr: A<br>.rownames: 137<br>.wavelength: 800<br>spc: 21.01" 
+ [36] NA                                                          
+ [37] "gr: A<br>.rownames: 138<br>.wavelength: 300<br>spc: 135.84"
+ [38] "gr: A<br>.rownames: 139<br>.wavelength: 350<br>spc: 159.02"
+ [39] "gr: A<br>.rownames: 141<br>.wavelength: 400<br>spc: 263.87"
+ [40] "gr: A<br>.rownames: 142<br>.wavelength: 450<br>spc: 300.7" 
+ [41] "gr: A<br>.rownames: 143<br>.wavelength: 500<br>spc: 316.12"
+ [42] "gr: A<br>.rownames: 144<br>.wavelength: 550<br>spc: 180.1" 
+ [43] "gr: A<br>.rownames: 146<br>.wavelength: 600<br>spc: 132.32"
+ [44] "gr: A<br>.rownames: 148<br>.wavelength: 650<br>spc: 99.64" 
+ [45] "gr: A<br>.rownames: 149<br>.wavelength: 700<br>spc: 63.64" 
+ [46] "gr: A<br>.rownames: 150<br>.wavelength: 750<br>spc: 33.65" 
+ [47] "gr: A<br>.rownames: 4<br>.wavelength: 800<br>spc: 14.8"    
+ [48] NA                                                          
+ [49] "gr: A<br>.rownames: 6<br>.wavelength: 300<br>spc: 187.09"  
+ [50] "gr: A<br>.rownames: 8<br>.wavelength: 350<br>spc: 200.36"  
+ [51] "gr: A<br>.rownames: 9<br>.wavelength: 400<br>spc: 273.15"  
+ [52] "gr: A<br>.rownames: 10<br>.wavelength: 450<br>spc: 325.08" 
+ [53] "gr: A<br>.rownames: 15<br>.wavelength: 500<br>spc: 394"    
+ [54] "gr: A<br>.rownames: 16<br>.wavelength: 550<br>spc: 205.03" 
+ [55] "gr: A<br>.rownames: 18<br>.wavelength: 600<br>spc: 143.87" 
+ [56] "gr: A<br>.rownames: 22<br>.wavelength: 650<br>spc: 107.04" 
+ [57] "gr: A<br>.rownames: 23<br>.wavelength: 700<br>spc: 66.72"  
+ [58] "gr: A<br>.rownames: 24<br>.wavelength: 750<br>spc: 38.27"  
+ [59] "gr: A<br>.rownames: 25<br>.wavelength: 800<br>spc: 18.17"  
+ [60] NA                                                          
+ [61] "gr: A<br>.rownames: 28<br>.wavelength: 300<br>spc: 118.14" 
+ [62] "gr: A<br>.rownames: 31<br>.wavelength: 350<br>spc: 143.03" 
+ [63] "gr: A<br>.rownames: 32<br>.wavelength: 400<br>spc: 255.22" 
+ [64] "gr: A<br>.rownames: 33<br>.wavelength: 450<br>spc: 299.52" 
+ [65] "gr: A<br>.rownames: 39<br>.wavelength: 500<br>spc: 316.41" 
+ [66] "gr: A<br>.rownames: 42<br>.wavelength: 550<br>spc: 195.32" 
+ [67] "gr: A<br>.rownames: 44<br>.wavelength: 600<br>spc: 145.69" 
+ [68] "gr: A<br>.rownames: 46<br>.wavelength: 650<br>spc: 110.11" 
+ [69] "gr: A<br>.rownames: 48<br>.wavelength: 700<br>spc: 73.8"   
+ [70] "gr: A<br>.rownames: 50<br>.wavelength: 750<br>spc: 38.01"  
+ [71] "gr: A<br>.rownames: 59<br>.wavelength: 800<br>spc: 14.93"  
+ [72] NA                                                          
+ [73] "gr: A<br>.rownames: 61<br>.wavelength: 300<br>spc: 148.6"  
+ [74] "gr: A<br>.rownames: 65<br>.wavelength: 350<br>spc: 169.31" 
+ [75] "gr: A<br>.rownames: 73<br>.wavelength: 400<br>spc: 268.39" 
+ [76] "gr: A<br>.rownames: 87<br>.wavelength: 450<br>spc: 307.87" 
+ [77] "gr: A<br>.rownames: 90<br>.wavelength: 500<br>spc: 338.91" 
+ [78] "gr: A<br>.rownames: 91<br>.wavelength: 550<br>spc: 186.85" 
+ [79] "gr: A<br>.rownames: 99<br>.wavelength: 600<br>spc: 130.97" 
+ [80] "gr: A<br>.rownames: 102<br>.wavelength: 650<br>spc: 98.06" 
+ [81] "gr: A<br>.rownames: 103<br>.wavelength: 700<br>spc: 60.94" 
+ [82] "gr: A<br>.rownames: 104<br>.wavelength: 750<br>spc: 34.67" 
+ [83] "gr: A<br>.rownames: 106<br>.wavelength: 800<br>spc: 14.1"  
+ [84] NA                                                          
+ [85] "gr: A<br>.rownames: 109<br>.wavelength: 300<br>spc: 185.88"
+ [86] "gr: A<br>.rownames: 110<br>.wavelength: 350<br>spc: 201.57"
+ [87] "gr: A<br>.rownames: 112<br>.wavelength: 400<br>spc: 290.64"
+ [88] "gr: A<br>.rownames: 117<br>.wavelength: 450<br>spc: 348.54"
+ [89] "gr: A<br>.rownames: 120<br>.wavelength: 500<br>spc: 401.37"
+ [90] "gr: A<br>.rownames: 121<br>.wavelength: 550<br>spc: 236.53"
+ [91] "gr: A<br>.rownames: 129<br>.wavelength: 600<br>spc: 179.6" 
+ [92] "gr: A<br>.rownames: 133<br>.wavelength: 650<br>spc: 139.33"
+ [93] "gr: A<br>.rownames: 136<br>.wavelength: 700<br>spc: 88.78" 
+ [94] "gr: A<br>.rownames: 137<br>.wavelength: 750<br>spc: 45.8"  
+ [95] "gr: A<br>.rownames: 138<br>.wavelength: 800<br>spc: 17.94" 
+ [96] NA                                                          
+ [97] "gr: A<br>.rownames: 139<br>.wavelength: 300<br>spc: 141.83"
+ [98] "gr: A<br>.rownames: 141<br>.wavelength: 350<br>spc: 159"   
+ [99] "gr: A<br>.rownames: 142<br>.wavelength: 400<br>spc: 246.6" 
+[100] "gr: A<br>.rownames: 143<br>.wavelength: 450<br>spc: 276.13"
+[101] "gr: A<br>.rownames: 144<br>.wavelength: 500<br>spc: 286.9" 
+[102] "gr: A<br>.rownames: 146<br>.wavelength: 550<br>spc: 154.68"
+[103] "gr: A<br>.rownames: 148<br>.wavelength: 600<br>spc: 109.84"
+[104] "gr: A<br>.rownames: 149<br>.wavelength: 650<br>spc: 79.59" 
+[105] "gr: A<br>.rownames: 150<br>.wavelength: 700<br>spc: 50.39" 
+[106] "gr: A<br>.rownames: 4<br>.wavelength: 750<br>spc: 25.63"   
+[107] "gr: A<br>.rownames: 6<br>.wavelength: 800<br>spc: 11.02"   
+[108] NA                                                          
+[109] "gr: A<br>.rownames: 8<br>.wavelength: 300<br>spc: 171.94"  
+[110] "gr: A<br>.rownames: 9<br>.wavelength: 350<br>spc: 179.99"  
+[111] "gr: A<br>.rownames: 10<br>.wavelength: 400<br>spc: 251.02" 
+[112] "gr: A<br>.rownames: 15<br>.wavelength: 450<br>spc: 276.33" 
+[113] "gr: A<br>.rownames: 16<br>.wavelength: 500<br>spc: 304.26" 
+[114] "gr: A<br>.rownames: 18<br>.wavelength: 550<br>spc: 126.58" 
+[115] "gr: A<br>.rownames: 22<br>.wavelength: 600<br>spc: 65.81"  
+[116] "gr: A<br>.rownames: 23<br>.wavelength: 650<br>spc: 50.23"  
+[117] "gr: A<br>.rownames: 24<br>.wavelength: 700<br>spc: 35.95"  
+[118] "gr: A<br>.rownames: 25<br>.wavelength: 750<br>spc: 14.17"  
+[119] "gr: A<br>.rownames: 28<br>.wavelength: 800<br>spc: 6.74"   
+[120] NA                                                          
+[121] "gr: A<br>.rownames: 31<br>.wavelength: 300<br>spc: 171.68" 
+[122] "gr: A<br>.rownames: 32<br>.wavelength: 350<br>spc: 190.34" 
+[123] "gr: A<br>.rownames: 33<br>.wavelength: 400<br>spc: 279.29" 
+[124] "gr: A<br>.rownames: 39<br>.wavelength: 450<br>spc: 318.57" 
+[125] "gr: A<br>.rownames: 42<br>.wavelength: 500<br>spc: 355.75" 
+[126] "gr: A<br>.rownames: 44<br>.wavelength: 550<br>spc: 218.75" 
+[127] "gr: A<br>.rownames: 46<br>.wavelength: 600<br>spc: 168.77" 
+[128] "gr: A<br>.rownames: 48<br>.wavelength: 650<br>spc: 130.23" 
+[129] "gr: A<br>.rownames: 50<br>.wavelength: 700<br>spc: 81.15"  
+[130] "gr: A<br>.rownames: 59<br>.wavelength: 750<br>spc: 44.86"  
+[131] "gr: A<br>.rownames: 61<br>.wavelength: 800<br>spc: 18.58"  
+[132] NA                                                          
+[133] "gr: A<br>.rownames: 65<br>.wavelength: 300<br>spc: 119.56" 
+[134] "gr: A<br>.rownames: 73<br>.wavelength: 350<br>spc: 145.87" 
+[135] "gr: A<br>.rownames: 87<br>.wavelength: 400<br>spc: 273.72" 
+[136] "gr: A<br>.rownames: 90<br>.wavelength: 450<br>spc: 312.06" 
+[137] "gr: A<br>.rownames: 91<br>.wavelength: 500<br>spc: 315.8"  
+[138] "gr: A<br>.rownames: 99<br>.wavelength: 550<br>spc: 180.39" 
+[139] "gr: A<br>.rownames: 102<br>.wavelength: 600<br>spc: 137.35"
+[140] "gr: A<br>.rownames: 103<br>.wavelength: 650<br>spc: 99.08" 
+[141] "gr: A<br>.rownames: 104<br>.wavelength: 700<br>spc: 61.43" 
+[142] "gr: A<br>.rownames: 106<br>.wavelength: 750<br>spc: 30.24" 
+[143] "gr: A<br>.rownames: 109<br>.wavelength: 800<br>spc: 17.23" 
+[144] NA                                                          
+[145] "gr: A<br>.rownames: 110<br>.wavelength: 300<br>spc: 157.52"
+[146] "gr: A<br>.rownames: 112<br>.wavelength: 350<br>spc: 178.16"
+[147] "gr: A<br>.rownames: 117<br>.wavelength: 400<br>spc: 268.63"
+[148] "gr: A<br>.rownames: 120<br>.wavelength: 450<br>spc: 298.59"
+[149] "gr: A<br>.rownames: 121<br>.wavelength: 500<br>spc: 317.68"
+[150] "gr: A<br>.rownames: 129<br>.wavelength: 550<br>spc: 158.98"
+[151] "gr: A<br>.rownames: 133<br>.wavelength: 600<br>spc: 110.08"
+[152] "gr: A<br>.rownames: 136<br>.wavelength: 650<br>spc: 80.45" 
+[153] "gr: A<br>.rownames: 137<br>.wavelength: 700<br>spc: 50.71" 
+[154] "gr: A<br>.rownames: 138<br>.wavelength: 750<br>spc: 27.7"  
+[155] "gr: A<br>.rownames: 139<br>.wavelength: 800<br>spc: 14.23" 
+[156] NA                                                          
+[157] "gr: A<br>.rownames: 141<br>.wavelength: 300<br>spc: 152"   
+[158] "gr: A<br>.rownames: 142<br>.wavelength: 350<br>spc: 178.08"
+[159] "gr: A<br>.rownames: 143<br>.wavelength: 400<br>spc: 274.56"
+[160] "gr: A<br>.rownames: 144<br>.wavelength: 450<br>spc: 334.26"
+[161] "gr: A<br>.rownames: 146<br>.wavelength: 500<br>spc: 394.11"
+[162] "gr: A<br>.rownames: 148<br>.wavelength: 550<br>spc: 247.02"
+[163] "gr: A<br>.rownames: 149<br>.wavelength: 600<br>spc: 194.52"
+[164] "gr: A<br>.rownames: 150<br>.wavelength: 650<br>spc: 148.87"
+[165] "gr: A<br>.rownames: 4<br>.wavelength: 700<br>spc: 97.02"   
+[166] "gr: A<br>.rownames: 6<br>.wavelength: 750<br>spc: 52.46"   
+[167] "gr: A<br>.rownames: 8<br>.wavelength: 800<br>spc: 22.48"   
+[168] NA                                                          
+[169] "gr: A<br>.rownames: 9<br>.wavelength: 300<br>spc: 153"     
+[170] "gr: A<br>.rownames: 10<br>.wavelength: 350<br>spc: 171.23" 
+[171] "gr: A<br>.rownames: 15<br>.wavelength: 400<br>spc: 260.75" 
+[172] "gr: A<br>.rownames: 16<br>.wavelength: 450<br>spc: 308.51" 
+[173] "gr: A<br>.rownames: 18<br>.wavelength: 500<br>spc: 337.74" 
+[174] "gr: A<br>.rownames: 22<br>.wavelength: 550<br>spc: 207.72" 
+[175] "gr: A<br>.rownames: 23<br>.wavelength: 600<br>spc: 166.2"  
+[176] "gr: A<br>.rownames: 24<br>.wavelength: 650<br>spc: 123.78" 
+[177] "gr: A<br>.rownames: 25<br>.wavelength: 700<br>spc: 84.92"  
+[178] "gr: A<br>.rownames: 28<br>.wavelength: 750<br>spc: 44.78"  
+[179] "gr: A<br>.rownames: 31<br>.wavelength: 800<br>spc: 16.55"  
+[180] NA                                                          
+[181] "gr: A<br>.rownames: 32<br>.wavelength: 300<br>spc: 168.59" 
+[182] "gr: A<br>.rownames: 33<br>.wavelength: 350<br>spc: 183.02" 
+[183] "gr: A<br>.rownames: 39<br>.wavelength: 400<br>spc: 267.85" 
+[184] "gr: A<br>.rownames: 42<br>.wavelength: 450<br>spc: 304.46" 
+[185] "gr: A<br>.rownames: 44<br>.wavelength: 500<br>spc: 352.26" 
+[186] "gr: A<br>.rownames: 46<br>.wavelength: 550<br>spc: 181.38" 
+[187] "gr: A<br>.rownames: 48<br>.wavelength: 600<br>spc: 128.76" 
+[188] "gr: A<br>.rownames: 50<br>.wavelength: 650<br>spc: 94.27"  
+[189] "gr: A<br>.rownames: 59<br>.wavelength: 700<br>spc: 59.55"  
+[190] "gr: A<br>.rownames: 61<br>.wavelength: 750<br>spc: 29.94"  
+[191] "gr: A<br>.rownames: 65<br>.wavelength: 800<br>spc: 13.76"  
+[192] NA                                                          
+[193] "gr: A<br>.rownames: 73<br>.wavelength: 300<br>spc: 168.44" 
+[194] "gr: A<br>.rownames: 87<br>.wavelength: 350<br>spc: 188.34" 
+[195] "gr: A<br>.rownames: 90<br>.wavelength: 400<br>spc: 290.44" 
+[196] "gr: A<br>.rownames: 91<br>.wavelength: 450<br>spc: 340.38" 
+[197] "gr: A<br>.rownames: 99<br>.wavelength: 500<br>spc: 384.63" 
+[198] "gr: A<br>.rownames: 102<br>.wavelength: 550<br>spc: 212.93"
+[199] "gr: A<br>.rownames: 103<br>.wavelength: 600<br>spc: 157.27"
+[200] "gr: A<br>.rownames: 104<br>.wavelength: 650<br>spc: 118.44"
+[201] "gr: A<br>.rownames: 106<br>.wavelength: 700<br>spc: 75.86" 
+[202] "gr: A<br>.rownames: 109<br>.wavelength: 750<br>spc: 39.22" 
+[203] "gr: A<br>.rownames: 110<br>.wavelength: 800<br>spc: 17.41" 
+[204] NA                                                          
+[205] "gr: A<br>.rownames: 112<br>.wavelength: 300<br>spc: 158.59"
+[206] "gr: A<br>.rownames: 117<br>.wavelength: 350<br>spc: 171.13"
+[207] "gr: A<br>.rownames: 120<br>.wavelength: 400<br>spc: 254.21"
+[208] "gr: A<br>.rownames: 121<br>.wavelength: 450<br>spc: 297.08"
+[209] "gr: A<br>.rownames: 129<br>.wavelength: 500<br>spc: 338.14"
+[210] "gr: A<br>.rownames: 133<br>.wavelength: 550<br>spc: 171.03"
+[211] "gr: A<br>.rownames: 136<br>.wavelength: 600<br>spc: 119.88"
+[212] "gr: A<br>.rownames: 137<br>.wavelength: 650<br>spc: 89.06" 
+[213] "gr: A<br>.rownames: 138<br>.wavelength: 700<br>spc: 56.46" 
+[214] "gr: A<br>.rownames: 139<br>.wavelength: 750<br>spc: 30.46" 
+[215] "gr: A<br>.rownames: 141<br>.wavelength: 800<br>spc: 12.38" 
+[216] NA                                                          
+[217] "gr: A<br>.rownames: 142<br>.wavelength: 300<br>spc: 139.61"
+[218] "gr: A<br>.rownames: 143<br>.wavelength: 350<br>spc: 152.6" 
+[219] "gr: A<br>.rownames: 144<br>.wavelength: 400<br>spc: 228.47"
+[220] "gr: A<br>.rownames: 146<br>.wavelength: 450<br>spc: 244.09"
+[221] "gr: A<br>.rownames: 148<br>.wavelength: 500<br>spc: 232.83"
+[222] "gr: A<br>.rownames: 149<br>.wavelength: 550<br>spc: 106.71"
+[223] "gr: A<br>.rownames: 150<br>.wavelength: 600<br>spc: 54.2"  
+[224] "gr: A<br>.rownames: 4<br>.wavelength: 650<br>spc: 29.95"   
+[225] "gr: A<br>.rownames: 6<br>.wavelength: 700<br>spc: 16.97"   
+[226] "gr: A<br>.rownames: 8<br>.wavelength: 750<br>spc: 12.13"   
+[227] "gr: A<br>.rownames: 9<br>.wavelength: 800<br>spc: 6.58"    
+[228] NA                                                          
+[229] "gr: A<br>.rownames: 10<br>.wavelength: 300<br>spc: 152.05" 
+[230] "gr: A<br>.rownames: 15<br>.wavelength: 350<br>spc: 171.38" 
+[231] "gr: A<br>.rownames: 16<br>.wavelength: 400<br>spc: 269.34" 
+[232] "gr: A<br>.rownames: 18<br>.wavelength: 450<br>spc: 308.98" 
+[233] "gr: A<br>.rownames: 22<br>.wavelength: 500<br>spc: 340.83" 
+[234] "gr: A<br>.rownames: 23<br>.wavelength: 550<br>spc: 205.43" 
+[235] "gr: A<br>.rownames: 24<br>.wavelength: 600<br>spc: 152.46" 
+[236] "gr: A<br>.rownames: 25<br>.wavelength: 650<br>spc: 116.36" 
+[237] "gr: A<br>.rownames: 28<br>.wavelength: 700<br>spc: 74.84"  
+[238] "gr: A<br>.rownames: 31<br>.wavelength: 750<br>spc: 40.15"  
+[239] "gr: A<br>.rownames: 32<br>.wavelength: 800<br>spc: 18.62"  
+[240] NA                                                          
+[241] "gr: A<br>.rownames: 33<br>.wavelength: 300<br>spc: 129.9"  
+[242] "gr: A<br>.rownames: 39<br>.wavelength: 350<br>spc: 147.61" 
+[243] "gr: A<br>.rownames: 42<br>.wavelength: 400<br>spc: 257.3"  
+[244] "gr: A<br>.rownames: 44<br>.wavelength: 450<br>spc: 282.15" 
+[245] "gr: A<br>.rownames: 46<br>.wavelength: 500<br>spc: 288.08" 
+[246] "gr: A<br>.rownames: 48<br>.wavelength: 550<br>spc: 161.49" 
+[247] "gr: A<br>.rownames: 50<br>.wavelength: 600<br>spc: 125.69" 
+[248] "gr: A<br>.rownames: 59<br>.wavelength: 650<br>spc: 94.21"  
+[249] "gr: A<br>.rownames: 61<br>.wavelength: 700<br>spc: 57.82"  
+[250] "gr: A<br>.rownames: 65<br>.wavelength: 750<br>spc: 31.04"  
+[251] "gr: A<br>.rownames: 73<br>.wavelength: 800<br>spc: 14.28"  
+[252] NA                                                          
+[253] "gr: A<br>.rownames: 87<br>.wavelength: 300<br>spc: 122.18" 
+[254] "gr: A<br>.rownames: 90<br>.wavelength: 350<br>spc: 150.03" 
+[255] "gr: A<br>.rownames: 91<br>.wavelength: 400<br>spc: 273.43" 
+[256] "gr: A<br>.rownames: 99<br>.wavelength: 450<br>spc: 311.49" 
+[257] "gr: A<br>.rownames: 102<br>.wavelength: 500<br>spc: 317.85"
+[258] "gr: A<br>.rownames: 103<br>.wavelength: 550<br>spc: 199.1" 
+[259] "gr: A<br>.rownames: 104<br>.wavelength: 600<br>spc: 155.92"
+[260] "gr: A<br>.rownames: 106<br>.wavelength: 650<br>spc: 119.31"
+[261] "gr: A<br>.rownames: 109<br>.wavelength: 700<br>spc: 77.16" 
+[262] "gr: A<br>.rownames: 110<br>.wavelength: 750<br>spc: 41.15" 
+[263] "gr: A<br>.rownames: 112<br>.wavelength: 800<br>spc: 17.89" 
+[264] NA                                                          
+[265] "gr: A<br>.rownames: 117<br>.wavelength: 300<br>spc: 169.79"
+[266] "gr: A<br>.rownames: 120<br>.wavelength: 350<br>spc: 182.84"
+[267] "gr: A<br>.rownames: 121<br>.wavelength: 400<br>spc: 259.52"
+[268] "gr: A<br>.rownames: 129<br>.wavelength: 450<br>spc: 300.86"
+[269] "gr: A<br>.rownames: 133<br>.wavelength: 500<br>spc: 342.66"
+[270] "gr: A<br>.rownames: 136<br>.wavelength: 550<br>spc: 189.31"
+[271] "gr: A<br>.rownames: 137<br>.wavelength: 600<br>spc: 136.63"
+[272] "gr: A<br>.rownames: 138<br>.wavelength: 650<br>spc: 103.24"
+[273] "gr: A<br>.rownames: 139<br>.wavelength: 700<br>spc: 65.92" 
+[274] "gr: A<br>.rownames: 141<br>.wavelength: 750<br>spc: 34.89" 
+[275] "gr: A<br>.rownames: 142<br>.wavelength: 800<br>spc: 15.48" 
+[276] NA                                                          
+[277] "gr: A<br>.rownames: 15<br>.wavelength: 300<br>spc: 137.89" 
+[278] "gr: A<br>.rownames: 16<br>.wavelength: 350<br>spc: 162.75" 
+[279] "gr: A<br>.rownames: 18<br>.wavelength: 400<br>spc: 262.09" 
+[280] "gr: A<br>.rownames: 22<br>.wavelength: 450<br>spc: 300.28" 
+[281] "gr: A<br>.rownames: 23<br>.wavelength: 500<br>spc: 319.64" 
+[282] "gr: A<br>.rownames: 24<br>.wavelength: 550<br>spc: 186.82" 
+[283] "gr: A<br>.rownames: 25<br>.wavelength: 600<br>spc: 131.96" 
+[284] "gr: A<br>.rownames: 28<br>.wavelength: 650<br>spc: 100.7"  
+[285] "gr: A<br>.rownames: 31<br>.wavelength: 700<br>spc: 67.7"   
+[286] "gr: A<br>.rownames: 32<br>.wavelength: 750<br>spc: 33.5"   
+[287] "gr: A<br>.rownames: 33<br>.wavelength: 800<br>spc: 12.12"  
+[288] NA                                                          
+[289] "gr: A<br>.rownames: 103<br>.wavelength: 300<br>spc: 129.99"
+[290] "gr: A<br>.rownames: 104<br>.wavelength: 350<br>spc: 154.28"
+[291] "gr: A<br>.rownames: 106<br>.wavelength: 400<br>spc: 257.74"
+[292] "gr: A<br>.rownames: 109<br>.wavelength: 450<br>spc: 301.23"
+[293] "gr: A<br>.rownames: 110<br>.wavelength: 500<br>spc: 329.25"
+[294] "gr: A<br>.rownames: 112<br>.wavelength: 550<br>spc: 208.95"
+[295] "gr: A<br>.rownames: 117<br>.wavelength: 600<br>spc: 158.66"
+[296] "gr: A<br>.rownames: 120<br>.wavelength: 650<br>spc: 122.42"
+[297] "gr: A<br>.rownames: 121<br>.wavelength: 700<br>spc: 78.83" 
+[298] "gr: A<br>.rownames: 129<br>.wavelength: 750<br>spc: 43.25" 
+[299] "gr: A<br>.rownames: 133<br>.wavelength: 800<br>spc: 19.01" 
+[300] NA                                                          
+[301] "gr: A<br>.rownames: 50<br>.wavelength: 300<br>spc: 137.78" 
+[302] "gr: A<br>.rownames: 59<br>.wavelength: 350<br>spc: 163.35" 
+[303] "gr: A<br>.rownames: 61<br>.wavelength: 400<br>spc: 267.42" 
+[304] "gr: A<br>.rownames: 65<br>.wavelength: 450<br>spc: 320.91" 
+[305] "gr: A<br>.rownames: 73<br>.wavelength: 500<br>spc: 355.82" 
+[306] "gr: A<br>.rownames: 87<br>.wavelength: 550<br>spc: 227.39" 
+[307] "gr: A<br>.rownames: 90<br>.wavelength: 600<br>spc: 180.74" 
+[308] "gr: A<br>.rownames: 91<br>.wavelength: 650<br>spc: 145.34" 
+[309] "gr: A<br>.rownames: 99<br>.wavelength: 700<br>spc: 90.75"  
+[310] "gr: A<br>.rownames: 102<br>.wavelength: 750<br>spc: 49.16" 
+[311] "gr: A<br>.rownames: 103<br>.wavelength: 800<br>spc: 22.37" 
+
+$x$data[[4]]$key
+[1] NA
+
+$x$data[[4]]$type
+[1] "scatter"
+
+$x$data[[4]]$mode
+[1] "lines"
+
+$x$data[[4]]$name
+[1] "A"
+
+$x$data[[4]]$line
+$x$data[[4]]$line$width
+[1] 1.889764
+
+$x$data[[4]]$line$color
+[1] "rgba(248,118,109,1)"
+
+$x$data[[4]]$line$dash
+[1] "solid"
+
+
+$x$data[[4]]$hoveron
+[1] "points"
+
+$x$data[[4]]$legendgroup
+[1] "A"
+
+$x$data[[4]]$showlegend
+[1] TRUE
+
+$x$data[[4]]$xaxis
+[1] "x2"
+
+$x$data[[4]]$yaxis
+[1] "y2"
+
+$x$data[[4]]$hoverinfo
+[1] "text"
+
+
+$x$data[[5]]
+$x$data[[5]]$x
+  [1] 300 350 400 450 500 550 600 650 700 750 800  NA 300 350 400 450 500 550
+ [19] 600 650 700 750 800  NA 300 350 400 450 500 550 600 650 700 750 800  NA
+ [37] 300 350 400 450 500 550 600 650 700 750 800  NA 300 350 400 450 500 550
+ [55] 600 650 700 750 800  NA 300 350 400 450 500 550 600 650 700 750 800  NA
+ [73] 300 350 400 450 500 550 600 650 700 750 800  NA 300 350 400 450 500 550
+ [91] 600 650 700 750 800  NA 300 350 400 450 500 550 600 650 700 750 800  NA
+[109] 300 350 400 450 500 550 600 650 700 750 800  NA 300 350 400 450 500 550
+[127] 600 650 700 750 800  NA 300 350 400 450 500 550 600 650 700 750 800  NA
+[145] 300 350 400 450 500 550 600 650 700 750 800  NA 300 350 400 450 500 550
+[163] 600 650 700 750 800  NA 300 350 400 450 500 550 600 650 700 750 800  NA
+[181] 300 350 400 450 500 550 600 650 700 750 800  NA 300 350 400 450 500 550
+[199] 600 650 700 750 800  NA 300 350 400 450 500 550 600 650 700 750 800  NA
+[217] 300 350 400 450 500 550 600 650 700 750 800  NA 300 350 400 450 500 550
+[235] 600 650 700 750 800  NA 300 350 400 450 500 550 600 650 700 750 800  NA
+[253] 300 350 400 450 500 550 600 650 700 750 800  NA 300 350 400 450 500 550
+[271] 600 650 700 750 800  NA 300 350 400 450 500 550 600 650 700 750 800  NA
+[289] 300 350 400 450 500 550 600 650 700 750 800  NA 300 350 400 450 500 550
+[307] 600 650 700 750 800  NA 300 350 400 450 500 550 600 650 700 750 800  NA
+[325] 300 350 400 450 500 550 600 650 700 750 800
+
+$x$data[[5]]$y
+  [1] 154.255914 162.528265 212.925030 254.422503 306.222696 166.974144
+  [7] 119.708402  89.115471  55.697100  28.094218  10.712003         NA
+ [13] 132.945443 145.798409 203.989927 244.574314 287.427295 143.356054
+ [19]  99.462853  68.711139  45.050472  22.410960   9.388331         NA
+ [25] 150.838867 160.372162 218.106409 267.905467 329.810168 188.820718
+ [31] 139.723861 107.281636  65.237354  35.882770  18.461816         NA
+ [37] 143.786022 158.594852 214.705264 246.423526 285.217323 160.337122
+ [43] 115.525707  84.516956  52.250912  28.836925  11.207688         NA
+ [49] 157.139667 172.937008 221.678655 271.078594 339.364804 182.489105
+ [55] 124.145947  93.756910  58.924735  31.846563  11.291671         NA
+ [61] 149.388902 161.197788 206.363772 259.206904 341.043724 164.839788
+ [67] 106.889770  78.328031  48.203020  25.969022  10.933738         NA
+ [73] 152.776422 162.208871 218.777890 261.925232 334.647683 187.059193
+ [79] 138.379320 103.638710  64.775123  34.819850  17.380966         NA
+ [85] 130.768825 153.612505 225.106100 263.723707 302.550732 159.091989
+ [91] 112.229878  78.406682  51.628082  26.175979  12.979990         NA
+ [97] 195.366387 196.701553 230.762893 299.629638 401.649756 218.325989
+[103] 163.655761 121.439313  75.906208  44.267957  17.872082         NA
+[109] 147.187982 174.394924 222.450765 272.239604 337.834299 192.818763
+[115] 141.270128 107.978004  72.382298  33.942581  13.902931         NA
+[121] 174.612830 186.381617 218.964407 270.631070 340.673513 178.565561
+[127] 116.065390  86.018526  55.690794  34.100216  14.512456         NA
+[133] 149.334512 155.427709 224.832465 270.308703 333.572165 205.791633
+[139] 164.745011 122.186999  79.306273  49.329952  14.159582         NA
+[145] 123.631488 136.747422 197.367914 221.135044 253.360468 117.245760
+[151]  61.964086  45.867315  30.026867  11.399201  10.502168         NA
+[157] 143.891226 158.204282 216.737819 271.191358 335.612487 204.772691
+[163] 156.349253 121.530379  77.708094  40.966339  18.851726         NA
+[169] 131.172633 149.356901 213.170954 254.225870 300.201581 179.176662
+[175] 134.091513 101.210639  64.172428  33.939749  15.049983         NA
+[181] 167.748646 179.237680 217.428024 280.918075 360.255585 210.685290
+[187] 157.173861 113.879173  77.329567  34.818885  15.772625         NA
+[193] 168.378780 172.278706 214.024972 284.311367 376.744493 203.941053
+[199] 152.843955 109.714490  70.707588  30.655480  10.802911         NA
+[205] 147.335310 162.125822 227.540667 284.906893 342.757509 195.074667
+[211] 141.156515 112.042571  63.296154  30.307731  18.186255         NA
+[217] 195.306096 200.074978 242.667499 302.740153 403.695431 216.582884
+[223] 154.909663 118.134615  77.401891  40.422783  17.351113         NA
+[229] 147.152486 169.960209 233.221176 277.756278 321.092002 201.690613
+[235] 155.114670 122.017092  79.074405  37.614921  14.726835         NA
+[241] 139.842938 153.563671 205.828908 244.782988 295.235390 155.483952
+[247] 106.034264  77.360592  52.888205  31.202406  14.816485         NA
+[253] 159.793044 159.820505 215.306677 254.701476 296.976036 161.115402
+[259] 120.622537  87.791627  50.122638  27.191652  10.914672         NA
+[265] 162.349891 172.463504 224.104051 266.431536 319.419561 177.314865
+[271] 127.806457  95.233399  60.187113  31.583384  14.620881         NA
+[277] 134.496659 157.408741 230.948051 286.484545 348.103283 207.208621
+[283] 159.489855 122.918168  73.014349  42.823385  21.778294         NA
+[289] 166.098951 173.025312 218.387176 249.223855 294.208105 129.564961
+[295]  75.808772  52.120044  30.844567  15.703743   6.521817         NA
+[301] 159.529061 171.749984 225.176584 271.403706 334.196557 185.549606
+[307] 133.820589 100.357740  63.768000  33.841351  14.746131         NA
+[313] 165.345791 171.980535 231.946122 272.677791 327.974425 182.672961
+[319] 132.615531 100.111763  60.616519  31.085337  14.957662         NA
+[325] 134.809871 152.269480 219.459944 265.252779 312.476549 164.403187
+[331] 116.882216  87.512903  51.001594  27.546688  10.286056
+
+$x$data[[5]]$text
+  [1] "gr: B<br>.rownames: 4<br>.wavelength: 300<br>spc: 154.26"  
+  [2] "gr: B<br>.rownames: 6<br>.wavelength: 350<br>spc: 162.53"  
+  [3] "gr: B<br>.rownames: 8<br>.wavelength: 400<br>spc: 212.93"  
+  [4] "gr: B<br>.rownames: 9<br>.wavelength: 450<br>spc: 254.42"  
+  [5] "gr: B<br>.rownames: 10<br>.wavelength: 500<br>spc: 306.22" 
+  [6] "gr: B<br>.rownames: 15<br>.wavelength: 550<br>spc: 166.97" 
+  [7] "gr: B<br>.rownames: 16<br>.wavelength: 600<br>spc: 119.71" 
+  [8] "gr: B<br>.rownames: 18<br>.wavelength: 650<br>spc: 89.12"  
+  [9] "gr: B<br>.rownames: 22<br>.wavelength: 700<br>spc: 55.7"   
+ [10] "gr: B<br>.rownames: 23<br>.wavelength: 750<br>spc: 28.09"  
+ [11] "gr: B<br>.rownames: 24<br>.wavelength: 800<br>spc: 10.71"  
+ [12] NA                                                          
+ [13] "gr: B<br>.rownames: 143<br>.wavelength: 300<br>spc: 132.95"
+ [14] "gr: B<br>.rownames: 144<br>.wavelength: 350<br>spc: 145.8" 
+ [15] "gr: B<br>.rownames: 146<br>.wavelength: 400<br>spc: 203.99"
+ [16] "gr: B<br>.rownames: 148<br>.wavelength: 450<br>spc: 244.57"
+ [17] "gr: B<br>.rownames: 149<br>.wavelength: 500<br>spc: 287.43"
+ [18] "gr: B<br>.rownames: 150<br>.wavelength: 550<br>spc: 143.36"
+ [19] "gr: B<br>.rownames: 4<br>.wavelength: 600<br>spc: 99.46"   
+ [20] "gr: B<br>.rownames: 6<br>.wavelength: 650<br>spc: 68.71"   
+ [21] "gr: B<br>.rownames: 8<br>.wavelength: 700<br>spc: 45.05"   
+ [22] "gr: B<br>.rownames: 9<br>.wavelength: 750<br>spc: 22.41"   
+ [23] "gr: B<br>.rownames: 10<br>.wavelength: 800<br>spc: 9.39"   
+ [24] NA                                                          
+ [25] "gr: B<br>.rownames: 39<br>.wavelength: 300<br>spc: 150.84" 
+ [26] "gr: B<br>.rownames: 42<br>.wavelength: 350<br>spc: 160.37" 
+ [27] "gr: B<br>.rownames: 44<br>.wavelength: 400<br>spc: 218.11" 
+ [28] "gr: B<br>.rownames: 46<br>.wavelength: 450<br>spc: 267.91" 
+ [29] "gr: B<br>.rownames: 48<br>.wavelength: 500<br>spc: 329.81" 
+ [30] "gr: B<br>.rownames: 50<br>.wavelength: 550<br>spc: 188.82" 
+ [31] "gr: B<br>.rownames: 59<br>.wavelength: 600<br>spc: 139.72" 
+ [32] "gr: B<br>.rownames: 61<br>.wavelength: 650<br>spc: 107.28" 
+ [33] "gr: B<br>.rownames: 65<br>.wavelength: 700<br>spc: 65.24"  
+ [34] "gr: B<br>.rownames: 73<br>.wavelength: 750<br>spc: 35.88"  
+ [35] "gr: B<br>.rownames: 87<br>.wavelength: 800<br>spc: 18.46"  
+ [36] NA                                                          
+ [37] "gr: B<br>.rownames: 90<br>.wavelength: 300<br>spc: 143.79" 
+ [38] "gr: B<br>.rownames: 91<br>.wavelength: 350<br>spc: 158.59" 
+ [39] "gr: B<br>.rownames: 99<br>.wavelength: 400<br>spc: 214.71" 
+ [40] "gr: B<br>.rownames: 102<br>.wavelength: 450<br>spc: 246.42"
+ [41] "gr: B<br>.rownames: 103<br>.wavelength: 500<br>spc: 285.22"
+ [42] "gr: B<br>.rownames: 104<br>.wavelength: 550<br>spc: 160.34"
+ [43] "gr: B<br>.rownames: 106<br>.wavelength: 600<br>spc: 115.53"
+ [44] "gr: B<br>.rownames: 109<br>.wavelength: 650<br>spc: 84.52" 
+ [45] "gr: B<br>.rownames: 110<br>.wavelength: 700<br>spc: 52.25" 
+ [46] "gr: B<br>.rownames: 112<br>.wavelength: 750<br>spc: 28.84" 
+ [47] "gr: B<br>.rownames: 117<br>.wavelength: 800<br>spc: 11.21" 
+ [48] NA                                                          
+ [49] "gr: B<br>.rownames: 120<br>.wavelength: 300<br>spc: 157.14"
+ [50] "gr: B<br>.rownames: 121<br>.wavelength: 350<br>spc: 172.94"
+ [51] "gr: B<br>.rownames: 129<br>.wavelength: 400<br>spc: 221.68"
+ [52] "gr: B<br>.rownames: 133<br>.wavelength: 450<br>spc: 271.08"
+ [53] "gr: B<br>.rownames: 136<br>.wavelength: 500<br>spc: 339.36"
+ [54] "gr: B<br>.rownames: 137<br>.wavelength: 550<br>spc: 182.49"
+ [55] "gr: B<br>.rownames: 138<br>.wavelength: 600<br>spc: 124.15"
+ [56] "gr: B<br>.rownames: 139<br>.wavelength: 650<br>spc: 93.76" 
+ [57] "gr: B<br>.rownames: 141<br>.wavelength: 700<br>spc: 58.92" 
+ [58] "gr: B<br>.rownames: 142<br>.wavelength: 750<br>spc: 31.85" 
+ [59] "gr: B<br>.rownames: 143<br>.wavelength: 800<br>spc: 11.29" 
+ [60] NA                                                          
+ [61] "gr: B<br>.rownames: 144<br>.wavelength: 300<br>spc: 149.39"
+ [62] "gr: B<br>.rownames: 146<br>.wavelength: 350<br>spc: 161.2" 
+ [63] "gr: B<br>.rownames: 148<br>.wavelength: 400<br>spc: 206.36"
+ [64] "gr: B<br>.rownames: 149<br>.wavelength: 450<br>spc: 259.21"
+ [65] "gr: B<br>.rownames: 150<br>.wavelength: 500<br>spc: 341.04"
+ [66] "gr: B<br>.rownames: 4<br>.wavelength: 550<br>spc: 164.84"  
+ [67] "gr: B<br>.rownames: 6<br>.wavelength: 600<br>spc: 106.89"  
+ [68] "gr: B<br>.rownames: 8<br>.wavelength: 650<br>spc: 78.33"   
+ [69] "gr: B<br>.rownames: 9<br>.wavelength: 700<br>spc: 48.2"    
+ [70] "gr: B<br>.rownames: 10<br>.wavelength: 750<br>spc: 25.97"  
+ [71] "gr: B<br>.rownames: 15<br>.wavelength: 800<br>spc: 10.93"  
+ [72] NA                                                          
+ [73] "gr: B<br>.rownames: 16<br>.wavelength: 300<br>spc: 152.78" 
+ [74] "gr: B<br>.rownames: 18<br>.wavelength: 350<br>spc: 162.21" 
+ [75] "gr: B<br>.rownames: 22<br>.wavelength: 400<br>spc: 218.78" 
+ [76] "gr: B<br>.rownames: 23<br>.wavelength: 450<br>spc: 261.93" 
+ [77] "gr: B<br>.rownames: 24<br>.wavelength: 500<br>spc: 334.65" 
+ [78] "gr: B<br>.rownames: 25<br>.wavelength: 550<br>spc: 187.06" 
+ [79] "gr: B<br>.rownames: 28<br>.wavelength: 600<br>spc: 138.38" 
+ [80] "gr: B<br>.rownames: 31<br>.wavelength: 650<br>spc: 103.64" 
+ [81] "gr: B<br>.rownames: 32<br>.wavelength: 700<br>spc: 64.78"  
+ [82] "gr: B<br>.rownames: 33<br>.wavelength: 750<br>spc: 34.82"  
+ [83] "gr: B<br>.rownames: 39<br>.wavelength: 800<br>spc: 17.38"  
+ [84] NA                                                          
+ [85] "gr: B<br>.rownames: 42<br>.wavelength: 300<br>spc: 130.77" 
+ [86] "gr: B<br>.rownames: 44<br>.wavelength: 350<br>spc: 153.61" 
+ [87] "gr: B<br>.rownames: 46<br>.wavelength: 400<br>spc: 225.11" 
+ [88] "gr: B<br>.rownames: 48<br>.wavelength: 450<br>spc: 263.72" 
+ [89] "gr: B<br>.rownames: 50<br>.wavelength: 500<br>spc: 302.55" 
+ [90] "gr: B<br>.rownames: 59<br>.wavelength: 550<br>spc: 159.09" 
+ [91] "gr: B<br>.rownames: 61<br>.wavelength: 600<br>spc: 112.23" 
+ [92] "gr: B<br>.rownames: 65<br>.wavelength: 650<br>spc: 78.41"  
+ [93] "gr: B<br>.rownames: 73<br>.wavelength: 700<br>spc: 51.63"  
+ [94] "gr: B<br>.rownames: 87<br>.wavelength: 750<br>spc: 26.18"  
+ [95] "gr: B<br>.rownames: 90<br>.wavelength: 800<br>spc: 12.98"  
+ [96] NA                                                          
+ [97] "gr: B<br>.rownames: 91<br>.wavelength: 300<br>spc: 195.37" 
+ [98] "gr: B<br>.rownames: 99<br>.wavelength: 350<br>spc: 196.7"  
+ [99] "gr: B<br>.rownames: 102<br>.wavelength: 400<br>spc: 230.76"
+[100] "gr: B<br>.rownames: 103<br>.wavelength: 450<br>spc: 299.63"
+[101] "gr: B<br>.rownames: 104<br>.wavelength: 500<br>spc: 401.65"
+[102] "gr: B<br>.rownames: 106<br>.wavelength: 550<br>spc: 218.33"
+[103] "gr: B<br>.rownames: 109<br>.wavelength: 600<br>spc: 163.66"
+[104] "gr: B<br>.rownames: 110<br>.wavelength: 650<br>spc: 121.44"
+[105] "gr: B<br>.rownames: 112<br>.wavelength: 700<br>spc: 75.91" 
+[106] "gr: B<br>.rownames: 117<br>.wavelength: 750<br>spc: 44.27" 
+[107] "gr: B<br>.rownames: 120<br>.wavelength: 800<br>spc: 17.87" 
+[108] NA                                                          
+[109] "gr: B<br>.rownames: 121<br>.wavelength: 300<br>spc: 147.19"
+[110] "gr: B<br>.rownames: 129<br>.wavelength: 350<br>spc: 174.39"
+[111] "gr: B<br>.rownames: 133<br>.wavelength: 400<br>spc: 222.45"
+[112] "gr: B<br>.rownames: 136<br>.wavelength: 450<br>spc: 272.24"
+[113] "gr: B<br>.rownames: 137<br>.wavelength: 500<br>spc: 337.83"
+[114] "gr: B<br>.rownames: 138<br>.wavelength: 550<br>spc: 192.82"
+[115] "gr: B<br>.rownames: 139<br>.wavelength: 600<br>spc: 141.27"
+[116] "gr: B<br>.rownames: 141<br>.wavelength: 650<br>spc: 107.98"
+[117] "gr: B<br>.rownames: 142<br>.wavelength: 700<br>spc: 72.38" 
+[118] "gr: B<br>.rownames: 143<br>.wavelength: 750<br>spc: 33.94" 
+[119] "gr: B<br>.rownames: 144<br>.wavelength: 800<br>spc: 13.9"  
+[120] NA                                                          
+[121] "gr: B<br>.rownames: 146<br>.wavelength: 300<br>spc: 174.61"
+[122] "gr: B<br>.rownames: 148<br>.wavelength: 350<br>spc: 186.38"
+[123] "gr: B<br>.rownames: 149<br>.wavelength: 400<br>spc: 218.96"
+[124] "gr: B<br>.rownames: 150<br>.wavelength: 450<br>spc: 270.63"
+[125] "gr: B<br>.rownames: 4<br>.wavelength: 500<br>spc: 340.67"  
+[126] "gr: B<br>.rownames: 6<br>.wavelength: 550<br>spc: 178.57"  
+[127] "gr: B<br>.rownames: 8<br>.wavelength: 600<br>spc: 116.07"  
+[128] "gr: B<br>.rownames: 9<br>.wavelength: 650<br>spc: 86.02"   
+[129] "gr: B<br>.rownames: 10<br>.wavelength: 700<br>spc: 55.69"  
+[130] "gr: B<br>.rownames: 15<br>.wavelength: 750<br>spc: 34.1"   
+[131] "gr: B<br>.rownames: 16<br>.wavelength: 800<br>spc: 14.51"  
+[132] NA                                                          
+[133] "gr: B<br>.rownames: 18<br>.wavelength: 300<br>spc: 149.33" 
+[134] "gr: B<br>.rownames: 22<br>.wavelength: 350<br>spc: 155.43" 
+[135] "gr: B<br>.rownames: 23<br>.wavelength: 400<br>spc: 224.83" 
+[136] "gr: B<br>.rownames: 24<br>.wavelength: 450<br>spc: 270.31" 
+[137] "gr: B<br>.rownames: 25<br>.wavelength: 500<br>spc: 333.57" 
+[138] "gr: B<br>.rownames: 28<br>.wavelength: 550<br>spc: 205.79" 
+[139] "gr: B<br>.rownames: 31<br>.wavelength: 600<br>spc: 164.75" 
+[140] "gr: B<br>.rownames: 32<br>.wavelength: 650<br>spc: 122.19" 
+[141] "gr: B<br>.rownames: 33<br>.wavelength: 700<br>spc: 79.31"  
+[142] "gr: B<br>.rownames: 39<br>.wavelength: 750<br>spc: 49.33"  
+[143] "gr: B<br>.rownames: 42<br>.wavelength: 800<br>spc: 14.16"  
+[144] NA                                                          
+[145] "gr: B<br>.rownames: 44<br>.wavelength: 300<br>spc: 123.63" 
+[146] "gr: B<br>.rownames: 46<br>.wavelength: 350<br>spc: 136.75" 
+[147] "gr: B<br>.rownames: 48<br>.wavelength: 400<br>spc: 197.37" 
+[148] "gr: B<br>.rownames: 50<br>.wavelength: 450<br>spc: 221.14" 
+[149] "gr: B<br>.rownames: 59<br>.wavelength: 500<br>spc: 253.36" 
+[150] "gr: B<br>.rownames: 61<br>.wavelength: 550<br>spc: 117.25" 
+[151] "gr: B<br>.rownames: 65<br>.wavelength: 600<br>spc: 61.96"  
+[152] "gr: B<br>.rownames: 73<br>.wavelength: 650<br>spc: 45.87"  
+[153] "gr: B<br>.rownames: 87<br>.wavelength: 700<br>spc: 30.03"  
+[154] "gr: B<br>.rownames: 90<br>.wavelength: 750<br>spc: 11.4"   
+[155] "gr: B<br>.rownames: 91<br>.wavelength: 800<br>spc: 10.5"   
+[156] NA                                                          
+[157] "gr: B<br>.rownames: 99<br>.wavelength: 300<br>spc: 143.89" 
+[158] "gr: B<br>.rownames: 102<br>.wavelength: 350<br>spc: 158.2" 
+[159] "gr: B<br>.rownames: 103<br>.wavelength: 400<br>spc: 216.74"
+[160] "gr: B<br>.rownames: 104<br>.wavelength: 450<br>spc: 271.19"
+[161] "gr: B<br>.rownames: 106<br>.wavelength: 500<br>spc: 335.61"
+[162] "gr: B<br>.rownames: 109<br>.wavelength: 550<br>spc: 204.77"
+[163] "gr: B<br>.rownames: 110<br>.wavelength: 600<br>spc: 156.35"
+[164] "gr: B<br>.rownames: 112<br>.wavelength: 650<br>spc: 121.53"
+[165] "gr: B<br>.rownames: 117<br>.wavelength: 700<br>spc: 77.71" 
+[166] "gr: B<br>.rownames: 120<br>.wavelength: 750<br>spc: 40.97" 
+[167] "gr: B<br>.rownames: 121<br>.wavelength: 800<br>spc: 18.85" 
+[168] NA                                                          
+[169] "gr: B<br>.rownames: 129<br>.wavelength: 300<br>spc: 131.17"
+[170] "gr: B<br>.rownames: 133<br>.wavelength: 350<br>spc: 149.36"
+[171] "gr: B<br>.rownames: 136<br>.wavelength: 400<br>spc: 213.17"
+[172] "gr: B<br>.rownames: 137<br>.wavelength: 450<br>spc: 254.23"
+[173] "gr: B<br>.rownames: 138<br>.wavelength: 500<br>spc: 300.2" 
+[174] "gr: B<br>.rownames: 139<br>.wavelength: 550<br>spc: 179.18"
+[175] "gr: B<br>.rownames: 141<br>.wavelength: 600<br>spc: 134.09"
+[176] "gr: B<br>.rownames: 142<br>.wavelength: 650<br>spc: 101.21"
+[177] "gr: B<br>.rownames: 143<br>.wavelength: 700<br>spc: 64.17" 
+[178] "gr: B<br>.rownames: 144<br>.wavelength: 750<br>spc: 33.94" 
+[179] "gr: B<br>.rownames: 146<br>.wavelength: 800<br>spc: 15.05" 
+[180] NA                                                          
+[181] "gr: B<br>.rownames: 148<br>.wavelength: 300<br>spc: 167.75"
+[182] "gr: B<br>.rownames: 149<br>.wavelength: 350<br>spc: 179.24"
+[183] "gr: B<br>.rownames: 150<br>.wavelength: 400<br>spc: 217.43"
+[184] "gr: B<br>.rownames: 4<br>.wavelength: 450<br>spc: 280.92"  
+[185] "gr: B<br>.rownames: 6<br>.wavelength: 500<br>spc: 360.26"  
+[186] "gr: B<br>.rownames: 8<br>.wavelength: 550<br>spc: 210.69"  
+[187] "gr: B<br>.rownames: 9<br>.wavelength: 600<br>spc: 157.17"  
+[188] "gr: B<br>.rownames: 10<br>.wavelength: 650<br>spc: 113.88" 
+[189] "gr: B<br>.rownames: 15<br>.wavelength: 700<br>spc: 77.33"  
+[190] "gr: B<br>.rownames: 16<br>.wavelength: 750<br>spc: 34.82"  
+[191] "gr: B<br>.rownames: 18<br>.wavelength: 800<br>spc: 15.77"  
+[192] NA                                                          
+[193] "gr: B<br>.rownames: 22<br>.wavelength: 300<br>spc: 168.38" 
+[194] "gr: B<br>.rownames: 23<br>.wavelength: 350<br>spc: 172.28" 
+[195] "gr: B<br>.rownames: 24<br>.wavelength: 400<br>spc: 214.02" 
+[196] "gr: B<br>.rownames: 25<br>.wavelength: 450<br>spc: 284.31" 
+[197] "gr: B<br>.rownames: 28<br>.wavelength: 500<br>spc: 376.74" 
+[198] "gr: B<br>.rownames: 31<br>.wavelength: 550<br>spc: 203.94" 
+[199] "gr: B<br>.rownames: 32<br>.wavelength: 600<br>spc: 152.84" 
+[200] "gr: B<br>.rownames: 33<br>.wavelength: 650<br>spc: 109.71" 
+[201] "gr: B<br>.rownames: 39<br>.wavelength: 700<br>spc: 70.71"  
+[202] "gr: B<br>.rownames: 42<br>.wavelength: 750<br>spc: 30.66"  
+[203] "gr: B<br>.rownames: 44<br>.wavelength: 800<br>spc: 10.8"   
+[204] NA                                                          
+[205] "gr: B<br>.rownames: 46<br>.wavelength: 300<br>spc: 147.34" 
+[206] "gr: B<br>.rownames: 48<br>.wavelength: 350<br>spc: 162.13" 
+[207] "gr: B<br>.rownames: 50<br>.wavelength: 400<br>spc: 227.54" 
+[208] "gr: B<br>.rownames: 59<br>.wavelength: 450<br>spc: 284.91" 
+[209] "gr: B<br>.rownames: 61<br>.wavelength: 500<br>spc: 342.76" 
+[210] "gr: B<br>.rownames: 65<br>.wavelength: 550<br>spc: 195.07" 
+[211] "gr: B<br>.rownames: 73<br>.wavelength: 600<br>spc: 141.16" 
+[212] "gr: B<br>.rownames: 87<br>.wavelength: 650<br>spc: 112.04" 
+[213] "gr: B<br>.rownames: 90<br>.wavelength: 700<br>spc: 63.3"   
+[214] "gr: B<br>.rownames: 91<br>.wavelength: 750<br>spc: 30.31"  
+[215] "gr: B<br>.rownames: 99<br>.wavelength: 800<br>spc: 18.19"  
+[216] NA                                                          
+[217] "gr: B<br>.rownames: 102<br>.wavelength: 300<br>spc: 195.31"
+[218] "gr: B<br>.rownames: 103<br>.wavelength: 350<br>spc: 200.07"
+[219] "gr: B<br>.rownames: 104<br>.wavelength: 400<br>spc: 242.67"
+[220] "gr: B<br>.rownames: 106<br>.wavelength: 450<br>spc: 302.74"
+[221] "gr: B<br>.rownames: 109<br>.wavelength: 500<br>spc: 403.7" 
+[222] "gr: B<br>.rownames: 110<br>.wavelength: 550<br>spc: 216.58"
+[223] "gr: B<br>.rownames: 112<br>.wavelength: 600<br>spc: 154.91"
+[224] "gr: B<br>.rownames: 117<br>.wavelength: 650<br>spc: 118.13"
+[225] "gr: B<br>.rownames: 120<br>.wavelength: 700<br>spc: 77.4"  
+[226] "gr: B<br>.rownames: 121<br>.wavelength: 750<br>spc: 40.42" 
+[227] "gr: B<br>.rownames: 129<br>.wavelength: 800<br>spc: 17.35" 
+[228] NA                                                          
+[229] "gr: B<br>.rownames: 133<br>.wavelength: 300<br>spc: 147.15"
+[230] "gr: B<br>.rownames: 136<br>.wavelength: 350<br>spc: 169.96"
+[231] "gr: B<br>.rownames: 137<br>.wavelength: 400<br>spc: 233.22"
+[232] "gr: B<br>.rownames: 138<br>.wavelength: 450<br>spc: 277.76"
+[233] "gr: B<br>.rownames: 139<br>.wavelength: 500<br>spc: 321.09"
+[234] "gr: B<br>.rownames: 141<br>.wavelength: 550<br>spc: 201.69"
+[235] "gr: B<br>.rownames: 142<br>.wavelength: 600<br>spc: 155.11"
+[236] "gr: B<br>.rownames: 143<br>.wavelength: 650<br>spc: 122.02"
+[237] "gr: B<br>.rownames: 144<br>.wavelength: 700<br>spc: 79.07" 
+[238] "gr: B<br>.rownames: 146<br>.wavelength: 750<br>spc: 37.61" 
+[239] "gr: B<br>.rownames: 148<br>.wavelength: 800<br>spc: 14.73" 
+[240] NA                                                          
+[241] "gr: B<br>.rownames: 149<br>.wavelength: 300<br>spc: 139.84"
+[242] "gr: B<br>.rownames: 150<br>.wavelength: 350<br>spc: 153.56"
+[243] "gr: B<br>.rownames: 4<br>.wavelength: 400<br>spc: 205.83"  
+[244] "gr: B<br>.rownames: 6<br>.wavelength: 450<br>spc: 244.78"  
+[245] "gr: B<br>.rownames: 8<br>.wavelength: 500<br>spc: 295.24"  
+[246] "gr: B<br>.rownames: 9<br>.wavelength: 550<br>spc: 155.48"  
+[247] "gr: B<br>.rownames: 10<br>.wavelength: 600<br>spc: 106.03" 
+[248] "gr: B<br>.rownames: 15<br>.wavelength: 650<br>spc: 77.36"  
+[249] "gr: B<br>.rownames: 16<br>.wavelength: 700<br>spc: 52.89"  
+[250] "gr: B<br>.rownames: 18<br>.wavelength: 750<br>spc: 31.2"   
+[251] "gr: B<br>.rownames: 22<br>.wavelength: 800<br>spc: 14.82"  
+[252] NA                                                          
+[253] "gr: B<br>.rownames: 23<br>.wavelength: 300<br>spc: 159.79" 
+[254] "gr: B<br>.rownames: 24<br>.wavelength: 350<br>spc: 159.82" 
+[255] "gr: B<br>.rownames: 25<br>.wavelength: 400<br>spc: 215.31" 
+[256] "gr: B<br>.rownames: 28<br>.wavelength: 450<br>spc: 254.7"  
+[257] "gr: B<br>.rownames: 31<br>.wavelength: 500<br>spc: 296.98" 
+[258] "gr: B<br>.rownames: 32<br>.wavelength: 550<br>spc: 161.12" 
+[259] "gr: B<br>.rownames: 33<br>.wavelength: 600<br>spc: 120.62" 
+[260] "gr: B<br>.rownames: 39<br>.wavelength: 650<br>spc: 87.79"  
+[261] "gr: B<br>.rownames: 42<br>.wavelength: 700<br>spc: 50.12"  
+[262] "gr: B<br>.rownames: 44<br>.wavelength: 750<br>spc: 27.19"  
+[263] "gr: B<br>.rownames: 46<br>.wavelength: 800<br>spc: 10.91"  
+[264] NA                                                          
+[265] "gr: B<br>.rownames: 48<br>.wavelength: 300<br>spc: 162.35" 
+[266] "gr: B<br>.rownames: 50<br>.wavelength: 350<br>spc: 172.46" 
+[267] "gr: B<br>.rownames: 59<br>.wavelength: 400<br>spc: 224.1"  
+[268] "gr: B<br>.rownames: 61<br>.wavelength: 450<br>spc: 266.43" 
+[269] "gr: B<br>.rownames: 65<br>.wavelength: 500<br>spc: 319.42" 
+[270] "gr: B<br>.rownames: 73<br>.wavelength: 550<br>spc: 177.31" 
+[271] "gr: B<br>.rownames: 87<br>.wavelength: 600<br>spc: 127.81" 
+[272] "gr: B<br>.rownames: 90<br>.wavelength: 650<br>spc: 95.23"  
+[273] "gr: B<br>.rownames: 91<br>.wavelength: 700<br>spc: 60.19"  
+[274] "gr: B<br>.rownames: 99<br>.wavelength: 750<br>spc: 31.58"  
+[275] "gr: B<br>.rownames: 102<br>.wavelength: 800<br>spc: 14.62" 
+[276] NA                                                          
+[277] "gr: B<br>.rownames: 136<br>.wavelength: 300<br>spc: 134.5" 
+[278] "gr: B<br>.rownames: 137<br>.wavelength: 350<br>spc: 157.41"
+[279] "gr: B<br>.rownames: 138<br>.wavelength: 400<br>spc: 230.95"
+[280] "gr: B<br>.rownames: 139<br>.wavelength: 450<br>spc: 286.48"
+[281] "gr: B<br>.rownames: 141<br>.wavelength: 500<br>spc: 348.1" 
+[282] "gr: B<br>.rownames: 142<br>.wavelength: 550<br>spc: 207.21"
+[283] "gr: B<br>.rownames: 143<br>.wavelength: 600<br>spc: 159.49"
+[284] "gr: B<br>.rownames: 144<br>.wavelength: 650<br>spc: 122.92"
+[285] "gr: B<br>.rownames: 146<br>.wavelength: 700<br>spc: 73.01" 
+[286] "gr: B<br>.rownames: 148<br>.wavelength: 750<br>spc: 42.82" 
+[287] "gr: B<br>.rownames: 149<br>.wavelength: 800<br>spc: 21.78" 
+[288] NA                                                          
+[289] "gr: B<br>.rownames: 150<br>.wavelength: 300<br>spc: 166.1" 
+[290] "gr: B<br>.rownames: 4<br>.wavelength: 350<br>spc: 173.03"  
+[291] "gr: B<br>.rownames: 6<br>.wavelength: 400<br>spc: 218.39"  
+[292] "gr: B<br>.rownames: 8<br>.wavelength: 450<br>spc: 249.22"  
+[293] "gr: B<br>.rownames: 9<br>.wavelength: 500<br>spc: 294.21"  
+[294] "gr: B<br>.rownames: 10<br>.wavelength: 550<br>spc: 129.56" 
+[295] "gr: B<br>.rownames: 15<br>.wavelength: 600<br>spc: 75.81"  
+[296] "gr: B<br>.rownames: 16<br>.wavelength: 650<br>spc: 52.12"  
+[297] "gr: B<br>.rownames: 18<br>.wavelength: 700<br>spc: 30.84"  
+[298] "gr: B<br>.rownames: 22<br>.wavelength: 750<br>spc: 15.7"   
+[299] "gr: B<br>.rownames: 23<br>.wavelength: 800<br>spc: 6.52"   
+[300] NA                                                          
+[301] "gr: B<br>.rownames: 24<br>.wavelength: 300<br>spc: 159.53" 
+[302] "gr: B<br>.rownames: 25<br>.wavelength: 350<br>spc: 171.75" 
+[303] "gr: B<br>.rownames: 28<br>.wavelength: 400<br>spc: 225.18" 
+[304] "gr: B<br>.rownames: 31<br>.wavelength: 450<br>spc: 271.4"  
+[305] "gr: B<br>.rownames: 32<br>.wavelength: 500<br>spc: 334.2"  
+[306] "gr: B<br>.rownames: 33<br>.wavelength: 550<br>spc: 185.55" 
+[307] "gr: B<br>.rownames: 39<br>.wavelength: 600<br>spc: 133.82" 
+[308] "gr: B<br>.rownames: 42<br>.wavelength: 650<br>spc: 100.36" 
+[309] "gr: B<br>.rownames: 44<br>.wavelength: 700<br>spc: 63.77"  
+[310] "gr: B<br>.rownames: 46<br>.wavelength: 750<br>spc: 33.84"  
+[311] "gr: B<br>.rownames: 48<br>.wavelength: 800<br>spc: 14.75"  
+[312] NA                                                          
+[313] "gr: B<br>.rownames: 104<br>.wavelength: 300<br>spc: 165.35"
+[314] "gr: B<br>.rownames: 106<br>.wavelength: 350<br>spc: 171.98"
+[315] "gr: B<br>.rownames: 109<br>.wavelength: 400<br>spc: 231.95"
+[316] "gr: B<br>.rownames: 110<br>.wavelength: 450<br>spc: 272.68"
+[317] "gr: B<br>.rownames: 112<br>.wavelength: 500<br>spc: 327.97"
+[318] "gr: B<br>.rownames: 117<br>.wavelength: 550<br>spc: 182.67"
+[319] "gr: B<br>.rownames: 120<br>.wavelength: 600<br>spc: 132.62"
+[320] "gr: B<br>.rownames: 121<br>.wavelength: 650<br>spc: 100.11"
+[321] "gr: B<br>.rownames: 129<br>.wavelength: 700<br>spc: 60.62" 
+[322] "gr: B<br>.rownames: 133<br>.wavelength: 750<br>spc: 31.09" 
+[323] "gr: B<br>.rownames: 136<br>.wavelength: 800<br>spc: 14.96" 
+[324] NA                                                          
+[325] "gr: B<br>.rownames: 137<br>.wavelength: 300<br>spc: 134.81"
+[326] "gr: B<br>.rownames: 138<br>.wavelength: 350<br>spc: 152.27"
+[327] "gr: B<br>.rownames: 139<br>.wavelength: 400<br>spc: 219.46"
+[328] "gr: B<br>.rownames: 141<br>.wavelength: 450<br>spc: 265.25"
+[329] "gr: B<br>.rownames: 142<br>.wavelength: 500<br>spc: 312.48"
+[330] "gr: B<br>.rownames: 143<br>.wavelength: 550<br>spc: 164.4" 
+[331] "gr: B<br>.rownames: 144<br>.wavelength: 600<br>spc: 116.88"
+[332] "gr: B<br>.rownames: 146<br>.wavelength: 650<br>spc: 87.51" 
+[333] "gr: B<br>.rownames: 148<br>.wavelength: 700<br>spc: 51"    
+[334] "gr: B<br>.rownames: 149<br>.wavelength: 750<br>spc: 27.55" 
+[335] "gr: B<br>.rownames: 150<br>.wavelength: 800<br>spc: 10.29" 
+
+$x$data[[5]]$key
+[1] NA
+
+$x$data[[5]]$type
+[1] "scatter"
+
+$x$data[[5]]$mode
+[1] "lines"
+
+$x$data[[5]]$name
+[1] "B"
+
+$x$data[[5]]$line
+$x$data[[5]]$line$width
+[1] 1.889764
+
+$x$data[[5]]$line$color
+[1] "rgba(97,156,255,1)"
+
+$x$data[[5]]$line$dash
+[1] "solid"
+
+
+$x$data[[5]]$hoveron
+[1] "points"
+
+$x$data[[5]]$legendgroup
+[1] "B"
+
+$x$data[[5]]$showlegend
+[1] TRUE
+
+$x$data[[5]]$xaxis
+[1] "x2"
+
+$x$data[[5]]$yaxis
+[1] "y2"
+
+$x$data[[5]]$hoverinfo
+[1] "text"
+
+
+$x$data[[6]]
+$x$data[[6]]$x
+ [1] 300 350 400 450 500 550 600 650 700 750 800
+
+$x$data[[6]]$y
+ [1] 166.09895 174.39492 242.66750 286.48455 348.10328 204.77269 141.27013
+ [8] 113.87917  79.30627  37.61492  15.04998
+
+$x$data[[6]]$text
+ [1] "Compared: A vs. B<br>.rownames: 1<br>.wavelength: 300<br>spc: 166.1" 
+ [2] "Compared: A vs. B<br>.rownames: 1<br>.wavelength: 350<br>spc: 174.39"
+ [3] "Compared: A vs. B<br>.rownames: 1<br>.wavelength: 400<br>spc: 242.67"
+ [4] "Compared: A vs. B<br>.rownames: 1<br>.wavelength: 450<br>spc: 286.48"
+ [5] "Compared: A vs. B<br>.rownames: 1<br>.wavelength: 500<br>spc: 348.1" 
+ [6] "Compared: A vs. B<br>.rownames: 1<br>.wavelength: 550<br>spc: 204.77"
+ [7] "Compared: A vs. B<br>.rownames: 1<br>.wavelength: 600<br>spc: 141.27"
+ [8] "Compared: A vs. B<br>.rownames: 1<br>.wavelength: 650<br>spc: 113.88"
+ [9] "Compared: A vs. B<br>.rownames: 1<br>.wavelength: 700<br>spc: 79.31" 
+[10] "Compared: A vs. B<br>.rownames: 1<br>.wavelength: 750<br>spc: 37.61" 
+[11] "Compared: A vs. B<br>.rownames: 1<br>.wavelength: 800<br>spc: 15.05" 
+
+$x$data[[6]]$key
+[1] NA
+
+$x$data[[6]]$type
+[1] "scatter"
+
+$x$data[[6]]$mode
+[1] "lines"
+
+$x$data[[6]]$name
+[1] "A vs. B"
+
+$x$data[[6]]$line
+$x$data[[6]]$line$width
+[1] 7.559055
+
+$x$data[[6]]$line$color
+[1] "rgba(0,186,56,1)"
+
+$x$data[[6]]$line$dash
+[1] "solid"
+
+
+$x$data[[6]]$hoveron
+[1] "points"
+
+$x$data[[6]]$legendgroup
+[1] "A vs. B"
+
+$x$data[[6]]$showlegend
+[1] TRUE
+
+$x$data[[6]]$xaxis
+[1] "x2"
+
+$x$data[[6]]$yaxis
+[1] "y2"
+
+$x$data[[6]]$hoverinfo
+[1] "text"
+
+
+
+$x$layout
+$x$layout$xaxis
+$x$layout$xaxis$type
+[1] "linear"
+
+$x$layout$xaxis$autorange
+[1] FALSE
+
+$x$layout$xaxis$tickmode
+[1] "array"
+
+$x$layout$xaxis$range
+[1] 275 825
+
+$x$layout$xaxis$ticktext
+[1] "300" "400" "500" "600" "700" "800"
+
+$x$layout$xaxis$tickvals
+[1] 300 400 500 600 700 800
+
+$x$layout$xaxis$ticks
+[1] "outside"
+
+$x$layout$xaxis$tickcolor
+[1] "rgba(0,0,0,1)"
+
+$x$layout$xaxis$ticklen
+[1] 3.985056
+
+$x$layout$xaxis$tickwidth
+[1] 0.664176
+
+$x$layout$xaxis$showticklabels
+[1] TRUE
+
+$x$layout$xaxis$tickfont
+$x$layout$xaxis$tickfont$color
+[1] "rgba(0,0,0,1)"
+
+$x$layout$xaxis$tickfont$family
+[1] ""
+
+$x$layout$xaxis$tickfont$size
+[1] 12.75218
+
+
+$x$layout$xaxis$tickangle
+[1] 0
+
+$x$layout$xaxis$showline
+[1] FALSE
+
+$x$layout$xaxis$linecolor
+[1] NA
+
+$x$layout$xaxis$linewidth
+[1] 0
+
+$x$layout$xaxis$showgrid
+[1] TRUE
+
+$x$layout$xaxis$domain
+[1] 0.00 0.48
+
+$x$layout$xaxis$gridcolor
+[1] "rgba(229,229,229,1)"
+
+$x$layout$xaxis$gridwidth
+[1] 0.2656704
+
+$x$layout$xaxis$zeroline
+[1] FALSE
+
+$x$layout$xaxis$anchor
+[1] "y"
+
+$x$layout$xaxis$titlefont
+$x$layout$xaxis$titlefont$color
+[1] "rgba(0,0,0,1)"
+
+$x$layout$xaxis$titlefont$family
+[1] ""
+
+$x$layout$xaxis$titlefont$size
+[1] 15.94022
+
+
+$x$layout$xaxis$hoverformat
+[1] ".2f"
+
+
+$x$layout$xaxis2
+$x$layout$xaxis2$type
+[1] "linear"
+
+$x$layout$xaxis2$autorange
+[1] FALSE
+
+$x$layout$xaxis2$tickmode
+[1] "array"
+
+$x$layout$xaxis2$range
+[1] 275 825
+
+$x$layout$xaxis2$ticktext
+[1] "300" "400" "500" "600" "700" "800"
+
+$x$layout$xaxis2$tickvals
+[1] 300 400 500 600 700 800
+
+$x$layout$xaxis2$ticks
+[1] "outside"
+
+$x$layout$xaxis2$tickcolor
+[1] "rgba(0,0,0,1)"
+
+$x$layout$xaxis2$ticklen
+[1] 3.985056
+
+$x$layout$xaxis2$tickwidth
+[1] 0.664176
+
+$x$layout$xaxis2$showticklabels
+[1] TRUE
+
+$x$layout$xaxis2$tickfont
+$x$layout$xaxis2$tickfont$color
+[1] "rgba(0,0,0,1)"
+
+$x$layout$xaxis2$tickfont$family
+[1] ""
+
+$x$layout$xaxis2$tickfont$size
+[1] 12.75218
+
+
+$x$layout$xaxis2$tickangle
+[1] 0
+
+$x$layout$xaxis2$showline
+[1] FALSE
+
+$x$layout$xaxis2$linecolor
+[1] NA
+
+$x$layout$xaxis2$linewidth
+[1] 0
+
+$x$layout$xaxis2$showgrid
+[1] TRUE
+
+$x$layout$xaxis2$domain
+[1] 0.52 1.00
+
+$x$layout$xaxis2$gridcolor
+[1] "rgba(229,229,229,1)"
+
+$x$layout$xaxis2$gridwidth
+[1] 0.2656704
+
+$x$layout$xaxis2$zeroline
+[1] FALSE
+
+$x$layout$xaxis2$anchor
+[1] "y2"
+
+$x$layout$xaxis2$titlefont
+$x$layout$xaxis2$titlefont$color
+[1] "rgba(0,0,0,1)"
+
+$x$layout$xaxis2$titlefont$family
+[1] ""
+
+$x$layout$xaxis2$titlefont$size
+[1] 15.94022
+
+
+$x$layout$xaxis2$hoverformat
+[1] ".2f"
+
+
+$x$layout$yaxis2
+$x$layout$yaxis2$type
+[1] "linear"
+
+$x$layout$yaxis2$autorange
+[1] FALSE
+
+$x$layout$yaxis2$tickmode
+[1] "array"
+
+$x$layout$yaxis2$range
+[1] -14.14441 429.06396
+
+$x$layout$yaxis2$ticktext
+[1] "0"   "100" "200" "300" "400"
+
+$x$layout$yaxis2$tickvals
+[1] -1.776357e-15  1.000000e+02  2.000000e+02  3.000000e+02  4.000000e+02
+
+$x$layout$yaxis2$ticks
+[1] "outside"
+
+$x$layout$yaxis2$tickcolor
+[1] "rgba(0,0,0,1)"
+
+$x$layout$yaxis2$ticklen
+[1] 3.985056
+
+$x$layout$yaxis2$tickwidth
+[1] 0.664176
+
+$x$layout$yaxis2$showticklabels
+[1] TRUE
+
+$x$layout$yaxis2$tickfont
+$x$layout$yaxis2$tickfont$color
+[1] "rgba(0,0,0,1)"
+
+$x$layout$yaxis2$tickfont$family
+[1] ""
+
+$x$layout$yaxis2$tickfont$size
+[1] 12.75218
+
+
+$x$layout$yaxis2$tickangle
+[1] 0
+
+$x$layout$yaxis2$showline
+[1] FALSE
+
+$x$layout$yaxis2$linecolor
+[1] NA
+
+$x$layout$yaxis2$linewidth
+[1] 0
+
+$x$layout$yaxis2$showgrid
+[1] TRUE
+
+$x$layout$yaxis2$domain
+[1] 0 1
+
+$x$layout$yaxis2$gridcolor
+[1] "rgba(229,229,229,1)"
+
+$x$layout$yaxis2$gridwidth
+[1] 0.2656704
+
+$x$layout$yaxis2$zeroline
+[1] FALSE
+
+$x$layout$yaxis2$anchor
+[1] "x2"
+
+$x$layout$yaxis2$titlefont
+$x$layout$yaxis2$titlefont$color
+[1] "rgba(0,0,0,1)"
+
+$x$layout$yaxis2$titlefont$family
+[1] ""
+
+$x$layout$yaxis2$titlefont$size
+[1] 15.94022
+
+
+$x$layout$yaxis2$hoverformat
+[1] ".2f"
+
+
+$x$layout$yaxis
+$x$layout$yaxis$type
+[1] "linear"
+
+$x$layout$yaxis$autorange
+[1] FALSE
+
+$x$layout$yaxis$tickmode
+[1] "array"
+
+$x$layout$yaxis$range
+[1] -14.14441 429.06396
+
+$x$layout$yaxis$ticktext
+[1] "0"   "100" "200" "300" "400"
+
+$x$layout$yaxis$tickvals
+[1] -1.776357e-15  1.000000e+02  2.000000e+02  3.000000e+02  4.000000e+02
+
+$x$layout$yaxis$ticks
+[1] "outside"
+
+$x$layout$yaxis$tickcolor
+[1] "rgba(0,0,0,1)"
+
+$x$layout$yaxis$ticklen
+[1] 3.985056
+
+$x$layout$yaxis$tickwidth
+[1] 0.664176
+
+$x$layout$yaxis$showticklabels
+[1] TRUE
+
+$x$layout$yaxis$tickfont
+$x$layout$yaxis$tickfont$color
+[1] "rgba(0,0,0,1)"
+
+$x$layout$yaxis$tickfont$family
+[1] ""
+
+$x$layout$yaxis$tickfont$size
+[1] 12.75218
+
+
+$x$layout$yaxis$tickangle
+[1] 0
+
+$x$layout$yaxis$showline
+[1] FALSE
+
+$x$layout$yaxis$linecolor
+[1] NA
+
+$x$layout$yaxis$linewidth
+[1] 0
+
+$x$layout$yaxis$showgrid
+[1] TRUE
+
+$x$layout$yaxis$domain
+[1] 0 1
+
+$x$layout$yaxis$gridcolor
+[1] "rgba(229,229,229,1)"
+
+$x$layout$yaxis$gridwidth
+[1] 0.2656704
+
+$x$layout$yaxis$zeroline
+[1] FALSE
+
+$x$layout$yaxis$anchor
+[1] "x"
+
+$x$layout$yaxis$titlefont
+$x$layout$yaxis$titlefont$color
+[1] "rgba(0,0,0,1)"
+
+$x$layout$yaxis$titlefont$family
+[1] ""
+
+$x$layout$yaxis$titlefont$size
+[1] 15.94022
+
+
+$x$layout$yaxis$hoverformat
+[1] ".2f"
+
+
+$x$layout$annotations
+$x$layout$annotations[[1]]
+$x$layout$annotations[[1]]$text
+[1] "gr"
+
+$x$layout$annotations[[1]]$x
+[1] 0.4896
+
+$x$layout$annotations[[1]]$y
+[1] 1
+
+$x$layout$annotations[[1]]$showarrow
+[1] FALSE
+
+$x$layout$annotations[[1]]$ax
+[1] 0
+
+$x$layout$annotations[[1]]$ay
+[1] 0
+
+$x$layout$annotations[[1]]$font
+$x$layout$annotations[[1]]$font$color
+[1] "rgba(0,0,0,1)"
+
+$x$layout$annotations[[1]]$font$family
+[1] ""
+
+$x$layout$annotations[[1]]$font$size
+[1] 15.94022
+
+
+$x$layout$annotations[[1]]$xref
+[1] "paper"
+
+$x$layout$annotations[[1]]$yref
+[1] "paper"
+
+$x$layout$annotations[[1]]$textangle
+[1] 0
+
+$x$layout$annotations[[1]]$xanchor
+[1] "left"
+
+$x$layout$annotations[[1]]$yanchor
+[1] "top"
+
+$x$layout$annotations[[1]]$legendTitle
+[1] TRUE
+
+
+$x$layout$annotations[[2]]
+$x$layout$annotations[[2]]$text
+[1] "gr"
+
+$x$layout$annotations[[2]]$x
+[1] 1.0096
+
+$x$layout$annotations[[2]]$y
+[1] 1
+
+$x$layout$annotations[[2]]$showarrow
+[1] FALSE
+
+$x$layout$annotations[[2]]$ax
+[1] 0
+
+$x$layout$annotations[[2]]$ay
+[1] 0
+
+$x$layout$annotations[[2]]$font
+$x$layout$annotations[[2]]$font$color
+[1] "rgba(0,0,0,1)"
+
+$x$layout$annotations[[2]]$font$family
+[1] ""
+
+$x$layout$annotations[[2]]$font$size
+[1] 15.94022
+
+
+$x$layout$annotations[[2]]$xref
+[1] "paper"
+
+$x$layout$annotations[[2]]$yref
+[1] "paper"
+
+$x$layout$annotations[[2]]$textangle
+[1] 0
+
+$x$layout$annotations[[2]]$xanchor
+[1] "left"
+
+$x$layout$annotations[[2]]$yanchor
+[1] "top"
+
+$x$layout$annotations[[2]]$legendTitle
+[1] TRUE
+
+
+
+$x$layout$shapes
+$x$layout$shapes[[1]]
+$x$layout$shapes[[1]]$type
+[1] "rect"
+
+$x$layout$shapes[[1]]$fillcolor
+[1] "transparent"
+
+$x$layout$shapes[[1]]$line
+$x$layout$shapes[[1]]$line$color
+[1] "rgba(127,127,127,1)"
+
+$x$layout$shapes[[1]]$line$width
+[1] 0.664176
+
+$x$layout$shapes[[1]]$line$linetype
+[1] "solid"
+
+
+$x$layout$shapes[[1]]$yref
+[1] "paper"
+
+$x$layout$shapes[[1]]$xref
+[1] "paper"
+
+$x$layout$shapes[[1]]$x0
+[1] 0
+
+$x$layout$shapes[[1]]$x1
+[1] 0.48
+
+$x$layout$shapes[[1]]$y0
+[1] 0
+
+$x$layout$shapes[[1]]$y1
+[1] 1
+
+
+$x$layout$shapes[[2]]
+$x$layout$shapes[[2]]$type
+[1] "rect"
+
+$x$layout$shapes[[2]]$fillcolor
+[1] "transparent"
+
+$x$layout$shapes[[2]]$line
+$x$layout$shapes[[2]]$line$color
+[1] "rgba(127,127,127,1)"
+
+$x$layout$shapes[[2]]$line$width
+[1] 0.664176
+
+$x$layout$shapes[[2]]$line$linetype
+[1] "solid"
+
+
+$x$layout$shapes[[2]]$yref
+[1] "paper"
+
+$x$layout$shapes[[2]]$xref
+[1] "paper"
+
+$x$layout$shapes[[2]]$x0
+[1] 0.52
+
+$x$layout$shapes[[2]]$x1
+[1] 1
+
+$x$layout$shapes[[2]]$y0
+[1] 0
+
+$x$layout$shapes[[2]]$y1
+[1] 1
+
+
+
+$x$layout$margin
+$x$layout$margin$t
+[1] 23.39439
+
+$x$layout$margin$r
+[1] 7.970112
+
+$x$layout$margin$b
+[1] 24.13163
+
+$x$layout$margin$l
+[1] 31.08344
+
+
+$x$layout$plot_bgcolor
+[1] "rgba(255,255,255,1)"
+
+$x$layout$paper_bgcolor
+[1] "rgba(255,255,255,1)"
+
+$x$layout$font
+$x$layout$font$color
+[1] "rgba(0,0,0,1)"
+
+$x$layout$font$family
+[1] ""
+
+$x$layout$font$size
+[1] 15.94022
+
+
+$x$layout$shapes
+$x$layout$shapes[[1]]
+$x$layout$shapes[[1]]$type
+[1] "rect"
+
+$x$layout$shapes[[1]]$fillcolor
+[1] "transparent"
+
+$x$layout$shapes[[1]]$line
+$x$layout$shapes[[1]]$line$color
+[1] "rgba(127,127,127,1)"
+
+$x$layout$shapes[[1]]$line$width
+[1] 0.664176
+
+$x$layout$shapes[[1]]$line$linetype
+[1] "solid"
+
+
+$x$layout$shapes[[1]]$yref
+[1] "paper"
+
+$x$layout$shapes[[1]]$xref
+[1] "paper"
+
+$x$layout$shapes[[1]]$x0
+[1] 0
+
+$x$layout$shapes[[1]]$x1
+[1] 1
+
+$x$layout$shapes[[1]]$y0
+[1] 0
+
+$x$layout$shapes[[1]]$y1
+[1] 1
+
+
+
+$x$layout$showlegend
+[1] TRUE
+
+$x$layout$legend
+$x$layout$legend$bgcolor
+[1] "rgba(255,255,255,1)"
+
+$x$layout$legend$bordercolor
+[1] "transparent"
+
+$x$layout$legend$borderwidth
+[1] 1.889764
+
+$x$layout$legend$font
+$x$layout$legend$font$color
+[1] "rgba(0,0,0,1)"
+
+$x$layout$legend$font$family
+[1] ""
+
+$x$layout$legend$font$size
+[1] 12.75218
+
+
+$x$layout$legend$y
+[1] 0.89762
+
+
+$x$layout$annotations
+$x$layout$annotations[[1]]
+$x$layout$annotations[[1]]$text
+[1] "gr"
+
+$x$layout$annotations[[1]]$x
+[1] 1.02
+
+$x$layout$annotations[[1]]$y
+[1] 1
+
+$x$layout$annotations[[1]]$showarrow
+[1] FALSE
+
+$x$layout$annotations[[1]]$ax
+[1] 0
+
+$x$layout$annotations[[1]]$ay
+[1] 0
+
+$x$layout$annotations[[1]]$font
+$x$layout$annotations[[1]]$font$color
+[1] "rgba(0,0,0,1)"
+
+$x$layout$annotations[[1]]$font$family
+[1] ""
+
+$x$layout$annotations[[1]]$font$size
+[1] 15.94022
+
+
+$x$layout$annotations[[1]]$xref
+[1] "paper"
+
+$x$layout$annotations[[1]]$yref
+[1] "paper"
+
+$x$layout$annotations[[1]]$textangle
+[1] 0
+
+$x$layout$annotations[[1]]$xanchor
+[1] "left"
+
+$x$layout$annotations[[1]]$yanchor
+[1] "top"
+
+$x$layout$annotations[[1]]$legendTitle
+[1] TRUE
+
+
+
+$x$layout$hovermode
+[1] "closest"
+
+
+attr(,"TOJSON_FUNC")
+function (x, ...) 
+{
+    jsonlite::toJSON(x, digits = 50, auto_unbox = TRUE, force = TRUE, 
+        null = "null", na = "null", ...)
+}
+<environment: namespace:plotly>
+
+$width
+NULL
+
+$height
+NULL
+
+$sizingPolicy
+$sizingPolicy$defaultWidth
+[1] "100%"
+
+$sizingPolicy$defaultHeight
+[1] 400
+
+$sizingPolicy$padding
+NULL
+
+$sizingPolicy$viewer
+$sizingPolicy$viewer$defaultWidth
+NULL
+
+$sizingPolicy$viewer$defaultHeight
+NULL
+
+$sizingPolicy$viewer$padding
+NULL
+
+$sizingPolicy$viewer$fill
+[1] TRUE
+
+$sizingPolicy$viewer$suppress
+[1] FALSE
+
+$sizingPolicy$viewer$paneHeight
+NULL
+
+
+$sizingPolicy$browser
+$sizingPolicy$browser$defaultWidth
+NULL
+
+$sizingPolicy$browser$defaultHeight
+NULL
+
+$sizingPolicy$browser$padding
+NULL
+
+$sizingPolicy$browser$fill
+[1] TRUE
+
+
+$sizingPolicy$knitr
+$sizingPolicy$knitr$defaultWidth
+NULL
+
+$sizingPolicy$knitr$defaultHeight
+NULL
+
+$sizingPolicy$knitr$figure
+[1] TRUE
+
+
+
+$dependencies
+NULL
+
+$elementId
+NULL
+
+$preRenderHook
+function (p) 
+{
+    UseMethod("plotly_build")
+}
+<environment: namespace:plotly>
+
+$jsHooks
+list()
+
+attr(,"package")
+[1] "plotly"

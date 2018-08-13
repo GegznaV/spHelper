@@ -1,0 +1,133 @@
+Initializing packrat project in directory:
+- "~/R/spHelper"
+
+Adding these packages to packrat:
+                 _              
+    BH             1.60.0-1     
+    DBI            0.3.1        
+    MASS           7.3-45       
+    R6             2.1.2        
+    RColorBrewer   1.1-2        
+    Rcpp           0.12.3       
+    assertthat     0.1          
+    base64enc      0.1-3        
+    bitops         1.0-6        
+    caTools        1.17.1       
+    colorspace     1.2-6        
+    curl           0.9.6        
+    devtools       1.10.0       
+    dichromat      2.0-0        
+    digest         0.6.9        
+    dplyr          0.4.3        
+    evaluate       0.8          
+    formatR        1.2.1        
+    ggplot2        2.0.0        
+    git2r          0.13.1       
+    gridExtra      2.0.0        
+    gtable         0.1.2        
+    highr          0.5.1        
+    htmltools      0.3          
+    htmlwidgets    0.5          
+    httr           1.1.0        
+    hyperSpec      0.98-20150304
+    jsonlite       0.9.19       
+    knitr          1.12.3       
+    labeling       0.3          
+    lattice        0.20-33      
+    latticeExtra   0.6-28       
+    lazyeval       0.1.10       
+    magrittr       1.5          
+    markdown       0.7.7        
+    memoise        1.0.0        
+    mime           0.4          
+    munsell        0.4.3        
+    mvbutils       2.7.4.1      
+    mvtnorm        1.0-5        
+    openssl        0.9.1        
+    packrat        0.4.6-13     
+    pander         0.6.0        
+    plotly         2.4.4        
+    plyr           1.8.3        
+    reshape2       1.4.1        
+    rmarkdown      0.9.5        
+    rstudioapi     0.5          
+    scales         0.3.0        
+    sna            2.3-2        
+    stringi        1.0-1        
+    stringr        1.0.0        
+    svUnit         0.7-12       
+    tidyr          0.4.1        
+    viridis        0.3.2        
+    whisker        0.3-2        
+    withr          1.0.1        
+    yaml           2.1.13       
+
+Fetching sources for BH (1.60.0-1) ... OK (CRAN current)
+Fetching sources for DBI (0.3.1) ... OK (CRAN current)
+Fetching sources for MASS (7.3-45) ... OK (CRAN current)
+Fetching sources for R6 (2.1.2) ... OK (CRAN current)
+Fetching sources for RColorBrewer (1.1-2) ... OK (CRAN current)
+Fetching sources for Rcpp (0.12.3) ... OK (CRAN current)
+Fetching sources for assertthat (0.1) ... OK (CRAN current)
+Fetching sources for base64enc (0.1-3) ... OK (CRAN current)
+Fetching sources for bitops (1.0-6) ... OK (CRAN current)
+Fetching sources for caTools (1.17.1) ... OK (CRAN current)
+Fetching sources for colorspace (1.2-6) ... OK (CRAN current)
+Fetching sources for curl (0.9.6) ... OK (CRAN current)
+Fetching sources for devtools (1.10.0) ... OK (CRAN current)
+Fetching sources for dichromat (2.0-0) ... OK (CRAN current)
+Fetching sources for digest (0.6.9) ... OK (CRAN current)
+Fetching sources for dplyr (0.4.3) ... OK (CRAN current)
+Fetching sources for evaluate (0.8) ... OK (CRAN current)
+Fetching sources for formatR (1.2.1) ... OK (CRAN current)
+Fetching sources for ggplot2 (2.0.0) ... OK (CRAN current)
+Fetching sources for git2r (0.13.1) ... OK (CRAN current)
+Fetching sources for gridExtra (2.0.0) ... OK (CRAN current)
+Fetching sources for gtable (0.1.2) ... OK (CRAN current)
+Fetching sources for highr (0.5.1) ... OK (CRAN current)
+Fetching sources for htmltools (0.3) ... OK (CRAN current)
+Fetching sources for htmlwidgets (0.5) ... OK (CRAN current)
+Fetching sources for httr (1.1.0) ... OK (CRAN current)
+Fetching sources for hyperSpec (0.98-20150304) ... OK (CRAN current)
+Fetching sources for jsonlite (0.9.19) ... OK (CRAN current)
+Fetching sources for knitr (1.12.3) ... OK (CRAN current)
+Fetching sources for labeling (0.3) ... OK (CRAN current)
+Fetching sources for lattice (0.20-33) ... OK (CRAN current)
+Fetching sources for latticeExtra (0.6-28) ... OK (CRAN current)
+Fetching sources for lazyeval (0.1.10) ... OK (CRAN current)
+Fetching sources for magrittr (1.5) ... OK (CRAN current)
+Fetching sources for markdown (0.7.7) ... OK (CRAN current)
+Fetching sources for memoise (1.0.0) ... OK (CRAN current)
+Fetching sources for mime (0.4) ... OK (CRAN current)
+Fetching sources for munsell (0.4.3) ... OK (CRAN current)
+Fetching sources for mvbutils (2.7.4.1) ... OK (CRAN current)
+Fetching sources for mvtnorm (1.0-5) ... OK (CRAN current)
+Fetching sources for openssl (0.9.1) ... OK (CRAN current)
+Fetching sources for packrat (0.4.6-13) ... OK (GitHub)
+Fetching sources for pander (0.6.0) ... OK (CRAN current)
+Fetching sources for plotly (2.4.4) ... OK (GitHub)
+Fetching sources for plyr (1.8.3) ... OK (CRAN current)
+Fetching sources for reshape2 (1.4.1) ... OK (CRAN current)
+Fetching sources for rmarkdown (0.9.5) ... OK (GitHub)
+Fetching sources for rstudioapi (0.5) ... OK (CRAN current)
+Fetching sources for scales (0.3.0) ... OK (CRAN current)
+Fetching sources for sna (2.3-2) ... OK (CRAN current)
+Fetching sources for stringi (1.0-1) ... OK (CRAN current)
+Fetching sources for stringr (1.0.0) ... OK (CRAN current)
+Fetching sources for svUnit (0.7-12) ... OK (CRAN current)
+Fetching sources for tidyr (0.4.1) ... OK (CRAN current)
+Fetching sources for viridis (0.3.2) ... OK (CRAN current)
+Fetching sources for whisker (0.3-2) ... OK (CRAN current)
+Fetching sources for withr (1.0.1) ... OK (CRAN current)
+Fetching sources for yaml (2.1.13) ... OK (CRAN current)
+Snapshot written to "D:/Dokumentai/R/spHelper/packrat/packrat.lock"
+Installing BH (1.60.0-1) ... 
+	OK (downloaded binary)
+Installing DBI (0.3.1) ... 
+	OK (downloaded binary)
+Installing MASS (7.3-45) ... 
+	OK (downloaded binary)
+Installing R6 (2.1.2) ... 
+	OK (downloaded binary)
+Installing RColorBrewer (1.1-2) ... 
+Error: package ‘RColorBrewer’ is required by ‘latticeExtra’ so will not be detached

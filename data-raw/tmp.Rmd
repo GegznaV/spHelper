@@ -1,0 +1,90 @@
+---
+title: "Untitled"
+author: "VG"
+date: "May 19, 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+ggplotly
+========================================================================
+
+fix legend entries
+
+```{r, message = FALSE, warning = FALSE}
+library(hyperSpec)
+library(spHelper)
+```
+
+
+
+
+```{r}
+
+qplolt_spStat(chondro,"clusters",mean)  %>% label_expr2text
+
+pp <- plotly_build(ggplotly())
+
+lenn <- length(pp$data)
+
+pp$data[[1]]$legendgroup
+pp$data[[1]]$name <- "Matrix"
+pp$data[[2]]$name <- "Lacuna"
+
+
+# correct_legend
+
+rm_repeated <- function(x) gsub("\\((.+?)(?:,\\1)+\\)", "\\1", x, perl = T)
+
+for (i in 1:lenn){
+    pp$data[[i]]$name  %<>% rm_repeated
+}
+```
+    # NAME <- "((A,B,C),(A,B,C),(A,B,C),(A,B,C))"
+    # NAME <- "(A,B,C,A,B,C,A,B,C,A,B,C)"
+    # NAME <- "(A B,A B)"
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+You can use
+
+    \((.+?)(?:,\1)+\)
+
+See the [regex demo][1]
+
+**Pattern explanation**:
+
+ - `\(` - opening round bracket;
+ - `(.+?)` - Group 1 matching 1 or more characters other than a newline;
+ - `(?:,\1)+` - 1 or more sequences of `,` followed with the value captured into Group 1;
+ - `\)` - a closing round bracket.
+
+R demo:
+
+```{r}
+s = "(matrix,matrix,matrix)"
+gsub("\\((.+?)(?:,\\1)+\\)", "\\1", s)
+    # [1] "matrix"
+
+gsub("\\((.+?)(?:,\\1)+\\)", "\\1", s)
+    # [1] "(m,d,s)"
+
+```
+
+    

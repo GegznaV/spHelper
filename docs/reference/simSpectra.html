@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>[!] Simulate spectroscopic data � simSpectra • spHelper</title>
+<title>[!] Simulate spectroscopic data — simSpectra • spHelper</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -18,13 +18,28 @@
 <!-- Font Awesome icons -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
+<!-- clipboard.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script>
+
+<!-- sticky kit -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
-<script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-  
-  
+
+
+
+<meta property="og:title" content="[!] Simulate spectroscopic data — simSpectra" />
+
+<meta property="og:description" content="Simulation of spectroscopic data: Loadings (spectra of spectroscopic
+components), Scores (amplitudes of these components) an Spectra (mixture of
+the spectroscopic components multiplied by the amplitudes with random noise
+added)." />
+<meta name="twitter:card" content="summary" />
+
+
+
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -34,8 +49,7 @@
 <![endif]-->
 
 
-  	<link rel="icon" href="../favicon.png" />
-</head>
+  </head>
 
   <body>
     <div class="container template-reference-topic">
@@ -48,8 +62,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="../index.html">spHelper | R package</a>
+      <span class="navbar-brand">
+        <a class="navbar-link" href="../index.html">spHelper</a>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.1.189</span>
+      </span>
     </div>
+
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
@@ -63,7 +81,7 @@
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Tutorials
+    Examples and Tutorials
      
     <span class="caret"></span>
   </a>
@@ -89,6 +107,7 @@
   </a>
 </li>
       </ul>
+      
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
@@ -96,23 +115,27 @@
       
       </header>
 
-      <div class="row">
+<div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>[!] Simulate spectroscopic data</h1>
+    
+    <div class="hidden name"><code>simSpectra.Rd</code></div>
     </div>
 
+    <div class="ref-description">
     
     <p>Simulation of spectroscopic data: Loadings (spectra of spectroscopic
 components), Scores (amplitudes of these components) an Spectra (mixture of
 the spectroscopic components multiplied by the amplitudes with random noise
 added).</p>
     
+    </div>
 
-    <pre class="usage"><span class='fu'>simSpectra</span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='fl'>300</span>:<span class='fl'>800</span>, <span class='kw'>nGr</span> <span class='kw'>=</span> <span class='fl'>2</span>, <span class='kw'>nInGr</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='fl'>50</span>, <span class='fl'>50</span>, <span class='fl'>50</span>), <span class='kw'>N</span> <span class='kw'>=</span> <span class='fu'>sum</span>(<span class='no'>nInGr</span>),
-  <span class='kw'>nDim</span> <span class='kw'>=</span> <span class='fl'>4</span>, <span class='kw'>w.possile</span> <span class='kw'>=</span> <span class='fl'>5</span>:<span class='fl'>150</span>, <span class='kw'>plots</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</pre>
+    <pre class="usage"><span class='fu'>simSpectra</span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='fl'>300</span>:<span class='fl'>800</span>, <span class='kw'>nGr</span> <span class='kw'>=</span> <span class='fl'>2</span>, <span class='kw'>nInGr</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='fl'>50</span>, <span class='fl'>50</span>, <span class='fl'>50</span>),
+  <span class='kw'>N</span> <span class='kw'>=</span> <span class='fu'>sum</span>(<span class='no'>nInGr</span>), <span class='kw'>nDim</span> <span class='kw'>=</span> <span class='fl'>4</span>, <span class='kw'>w.possile</span> <span class='kw'>=</span> <span class='fl'>5</span>:<span class='fl'>150</span>, <span class='kw'>plots</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</pre>
     
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
@@ -156,7 +179,8 @@ added).</p>
 
 <p>In the list the <code>hyperSpec</code> objects contain spectroscopic data and
 additional variables.</p>
-<p>Additional variables for <code>Spectra</code> and <code>Scores</code>:</p><dl class='dl-horizontal'>
+<p>Additional variables for <code>Spectra</code> and <code>Scores</code>:</p>
+<dl class='dl-horizontal'>
   <dt>class</dt><dd><p>A factor variable for classification.</p></dd>
   <dt>gr</dt><dd><p>A factor variable for other type classification.</p></dd>
 </dl>
@@ -182,9 +206,9 @@ additional variables.</p>
 #&gt;    501 data points / spectrum
 #&gt; wavelength: list(lambda, nm) [integer] 300 301 ... 800 
 #&gt; data:  (150 rows x 3 columns)
-#&gt;    1. gr:  [factor] B B ... A 
-#&gt;    2. class:  [factor] S1 S1 ... K 
-#&gt;    3. spc: I / a.u. [matrix501] -0.2787423 -0.6072803 ... 149.7971 
+#&gt;    1. gr:  [factor] A A ... B 
+#&gt;    2. class:  [factor] N N ... S1 
+#&gt;    3. spc: I / a.u. [matrix501] 147.7780 168.2264 ... 37.3538 
 #&gt; 
 #&gt; $Loadings
 #&gt; hyperSpec object
@@ -193,9 +217,9 @@ additional variables.</p>
 #&gt;    501 data points / spectrum
 #&gt; wavelength: list(lambda, nm) [integer] 300 301 ... 800 
 #&gt; data:  (4 rows x 4 columns)
-#&gt;    1. spc: I / a.u. [matrix501] 0.0006443798 0.0197595427 ... 0.9105801 
-#&gt;    2. cNames: cNames [character] max: 438nm max: 681nm max: 732nm max: 742nm 
-#&gt;    3. PeakAt: PeakAt [character] 438nm 681nm 732nm 742nm 
+#&gt;    1. spc: I / a.u. [matrix501] 0.9112889 0.3724762 ... 7.157945e-59 
+#&gt;    2. cNames: cNames [character] max: 325nm max: 508nm max: 537nm max: 620nm 
+#&gt;    3. PeakAt: PeakAt [character] 325nm 508nm 537nm 620nm 
 #&gt;    4. order.of.rows: order.of.rows [integer] 1 2 3 4 
 #&gt; 
 #&gt; $Scores
@@ -205,9 +229,9 @@ additional variables.</p>
 #&gt;    4 data points / spectrum
 #&gt; wavelength: Component [integer] 1 2 3 4 
 #&gt; data:  (150 rows x 3 columns)
-#&gt;    1. gr: gr [factor] B B ... A 
-#&gt;    2. class: class [factor] S1 S1 ... K 
-#&gt;    3. spc: Amplitude [matrix4] 209.1089 200.0968 ... 117.4656 
+#&gt;    1. gr: gr [factor] A A ... B 
+#&gt;    2. class: class [factor] N N ... S1 
+#&gt;    3. spc: Amplitude [matrix4] 82.07788 92.89176 ... 142.8269 
 #&gt; </div><div class='input'>
 <span class='fu'>simSpectra</span>()$<span class='no'>Spectra</span></div><div class='output co'>#&gt; hyperSpec object
 #&gt;    150 spectra
@@ -216,8 +240,8 @@ additional variables.</p>
 #&gt; wavelength: list(lambda, nm) [integer] 300 301 ... 800 
 #&gt; data:  (150 rows x 3 columns)
 #&gt;    1. gr:  [factor] B B ... A 
-#&gt;    2. class:  [factor] K K ... K 
-#&gt;    3. spc: I / a.u. [matrix501] 5.861056 6.097299 ... 1.386202 </div><div class='input'>
+#&gt;    2. class:  [factor] S1 N  ... S1 
+#&gt;    3. spc: I / a.u. [matrix501] 45.49377 51.28332 ... 74.73758 </div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
@@ -245,11 +269,14 @@ Vilmantas Gegzna
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="http://hadley.github.io/pkgdown/">pkgdown</a>.</p>
+  <p>Site built with <a href="http://pkgdown.r-lib.org/">pkgdown</a>.</p>
 </div>
 
       </footer>
    </div>
 
+  
+
   </body>
 </html>
+

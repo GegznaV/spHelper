@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>[.!] Compare spectra of groups at each wavelength � sp_class_perform • spHelper</title>
+<title>[.!] Compare spectra of groups at each wavelength — sp_class_perform • spHelper</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -18,13 +18,25 @@
 <!-- Font Awesome icons -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
+<!-- clipboard.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script>
+
+<!-- sticky kit -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
-<script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-  
-  
+
+
+
+<meta property="og:title" content="[.!] Compare spectra of groups at each wavelength — sp_class_perform" />
+
+<meta property="og:description" content="Compare spectra of each pair of indicated groups at each wavelength." />
+<meta name="twitter:card" content="summary" />
+
+
+
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -34,8 +46,7 @@
 <![endif]-->
 
 
-  	<link rel="icon" href="../favicon.png" />
-</head>
+  </head>
 
   <body>
     <div class="container template-reference-topic">
@@ -48,8 +59,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="../index.html">spHelper | R package</a>
+      <span class="navbar-brand">
+        <a class="navbar-link" href="../index.html">spHelper</a>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.1.189</span>
+      </span>
     </div>
+
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
@@ -63,7 +78,7 @@
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Tutorials
+    Examples and Tutorials
      
     <span class="caret"></span>
   </a>
@@ -89,6 +104,7 @@
   </a>
 </li>
       </ul>
+      
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
@@ -96,22 +112,26 @@
       
       </header>
 
-      <div class="row">
+<div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>[.!] Compare spectra of groups at each wavelength</h1>
+    
+    <div class="hidden name"><code>sp_class_perform.Rd</code></div>
     </div>
 
+    <div class="ref-description">
     
     <p>Compare spectra of each pair of indicated groups at each wavelength.</p>
     
+    </div>
 
     <pre class="usage"><span class='fu'>sp_class_perform</span>(<span class='no'>sp</span>, <span class='kw'>by</span> <span class='kw'>=</span> <span class='fu'>stop</span>(<span class='st'>"Parameter 'by' is missing."</span>),
   <span class='kw'>measure</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"auc"</span>, <span class='st'>"bac"</span>, <span class='st'>"j"</span>, <span class='st'>"sesp"</span>, <span class='st'>"tpr"</span>))
 
 <span class='fu'>sp_class_perform_cv</span>(<span class='no'>sp</span>, <span class='kw'>by</span> <span class='kw'>=</span> <span class='fu'>stop</span>(<span class='st'>"Parameter 'by' is not specified."</span>),
-  <span class='kw'>measure</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"sesp"</span>, <span class='st'>"j"</span>, <span class='st'>"tpr"</span>)[<span class='fl'>1</span>], <span class='kw'>cvo</span> <span class='kw'>=</span> <span class='fu'><a href='cvo_create_folds.html'>cvo_create_folds</a></span>(<span class='no'>sp</span>, <span class='no'>by</span>, <span class='no'>seeds</span>),
-  <span class='kw'>seeds</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>sp_test</span> <span class='kw'>=</span> <span class='kw'>NULL</span>)
+  <span class='kw'>measure</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"sesp"</span>, <span class='st'>"j"</span>, <span class='st'>"tpr"</span>)[<span class='fl'>1</span>], <span class='kw'>cvo</span> <span class='kw'>=</span> <span class='fu'>cvo_create_folds</span>(<span class='no'>sp</span>, <span class='no'>by</span>,
+  <span class='no'>seeds</span>), <span class='kw'>seeds</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>sp_test</span> <span class='kw'>=</span> <span class='kw'>NULL</span>)
 
 <span class='co'># S3 method for sp_class_perform_cv</span>
 <span class='fu'>print</span>(<span class='no'>obj</span>)
@@ -120,12 +140,13 @@
 <span class='fu'>print</span>(<span class='no'>obj</span>)
 
 <span class='co'># S3 method for sp_classif_performance</span>
-<span class='fu'>predict</span>(<span class='no'>object</span>, <span class='no'>newdata</span>, <span class='kw'>what</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"values"</span>,
-  <span class='st'>"performance"</span>), <span class='no'>...</span>)
+<span class='fu'>predict</span>(<span class='no'>object</span>, <span class='no'>newdata</span>,
+  <span class='kw'>what</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"values"</span>, <span class='st'>"performance"</span>), <span class='no'>...</span>)
 
 <span class='fu'>sp_classification_performance</span>(<span class='no'>sp</span>,
-  <span class='kw'>by</span> <span class='kw'>=</span> <span class='fu'>stop</span>(<span class='st'>"Parameter 'by' is not specified."</span>), <span class='kw'>measure</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"sesp"</span>, <span class='st'>"j"</span>,
-  <span class='st'>"tpr"</span>)[<span class='fl'>1</span>], <span class='kw'>cvo</span> <span class='kw'>=</span> <span class='fu'><a href='cvo_create_folds.html'>cvo_create_folds</a></span>(<span class='no'>sp</span>, <span class='no'>by</span>, <span class='no'>seeds</span>), <span class='kw'>seeds</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='no'>...</span>)
+  <span class='kw'>by</span> <span class='kw'>=</span> <span class='fu'>stop</span>(<span class='st'>"Parameter 'by' is not specified."</span>), <span class='kw'>measure</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"sesp"</span>,
+  <span class='st'>"j"</span>, <span class='st'>"tpr"</span>)[<span class='fl'>1</span>], <span class='kw'>cvo</span> <span class='kw'>=</span> <span class='fu'>cvo_create_folds</span>(<span class='no'>sp</span>, <span class='no'>by</span>, <span class='no'>seeds</span>), <span class='kw'>seeds</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='no'>...</span>)
 
 <span class='fu'>sp_compare_gr_wl</span>(<span class='no'>sp</span>, <span class='kw'>by</span> <span class='kw'>=</span> <span class='fu'>stop</span>(<span class='st'>"Parameter 'by' is missing."</span>),
   <span class='kw'>measure</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"auc"</span>, <span class='st'>"j"</span>, <span class='st'>"sesp"</span>, <span class='st'>"tpr"</span>), <span class='no'>...</span>)
@@ -133,7 +154,7 @@
 <span class='fu'>class_perform_sp</span>(<span class='no'>sp</span>, <span class='kw'>by</span> <span class='kw'>=</span> <span class='fu'>stop</span>(<span class='st'>"Parameter 'by' is missing."</span>),
   <span class='kw'>measure</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"auc"</span>, <span class='st'>"j"</span>, <span class='st'>"sesp"</span>, <span class='st'>"tpr"</span>), <span class='no'>...</span>)</pre>
     
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
@@ -149,59 +170,46 @@ of length <code>nrow(sp)</code>.</p></td>
     <tr>
       <th>measure</th>
       <td><p>string with measure of classification performance. Currently
- available options:
-"auc"   - AUC (default) area under the ROC curve;
-"j"     - Youden's index;
-"bac"   - Balanced accuracy (mean of Sensitivity (Se) and Specificity (Sp)).
-
-"sesp"  - [DEPRECATED!] The same as "bac";
-"tpr"   - [DEPRECATED!] The same as "bac";
+ available options:<br />
+"auc"   - AUC (default) area under the ROC curve;<br />
+"j"     - Youden's index;<br />
+"bac"   - Balanced accuracy (mean of Sensitivity (Se) and Specificity (Sp)).<br />
+<br />
+"sesp"  - [DEPRECATED!] The same as "bac";<br />
+"tpr"   - [DEPRECATED!] The same as "bac";<br />
 "kappa" - [SLOW, DO NOT USE IT] Cohen's kappa.</p></td>
     </tr>
     <tr>
       <th>cvo</th>
       <td><p>a cross-validation object (cvo), created with function
-<code><a href='cvo_create_folds.html'>cvo_create_folds</a></code>,<code><a href='http://www.rdocumentation.org/packages/caret/topics/createDataPartition'>createFolds</a></code>
+<code>cvo_create_folds</code>,<code><a href='http://www.rdocumentation.org/packages/caret/topics/createDataPartition'>createFolds</a></code>
 or similar.</p></td>
-    </tr>
-    <tr>
-      <th>seeds</th>
-      <td><p>(vector of integers | <code>NULL</code>) Seeds for random number
-            generator for each repetition.
-            If <code>seeds = NULL</code> random seeds are generated.
-            If number of repetitions is
-            greater than number of provided seeds, random seeds are
-            generated and added to the provided ones. The first seed will
-            be used to ensure reproducibility of the randomly generated
-            seeds.</p>
-<p>(See <code><a href='http://www.rdocumentation.org/packages/base/topics/Random'>set.seed</a></code> for more information about
-             random number generation).</p></td>
     </tr>
     </table>
     
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>Fields of <code>sp_classif_performance</code> object:</p>
-<p><b>type</b> type of data used ("Training data");
- <b>performance</b> - <code>hyperSepc</code> object with performance estimates;
+    <p>Fields of <code>sp_classif_performance</code> object: <br /></p>
+<p><b>type</b> type of data used ("Training data");<br />
+ <b>performance</b> - <code>hyperSepc</code> object with performance estimates;<br />
  <b>cutoffs</b> - <code>hyperSepc</code> object with estimates of critical values
-                   (cut-off points);
- <b>means</b> - <code>hyperSepc</code> object with means of each compared group;
+                   (cut-off points);<br />
+ <b>means</b> - <code>hyperSepc</code> object with means of each compared group;<br />
  <b>means.description</b> - type of those means
-                            ("10% trimmed mean (of each group)");
- <b>compared_by_var</b> - variable name, that was used for grouping; 
- <b>measure</b>- measure of performance.</p>
-<p>Fields of <code>sp_class_perform_cv</code> object:</p>
-<p><b>data</b> - a <code>hyperSpec</code> object with data used in calculations; 
- <b>cvo</b> - cross-validation object used for analysis;  
- <b>train_performance</b> - performance estimates of training datasets for each repetition and fold; 
- <b>test_performance</b> - performance estimates of testing datasets for each repetition and fold; 
- <b>cutoffs</b> - estimates of cut-off values for each repetition and fold;
- <b>obj</b> - a list of <code>sp_classif_performance</code> objects for each repetition and fold;</p>
+                            ("10% trimmed mean (of each group)");<br />
+ <b>compared_by_var</b> - variable name, that was used for grouping; <br />
+ <b>measure</b>- measure of performance. <br /> <br /></p>
+<p>Fields of <code>sp_class_perform_cv</code> object: <br /></p>
+<p><b>data</b> - a <code>hyperSpec</code> object with data used in calculations; <br />
+ <b>cvo</b> - cross-validation object used for analysis;  <br />
+ <b>train_performance</b> - performance estimates of training datasets for each repetition and fold; <br />
+ <b>test_performance</b> - performance estimates of testing datasets for each repetition and fold; <br />
+ <b>cutoffs</b> - estimates of cut-off values for each repetition and fold;<br />
+ <b>obj</b> - a list of <code>sp_classif_performance</code> objects for each repetition and fold; <br /></p>
     
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
-    <p>Other <span class="pkg">spHelper</span> functions for spectroscopy and <span class="pkg">hyperSpec</span>: <code><a href='IQR_outliers.html'>IQR_outliers</a></code>,
+    <div class='dont-index'><p>Other <span class="pkg">spHelper</span> functions for spectroscopy and <span class="pkg">hyperSpec</span>: <code><a href='IQR_outliers.html'>IQR_outliers</a></code>,
   <code><a href='binning.html'>binning</a></code>, <code><a href='file.html'>file</a></code>,
   <code><a href='gapDer.html'>gapDer</a></code>, <code><a href='hy2mat.html'>hy2mat</a></code>,
   <code><a href='hyAdd_Label_wl.html'>hyAdd_Label_wl</a></code>,
@@ -216,7 +224,7 @@ or similar.</p></td>
   <code><a href='read.OceanView.header.html'>read.OceanView.header</a></code>,
   <code><a href='read.OceanView.html'>read.OceanView</a></code>, <code><a href='read.sp.csv2.html'>read.sp.csv2</a></code>,
   <code><a href='read3csv2hy.html'>read3csv2hy</a></code>, <code><a href='replace_spc.html'>replace_spc</a></code>,
-  <code><a href='sd_outliers.html'>sd_outliers</a></code>, <code><a href='spStat.html'>spStat</a></code></p>
+  <code><a href='sd_outliers.html'>sd_outliers</a></code>, <code><a href='spStat.html'>spStat</a></code></p></div>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
@@ -278,17 +286,15 @@ or similar.</p></td>
 
 
 <span class='fu'>theme_set</span>(<span class='fu'>theme_bw</span>())
-<span class='fu'>ggplot</span>(<span class='no'>sp_compared</span>$<span class='no'>performance</span>, <span class='fu'>aes</span>(<span class='kw'>color</span> <span class='kw'>=</span> <span class='no'>Compared</span>)) + <span class='fu'>geom_line</span>()</div><div class='img'><img src='sp_class_perform-4.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
-<span class='fu'>ggplot</span>(<span class='no'>sp_compared</span>$<span class='no'>cutoffs</span>, <span class='fu'>aes</span>(<span class='kw'>color</span> <span class='kw'>=</span> <span class='no'>Compared</span>)) + <span class='fu'>geom_line</span>()</div><div class='img'><img src='sp_class_perform-5.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
-<span class='fu'><a href='qplot_kSp.html'>qplot_sp</a></span>(<span class='no'>sp_compared</span>$<span class='no'>performance</span>, <span class='kw'>by</span> <span class='kw'>=</span> <span class='st'>"Compared"</span>) + <span class='fu'><a href='http://www.rdocumentation.org/packages/spPlot/topics/ggLims'>set_ggLims</a></span>(<span class='fu'>c</span>(<span class='fl'>.45</span>,<span class='fl'>1</span>),<span class='st'>"y"</span>)</div><div class='img'><img src='sp_class_perform-6.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+<span class='fu'>ggplot</span>(<span class='no'>sp_compared</span>$<span class='no'>performance</span>, <span class='fu'>aes</span>(<span class='kw'>color</span> <span class='kw'>=</span> <span class='no'>Compared</span>)) + <span class='fu'>geom_line</span>()</div><div class='img'><img src='sp_class_perform-1.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'>ggplot</span>(<span class='no'>sp_compared</span>$<span class='no'>cutoffs</span>, <span class='fu'>aes</span>(<span class='kw'>color</span> <span class='kw'>=</span> <span class='no'>Compared</span>)) + <span class='fu'>geom_line</span>()</div><div class='img'><img src='sp_class_perform-2.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='qplot_kSp.html'>qplot_sp</a></span>(<span class='no'>sp_compared</span>$<span class='no'>performance</span>, <span class='kw'>by</span> <span class='kw'>=</span> <span class='st'>"Compared"</span>) + <span class='fu'><a href='http://www.rdocumentation.org/packages/spPlot/topics/ggLims'>set_ggLims</a></span>(<span class='fu'>c</span>(<span class='fl'>.45</span>,<span class='fl'>1</span>),<span class='st'>"y"</span>)</div><div class='img'><img src='sp_class_perform-3.png' alt='' width='700' height='433' /></div><div class='input'>
 
 <span class='co'># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
 
 <span class='no'>Sp2</span> <span class='kw'>&lt;-</span> <span class='no'>Spectra2</span>[,,<span class='fl'>500</span>~<span class='fl'>510</span>]
-<span class='no'>sp_compared_cv</span> <span class='kw'>&lt;-</span> <span class='fu'>sp_class_perform_cv</span>(<span class='no'>Sp2</span>, <span class='st'>"class"</span>)
-
-<span class='fu'>names</span>(<span class='no'>sp_compared_cv</span>)</div><div class='output co'>#&gt; [1] "data"              "cvo"               "train_performance"
-#&gt; [4] "test_performance"  "cutoffs"           "obj"              </div><div class='input'>  ## [1] "data"              "cvo"      "train_performance"
+<span class='no'>sp_compared_cv</span> <span class='kw'>&lt;-</span> <span class='fu'>sp_class_perform_cv</span>(<span class='no'>Sp2</span>, <span class='st'>"class"</span>)</div><div class='output co'>#&gt; <span class='error'>Error in cvo_count_folds(cvo): could not find function "cvo_count_folds"</span></div><div class='input'>
+<span class='fu'>names</span>(<span class='no'>sp_compared_cv</span>)</div><div class='output co'>#&gt; <span class='error'>Error in eval(expr, envir, enclos): object 'sp_compared_cv' not found</span></div><div class='input'>  ## [1] "data"              "cvo"      "train_performance"
   ## [4] "test_performance"  "cutoffs"  "obj"
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -327,11 +333,14 @@ Vilmantas Gegzna
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="http://hadley.github.io/pkgdown/">pkgdown</a>.</p>
+  <p>Site built with <a href="http://pkgdown.r-lib.org/">pkgdown</a>.</p>
 </div>
 
       </footer>
    </div>
 
+  
+
   </body>
 </html>
+

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>[!] Calculate common center subtracted group centers of spectroscopic data � center_subtracted_centers • spHelper</title>
+<title>[!] Calculate common center subtracted group centers of spectroscopic data — center_subtracted_centers • spHelper</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -18,13 +18,30 @@
 <!-- Font Awesome icons -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
+<!-- clipboard.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script>
+
+<!-- sticky kit -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
-<script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-  
-  
+
+
+
+<meta property="og:title" content="[!] Calculate common center subtracted group centers of spectroscopic data — center_subtracted_centers" />
+
+<meta property="og:description" content="Function calculates common center subtracted group centers of spectroscopic
+data.
+In other words, function calculates centers (i.e., means, medians) for each
+indicated group. Then common center (e.g., a center of all data,
+a balanced center of all data, a center of certain group or a known spectrum)
+is subtracted from group centers." />
+<meta name="twitter:card" content="summary" />
+
+
+
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -34,8 +51,7 @@
 <![endif]-->
 
 
-  	<link rel="icon" href="../favicon.png" />
-</head>
+  </head>
 
   <body>
     <div class="container template-reference-topic">
@@ -48,8 +64,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="../index.html">spHelper | R package</a>
+      <span class="navbar-brand">
+        <a class="navbar-link" href="../index.html">spHelper</a>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.1.189</span>
+      </span>
     </div>
+
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
@@ -63,7 +83,7 @@
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Tutorials
+    Examples and Tutorials
      
     <span class="caret"></span>
   </a>
@@ -89,6 +109,7 @@
   </a>
 </li>
       </ul>
+      
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
@@ -96,12 +117,15 @@
       
       </header>
 
-      <div class="row">
+<div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>[!] Calculate common center subtracted group centers of spectroscopic data</h1>
+    
+    <div class="hidden name"><code>center_subtracted_centers.Rd</code></div>
     </div>
 
+    <div class="ref-description">
     
     <p>Function calculates common center subtracted group centers of spectroscopic
 data.
@@ -110,12 +134,13 @@ indicated group. Then common center (e.g., a center of all data,
 a balanced center of all data, a center of certain group or a known spectrum)
 is subtracted from group centers.</p>
     
+    </div>
 
     <pre class="usage"><span class='fu'>center_subtracted_centers</span>(<span class='no'>sp</span>, <span class='kw'>by</span> <span class='kw'>=</span> <span class='fu'>stop</span>(<span class='st'>"Argument 'by' is missing."</span>),
-  <span class='kw'>FUN</span> <span class='kw'>=</span> <span class='no'>median</span>, <span class='kw'>Center</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>balanced</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>balance.FUN</span> <span class='kw'>=</span> <span class='no'>mean</span>,
-  <span class='kw'>show.all</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>show.balanced</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</pre>
+  <span class='kw'>FUN</span> <span class='kw'>=</span> <span class='no'>median</span>, <span class='kw'>Center</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>balanced</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>,
+  <span class='kw'>balance.FUN</span> <span class='kw'>=</span> <span class='no'>mean</span>, <span class='kw'>show.all</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>show.balanced</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</pre>
     
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
@@ -129,22 +154,22 @@ is subtracted from group centers.</p>
     <tr>
       <th>FUN</th>
       <td><p>Function (default is <code>median</code>), that calculates center
-tendencies (CT, e.g., means, medians or similar) for each group. 
+tendencies (CT, e.g., means, medians or similar) for each group. <br />
 This function calculates CT for each group and CT that is common
 for whole dataset.</p></td>
     </tr>
     <tr>
       <th>Center</th>
       <td><p>One of the following options to select the common center
-tendency (CCT) that will be subtracted from other CTs:
+tendency (CCT) that will be subtracted from other CTs:<br />
     - <code>NULL</code> (default) or <code>'.All'</code> to use CT that is common for
-        whole dataset (e.g. a median of whole dataset);
+        whole dataset (e.g. a median of whole dataset);<br />
     - numerical vector of length <code>nwl(sp)</code> to be uses as known/calculated
-        spectrum;
+        spectrum;<br />
     - string with one of the levels of grouping variable
         (available levels: <code>levels(sp$..[,by])</code>) to use CT of that
-        level. 
-       
+        level. <br />
+       <br />
     If <code>balanced == TRUE</code>, values of <code>Center</code> are ignored and
     bananced CT is used.</p></td>
     </tr>
@@ -189,21 +214,19 @@ statistic calculated at each wavelangth.</p>
 <span class='no'>CSCs</span> <span class='kw'>&lt;-</span> <span class='fu'>center_subtracted_centers</span>(<span class='kw'>sp</span> <span class='kw'>=</span> <span class='no'>Spectra2</span>, <span class='kw'>by</span> <span class='kw'>=</span> <span class='st'>"gr"</span>)
 
 <span class='co'># ggplot2 type plot --------------------------------------------------------</span>
-<span class='fu'><a href='qplot_kSp.html'>qplot_sp</a></span>(<span class='no'>CSCs</span>, <span class='kw'>names.in</span> <span class='kw'>=</span> <span class='st'>"gr"</span>) + <span class='fu'>ggtitle</span>(<span class='st'>"CSCs - center subtracted centers"</span>)</div><div class='img'><img src='center_subtracted_centers-3.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+<span class='fu'><a href='qplot_kSp.html'>qplot_sp</a></span>(<span class='no'>CSCs</span>, <span class='kw'>names.in</span> <span class='kw'>=</span> <span class='st'>"gr"</span>) + <span class='fu'>ggtitle</span>(<span class='st'>"CSCs - center subtracted centers"</span>)</div><div class='img'><img src='center_subtracted_centers-1.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># R base type plot ---------------------------------------------------------</span>
 <span class='no'>names</span> <span class='kw'>&lt;-</span> <span class='no'>CSCs</span>$<span class='no'>gr</span>
-<span class='fu'>plot</span>(<span class='no'>CSCs</span>, <span class='kw'>col</span> <span class='kw'>=</span> <span class='no'>names</span>)</div><div class='output co'>#&gt; <span class='error'>Error in as.double(y): cannot coerce type 'S4' to vector of type 'double'</span></div><div class='input'><span class='fu'>legend</span>(<span class='st'>"topright"</span>, <span class='kw'>lty</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='kw'>col</span> <span class='kw'>=</span> <span class='no'>names</span>, <span class='kw'>legend</span> <span class='kw'>=</span> <span class='no'>names</span>, <span class='kw'>bty</span> <span class='kw'>=</span> <span class='st'>"n"</span>)</div><div class='output co'>#&gt; <span class='error'>Error in strwidth(legend, units = "user", cex = cex, font = text.font): plot.new has not been called yet</span></div><div class='input'><span class='fu'>title</span>(<span class='st'>"CSCs - center subtracted centers"</span>)</div><div class='output co'>#&gt; <span class='error'>Error in title("CSCs - center subtracted centers"): plot.new has not been called yet</span></div><div class='input'>
+<span class='fu'>plot</span>(<span class='no'>CSCs</span>, <span class='kw'>col</span> <span class='kw'>=</span> <span class='no'>names</span>)</div><div class='input'><span class='fu'>legend</span>(<span class='st'>"topright"</span>, <span class='kw'>lty</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='kw'>col</span> <span class='kw'>=</span> <span class='no'>names</span>, <span class='kw'>legend</span> <span class='kw'>=</span> <span class='no'>names</span>, <span class='kw'>bty</span> <span class='kw'>=</span> <span class='st'>"n"</span>)</div><div class='input'><span class='fu'>title</span>(<span class='st'>"CSCs - center subtracted centers"</span>)</div><div class='img'><img src='center_subtracted_centers-2.png' alt='' width='700' height='433' /></div><div class='input'>
 
 <span class='co'># === Center of a certain group as the subtracted center ===================</span>
 
 <span class='fu'>center_subtracted_centers</span>(<span class='no'>Spectra2</span>, <span class='st'>"gr"</span>, <span class='kw'>Center</span> <span class='kw'>=</span> <span class='st'>"A"</span>)  <span class='kw'>%&gt;%</span>
     <span class='fu'><a href='qplot_kSp.html'>qplot_sp</a></span>(<span class='kw'>names.in</span> <span class='kw'>=</span> <span class='st'>"gr"</span>) +
-    <span class='fu'>ggtitle</span>(<span class='st'>"Subtraced center is center of group 'A'"</span>)
-
+    <span class='fu'>ggtitle</span>(<span class='st'>"Subtraced center is center of group 'A'"</span>)</div><div class='img'><img src='center_subtracted_centers-3.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='fu'>center_subtracted_centers</span>(<span class='no'>Spectra2</span>, <span class='st'>"gr"</span>, <span class='kw'>Center</span> <span class='kw'>=</span> <span class='st'>"C"</span>)  <span class='kw'>%&gt;%</span>
     <span class='fu'><a href='qplot_kSp.html'>qplot_sp</a></span>(<span class='kw'>names.in</span> <span class='kw'>=</span> <span class='st'>"gr"</span>)+
-    <span class='fu'>ggtitle</span>(<span class='st'>"Subtraced center is center of group 'C'"</span>)
-
+    <span class='fu'>ggtitle</span>(<span class='st'>"Subtraced center is center of group 'C'"</span>)</div><div class='img'><img src='center_subtracted_centers-4.png' alt='' width='700' height='433' /></div><div class='input'>
 
 
 <span class='co'># === Balanced center as the subtracted center =============================</span>
@@ -212,16 +235,14 @@ statistic calculated at each wavelangth.</p>
     <span class='fu'><a href='qplot_kSp.html'>qplot_sp</a></span>(<span class='kw'>names.in</span> <span class='kw'>=</span> <span class='st'>"gr"</span>)+
     <span class='fu'>ggtitle</span>(<span class='fu'><a href='subt.html'>subt</a></span>(<span class='st'>"Balanced center subtraced centers (BCSCs)"</span>,
                  <span class='st'>"Balanced = a mean of all group centers\n"</span> <span class='kw'>%++%</span>
-                     <span class='st'>"Balanced center is mean"</span>))
-
+                     <span class='st'>"Balanced center is mean"</span>))</div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='output co'>#&gt; <span class='warning'>Warning: font metrics unknown for character 0xa</span></div><div class='img'><img src='center_subtracted_centers-5.png' alt='' width='700' height='433' /></div><div class='input'>
 
 <span class='fu'>center_subtracted_centers</span>(<span class='no'>Spectra2</span>, <span class='st'>"gr"</span>,
                           <span class='kw'>balanced</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>,
                           <span class='kw'>balance.FUN</span> <span class='kw'>=</span> <span class='no'>median</span>)  <span class='kw'>%&gt;%</span>
     <span class='fu'><a href='qplot_kSp.html'>qplot_sp</a></span>(<span class='kw'>names.in</span> <span class='kw'>=</span> <span class='st'>"gr"</span>) +
     <span class='fu'>ggtitle</span>(<span class='fu'><a href='subt.html'>subt</a></span>(<span class='st'>"Balanced center subtraced centers (BCSCs)"</span>,
-                 <span class='st'>"Balanced center is median"</span>))
-
+                 <span class='st'>"Balanced center is median"</span>))</div><div class='img'><img src='center_subtracted_centers-6.png' alt='' width='700' height='433' /></div><div class='input'>
 
 <span class='co'># === Scaled data ==========================================================</span>
 
@@ -231,8 +252,7 @@ statistic calculated at each wavelangth.</p>
 <span class='fu'>scale</span>(<span class='no'>Spectra2</span>,<span class='kw'>center</span> <span class='kw'>=</span> <span class='no'>MED</span>, <span class='kw'>scale</span> <span class='kw'>=</span> <span class='no'>MAD</span>)  <span class='kw'>%&gt;%</span>
     <span class='fu'>center_subtracted_centers</span>(<span class='kw'>by</span> <span class='kw'>=</span> <span class='st'>"gr"</span>)  <span class='kw'>%&gt;%</span>
     <span class='fu'><a href='qplot_kSp.html'>qplot_sp</a></span>(<span class='kw'>names.in</span> <span class='kw'>=</span> <span class='st'>"gr"</span>) +
-    <span class='fu'>ggtitle</span>(<span class='fu'><a href='subt.html'>subt</a></span>(<span class='st'>"CSCs of scaled data"</span>,<span class='st'>"Scaling: x = (x-median)/MAD"</span>))
-
+    <span class='fu'>ggtitle</span>(<span class='fu'><a href='subt.html'>subt</a></span>(<span class='st'>"CSCs of scaled data"</span>,<span class='st'>"Scaling: x = (x-median)/MAD"</span>))</div><div class='img'><img src='center_subtracted_centers-7.png' alt='' width='700' height='433' /></div><div class='input'>
 
 <span class='fu'>scale</span>(<span class='no'>Spectra2</span>,<span class='kw'>center</span> <span class='kw'>=</span> <span class='no'>MED</span>, <span class='kw'>scale</span> <span class='kw'>=</span> <span class='no'>MAD</span>)  <span class='kw'>%&gt;%</span>
     <span class='fu'>center_subtracted_centers</span>(<span class='kw'>by</span> <span class='kw'>=</span> <span class='st'>"gr"</span>,
@@ -240,8 +260,7 @@ statistic calculated at each wavelangth.</p>
                               <span class='kw'>balance.FUN</span> <span class='kw'>=</span> <span class='no'>median</span>)  <span class='kw'>%&gt;%</span>
     <span class='fu'><a href='qplot_kSp.html'>qplot_sp</a></span>(<span class='kw'>names.in</span> <span class='kw'>=</span> <span class='st'>"gr"</span>) +
     <span class='fu'>ggtitle</span>(<span class='fu'><a href='subt.html'>subt</a></span>(<span class='st'>"Balanced median SCs of scaled data"</span>,
-                 <span class='st'>"Scaling: x = (x-median)/MAD"</span>))
-
+                 <span class='st'>"Scaling: x = (x-median)/MAD"</span>))</div><div class='img'><img src='center_subtracted_centers-8.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># === Add curves of common &amp; balanced central tendencies =================</span>
 
 <span class='fu'>center_subtracted_centers</span>(<span class='no'>Spectra2</span>, <span class='st'>"gr"</span>,
@@ -249,8 +268,7 @@ statistic calculated at each wavelangth.</p>
                           <span class='kw'>show.all</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)  <span class='kw'>%&gt;%</span>
     <span class='fu'><a href='qplot_kSp.html'>qplot_sp</a></span>(<span class='kw'>names.in</span> <span class='kw'>=</span> <span class='st'>"gr"</span>) +
     <span class='fu'>ggtitle</span>(<span class='fu'><a href='subt.html'>subt</a></span>(<span class='st'>"Curves of common &amp; balanced centers added"</span>,
-                 <span class='st'>"Imbalanced center subtracted centers"</span>))
-
+                 <span class='st'>"Imbalanced center subtracted centers"</span>))</div><div class='img'><img src='center_subtracted_centers-9.png' alt='' width='700' height='433' /></div><div class='input'>
 
 <span class='fu'>center_subtracted_centers</span>(<span class='no'>Spectra2</span>, <span class='st'>"gr"</span>,
                           <span class='kw'>balanced</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>,
@@ -258,15 +276,15 @@ statistic calculated at each wavelangth.</p>
                           <span class='kw'>show.all</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)  <span class='kw'>%&gt;%</span>
     <span class='fu'><a href='qplot_kSp.html'>qplot_sp</a></span>(<span class='kw'>names.in</span> <span class='kw'>=</span> <span class='st'>"gr"</span>)+
     <span class='fu'>ggtitle</span>(<span class='fu'><a href='subt.html'>subt</a></span>(<span class='st'>"Curves of common &amp; balanced centers added"</span>,
-                 <span class='st'>"Balanced center subtracted centers"</span>))
-
+                 <span class='st'>"Balanced center subtracted centers"</span>))</div><div class='img'><img src='center_subtracted_centers-10.png' alt='' width='700' height='433' /></div><div class='input'>
 
 <span class='fu'>center_subtracted_centers</span>(<span class='no'>Spectra2</span>, <span class='st'>"gr"</span>, <span class='kw'>Center</span> <span class='kw'>=</span> <span class='st'>"C"</span>,
                           <span class='kw'>show.balanced</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>,
                           <span class='kw'>show.all</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)  <span class='kw'>%&gt;%</span>
     <span class='fu'><a href='qplot_kSp.html'>qplot_sp</a></span>(<span class='kw'>names.in</span> <span class='kw'>=</span> <span class='st'>"gr"</span>)+
     <span class='fu'>ggtitle</span>(<span class='fu'><a href='subt.html'>subt</a></span>(<span class='st'>"Curves of common &amp; balanced centers added"</span>,
-                 <span class='st'>"Group 'C' center subtracted centers"</span>))</div></pre>
+                 <span class='st'>"Group 'C' center subtracted centers"</span>))</div><div class='img'><img src='center_subtracted_centers-11.png' alt='' width='700' height='433' /></div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
@@ -282,7 +300,7 @@ statistic calculated at each wavelangth.</p>
 
     <h2>Author</h2>
     
-Vilmantas Geg�na
+Vilmantas Gėgžna
 
   </div>
 </div>
@@ -293,11 +311,14 @@ Vilmantas Geg�na
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="http://hadley.github.io/pkgdown/">pkgdown</a>.</p>
+  <p>Site built with <a href="http://pkgdown.r-lib.org/">pkgdown</a>.</p>
 </div>
 
       </footer>
    </div>
 
+  
+
   </body>
 </html>
+

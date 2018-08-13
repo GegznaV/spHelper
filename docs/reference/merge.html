@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>[!!!] Merge a hyperSpec object and a data frame � merge,hyperSpec,data.frame-method • spHelper</title>
+<title>[!!!] Merge a hyperSpec object and a data frame — merge,hyperSpec,data.frame-method • spHelper</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -18,13 +18,25 @@
 <!-- Font Awesome icons -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
+<!-- clipboard.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script>
+
+<!-- sticky kit -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
-<script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-  
-  
+
+
+
+<meta property="og:title" content="[!!!] Merge a hyperSpec object and a data frame — merge,hyperSpec,data.frame-method" />
+
+<meta property="og:description" content="Merge a hyperSpec object and a data frame." />
+<meta name="twitter:card" content="summary" />
+
+
+
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -34,8 +46,7 @@
 <![endif]-->
 
 
-  	<link rel="icon" href="../favicon.png" />
-</head>
+  </head>
 
   <body>
     <div class="container template-reference-topic">
@@ -48,8 +59,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="../index.html">spHelper | R package</a>
+      <span class="navbar-brand">
+        <a class="navbar-link" href="../index.html">spHelper</a>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.1.189</span>
+      </span>
     </div>
+
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
@@ -63,7 +78,7 @@
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Tutorials
+    Examples and Tutorials
      
     <span class="caret"></span>
   </a>
@@ -89,6 +104,7 @@
   </a>
 </li>
       </ul>
+      
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
@@ -96,20 +112,24 @@
       
       </header>
 
-      <div class="row">
+<div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>[!!!] Merge a hyperSpec object and a data frame</h1>
+    
+    <div class="hidden name"><code>merge.Rd</code></div>
     </div>
 
+    <div class="ref-description">
     
     <p>Merge a hyperSpec object and a data frame.</p>
     
+    </div>
 
     <pre class="usage"><span class='co'># S4 method for hyperSpec,data.frame</span>
 <span class='fu'>merge</span>(<span class='no'>x</span>, <span class='no'>y</span>, <span class='no'>...</span>)</pre>
     
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
@@ -132,37 +152,60 @@
     
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
-    <p><code><a href='http://www.rdocumentation.org/packages/base/topics/merge'>merge</a></code>, <code><a href='http://www.rdocumentation.org/packages/hyperSpec/topics/merge'>merge</a></code>.
-    <code>collapse</code> combines hyperSpec objects that do not share the wavelength axis.
-<code>rbind</code>, and <code>cbind</code> for combining hyperSpec objects that.</p>
+    <div class='dont-index'><p><code><a href='http://www.rdocumentation.org/packages/base/topics/merge'>merge</a></code>, <code><a href='http://www.rdocumentation.org/packages/hyperSpec/topics/merge'>merge</a></code>.</p>
+<p><code>collapse</code> combines hyperSpec objects that do not share the wavelength axis.
+<code>rbind</code>, and <code>cbind</code> for combining hyperSpec objects that.</p></div>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'>merge</span>(<span class='no'>chondro</span> [<span class='fl'>1</span>:<span class='fl'>10</span>,, <span class='fl'>600</span>], <span class='no'>chondro</span>[<span class='fl'>5</span>:<span class='fl'>15</span>,, <span class='fl'>600</span>]$<span class='no'>..</span>, <span class='kw'>by</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"x"</span>, <span class='st'>"y"</span>))$<span class='no'>.</span></div><div class='output co'>#&gt;       x     y clusters.x &lt;NA&gt; clusters.y
-#&gt; 1 -2.55 -4.77     lacuna   NA     lacuna
-#&gt; 2 -3.55 -4.77     lacuna   NA     lacuna
-#&gt; 3 -4.55 -4.77     lacuna   NA     lacuna
-#&gt; 4 -5.55 -4.77     lacuna   NA     lacuna
-#&gt; 5 -6.55 -4.77     matrix   NA     matrix
-#&gt; 6 -7.55 -4.77     matrix   NA     matrix</div><div class='input'><span class='no'>tmp</span> <span class='kw'>&lt;-</span> <span class='fu'>merge</span> (<span class='no'>chondro</span> [<span class='fl'>1</span>:<span class='fl'>10</span>,, <span class='fl'>610</span>], <span class='no'>chondro</span> [<span class='fl'>5</span>:<span class='fl'>15</span>,, <span class='fl'>610</span>]$<span class='no'>..</span>,
+<span class='fu'>merge</span>(<span class='no'>chondro</span> [<span class='fl'>1</span>:<span class='fl'>10</span>,, <span class='fl'>600</span>], <span class='no'>chondro</span>[<span class='fl'>5</span>:<span class='fl'>15</span>,, <span class='fl'>600</span>]$<span class='no'>..</span>, <span class='kw'>by</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"x"</span>, <span class='st'>"y"</span>))$<span class='no'>.</span></div><div class='output co'>#&gt;       x     y          filename.x clusters.x &lt;NA&gt;          filename.y
+#&gt; 1 -2.55 -4.77 rawdata/chondro.txt     lacuna   NA rawdata/chondro.txt
+#&gt; 2 -3.55 -4.77 rawdata/chondro.txt     lacuna   NA rawdata/chondro.txt
+#&gt; 3 -4.55 -4.77 rawdata/chondro.txt     lacuna   NA rawdata/chondro.txt
+#&gt; 4 -5.55 -4.77 rawdata/chondro.txt     lacuna   NA rawdata/chondro.txt
+#&gt; 5 -6.55 -4.77 rawdata/chondro.txt     matrix   NA rawdata/chondro.txt
+#&gt; 6 -7.55 -4.77 rawdata/chondro.txt     matrix   NA rawdata/chondro.txt
+#&gt;   clusters.y
+#&gt; 1     lacuna
+#&gt; 2     lacuna
+#&gt; 3     lacuna
+#&gt; 4     lacuna
+#&gt; 5     matrix
+#&gt; 6     matrix</div><div class='input'><span class='no'>tmp</span> <span class='kw'>&lt;-</span> <span class='fu'>merge</span> (<span class='no'>chondro</span> [<span class='fl'>1</span>:<span class='fl'>10</span>,, <span class='fl'>610</span>], <span class='no'>chondro</span> [<span class='fl'>5</span>:<span class='fl'>15</span>,, <span class='fl'>610</span>]$<span class='no'>..</span>,
               <span class='kw'>by</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"x"</span>, <span class='st'>"y"</span>), <span class='kw'>all</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)
-<span class='no'>tmp</span>$<span class='no'>.</span></div><div class='output co'>#&gt;         x     y clusters.x        610 clusters.y
-#&gt; 1  -11.55 -4.77     matrix 0.03572652       &lt;NA&gt;
-#&gt; 2  -10.55 -4.77     matrix 0.03538395       &lt;NA&gt;
-#&gt; 3   -9.55 -4.77     matrix 0.03421924       &lt;NA&gt;
-#&gt; 4   -8.55 -4.77     matrix 0.06429267       &lt;NA&gt;
-#&gt; 5   -7.55 -4.77     matrix 0.03318567     matrix
-#&gt; 6   -6.55 -4.77     matrix 0.06338616     matrix
-#&gt; 7   -5.55 -4.77     lacuna 0.02631364     lacuna
-#&gt; 8   -4.55 -4.77     lacuna 0.05297396     lacuna
-#&gt; 9   -3.55 -4.77     lacuna 0.02231205     lacuna
-#&gt; 10  -2.55 -4.77     lacuna 0.02625338     lacuna
-#&gt; 11  -1.55 -4.77       &lt;NA&gt;         NA     lacuna
-#&gt; 12  -0.55 -4.77       &lt;NA&gt;         NA     lacuna
-#&gt; 13   0.45 -4.77       &lt;NA&gt;         NA     lacuna
-#&gt; 14   1.45 -4.77       &lt;NA&gt;         NA     lacuna
-#&gt; 15   2.45 -4.77       &lt;NA&gt;         NA     lacuna</div><div class='input'><span class='fu'>wl</span> (<span class='no'>tmp</span>)</div><div class='output co'>#&gt; [1] 610</div><div class='input'>
+<span class='no'>tmp</span>$<span class='no'>.</span></div><div class='output co'>#&gt;         x     y          filename.x clusters.x      610          filename.y
+#&gt; 1  -11.55 -4.77 rawdata/chondro.txt     matrix 488.6323                &lt;NA&gt;
+#&gt; 2  -10.55 -4.77 rawdata/chondro.txt     matrix 489.4758                &lt;NA&gt;
+#&gt; 3   -9.55 -4.77 rawdata/chondro.txt     matrix 456.0324                &lt;NA&gt;
+#&gt; 4   -8.55 -4.77 rawdata/chondro.txt     matrix 464.8207                &lt;NA&gt;
+#&gt; 5   -7.55 -4.77 rawdata/chondro.txt     matrix 428.6620 rawdata/chondro.txt
+#&gt; 6   -6.55 -4.77 rawdata/chondro.txt     matrix 426.0734 rawdata/chondro.txt
+#&gt; 7   -5.55 -4.77 rawdata/chondro.txt     lacuna 412.3674 rawdata/chondro.txt
+#&gt; 8   -4.55 -4.77 rawdata/chondro.txt     lacuna 398.4772 rawdata/chondro.txt
+#&gt; 9   -3.55 -4.77 rawdata/chondro.txt     lacuna 412.1881 rawdata/chondro.txt
+#&gt; 10  -2.55 -4.77 rawdata/chondro.txt     lacuna 392.5067 rawdata/chondro.txt
+#&gt; 11  -1.55 -4.77                &lt;NA&gt;       &lt;NA&gt;       NA rawdata/chondro.txt
+#&gt; 12  -0.55 -4.77                &lt;NA&gt;       &lt;NA&gt;       NA rawdata/chondro.txt
+#&gt; 13   0.45 -4.77                &lt;NA&gt;       &lt;NA&gt;       NA rawdata/chondro.txt
+#&gt; 14   1.45 -4.77                &lt;NA&gt;       &lt;NA&gt;       NA rawdata/chondro.txt
+#&gt; 15   2.45 -4.77                &lt;NA&gt;       &lt;NA&gt;       NA rawdata/chondro.txt
+#&gt;    clusters.y
+#&gt; 1        &lt;NA&gt;
+#&gt; 2        &lt;NA&gt;
+#&gt; 3        &lt;NA&gt;
+#&gt; 4        &lt;NA&gt;
+#&gt; 5      matrix
+#&gt; 6      matrix
+#&gt; 7      lacuna
+#&gt; 8      lacuna
+#&gt; 9      lacuna
+#&gt; 10     lacuna
+#&gt; 11     lacuna
+#&gt; 12     lacuna
+#&gt; 13     lacuna
+#&gt; 14     lacuna
+#&gt; 15     lacuna</div><div class='input'><span class='fu'>wl</span> (<span class='no'>tmp</span>)</div><div class='output co'>#&gt; <span class='error'>Error in wl(tmp): Argument 'x' must be logical</span></div><div class='input'>
 <span class='co'>## remove duplicated wavelengths:</span>
 <span class='no'>approxfun</span> <span class='kw'>&lt;-</span> <span class='kw'>function</span> (<span class='no'>y</span>, <span class='no'>wl</span>, <span class='no'>new.wl</span>){
   <span class='fu'>approx</span> (<span class='no'>wl</span>, <span class='no'>y</span>, <span class='no'>new.wl</span>, <span class='kw'>method</span> <span class='kw'>=</span> <span class='st'>"constant"</span>,
@@ -171,52 +214,51 @@
 }
 
 <span class='no'>merged</span> <span class='kw'>&lt;-</span> <span class='fu'>merge</span> (<span class='no'>chondro</span> [<span class='fl'>1</span>:<span class='fl'>7</span>,, <span class='fl'>610</span> ~ <span class='fl'>620</span>], <span class='no'>chondro</span> [<span class='fl'>5</span>:<span class='fl'>10</span>,, <span class='fl'>615</span> ~ <span class='fl'>625</span>], <span class='kw'>all</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)
-<span class='no'>merged</span>$<span class='no'>.</span></div><div class='output co'>#&gt;        y      x clusters .nx .ny     spc.610     spc.614     spc.618
-#&gt; 1  -4.77 -11.55   matrix   1  NA 0.035726519 0.019315397 0.005847812
-#&gt; 2  -4.77 -10.55   matrix   2  NA 0.035383950 0.017850057 0.001127721
-#&gt; 3  -4.77  -9.55   matrix   3  NA 0.034219235 0.023651999 0.002247300
-#&gt; 4  -4.77  -8.55   matrix   4  NA 0.064292668 0.053033157 0.039095320
-#&gt; 5  -4.77  -7.55   matrix   5   1 0.033185665 0.022288895 0.007502747
-#&gt; 6  -4.77  -6.55   matrix   6   2 0.063386162 0.054046133 0.038441988
-#&gt; 7  -4.77  -5.55   lacuna   7   3 0.026313645 0.020229461 0.011212863
-#&gt; 8  -4.77  -4.55   lacuna  NA   4          NA          NA          NA
-#&gt; 9  -4.77  -3.55   lacuna  NA   5          NA          NA          NA
-#&gt; 10 -4.77  -2.55   lacuna  NA   6          NA          NA          NA
-#&gt;        spc.614     spc.618     spc.622     spc.626
-#&gt; 1           NA          NA          NA          NA
-#&gt; 2           NA          NA          NA          NA
-#&gt; 3           NA          NA          NA          NA
-#&gt; 4           NA          NA          NA          NA
-#&gt; 5  0.022288895 0.007502747 0.016177711 0.008470630
-#&gt; 6  0.054046133 0.038441988 0.040681397 0.041202231
-#&gt; 7  0.020229461 0.011212863 0.010838222 0.005669760
-#&gt; 8  0.044829596 0.035126075 0.033175597 0.030297464
-#&gt; 9  0.020100192 0.011917559 0.006782644 0.002454492
-#&gt; 10 0.021486812 0.013691807 0.008778219 0.003884944</div><div class='input'><span class='no'>merged</span> <span class='kw'>&lt;-</span> <span class='fu'>apply</span> (<span class='no'>merged</span>, <span class='fl'>1</span>, <span class='no'>approxfun</span>,
+<span class='no'>merged</span>$<span class='no'>.</span></div><div class='output co'>#&gt;        y      x            filename clusters .nx .ny  spc.610  spc.614  spc.618
+#&gt; 1  -4.77 -11.55 rawdata/chondro.txt   matrix   1  NA 488.6323 466.1774 492.0016
+#&gt; 2  -4.77 -10.55 rawdata/chondro.txt   matrix   2  NA 489.4758 465.0506 490.5329
+#&gt; 3  -4.77  -9.55 rawdata/chondro.txt   matrix   3  NA 456.0324 436.6220 458.0576
+#&gt; 4  -4.77  -8.55 rawdata/chondro.txt   matrix   4  NA 464.8207 444.8486 470.0172
+#&gt; 5  -4.77  -7.55 rawdata/chondro.txt   matrix   5   1 428.6620 410.7956 433.1228
+#&gt; 6  -4.77  -6.55 rawdata/chondro.txt   matrix   6   2 426.0734 407.8570 431.2145
+#&gt; 7  -4.77  -5.55 rawdata/chondro.txt   lacuna   7   3 412.3674 396.5000 421.2738
+#&gt; 8  -4.77  -4.55 rawdata/chondro.txt   lacuna  NA   4       NA       NA       NA
+#&gt; 9  -4.77  -3.55 rawdata/chondro.txt   lacuna  NA   5       NA       NA       NA
+#&gt; 10 -4.77  -2.55 rawdata/chondro.txt   lacuna  NA   6       NA       NA       NA
+#&gt;     spc.614  spc.618  spc.622  spc.626
+#&gt; 1        NA       NA       NA       NA
+#&gt; 2        NA       NA       NA       NA
+#&gt; 3        NA       NA       NA       NA
+#&gt; 4        NA       NA       NA       NA
+#&gt; 5  410.7956 433.1228 461.1903 397.3773
+#&gt; 6  407.8570 431.2145 458.1503 394.1776
+#&gt; 7  396.5000 421.2738 445.5431 382.7198
+#&gt; 8  381.9505 406.2471 429.6729 368.4599
+#&gt; 9  397.5075 423.3002 446.1478 381.8675
+#&gt; 10 377.3918 402.2349 424.1902 362.4297</div><div class='input'><span class='no'>merged</span> <span class='kw'>&lt;-</span> <span class='fu'>apply</span> (<span class='no'>merged</span>, <span class='fl'>1</span>, <span class='no'>approxfun</span>,
                  <span class='kw'>wl</span> <span class='kw'>=</span> <span class='fu'>wl</span> (<span class='no'>merged</span>), <span class='kw'>new.wl</span> <span class='kw'>=</span> <span class='fu'>unique</span> (<span class='fu'>wl</span> (<span class='no'>merged</span>)),
-                 <span class='kw'>new.wavelength</span> <span class='kw'>=</span> <span class='st'>"new.wl"</span>)
-<span class='no'>merged</span>$<span class='no'>.</span></div><div class='output co'>#&gt;        y      x clusters .nx .ny     spc.610     spc.614     spc.618
-#&gt; 1  -4.77 -11.55   matrix   1  NA 0.035726519 0.019315397 0.005847812
-#&gt; 2  -4.77 -10.55   matrix   2  NA 0.035383950 0.017850057 0.001127721
-#&gt; 3  -4.77  -9.55   matrix   3  NA 0.034219235 0.023651999 0.002247300
-#&gt; 4  -4.77  -8.55   matrix   4  NA 0.064292668 0.053033157 0.039095320
-#&gt; 5  -4.77  -7.55   matrix   5   1 0.033185665 0.022288895 0.007502747
-#&gt; 6  -4.77  -6.55   matrix   6   2 0.063386162 0.054046133 0.038441988
-#&gt; 7  -4.77  -5.55   lacuna   7   3 0.026313645 0.020229461 0.011212863
-#&gt; 8  -4.77  -4.55   lacuna  NA   4          NA 0.044829596 0.035126075
-#&gt; 9  -4.77  -3.55   lacuna  NA   5          NA 0.020100192 0.011917559
-#&gt; 10 -4.77  -2.55   lacuna  NA   6          NA 0.021486812 0.013691807
-#&gt;        spc.622     spc.626
-#&gt; 1           NA          NA
-#&gt; 2           NA          NA
-#&gt; 3           NA          NA
-#&gt; 4           NA          NA
-#&gt; 5  0.016177711 0.008470630
-#&gt; 6  0.040681397 0.041202231
-#&gt; 7  0.010838222 0.005669760
-#&gt; 8  0.033175597 0.030297464
-#&gt; 9  0.006782644 0.002454492
-#&gt; 10 0.008778219 0.003884944</div><div class='input'>
+                 <span class='kw'>new.wavelength</span> <span class='kw'>=</span> <span class='st'>"new.wl"</span>)</div><div class='output co'>#&gt; <span class='error'>Error in wl(merged): Argument 'x' must be logical</span></div><div class='input'><span class='no'>merged</span>$<span class='no'>.</span></div><div class='output co'>#&gt;        y      x            filename clusters .nx .ny  spc.610  spc.614  spc.618
+#&gt; 1  -4.77 -11.55 rawdata/chondro.txt   matrix   1  NA 488.6323 466.1774 492.0016
+#&gt; 2  -4.77 -10.55 rawdata/chondro.txt   matrix   2  NA 489.4758 465.0506 490.5329
+#&gt; 3  -4.77  -9.55 rawdata/chondro.txt   matrix   3  NA 456.0324 436.6220 458.0576
+#&gt; 4  -4.77  -8.55 rawdata/chondro.txt   matrix   4  NA 464.8207 444.8486 470.0172
+#&gt; 5  -4.77  -7.55 rawdata/chondro.txt   matrix   5   1 428.6620 410.7956 433.1228
+#&gt; 6  -4.77  -6.55 rawdata/chondro.txt   matrix   6   2 426.0734 407.8570 431.2145
+#&gt; 7  -4.77  -5.55 rawdata/chondro.txt   lacuna   7   3 412.3674 396.5000 421.2738
+#&gt; 8  -4.77  -4.55 rawdata/chondro.txt   lacuna  NA   4       NA       NA       NA
+#&gt; 9  -4.77  -3.55 rawdata/chondro.txt   lacuna  NA   5       NA       NA       NA
+#&gt; 10 -4.77  -2.55 rawdata/chondro.txt   lacuna  NA   6       NA       NA       NA
+#&gt;     spc.614  spc.618  spc.622  spc.626
+#&gt; 1        NA       NA       NA       NA
+#&gt; 2        NA       NA       NA       NA
+#&gt; 3        NA       NA       NA       NA
+#&gt; 4        NA       NA       NA       NA
+#&gt; 5  410.7956 433.1228 461.1903 397.3773
+#&gt; 6  407.8570 431.2145 458.1503 394.1776
+#&gt; 7  396.5000 421.2738 445.5431 382.7198
+#&gt; 8  381.9505 406.2471 429.6729 368.4599
+#&gt; 9  397.5075 423.3002 446.1478 381.8675
+#&gt; 10 377.3918 402.2349 424.1902 362.4297</div><div class='input'>
 
 
 </div></pre>
@@ -246,11 +288,14 @@ V. Gegzna
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="http://hadley.github.io/pkgdown/">pkgdown</a>.</p>
+  <p>Site built with <a href="http://pkgdown.r-lib.org/">pkgdown</a>.</p>
 </div>
 
       </footer>
    </div>
 
+  
+
   </body>
 </html>
+

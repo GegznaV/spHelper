@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>[!!!] Plot spectroscopic curves � qplot_spc • spHelper</title>
+<title>[!!!] Plot spectroscopic curves — qplot_spc • spHelper</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -18,13 +18,26 @@
 <!-- Font Awesome icons -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
+<!-- clipboard.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script>
+
+<!-- sticky kit -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
-<script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-  
-  
+
+
+
+<meta property="og:title" content="[!!!] Plot spectroscopic curves — qplot_spc" />
+
+<meta property="og:description" content="Plot spectroscopic curves in different colors. 
+[ DESCRIPTION MUST BE UPDATED ]" />
+<meta name="twitter:card" content="summary" />
+
+
+
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -34,8 +47,7 @@
 <![endif]-->
 
 
-  	<link rel="icon" href="../favicon.png" />
-</head>
+  </head>
 
   <body>
     <div class="container template-reference-topic">
@@ -48,8 +60,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="../index.html">spHelper | R package</a>
+      <span class="navbar-brand">
+        <a class="navbar-link" href="../index.html">spHelper</a>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.1.189</span>
+      </span>
     </div>
+
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
@@ -63,7 +79,7 @@
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Tutorials
+    Examples and Tutorials
      
     <span class="caret"></span>
   </a>
@@ -89,6 +105,7 @@
   </a>
 </li>
       </ul>
+      
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
@@ -96,25 +113,30 @@
       
       </header>
 
-      <div class="row">
+<div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>[!!!] Plot spectroscopic curves</h1>
+    
+    <div class="hidden name"><code>qplot_spc.Rd</code></div>
     </div>
 
+    <div class="ref-description">
     
-    <p>Plot spectroscopic curves in different colors.</p>
+    <p>Plot spectroscopic curves in different colors. <br /></p>
 <p>[ DESCRIPTION MUST BE UPDATED ]</p>
     
+    </div>
 
     <pre class="usage"><span class='fu'>qplot_spc</span>(<span class='no'>sp</span>, <span class='kw'>Title</span> <span class='kw'>=</span> <span class='st'>"Components"</span>, <span class='kw'>xLabel</span> <span class='kw'>=</span> <span class='fu'>labels</span>(<span class='no'>sp</span>, <span class='st'>".wavelength"</span>),
-  <span class='kw'>yLabel</span> <span class='kw'>=</span> <span class='fu'>labels</span>(<span class='no'>sp</span>, <span class='st'>"spc"</span>), <span class='kw'>by</span> <span class='kw'>=</span> <span class='st'>"cNames"</span>, <span class='kw'>palette</span> <span class='kw'>=</span> <span class='fu'><a href='hyGet_palette.html'>hyGet_palette</a></span>(<span class='no'>sp</span>),
-  <span class='kw'>legendName</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>filled</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='kw'>normalize</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>facets</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>,
-  <span class='kw'>subTitle</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>names.in</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>line_size</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='kw'>add</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='no'>...</span>)
+  <span class='kw'>yLabel</span> <span class='kw'>=</span> <span class='fu'>labels</span>(<span class='no'>sp</span>, <span class='st'>"spc"</span>), <span class='kw'>by</span> <span class='kw'>=</span> <span class='st'>"cNames"</span>,
+  <span class='kw'>palette</span> <span class='kw'>=</span> <span class='fu'><a href='hyGet_palette.html'>hyGet_palette</a></span>(<span class='no'>sp</span>), <span class='kw'>legendName</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>filled</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>,
+  <span class='kw'>normalize</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>facets</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>subTitle</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>names.in</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>line_size</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='kw'>add</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='no'>...</span>)
 
 <span class='fu'>gg_spc</span>(<span class='no'>sp</span>, <span class='kw'>by</span> <span class='kw'>=</span> <span class='st'>"cNames"</span>, <span class='kw'>line_size</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='no'>...</span>)</pre>
     
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
@@ -136,7 +158,7 @@
     <tr>
       <th>by</th>
       <td><p>A name of variable in <code>sp</code> that contains variable names.
-If indicated variable does not exist, row names are used instead.
+If indicated variable does not exist, row names are used instead.<br />
 Default is <code>names = 'cNames'</code></p></td>
     </tr>
     <tr>
@@ -197,8 +219,8 @@ and in italics.</p></td>
     
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p><code>qplot_kSp</code> plots spectra on one graph. 
-         <code>qplot_kSpFacets</code> plots spectra on separate graphs (facets).</p>
+    <p><code>qplot_kSp</code> plots spectra on one graph. <br />
+         <code>qplot_kSpFacets</code> plots spectra on separate graphs (facets).<br /></p>
     
     <h2 class="hasAnchor" id="note"><a class="anchor" href="#note"></a>Note</h2>
 
@@ -209,7 +231,7 @@ and in italics.</p></td>
     
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
-    <p>Other <span class="pkg">spHelper</span> plots: <code><a href='qplot_spRange.html'>check_palette</a></code>,
+    <div class='dont-index'><p>Other <span class="pkg">spHelper</span> plots: <code><a href='qplot_spRange.html'>check_palette</a></code>,
   <code><a href='qplot_spRangeMean.html'>layer_spRangeMean</a></code>,
   <code><a href='plot_colors.html'>plot_colors</a></code>, <code><a href='plot_hyPalette.html'>plot_hyPalette</a></code>,
   <code><a href='plot_spCompare.html'>plot_spCompare</a></code>, <code><a href='plot_spDiff.html'>plot_spDiff</a></code>,
@@ -219,39 +241,40 @@ and in italics.</p></td>
   <code><a href='qplot_infoDim.html'>qplot_infoDim</a></code>, <code><a href='qplot_kAmp.html'>qplot_kAmp</a></code>,
   <code><a href='qplot_kSp.html'>qplot_kSp</a></code>, <code><a href='qplot_prediction.html'>qplot_prediction</a></code>,
   <code><a href='qplot_spRangeCenter.html'>qplot_spRangeCenter</a></code>,
-  <code>qplot_spStat</code>, <code><a href='rmExpr.html'>rmExpr</a></code>,
+  <code><a href='qplot_spRangeMedian.html'>qplot_spRangeMedian</a></code>,
+  <code><a href='qplot_spStat.html'>qplot_spStat</a></code>, <code><a href='rmExpr.html'>rmExpr</a></code>,
   <code><a href='rm_stripes.html'>rm_stripes</a></code>, <code><a href='stat_chull.html'>stat_chull</a></code></p>
 <p>Other component analysis / factorisation related functions in <span class="pkg">spHelper</span>: <code><a href='getScores.html'>getScores</a></code>,
   <code><a href='infoDim.html'>infoDim</a></code>, <code><a href='plot_spDiff.html'>plot_spDiff</a></code>,
   <code><a href='qplot_infoDim.html'>qplot_infoDim</a></code>, <code><a href='qplot_kAmp.html'>qplot_kAmp</a></code>,
   <code><a href='qplot_kSp.html'>qplot_kSp</a></code>, <code><a href='reconstructSp.html'>reconstructSp</a></code>,
   <code><a href='sortLoadings.html'>sortLoadings</a></code>, <code><a href='unipeak.html'>unipeak</a></code>,
-  <code><a href='whichOutlier.html'>whichOutlier</a></code></p>
+  <code><a href='whichOutlier.html'>whichOutlier</a></code></p></div>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>library</span>(<span class='no'>spHepler</span>)</div><div class='output co'>#&gt; <span class='error'>Error in library(spHepler): there is no package called �spHepler�</span></div><div class='input'><span class='fu'>library</span>(<span class='no'>spPlot</span>)
+    <pre class="examples"><div class='input'><span class='fu'>library</span>(<span class='no'>spHepler</span>)</div><div class='output co'>#&gt; <span class='error'>Error in library(spHepler): there is no package called 'spHepler'</span></div><div class='input'><span class='fu'>library</span>(<span class='no'>spPlot</span>)
 
 
   <span class='fu'>ggplot</span>() +
    <span class='fu'>qplot_spc</span>(<span class='no'>sp</span>, <span class='kw'>by</span> <span class='kw'>=</span> <span class='st'>"gr"</span>, <span class='kw'>add</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='kw'>alpha</span> <span class='kw'>=</span> <span class='fl'>.2</span>) +
-   <span class='fu'>qplot_spStat</span>(<span class='no'>sp</span>,<span class='st'>"gr"</span>, <span class='no'>mean</span>, <span class='kw'>add</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</div><div class='output co'>#&gt; <span class='error'>Error in hyGet_palette0(sp): object 'sp' not found</span></div><div class='input'>
+   <span class='fu'><a href='qplot_spStat.html'>qplot_spStat</a></span>(<span class='no'>sp</span>,<span class='st'>"gr"</span>, <span class='no'>mean</span>, <span class='kw'>add</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</div><div class='output co'>#&gt; <span class='error'>Error in hyGet_palette0(sp): object 'sp' not found</span></div><div class='input'>
 
 
-<span class='fu'><a href='qplot_kSp.html'>qplot_kSp</a></span>(<span class='no'>Loadings2</span>)</div><div class='img'><img src='qplot_spc-23.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+<span class='fu'><a href='qplot_kSp.html'>qplot_kSp</a></span>(<span class='no'>Loadings2</span>)</div><div class='img'><img src='qplot_spc-1.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='fu'>data</span>(<span class='no'>flu</span>, <span class='kw'>package</span> <span class='kw'>=</span> <span class='st'>"hyperSpec"</span>)
 
-<span class='fu'><a href='qplot_kSp.html'>qplot_kSpFacets</a></span>(<span class='no'>flu</span>, <span class='kw'>Title</span> <span class='kw'>=</span> <span class='st'>"Flu dataset"</span>)</div><div class='img'><img src='qplot_spc-24.png' alt='' width='700' height='432.632880098887' /></div><div class='input'><span class='fu'><a href='qplot_kSp.html'>qplot_kSpFacets</a></span>(<span class='no'>flu</span>, <span class='kw'>Title</span> <span class='kw'>=</span> <span class='st'>"Flu dataset"</span>, <span class='kw'>normalize</span> <span class='kw'>=</span> <span class='fl'>1</span>)</div><div class='img'><img src='qplot_spc-25.png' alt='' width='700' height='432.632880098887' /></div><div class='input'><span class='fu'><a href='qplot_kSp.html'>qplot_kSpFacets</a></span>(<span class='no'>flu</span>, <span class='kw'>Title</span> <span class='kw'>=</span> <span class='st'>"Flu dataset"</span>, <span class='kw'>normalize</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='img'><img src='qplot_spc-26.png' alt='' width='700' height='432.632880098887' /></div><div class='input'><span class='fu'><a href='qplot_kSp.html'>qplot_kSpFacets</a></span>(<span class='no'>flu</span>, <span class='kw'>Title</span> <span class='kw'>=</span> <span class='st'>"Flu dataset"</span>, <span class='kw'>normalize</span> <span class='kw'>=</span> -<span class='fl'>1</span>)</div><div class='img'><img src='qplot_spc-27.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+<span class='fu'><a href='qplot_kSp.html'>qplot_kSpFacets</a></span>(<span class='no'>flu</span>, <span class='kw'>Title</span> <span class='kw'>=</span> <span class='st'>"Flu dataset"</span>)</div><div class='img'><img src='qplot_spc-2.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='qplot_kSp.html'>qplot_kSpFacets</a></span>(<span class='no'>flu</span>, <span class='kw'>Title</span> <span class='kw'>=</span> <span class='st'>"Flu dataset"</span>, <span class='kw'>normalize</span> <span class='kw'>=</span> <span class='fl'>1</span>)</div><div class='img'><img src='qplot_spc-3.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='qplot_kSp.html'>qplot_kSpFacets</a></span>(<span class='no'>flu</span>, <span class='kw'>Title</span> <span class='kw'>=</span> <span class='st'>"Flu dataset"</span>, <span class='kw'>normalize</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='img'><img src='qplot_spc-4.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='qplot_kSp.html'>qplot_kSpFacets</a></span>(<span class='no'>flu</span>, <span class='kw'>Title</span> <span class='kw'>=</span> <span class='st'>"Flu dataset"</span>, <span class='kw'>normalize</span> <span class='kw'>=</span> -<span class='fl'>1</span>)</div><div class='img'><img src='qplot_spc-5.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'>## Remove fill -----------------------------------------------------------------</span>
 
 
-<span class='fu'><a href='qplot_kSp.html'>qplot_kSp</a></span>(<span class='no'>flu</span>, <span class='kw'>filled</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='img'><img src='qplot_spc-28.png' alt='' width='700' height='432.632880098887' /></div><div class='input'><span class='fu'><a href='qplot_kSp.html'>qplot_sp</a></span>(<span class='no'>flu</span>)</div><div class='img'><img src='qplot_spc-29.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+<span class='fu'><a href='qplot_kSp.html'>qplot_kSp</a></span>(<span class='no'>flu</span>, <span class='kw'>filled</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='img'><img src='qplot_spc-6.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='qplot_kSp.html'>qplot_sp</a></span>(<span class='no'>flu</span>)</div><div class='img'><img src='qplot_spc-7.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'>## Name of a legend ------------------------------------------------------------</span>
 <span class='no'>flu</span>$<span class='no'>c2</span> <span class='kw'>&lt;-</span> <span class='fu'>as.factor</span>(<span class='no'>flu</span>$<span class='no'>c</span>)
 
-<span class='fu'><a href='qplot_kSp.html'>qplot_sp</a></span>(<span class='no'>flu</span>, <span class='kw'>Title</span> <span class='kw'>=</span> <span class='st'>"Flu dataset"</span>, <span class='kw'>by</span> <span class='kw'>=</span> <span class='st'>'c2'</span>, <span class='kw'>legendName</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='img'><img src='qplot_spc-30.png' alt='' width='700' height='432.632880098887' /></div><div class='input'><span class='fu'><a href='qplot_kSp.html'>qplot_sp</a></span>(<span class='no'>flu</span>, <span class='kw'>Title</span> <span class='kw'>=</span> <span class='st'>"Flu dataset"</span>, <span class='kw'>by</span> <span class='kw'>=</span> <span class='st'>'c2'</span>, <span class='kw'>legendName</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</div><div class='img'><img src='qplot_spc-31.png' alt='' width='700' height='432.632880098887' /></div><div class='input'><span class='fu'><a href='qplot_kSp.html'>qplot_sp</a></span>(<span class='no'>flu</span>, <span class='kw'>Title</span> <span class='kw'>=</span> <span class='st'>"Flu dataset"</span>, <span class='kw'>by</span> <span class='kw'>=</span> <span class='st'>'c2'</span>, <span class='kw'>legendName</span> <span class='kw'>=</span> <span class='st'>"Concentration"</span>)</div><div class='img'><img src='qplot_spc-32.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+<span class='fu'><a href='qplot_kSp.html'>qplot_sp</a></span>(<span class='no'>flu</span>, <span class='kw'>Title</span> <span class='kw'>=</span> <span class='st'>"Flu dataset"</span>, <span class='kw'>by</span> <span class='kw'>=</span> <span class='st'>'c2'</span>, <span class='kw'>legendName</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='img'><img src='qplot_spc-8.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='qplot_kSp.html'>qplot_sp</a></span>(<span class='no'>flu</span>, <span class='kw'>Title</span> <span class='kw'>=</span> <span class='st'>"Flu dataset"</span>, <span class='kw'>by</span> <span class='kw'>=</span> <span class='st'>'c2'</span>, <span class='kw'>legendName</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</div><div class='img'><img src='qplot_spc-9.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='qplot_kSp.html'>qplot_sp</a></span>(<span class='no'>flu</span>, <span class='kw'>Title</span> <span class='kw'>=</span> <span class='st'>"Flu dataset"</span>, <span class='kw'>by</span> <span class='kw'>=</span> <span class='st'>'c2'</span>, <span class='kw'>legendName</span> <span class='kw'>=</span> <span class='st'>"Concentration"</span>)</div><div class='img'><img src='qplot_spc-10.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'>## Example of line color transitions -------------------------------------------</span>
-  <span class='fu'><a href='qplot_kSp.html'>qplot_sp</a></span>(<span class='no'>laser</span>)</div><div class='img'><img src='qplot_spc-33.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+  <span class='fu'><a href='qplot_kSp.html'>qplot_sp</a></span>(<span class='no'>laser</span>)</div><div class='img'><img src='qplot_spc-11.png' alt='' width='700' height='433' /></div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
@@ -283,11 +306,14 @@ Vilmantas Gegzna
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="http://hadley.github.io/pkgdown/">pkgdown</a>.</p>
+  <p>Site built with <a href="http://pkgdown.r-lib.org/">pkgdown</a>.</p>
 </div>
 
       </footer>
    </div>
 
+  
+
   </body>
 </html>
+

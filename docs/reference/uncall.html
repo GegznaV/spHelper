@@ -9,7 +9,7 @@
 <title>[.] Unwrap text from `call` object
 Assumption: only the second element in a `call` can be text
 first element is an object of class "name", that can be dropped.
-This algorithm can loose some text elements. � uncall • spHelper</title>
+This algorithm can loose some text elements. — uncall • spHelper</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -21,13 +21,31 @@ This algorithm can loose some text elements. � uncall • spHelper</title>
 <!-- Font Awesome icons -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
+<!-- clipboard.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script>
+
+<!-- sticky kit -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
-<script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-  
-  
+
+
+
+<meta property="og:title" content="[.] Unwrap text from `call` object
+Assumption: only the second element in a `call` can be text
+first element is an object of class "name", that can be dropped.
+This algorithm can loose some text elements. — uncall" />
+
+<meta property="og:description" content="[.] Unwrap text from `call` object
+Assumption: only the second element in a `call` can be text
+first element is an object of class &quot;name&quot;, that can be dropped.
+This algorithm can loose some text elements." />
+<meta name="twitter:card" content="summary" />
+
+
+
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -37,8 +55,7 @@ This algorithm can loose some text elements. � uncall • spHelper</title>
 <![endif]-->
 
 
-  	<link rel="icon" href="../favicon.png" />
-</head>
+  </head>
 
   <body>
     <div class="container template-reference-topic">
@@ -51,8 +68,12 @@ This algorithm can loose some text elements. � uncall • spHelper</title>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="../index.html">spHelper | R package</a>
+      <span class="navbar-brand">
+        <a class="navbar-link" href="../index.html">spHelper</a>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.1.189</span>
+      </span>
     </div>
+
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
@@ -66,7 +87,7 @@ This algorithm can loose some text elements. � uncall • spHelper</title>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Tutorials
+    Examples and Tutorials
      
     <span class="caret"></span>
   </a>
@@ -92,6 +113,7 @@ This algorithm can loose some text elements. � uncall • spHelper</title>
   </a>
 </li>
       </ul>
+      
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
@@ -99,25 +121,29 @@ This algorithm can loose some text elements. � uncall • spHelper</title>
       
       </header>
 
-      <div class="row">
+<div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>[.] Unwrap text from `call` object
 Assumption: only the second element in a `call` can be text
 first element is an object of class "name", that can be dropped.
 This algorithm can loose some text elements.</h1>
+    
+    <div class="hidden name"><code>uncall.Rd</code></div>
     </div>
 
+    <div class="ref-description">
     
     <p>[.] Unwrap text from `call` object
 Assumption: only the second element in a `call` can be text
 first element is an object of class "name", that can be dropped.
 This algorithm can loose some text elements.</p>
     
+    </div>
 
     <pre class="usage"><span class='fu'>uncall</span>(<span class='no'>x</span>)</pre>
     
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
@@ -132,10 +158,10 @@ This algorithm can loose some text elements.</p>
     
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
-    <p>Other <span class="pkg">spHelper</span> utilities: <code><a href='IQR_outliers.html'>IQR_outliers</a></code>,
+    <div class='dont-index'><p>Other <span class="pkg">spHelper</span> utilities: <code><a href='IQR_outliers.html'>IQR_outliers</a></code>,
   <code><a href='expr2text.html'>expr2text</a></code>, <code><a href='mad_outliers.html'>mad_outliers</a></code>,
   <code><a href='rmExpr.html'>rmExpr</a></code>, <code><a href='sd_outliers.html'>sd_outliers</a></code>,
-  <code><a href='subt.html'>subt</a></code>, <code><a href='unGroup.html'>unGroup</a></code></p>
+  <code><a href='subt.html'>subt</a></code>, <code><a href='unGroup.html'>unGroup</a></code></p></div>
     
 
   </div>
@@ -162,11 +188,14 @@ Vilmantas Gegzna
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="http://hadley.github.io/pkgdown/">pkgdown</a>.</p>
+  <p>Site built with <a href="http://pkgdown.r-lib.org/">pkgdown</a>.</p>
 </div>
 
       </footer>
    </div>
 
+  
+
   </body>
 </html>
+

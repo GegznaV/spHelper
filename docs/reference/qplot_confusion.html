@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>[!+] Plot a confusion matrix (a.k.a. classification table) � qplot_confusion • spHelper</title>
+<title>[!+] Plot a confusion matrix (a.k.a. classification table) — qplot_confusion • spHelper</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -18,13 +18,36 @@
 <!-- Font Awesome icons -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
+<!-- clipboard.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script>
+
+<!-- sticky kit -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
-<script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-  
-  
+
+
+
+<meta property="og:title" content="[!+] Plot a confusion matrix (a.k.a. classification table) — qplot_confusion" />
+
+<meta property="og:description" content="Plot a confusion matrix (classification table) with
+             additional statistics (sensitivity (Se) a.k.a. true positive
+             rate, positive predictive value (PPV) and Cohens' Kappa (k)). 
+Colors in the main matrix: diagonal cells vary from grey to
+         green and offdiagonal elements vary from grey to
+         red. The color intensity in certain cell is determined by
+         parameter shades.
+Colors of cells with statistics Se, PPV and k vary depening on
+          values of these statistics from red (low values) to
+          grey (middle values), to green (high values).
+Exception: when shades=&quot;const&quot; and shades=&quot;none&quot;,
+         color intensities are constant." />
+<meta name="twitter:card" content="summary" />
+
+
+
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -34,8 +57,7 @@
 <![endif]-->
 
 
-  	<link rel="icon" href="../favicon.png" />
-</head>
+  </head>
 
   <body>
     <div class="container template-reference-topic">
@@ -48,8 +70,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="../index.html">spHelper | R package</a>
+      <span class="navbar-brand">
+        <a class="navbar-link" href="../index.html">spHelper</a>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.1.189</span>
+      </span>
     </div>
+
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
@@ -63,7 +89,7 @@
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Tutorials
+    Examples and Tutorials
      
     <span class="caret"></span>
   </a>
@@ -89,6 +115,7 @@
   </a>
 </li>
       </ul>
+      
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
@@ -96,26 +123,30 @@
       
       </header>
 
-      <div class="row">
+<div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>[!+] Plot a confusion matrix (a.k.a. classification table)</h1>
+    
+    <div class="hidden name"><code>qplot_confusion.Rd</code></div>
     </div>
 
+    <div class="ref-description">
     
     <p>Plot a confusion matrix (classification table) with
              additional statistics (sensitivity (Se) a.k.a. true positive
-             rate, positive predictive value (PPV) and Cohens' Kappa (k)).</p>
+             rate, positive predictive value (PPV) and Cohens' Kappa (k)). <br /></p>
 <p>Colors in the main matrix: <b>diagonal</b> cells vary from grey to
          <b>green</b> and <b>offdiagonal</b> elements vary from grey to
          <b>red</b>. The color intensity in certain cell is determined by
-         parameter <code>shades</code>.</p>
+         parameter <code>shades</code>.<br /></p>
 <p>Colors of cells with statistics Se, PPV and k vary depening on
           values of these statistics from <b>red</b> (<em>low</em> values) to
-          <b>grey</b> (<em>middle</em> values), to <b>green</b> (<em>high</em> values).</p>
+          <b>grey</b> (<em>middle</em> values), to <b>green</b> (<em>high</em> values).<br /></p>
 <p><b>Exception:</b> when <code>shades="const"</code> and <code>shades="none"</code>,
          color intensities are constant.</p>
     
+    </div>
 
     <pre class="usage"><span class='fu'>qplot_confusion</span>(<span class='no'>...</span>)
 
@@ -131,11 +162,12 @@
 <span class='co'># S3 method for table</span>
 <span class='fu'>qplot_confusion</span>(<span class='no'>conf</span>, <span class='kw'>Title</span> <span class='kw'>=</span> <span class='st'>"Classification table"</span>,
   <span class='kw'>xLabel</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>yLabel</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>subTitle</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>shades</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"prop"</span>,
-  <span class='st'>"max"</span>, <span class='st'>"const"</span>, <span class='st'>"none"</span>), <span class='kw'>guide</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>text.size</span> <span class='kw'>=</span> <span class='fl'>5</span>, <span class='kw'>decimals</span> <span class='kw'>=</span> <span class='fl'>2</span>,
-  <span class='kw'>TPR.name</span> <span class='kw'>=</span> <span class='st'>"&lt;TPR&gt;"</span>, <span class='kw'>PPV.name</span> <span class='kw'>=</span> <span class='st'>"&lt;PPV&gt;"</span>, <span class='kw'>sort</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='fl'>FALSE</span>, <span class='st'>"diagonal"</span>,
-  <span class='st'>"PPV"</span>, <span class='st'>"TPR"</span>), <span class='kw'>metric</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"kappa"</span>, <span class='st'>"weighted.kappa"</span>, <span class='st'>"meanTPR"</span>))</pre>
+  <span class='st'>"max"</span>, <span class='st'>"const"</span>, <span class='st'>"none"</span>), <span class='kw'>guide</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>text.size</span> <span class='kw'>=</span> <span class='fl'>5</span>,
+  <span class='kw'>decimals</span> <span class='kw'>=</span> <span class='fl'>2</span>, <span class='kw'>TPR.name</span> <span class='kw'>=</span> <span class='st'>"&lt;TPR&gt;"</span>, <span class='kw'>PPV.name</span> <span class='kw'>=</span> <span class='st'>"&lt;PPV&gt;"</span>,
+  <span class='kw'>sort</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='fl'>FALSE</span>, <span class='st'>"diagonal"</span>, <span class='st'>"PPV"</span>, <span class='st'>"TPR"</span>), <span class='kw'>metric</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"kappa"</span>,
+  <span class='st'>"weighted.kappa"</span>, <span class='st'>"meanTPR"</span>))</pre>
     
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
@@ -212,18 +244,18 @@ Default is "&lt;PPV&gt;".</p></td>
     <tr>
       <th>sort</th>
       <td><p>A way to sort columns and rows of output matrix. Options to sort
-values in descending order:
-<code>FALSE</code> (default) do not sort;
-<code>"diagonal"</code> - sort values on diagonal;
-<code>"PPV"</code> - sort positive predictive values (PPV);
+values in descending order:<br />
+<code>FALSE</code> (default) do not sort;<br />
+<code>"diagonal"</code> - sort values on diagonal;<br />
+<code>"PPV"</code> - sort positive predictive values (PPV);<br />
 <code>"TPR"</code> - sort true positive rate (TPR) values.</p></td>
     </tr>
     <tr>
       <th>metric</th>
-      <td><p>The metric of overall accuracy. Curently supported values are:
-<code>"kappa"</code> (default) to use Cohen's kappa, in table denoted with symbol <b>"k"</b>;
-<code>"weighted.kappa"</code>  to use weighted kappa, (symbol <b>"w"</b>);
-<code>"meanTPR"</code> Mean of true positive rates of each group (symbol <b>"t"</b>);
+      <td><p>The metric of overall accuracy. Curently supported values are:<br />
+<code>"kappa"</code> (default) to use Cohen's kappa, in table denoted with symbol <b>"k"</b>;<br />
+<code>"weighted.kappa"</code>  to use weighted kappa, (symbol <b>"w"</b>);<br />
+<code>"meanTPR"</code> Mean of true positive rates of each group (symbol <b>"t"</b>);<br />
 <code>"meanPPV"</code> Mean of positive predictive values of each group (symbol <b>"v"</b>).</p></td>
     </tr>
     </table>
@@ -234,7 +266,7 @@ values in descending order:
     
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
-    <p>Other <span class="pkg">spHelper</span> plots: <code><a href='qplot_spRange.html'>check_palette</a></code>,
+    <div class='dont-index'><p>Other <span class="pkg">spHelper</span> plots: <code><a href='qplot_spRange.html'>check_palette</a></code>,
   <code><a href='qplot_spRangeMean.html'>layer_spRangeMean</a></code>,
   <code><a href='plot_colors.html'>plot_colors</a></code>, <code><a href='plot_hyPalette.html'>plot_hyPalette</a></code>,
   <code><a href='plot_spCompare.html'>plot_spCompare</a></code>, <code><a href='plot_spDiff.html'>plot_spDiff</a></code>,
@@ -243,9 +275,10 @@ values in descending order:
   <code><a href='qplot_infoDim.html'>qplot_infoDim</a></code>, <code><a href='qplot_kAmp.html'>qplot_kAmp</a></code>,
   <code><a href='qplot_kSp.html'>qplot_kSp</a></code>, <code><a href='qplot_prediction.html'>qplot_prediction</a></code>,
   <code><a href='qplot_spRangeCenter.html'>qplot_spRangeCenter</a></code>,
-  <code>qplot_spStat</code>, <code><a href='qplot_spc.html'>qplot_spc</a></code>,
+  <code><a href='qplot_spRangeMedian.html'>qplot_spRangeMedian</a></code>,
+  <code><a href='qplot_spStat.html'>qplot_spStat</a></code>, <code><a href='qplot_spc.html'>qplot_spc</a></code>,
   <code><a href='rmExpr.html'>rmExpr</a></code>, <code><a href='rm_stripes.html'>rm_stripes</a></code>,
-  <code><a href='stat_chull.html'>stat_chull</a></code></p>
+  <code><a href='stat_chull.html'>stat_chull</a></code></p></div>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
@@ -257,33 +290,33 @@ values in descending order:
 <span class='no'>Reference</span>  <span class='kw'>&lt;-</span> <span class='fu'>sample</span>(<span class='fu'>c</span>(<span class='st'>"A"</span>, <span class='st'>"B"</span>,<span class='st'>"C"</span>,<span class='st'>"D"</span>),<span class='no'>N</span>, <span class='kw'>replace</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)
 
 <span class='co'># This function:</span>
-<span class='fu'>qplot_confusion</span>(<span class='no'>Prediction</span>, <span class='no'>Reference</span>)</div><div class='img'><img src='qplot_confusion-27.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+<span class='fu'>qplot_confusion</span>(<span class='no'>Prediction</span>, <span class='no'>Reference</span>)</div><div class='img'><img src='qplot_confusion-1.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># does the same as:</span>
 <span class='no'>conf</span> <span class='kw'>&lt;-</span> <span class='fu'>table</span>(<span class='no'>Prediction</span>,<span class='no'>Reference</span>)
-<span class='fu'>qplot_confusion</span>(<span class='no'>conf</span>)</div><div class='img'><img src='qplot_confusion-28.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+<span class='fu'>qplot_confusion</span>(<span class='no'>conf</span>)</div><div class='img'><img src='qplot_confusion-2.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># At least 50% of the cases agree =========================</span>
 <span class='no'>ind</span> <span class='kw'>&lt;-</span> <span class='fu'>sample</span>(<span class='fl'>1</span>:<span class='no'>N</span>,<span class='fu'>round</span>(<span class='fl'>0.50</span>*<span class='no'>N</span>))
 <span class='no'>Reference</span>[<span class='no'>ind</span>] <span class='kw'>&lt;-</span> <span class='no'>Prediction</span>[<span class='no'>ind</span>]
 <span class='no'>conf2</span> <span class='kw'>&lt;-</span> <span class='fu'>table</span>(<span class='no'>Prediction</span>,<span class='no'>Reference</span>)
 
-<span class='fu'>qplot_confusion</span>(<span class='no'>conf2</span>)</div><div class='img'><img src='qplot_confusion-29.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+<span class='fu'>qplot_confusion</span>(<span class='no'>conf2</span>)</div><div class='img'><img src='qplot_confusion-3.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># Most of the cases agree =================================</span>
 <span class='no'>ind</span> <span class='kw'>&lt;-</span> <span class='fu'>sample</span>(<span class='fl'>1</span>:<span class='no'>N</span>,<span class='fu'>round</span>(<span class='no'>N</span>*<span class='fl'>.80</span>))
 <span class='no'>Reference</span>[<span class='no'>ind</span>] <span class='kw'>&lt;-</span> <span class='no'>Prediction</span>[<span class='no'>ind</span>]
 <span class='no'>conf3</span> <span class='kw'>&lt;-</span> <span class='fu'>table</span>(<span class='no'>Prediction</span>,<span class='no'>Reference</span>)
 
-<span class='fu'>qplot_confusion</span>(<span class='no'>conf3</span>)</div><div class='img'><img src='qplot_confusion-30.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+<span class='fu'>qplot_confusion</span>(<span class='no'>conf3</span>)</div><div class='img'><img src='qplot_confusion-4.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># Proportions =============================================</span>
 
-<span class='fu'>qplot_confusion</span>(<span class='no'>conf3</span>)</div><div class='img'><img src='qplot_confusion-31.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+<span class='fu'>qplot_confusion</span>(<span class='no'>conf3</span>)</div><div class='img'><img src='qplot_confusion-5.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># Shades: proportional =====================================</span>
 
-<span class='fu'>qplot_confusion</span>(<span class='no'>conf</span>,<span class='kw'>shades</span> <span class='kw'>=</span> <span class='st'>"prop"</span>,  <span class='kw'>subTitle</span> <span class='kw'>=</span> <span class='st'>"shades: 'prop', correct by chance"</span>)</div><div class='img'><img src='qplot_confusion-32.png' alt='' width='700' height='432.632880098887' /></div><div class='input'><span class='fu'>qplot_confusion</span>(<span class='no'>conf</span>,<span class='kw'>shades</span> <span class='kw'>=</span> <span class='st'>"max"</span>,   <span class='kw'>subTitle</span> <span class='kw'>=</span> <span class='st'>"shades: 'max', correct by chance"</span>)</div><div class='img'><img src='qplot_confusion-33.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
-<span class='fu'>qplot_confusion</span>(<span class='no'>conf2</span>,<span class='kw'>shades</span> <span class='kw'>=</span> <span class='st'>"prop"</span>, <span class='kw'>subTitle</span> <span class='kw'>=</span> <span class='st'>"shades: 'prop', correct &gt;50%"</span>)</div><div class='img'><img src='qplot_confusion-34.png' alt='' width='700' height='432.632880098887' /></div><div class='input'><span class='fu'>qplot_confusion</span>(<span class='no'>conf2</span>,<span class='kw'>shades</span> <span class='kw'>=</span> <span class='st'>"max"</span>,  <span class='kw'>subTitle</span> <span class='kw'>=</span> <span class='st'>"shades: 'max', correct &gt;50%"</span>)</div><div class='img'><img src='qplot_confusion-35.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
-<span class='fu'>qplot_confusion</span>(<span class='no'>conf3</span>,<span class='kw'>shades</span> <span class='kw'>=</span> <span class='st'>"prop"</span>, <span class='kw'>subTitle</span> <span class='kw'>=</span> <span class='st'>"shades: 'prop', correct &gt;80%"</span>)</div><div class='img'><img src='qplot_confusion-36.png' alt='' width='700' height='432.632880098887' /></div><div class='input'><span class='fu'>qplot_confusion</span>(<span class='no'>conf3</span>,<span class='kw'>shades</span> <span class='kw'>=</span> <span class='st'>"max"</span>,  <span class='kw'>subTitle</span> <span class='kw'>=</span> <span class='st'>"shades: 'max', correct &gt;80%"</span>)</div><div class='img'><img src='qplot_confusion-37.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+<span class='fu'>qplot_confusion</span>(<span class='no'>conf</span>,<span class='kw'>shades</span> <span class='kw'>=</span> <span class='st'>"prop"</span>,  <span class='kw'>subTitle</span> <span class='kw'>=</span> <span class='st'>"shades: 'prop', correct by chance"</span>)</div><div class='img'><img src='qplot_confusion-6.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'>qplot_confusion</span>(<span class='no'>conf</span>,<span class='kw'>shades</span> <span class='kw'>=</span> <span class='st'>"max"</span>,   <span class='kw'>subTitle</span> <span class='kw'>=</span> <span class='st'>"shades: 'max', correct by chance"</span>)</div><div class='img'><img src='qplot_confusion-7.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'>qplot_confusion</span>(<span class='no'>conf2</span>,<span class='kw'>shades</span> <span class='kw'>=</span> <span class='st'>"prop"</span>, <span class='kw'>subTitle</span> <span class='kw'>=</span> <span class='st'>"shades: 'prop', correct &gt;50%"</span>)</div><div class='img'><img src='qplot_confusion-8.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'>qplot_confusion</span>(<span class='no'>conf2</span>,<span class='kw'>shades</span> <span class='kw'>=</span> <span class='st'>"max"</span>,  <span class='kw'>subTitle</span> <span class='kw'>=</span> <span class='st'>"shades: 'max', correct &gt;50%"</span>)</div><div class='img'><img src='qplot_confusion-9.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'>qplot_confusion</span>(<span class='no'>conf3</span>,<span class='kw'>shades</span> <span class='kw'>=</span> <span class='st'>"prop"</span>, <span class='kw'>subTitle</span> <span class='kw'>=</span> <span class='st'>"shades: 'prop', correct &gt;80%"</span>)</div><div class='img'><img src='qplot_confusion-10.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'>qplot_confusion</span>(<span class='no'>conf3</span>,<span class='kw'>shades</span> <span class='kw'>=</span> <span class='st'>"max"</span>,  <span class='kw'>subTitle</span> <span class='kw'>=</span> <span class='st'>"shades: 'max', correct &gt;80%"</span>)</div><div class='img'><img src='qplot_confusion-11.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># Shades: constant and none ================================</span>
 
-<span class='fu'>qplot_confusion</span>(<span class='no'>conf3</span>,<span class='kw'>shades</span> <span class='kw'>=</span> <span class='st'>"const"</span>,<span class='kw'>subTitle</span> <span class='kw'>=</span> <span class='st'>"shades: constant"</span>)</div><div class='img'><img src='qplot_confusion-38.png' alt='' width='700' height='432.632880098887' /></div><div class='input'><span class='fu'>qplot_confusion</span>(<span class='no'>conf3</span>,<span class='kw'>shades</span> <span class='kw'>=</span> <span class='st'>"none"</span>, <span class='kw'>subTitle</span> <span class='kw'>=</span> <span class='st'>"shades: none"</span>)</div><div class='img'><img src='qplot_confusion-39.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+<span class='fu'>qplot_confusion</span>(<span class='no'>conf3</span>,<span class='kw'>shades</span> <span class='kw'>=</span> <span class='st'>"const"</span>,<span class='kw'>subTitle</span> <span class='kw'>=</span> <span class='st'>"shades: constant"</span>)</div><div class='img'><img src='qplot_confusion-12.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'>qplot_confusion</span>(<span class='no'>conf3</span>,<span class='kw'>shades</span> <span class='kw'>=</span> <span class='st'>"none"</span>, <span class='kw'>subTitle</span> <span class='kw'>=</span> <span class='st'>"shades: none"</span>)</div><div class='img'><img src='qplot_confusion-13.png' alt='' width='700' height='433' /></div><div class='input'>
 
 </div></pre>
   </div>
@@ -312,11 +345,14 @@ Vilmantas Gegzna
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="http://hadley.github.io/pkgdown/">pkgdown</a>.</p>
+  <p>Site built with <a href="http://pkgdown.r-lib.org/">pkgdown</a>.</p>
 </div>
 
       </footer>
    </div>
 
+  
+
   </body>
 </html>
+

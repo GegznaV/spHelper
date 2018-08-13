@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Extension for `hyperSpec` and convenience functions � spHelper • spHelper</title>
+<title>Extension for `hyperSpec` and convenience functions — spHelper • spHelper</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -18,13 +18,27 @@
 <!-- Font Awesome icons -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
+<!-- clipboard.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script>
+
+<!-- sticky kit -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
-<script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-  
-  
+
+
+
+<meta property="og:title" content="Extension for `hyperSpec` and convenience functions — spHelper" />
+
+<meta property="og:description" content="[+] - function is well described. 
+[!] - a description is incomplete and needs revision.
+Functions in spHelper by topic" />
+<meta name="twitter:card" content="summary" />
+
+
+
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -34,8 +48,7 @@
 <![endif]-->
 
 
-  	<link rel="icon" href="../favicon.png" />
-</head>
+  </head>
 
   <body>
     <div class="container template-reference-topic">
@@ -48,8 +61,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="../index.html">spHelper | R package</a>
+      <span class="navbar-brand">
+        <a class="navbar-link" href="../index.html">spHelper</a>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.1.189</span>
+      </span>
     </div>
+
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
@@ -63,7 +80,7 @@
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Tutorials
+    Examples and Tutorials
      
     <span class="caret"></span>
   </a>
@@ -89,6 +106,7 @@
   </a>
 </li>
       </ul>
+      
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
@@ -96,68 +114,72 @@
       
       </header>
 
-      <div class="row">
+<div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Extension for `hyperSpec` and convenience functions</h1>
+    
+    <div class="hidden name"><code>spHelper.Rd</code></div>
     </div>
 
+    <div class="ref-description">
     
-    <p>[+] - function is well described.</p>
-<p>[!] - a description is incomplete and needs revision.</p>
+    <p>[+] - function is well described. <br /></p>
+<p>[!] - a description is incomplete and needs revision.<br /><br /></p>
 <p>Functions in spHelper by topic</p>
     
+    </div>
 
         
     <h2 class="hasAnchor" id="cross-validation"><a class="anchor" href="#cross-validation"></a>Cross-validation</h2>
 
     
-    <p><code><a href='createFoldsBS.html'>stratifiedFolds</a></code></p>
+    <p><code><a href='createFoldsBS.html'>stratifiedFolds</a></code> <br /></p>
     
     <h2 class="hasAnchor" id="component-analysis-spectroscopy"><a class="anchor" href="#component-analysis-spectroscopy"></a>Component analysis / Spectroscopy</h2>
 
     
-    <p><code><a href='sortLoadings.html'>sortLoadings</a></code> 
-<code><a href='GaussAmp.html'>GaussAmp</a></code> 
-<code><a href='getScores.html'>getScores</a></code> 
-<code><a href='infoDim.html'>infoDim</a></code> 
-<code><a href='qplot_infoDim.html'>qplot_infoDim</a></code> 
-<code><a href='whichOutlier.html'>whichOutlier</a></code></p>
+    <p><code><a href='sortLoadings.html'>sortLoadings</a></code> <br />
+<code><a href='GaussAmp.html'>GaussAmp</a></code> <br />
+<code><a href='getScores.html'>getScores</a></code> <br />
+<code><a href='infoDim.html'>infoDim</a></code> <br />
+<code><a href='qplot_infoDim.html'>qplot_infoDim</a></code> <br />
+<code><a href='whichOutlier.html'>whichOutlier</a></code> <br /></p>
     
-    <h2 class="hasAnchor" id="spectroscopy-code-hyperspec-code-"><a class="anchor" href="#spectroscopy-code-hyperspec-code-"></a>Spectroscopy / &lt;code&gt;hyperSpec&lt;/code&gt;</h2>
+    <h2 class="hasAnchor" id="spectroscopy-hyperspec"><a class="anchor" href="#spectroscopy-hyperspec"></a>Spectroscopy / <code>hyperSpec</code></h2>
 
     
-    <p><code><a href='hy2mat.html'>hy2mat</a></code> 
-<code><a href='read3csv2hy.html'>read3csv2hy</a></code>
-    <code><a href='hyAdd_Labels_TD2009.html'>hyAdd_Labels_TD2009</a></code></p>
+    <p><code><a href='hy2mat.html'>hy2mat</a></code> <br />
+<code><a href='read3csv2hy.html'>read3csv2hy</a></code> <br /></p>
+<p><code><a href='hyAdd_Labels_TD2009.html'>hyAdd_Labels_TD2009</a></code> <br /></p>
     
     <h2 class="hasAnchor" id="plotting"><a class="anchor" href="#plotting"></a>Plotting</h2>
 
     
-    <p><code><a href='qplot_kAmp.html'>qplot_kAmp</a></code> 
-<code><a href='qplot_kSp.html'>qplot_kSp</a></code> 
-<code><a href='qplot_kSp.html'>qplot_kSpFacets</a></code> 
-<code><a href='qplot_confusion.html'>qplot_confusion</a></code>  
-<code>qplot_spStat</code>  
-<code><a href='plot_spDiff.html'>plot_spDiff</a></code></p>
-    <p><code><a href='subt.html'>subt</a></code>          
-<code><a href='qplot_infoDim.html'>qplot_infoDim</a></code> 
-<code><a href='reconstructSp.html'>reconstructSp</a></code></p>
+    <p><code><a href='qplot_kAmp.html'>qplot_kAmp</a></code> <br />
+<code><a href='qplot_kSp.html'>qplot_kSp</a></code> <br />
+<code><a href='qplot_kSp.html'>qplot_kSpFacets</a></code> <br />
+<code><a href='qplot_confusion.html'>qplot_confusion</a></code>  <br />
+<code><a href='qplot_spStat.html'>qplot_spStat</a></code>  <br />
+<code><a href='plot_spDiff.html'>plot_spDiff</a></code>    <br /></p>
+    <p><code><a href='subt.html'>subt</a></code>          <br />
+<code><a href='qplot_infoDim.html'>qplot_infoDim</a></code> <br />
+<code><a href='reconstructSp.html'>reconstructSp</a></code> <br /></p>
     
     <h2 class="hasAnchor" id="regular-expressions"><a class="anchor" href="#regular-expressions"></a>Regular expressions</h2>
 
     
-    <p><code>regcapturedmatches</code> 
-<code>regexp2df</code></p>
+    <p><code>regcapturedmatches</code> <br />
+<code>regexp2df</code> <br /></p>
     
     <h2 class="hasAnchor" id="various"><a class="anchor" href="#various"></a>Various</h2>
 
     
-    <p><code>bru</code> 
-<code>fCap</code> 
-<code>make_firstCapitals</code> 
-<code>list_functions</code> 
-<code><a href='hyDrop_NA.html'>hyDrop_NA</a></code></p>
+    <p><code>bru</code> <br />
+<code>fCap</code> <br />
+<code>make_firstCapitals</code> <br />
+<code>list_functions</code> <br />
+<code><a href='hyDrop_NA.html'>hyDrop_NA</a></code> <br /></p>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
@@ -165,95 +187,129 @@
 </div><div class='input'>
 <span class='co'># List all functions in package:</span>
 
-<span class='fu'>list_functions</span>()</div><div class='output co'>#&gt;    Functions in spMisc (0.0.17)
-#&gt; 1                         %!in%
-#&gt; 2                         %.+.%
-#&gt; 3                          %++%
-#&gt; 4                     %if.NULL%
-#&gt; 5                     %if_null%
-#&gt; 6             %if_null_or_len0%
-#&gt; 7                       %NOTin%
-#&gt; 8                all_na_columns
-#&gt; 9                   all_na_rows
-#&gt; 10                          bru
-#&gt; 11                        bru_n
-#&gt; 12                         bru0
-#&gt; 13                    class_add
-#&gt; 14                          clc
-#&gt; 15                        clear
-#&gt; 16                    clear_all
-#&gt; 17                  clear_class
-#&gt; 18                 clear_except
-#&gt; 19           clear_except_class
-#&gt; 20                    clear_fun
-#&gt; 21            clear_hidden_only
-#&gt; 22                 corr_vec2mat
-#&gt; 23                     Duration
-#&gt; 24                        eval_
-#&gt; 25                         fCap
-#&gt; 26                    file2text
-#&gt; 27              fixed_to_regexp
-#&gt; 28                     fullfile
-#&gt; 29                 getVarValues
-#&gt; 30        html_add_line_to_head
-#&gt; 31         html_enable_favicons
-#&gt; 32                      ifFALSE
-#&gt; 33                    indMatrix
-#&gt; 34                      isFALSE
-#&gt; 35                   list_AddRm
-#&gt; 36               list_functions
-#&gt; 37               make.filenames
-#&gt; 38                   na.replace
-#&gt; 39                   nDiag2nTri
-#&gt; 40                   nTri2nDiag
-#&gt; 41                      open_wd
-#&gt; 42                printDuration
-#&gt; 43             rbind_df_in_list
-#&gt; 44           regcapturedmatches
-#&gt; 45                    regexp2df
-#&gt; 46                     rep_cols
-#&gt; 47                      rep_mat
-#&gt; 48                     rep_rows
-#&gt; 49                revalueMatrix
-#&gt; 50                  simCorrVars
-#&gt; 51                  sort_colMax
-#&gt; 52                 sort_colSums
-#&gt; 53              sort_descOnDiag
-#&gt; 54                  sort_rowMax
-#&gt; 55                 sort_rowSums
-#&gt; 56                         st01
-#&gt; 57                     stMinMax
-#&gt; 58                 time_elapsed
-#&gt; 59                  visNetwork_
-#&gt; 60                     which.in
-#&gt; 61                 which.in.col
-#&gt; 62                which.in.diag
-#&gt; 63             which.in.offdiag
-#&gt; 64                 which.in.row
-#&gt; 65              which.in.trilow
-#&gt; 66              which.in.triupp
-#&gt; 67                which.max.all
-#&gt; 68             which.max.perCol
-#&gt; 69             which.max.perRow
-#&gt; 70                which.min.all</div><div class='input'>
+<span class='fu'>list_functions</span>()</div><div class='output co'>#&gt;       Functions in spMisc (0.0.20)
+#&gt; 1                            %!in%
+#&gt; 2                            %.+.%
+#&gt; 3                             %++%
+#&gt; 4                        %if.NULL%
+#&gt; 5                        %if_null%
+#&gt; 6                %if_null_or_len0%
+#&gt; 7                          %NOTin%
+#&gt; 8                   all_na_columns
+#&gt; 9                      all_na_rows
+#&gt; 10                             bru
+#&gt; 11                           bru_n
+#&gt; 12                            bru0
+#&gt; 13                       class_add
+#&gt; 14                             clc
+#&gt; 15                           clear
+#&gt; 16                       clear_all
+#&gt; 17                clear_all_except
+#&gt; 18          clear_all_except_class
+#&gt; 19                     clear_class
+#&gt; 20                    clear_except
+#&gt; 21                       clear_fun
+#&gt; 22               clear_hidden_only
+#&gt; 23                    corr_vec2mat
+#&gt; 24                        Duration
+#&gt; 25                           eval_
+#&gt; 26                       eval_glue
+#&gt; 27                            fCap
+#&gt; 28                       file2text
+#&gt; 29                 fixed_to_regexp
+#&gt; 30                   flattr_header
+#&gt; 31                        fullfile
+#&gt; 32                    getVarValues
+#&gt; 33           html_add_line_to_head
+#&gt; 34            html_enable_favicons
+#&gt; 35                         ifFALSE
+#&gt; 36                       indMatrix
+#&gt; 37                         isFALSE
+#&gt; 38                       latex2rmd
+#&gt; 39                      list_AddRm
+#&gt; 40                  list_functions
+#&gt; 41                  make.filenames
+#&gt; 42                      na.replace
+#&gt; 43                      nDiag2nTri
+#&gt; 44                      nested_env
+#&gt; 45                      nTri2nDiag
+#&gt; 46                         open_wd
+#&gt; 47 pkgdown_find_missing_references
+#&gt; 48        print.missing_references
+#&gt; 49                   printDuration
+#&gt; 50                rbind_df_in_list
+#&gt; 51              regcapturedmatches
+#&gt; 52                       regexp2df
+#&gt; 53                    remove_names
+#&gt; 54                        rep_cols
+#&gt; 55                         rep_mat
+#&gt; 56                        rep_rows
+#&gt; 57                   revalueMatrix
+#&gt; 58                         rnw2rmd
+#&gt; 59                     simCorrVars
+#&gt; 60                     sort_colMax
+#&gt; 61                    sort_colSums
+#&gt; 62                 sort_descOnDiag
+#&gt; 63                     sort_rowMax
+#&gt; 64                    sort_rowSums
+#&gt; 65                            st01
+#&gt; 66                        stMinMax
+#&gt; 67                    time_elapsed
+#&gt; 68                   vignette_stub
+#&gt; 69                     visNetwork_
+#&gt; 70                        which.in
+#&gt; 71                    which.in.col
+#&gt; 72                   which.in.diag
+#&gt; 73                which.in.offdiag
+#&gt; 74                    which.in.row
+#&gt; 75                 which.in.trilow
+#&gt; 76                 which.in.triupp
+#&gt; 77                   which.max.all
+#&gt; 78                which.max.perCol
+#&gt; 79                which.max.perRow
+#&gt; 80                   which.min.all</div><div class='input'>
 <span class='co'># Plot structure of functions inside the package:</span>
-<span class='fu'>require</span>(<span class='no'>sna</span>)
-<span class='fu'>require</span>(<span class='no'>mvbutils</span>)
-
-<span class='no'>pkgFW</span> <span class='kw'>&lt;-</span> <span class='kw pkg'>mvbutils</span><span class='kw ns'>::</span><span class='fu'><a href='http://www.rdocumentation.org/packages/mvbutils/topics/foodweb'>foodweb</a></span>(<span class='kw'>where</span><span class='kw'>=</span><span class='st'>"package:spHelper"</span>, <span class='kw'>cex</span><span class='kw'>=</span><span class='fl'>0.7</span>, <span class='kw'>charlim</span><span class='kw'>=</span><span class='fl'>60</span>)</div><div class='img'><img src='spHelper-2.png' alt='' width='700' height='432.632880098887' /></div><div class='input'><span class='kw pkg'>sna</span><span class='kw ns'>::</span><span class='fu'><a href='http://www.rdocumentation.org/packages/sna/topics/gplot'>gplot</a></span>(<span class='no'>pkgFW</span>$<span class='no'>funmat</span>, <span class='kw'>g</span> <span class='kw'>=</span> <span class='fl'>9</span>,
+<span class='fu'>require</span>(<span class='no'>sna</span>)</div><div class='output co'>#&gt; <span class='message'>Loading required package: sna</span></div><div class='output co'>#&gt; <span class='message'>Loading required package: statnet.common</span></div><div class='output co'>#&gt; <span class='message'></span>
+#&gt; <span class='message'>Attaching package: 'statnet.common'</span></div><div class='output co'>#&gt; <span class='message'>The following object is masked from 'package:base':</span>
+#&gt; <span class='message'></span>
+#&gt; <span class='message'>    order</span></div><div class='output co'>#&gt; <span class='message'>Loading required package: network</span></div><div class='output co'>#&gt; <span class='message'>network: Classes for Relational Data</span>
+#&gt; <span class='message'>Version 1.13.0.1 created on 2015-08-31.</span>
+#&gt; <span class='message'>copyright (c) 2005, Carter T. Butts, University of California-Irvine</span>
+#&gt; <span class='message'>                    Mark S. Handcock, University of California -- Los Angeles</span>
+#&gt; <span class='message'>                    David R. Hunter, Penn State University</span>
+#&gt; <span class='message'>                    Martina Morris, University of Washington</span>
+#&gt; <span class='message'>                    Skye Bender-deMoll, University of Washington</span>
+#&gt; <span class='message'> For citation information, type citation("network").</span>
+#&gt; <span class='message'> Type help("network-package") to get started.</span></div><div class='output co'>#&gt; <span class='message'>sna: Tools for Social Network Analysis</span>
+#&gt; <span class='message'>Version 2.4 created on 2016-07-23.</span>
+#&gt; <span class='message'>copyright (c) 2005, Carter T. Butts, University of California-Irvine</span>
+#&gt; <span class='message'> For citation information, type citation("sna").</span>
+#&gt; <span class='message'> Type help(package="sna") to get started.</span></div><div class='input'><span class='fu'>require</span>(<span class='no'>mvbutils</span>)</div><div class='output co'>#&gt; <span class='message'>Loading required package: mvbutils</span></div><div class='output co'>#&gt; <span class='warning'>Warning: there is no package called 'mvbutils'</span></div><div class='input'>
+<span class='no'>pkgFW</span> <span class='kw'>&lt;-</span> <span class='kw pkg'>mvbutils</span><span class='kw ns'>::</span><span class='fu'>foodweb</span>(<span class='kw'>where</span><span class='kw'>=</span><span class='st'>"package:spHelper"</span>, <span class='kw'>cex</span><span class='kw'>=</span><span class='fl'>0.7</span>, <span class='kw'>charlim</span><span class='kw'>=</span><span class='fl'>60</span>)</div><div class='output co'>#&gt; <span class='error'>Error in loadNamespace(name): there is no package called 'mvbutils'</span></div><div class='input'><span class='kw pkg'>sna</span><span class='kw ns'>::</span><span class='fu'><a href='http://www.rdocumentation.org/packages/sna/topics/gplot'>gplot</a></span>(<span class='no'>pkgFW</span>$<span class='no'>funmat</span>, <span class='kw'>g</span> <span class='kw'>=</span> <span class='fl'>9</span>,
            <span class='kw'>jitter</span> <span class='kw'>=</span> <span class='no'>T</span>,
            <span class='co'># mode = "mds",</span>
            <span class='kw'>label.cex</span> <span class='kw'>=</span> <span class='fl'>.6</span>,
            <span class='kw'>diag</span><span class='kw'>=</span><span class='fl'>TRUE</span>,
            <span class='kw'>vertex.cex</span><span class='kw'>=</span><span class='fl'>1</span>:<span class='fl'>2</span>,
            <span class='kw'>displaylabels</span><span class='kw'>=</span><span class='fl'>TRUE</span>,
-           <span class='kw'>label.bg</span><span class='kw'>=</span><span class='st'>"gray90"</span>)</div><div class='img'><img src='spHelper-3.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+           <span class='kw'>label.bg</span><span class='kw'>=</span><span class='st'>"gray90"</span>)</div><div class='output co'>#&gt; <span class='error'>Error in as.edgelist.sna(dat, force.bipartite = (gmode == "twomode")): object 'pkgFW' not found</span></div><div class='input'>
 
 <span class='co'># Other things to remember</span>
 
 
- <span class='kw pkg'>devtools</span><span class='kw ns'>::</span><span class='fu'><a href='http://www.rdocumentation.org/packages/devtools/topics/build_vignettes'>build_vignettes</a></span>()</div><div class='output co'>#&gt; <span class='message'>Building spHelper vignettes</span></div><div class='output co'>#&gt; <span class='message'>Moving v1_spHelper_Plotting.html, v2_Other_Examples.html, v3_Plotting_Examples_gg_hy.html, v1_spHelper_Plotting.R, v2_Other_Examples.R, v3_Plotting_Examples_gg_hy.R to inst/doc/</span></div><div class='output co'>#&gt; <span class='message'>Copying v1_spHelper_Plotting.Rmd, v2_Other_Examples.Rmd, v3_Plotting_Examples_gg_hy.Rmd to inst/doc/</span></div><div class='input'>
-<span class='fu'>plotc</span>(<span class='no'>ObjectName</span>[,,<span class='fl'>500</span>],<span class='kw'>model</span> <span class='kw'>=</span> <span class='no'>spc</span>~<span class='no'>Integration_time</span>)</div><div class='output co'>#&gt; <span class='error'>Error in is(object, "hyperSpec"): object 'ObjectName' not found</span></div></pre>
+ <span class='kw pkg'>devtools</span><span class='kw ns'>::</span><span class='fu'><a href='http://www.rdocumentation.org/packages/devtools/topics/build_vignettes'>build_vignettes</a></span>()</div><div class='output co'>#&gt; <span class='message'>Building spHelper vignettes</span></div><div class='output co'>#&gt; <span class='message'></span>
+#&gt; <span class='message'>Attaching package: 'dplyr'</span></div><div class='output co'>#&gt; <span class='message'>The following objects are masked from 'package:data.table':</span>
+#&gt; <span class='message'></span>
+#&gt; <span class='message'>    between, first, last</span></div><div class='output co'>#&gt; <span class='message'>The following object is masked from 'package:hyperSpec':</span>
+#&gt; <span class='message'></span>
+#&gt; <span class='message'>    collapse</span></div><div class='output co'>#&gt; <span class='message'>The following objects are masked from 'package:stats':</span>
+#&gt; <span class='message'></span>
+#&gt; <span class='message'>    filter, lag</span></div><div class='output co'>#&gt; <span class='message'>The following objects are masked from 'package:base':</span>
+#&gt; <span class='message'></span>
+#&gt; <span class='message'>    intersect, setdiff, setequal, union</span></div><div class='output co'>#&gt; <span class='message'>Quitting from lines 125-128 (v2_Other_Examples.Rmd) </span></div><div class='output co'>#&gt; <span class='error'>Error: processing vignette 'v2_Other_Examples.Rmd' failed with diagnostics:</span>
+#&gt; <span class='error'>could not find function "cvo_create_folds"</span></div><div class='input'>
+<span class='fu'>plotc</span>(<span class='no'>ObjectName</span>[,,<span class='fl'>500</span>],<span class='kw'>model</span> <span class='kw'>=</span> <span class='no'>spc</span>~<span class='no'>Integration_time</span>)</div><div class='output co'>#&gt; <span class='error'>Error in is(object, "hyperSpec"): object 'ObjectName' not found</span></div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
@@ -263,7 +319,7 @@
 
       <li><a href="#component-analysis-spectroscopy">Component analysis / Spectroscopy</a></li>
 
-      <li><a href="#spectroscopy-code-hyperspec-code-">Spectroscopy / &lt;code&gt;hyperSpec&lt;/code&gt;</a></li>
+      <li><a href="#spectroscopy-hyperspec">Spectroscopy / <code>hyperSpec</code></a></li>
 
       <li><a href="#plotting">Plotting</a></li>
 
@@ -287,11 +343,14 @@ Vilmantas Gegzna
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="http://hadley.github.io/pkgdown/">pkgdown</a>.</p>
+  <p>Site built with <a href="http://pkgdown.r-lib.org/">pkgdown</a>.</p>
 </div>
 
       </footer>
    </div>
 
+  
+
   </body>
 </html>
+

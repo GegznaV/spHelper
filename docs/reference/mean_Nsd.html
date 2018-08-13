@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>[!] Find spectra that represent mean +/- n standard deiations � mean_Nsd • spHelper</title>
+<title>[!] Find spectra that represent mean +/- n standard deiations — mean_Nsd • spHelper</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -18,13 +18,26 @@
 <!-- Font Awesome icons -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
+<!-- clipboard.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script>
+
+<!-- sticky kit -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
-<script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-  
-  
+
+
+
+<meta property="og:title" content="[!] Find spectra that represent mean +/- n standard deiations — mean_Nsd" />
+
+<meta property="og:description" content="Function finds spectra that represent mean +/- n standard deiations
+and adds column .name." />
+<meta name="twitter:card" content="summary" />
+
+
+
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -34,8 +47,7 @@
 <![endif]-->
 
 
-  	<link rel="icon" href="../favicon.png" />
-</head>
+  </head>
 
   <body>
     <div class="container template-reference-topic">
@@ -48,8 +60,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="../index.html">spHelper | R package</a>
+      <span class="navbar-brand">
+        <a class="navbar-link" href="../index.html">spHelper</a>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.1.189</span>
+      </span>
     </div>
+
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
@@ -63,7 +79,7 @@
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Tutorials
+    Examples and Tutorials
      
     <span class="caret"></span>
   </a>
@@ -89,6 +105,7 @@
   </a>
 </li>
       </ul>
+      
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
@@ -96,20 +113,24 @@
       
       </header>
 
-      <div class="row">
+<div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>[!] Find spectra that represent mean +/- n standard deiations</h1>
+    
+    <div class="hidden name"><code>mean_Nsd.Rd</code></div>
     </div>
 
+    <div class="ref-description">
     
     <p>Function finds spectra that represent mean +/- n standard deiations
 and adds column <code>.name</code>.</p>
     
+    </div>
 
     <pre class="usage"><span class='fu'>mean_Nsd</span>(<span class='no'>sp</span>, <span class='kw'>n</span> <span class='kw'>=</span> <span class='fl'>2</span>, <span class='kw'>plus.minus</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</pre>
     
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
@@ -122,18 +143,18 @@ and adds column <code>.name</code>.</p>
     </tr>
     <tr>
       <th>plus.minus</th>
-      <td><p>Logical. If <code>TRUE</code>, two spectra representing <code>�z</code>
+      <td><p>Logical. If <code>TRUE</code>, two spectra representing <code>±z</code>
 are calculated. Otherwise only one spectrum representing <code>n</code> is calculated.</p></td>
     </tr>
     </table>
     
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>A <code>hyperSpec</code> object with spectra at <code>mean(sp) � n*sd(sp)</code>.</p>
+    <p>A <code>hyperSpec</code> object with spectra at <code>mean(sp) ± n*sd(sp)</code>.</p>
     
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
-    <p><a href='http://www.rdocumentation.org/packages/hyperSpec/topics/scale'>scale</a>, <a href='sd_outliers.html'>outside_mean_pm_Nsd</a>,
+    <div class='dont-index'><p><a href='http://www.rdocumentation.org/packages/hyperSpec/topics/scale'>scale</a>, <a href='sd_outliers.html'>outside_mean_pm_Nsd</a>,
   <a href='http://www.rdocumentation.org/packages/hyperSpec/topics/mean_sd'>mean_sd</a></p>
 <p>Other <span class="pkg">spHelper</span> functions for spectroscopy and <span class="pkg">hyperSpec</span>: <code><a href='IQR_outliers.html'>IQR_outliers</a></code>,
   <code><a href='binning.html'>binning</a></code>, <code><a href='file.html'>file</a></code>,
@@ -150,7 +171,7 @@ are calculated. Otherwise only one spectrum representing <code>n</code> is calcu
   <code><a href='read.OceanView.html'>read.OceanView</a></code>, <code><a href='read.sp.csv2.html'>read.sp.csv2</a></code>,
   <code><a href='read3csv2hy.html'>read3csv2hy</a></code>, <code><a href='replace_spc.html'>replace_spc</a></code>,
   <code><a href='sd_outliers.html'>sd_outliers</a></code>, <code><a href='spStat.html'>spStat</a></code>,
-  <code><a href='sp_class_perform.html'>sp_class_perform</a></code></p>
+  <code><a href='sp_class_perform.html'>sp_class_perform</a></code></p></div>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
@@ -159,7 +180,7 @@ are calculated. Otherwise only one spectrum representing <code>n</code> is calcu
 <span class='no'>Margins</span>  <span class='kw'>&lt;-</span> <span class='fu'>mean_Nsd</span>(<span class='no'>Spectra2</span>)
 <span class='no'>Margins3</span> <span class='kw'>&lt;-</span> <span class='fu'>mean_Nsd</span>(<span class='no'>Spectra2</span>, <span class='kw'>n</span> <span class='kw'>=</span> <span class='fl'>3</span>)
 
-<span class='fu'>plotspc</span>(<span class='no'>Margins</span>)</div><div class='img'><img src='mean_Nsd-4.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+<span class='fu'>plotspc</span>(<span class='no'>Margins</span>)</div><div class='img'><img src='mean_Nsd-1.png' alt='' width='700' height='433' /></div><div class='input'>
 
 <span class='co'># Plot data and margins =======================================</span>
 
@@ -174,7 +195,7 @@ are calculated. Otherwise only one spectrum representing <code>n</code> is calcu
     <span class='fu'>geom_line</span>(<span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>Marg2</span>, <span class='fu'>aes</span>(<span class='kw'>color</span> <span class='kw'>=</span> <span class='no'>.name</span>), <span class='kw'>lwd</span> <span class='kw'>=</span> <span class='fl'>1</span>) +
     <span class='fu'>geom_line</span>(<span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>Marg3</span>, <span class='fu'>aes</span>(<span class='kw'>color</span> <span class='kw'>=</span> <span class='no'>.name</span>), <span class='kw'>lwd</span> <span class='kw'>=</span> <span class='fl'>1</span>) +
     <span class='fu'>scale_color_manual</span>(<span class='st'>" "</span>, <span class='kw'>values</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"blue"</span>,<span class='st'>"orange2"</span>, <span class='st'>"red"</span>)) +
-    <span class='fu'>scale_alpha_manual</span>(<span class='st'>" "</span>, <span class='kw'>values</span> <span class='kw'>=</span> <span class='st'>".2"</span>, <span class='kw'>guide</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='img'><img src='mean_Nsd-5.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+    <span class='fu'>scale_alpha_manual</span>(<span class='st'>" "</span>, <span class='kw'>values</span> <span class='kw'>=</span> <span class='st'>".2"</span>, <span class='kw'>guide</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='img'><img src='mean_Nsd-2.png' alt='' width='700' height='433' /></div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
@@ -202,11 +223,14 @@ Vilmantas Gegzna
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="http://hadley.github.io/pkgdown/">pkgdown</a>.</p>
+  <p>Site built with <a href="http://pkgdown.r-lib.org/">pkgdown</a>.</p>
 </div>
 
       </footer>
    </div>
 
+  
+
   </body>
 </html>
+

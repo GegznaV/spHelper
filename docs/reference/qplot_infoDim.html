@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>[+] Scree plot with indicated information dimension (ggplot2) � qplot_infoDim • spHelper</title>
+<title>[+] Scree plot with indicated information dimension (ggplot2) — qplot_infoDim • spHelper</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -18,13 +18,25 @@
 <!-- Font Awesome icons -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
+<!-- clipboard.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script>
+
+<!-- sticky kit -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
-<script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-  
-  
+
+
+
+<meta property="og:title" content="[+] Scree plot with indicated information dimension (ggplot2) — qplot_infoDim" />
+
+<meta property="og:description" content="Plot a screeplot and with indicated information dimension." />
+<meta name="twitter:card" content="summary" />
+
+
+
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -34,8 +46,7 @@
 <![endif]-->
 
 
-  	<link rel="icon" href="../favicon.png" />
-</head>
+  </head>
 
   <body>
     <div class="container template-reference-topic">
@@ -48,8 +59,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="../index.html">spHelper | R package</a>
+      <span class="navbar-brand">
+        <a class="navbar-link" href="../index.html">spHelper</a>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.1.189</span>
+      </span>
     </div>
+
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
@@ -63,7 +78,7 @@
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Tutorials
+    Examples and Tutorials
      
     <span class="caret"></span>
   </a>
@@ -89,6 +104,7 @@
   </a>
 </li>
       </ul>
+      
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
@@ -96,25 +112,29 @@
       
       </header>
 
-      <div class="row">
+<div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>[+] Scree plot with indicated information dimension (ggplot2)</h1>
+    
+    <div class="hidden name"><code>qplot_infoDim.Rd</code></div>
     </div>
 
+    <div class="ref-description">
     
     <p>Plot a screeplot and with indicated information dimension.</p>
     
+    </div>
 
-    <pre class="usage"><span class='fu'>qplot_infoDim</span>(<span class='no'>obj</span>, <span class='kw'>n.comp.SHOW</span> <span class='kw'>=</span> <span class='fl'>20</span>, <span class='kw'>selected</span> <span class='kw'>=</span> <span class='fl'>NA</span>, <span class='kw'>Title</span> <span class='kw'>=</span> <span class='st'>"Scree Plot"</span>,
-  <span class='kw'>y.log</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='kw'>show.legend</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='kw'>legend.position</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='fl'>0.8</span>, <span class='fl'>0.8</span>),
-  <span class='kw'>ggtheme</span> <span class='kw'>=</span> <span class='fu'>theme_bw</span>())
+    <pre class="usage"><span class='fu'>qplot_infoDim</span>(<span class='no'>obj</span>, <span class='kw'>n.comp.SHOW</span> <span class='kw'>=</span> <span class='fl'>20</span>, <span class='kw'>selected</span> <span class='kw'>=</span> <span class='fl'>NA</span>,
+  <span class='kw'>Title</span> <span class='kw'>=</span> <span class='st'>"Scree Plot"</span>, <span class='kw'>y.log</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='kw'>show.legend</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>,
+  <span class='kw'>legend.position</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='fl'>0.8</span>, <span class='fl'>0.8</span>), <span class='kw'>ggtheme</span> <span class='kw'>=</span> <span class='fu'>theme_bw</span>())
 
 <span class='fu'>qplot_screeplot</span>(<span class='no'>obj</span>, <span class='no'>...</span>)
 
 <span class='fu'>qplot_scree</span>(<span class='no'>obj</span>, <span class='no'>...</span>)</pre>
     
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
@@ -166,7 +186,7 @@ ggtheme). Default is <code>theme_bw()</code>.</p></td>
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
     <p>A scree plot : plot which helps to
-        determine the number of nenessary components (e.g. for PCA).
+        determine the number of nenessary components (e.g. for PCA).<br />
         (A "ggplot" object.)</p>
     
     <h2 class="hasAnchor" id="note"><a class="anchor" href="#note"></a>Note</h2>
@@ -175,7 +195,7 @@ ggtheme). Default is <code>theme_bw()</code>.</p></td>
     
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
-    <p>Other <span class="pkg">spHelper</span> plots: <code><a href='qplot_spRange.html'>check_palette</a></code>,
+    <div class='dont-index'><p>Other <span class="pkg">spHelper</span> plots: <code><a href='qplot_spRange.html'>check_palette</a></code>,
   <code><a href='qplot_spRangeMean.html'>layer_spRangeMean</a></code>,
   <code><a href='plot_colors.html'>plot_colors</a></code>, <code><a href='plot_hyPalette.html'>plot_hyPalette</a></code>,
   <code><a href='plot_spCompare.html'>plot_spCompare</a></code>, <code><a href='plot_spDiff.html'>plot_spDiff</a></code>,
@@ -184,7 +204,8 @@ ggtheme). Default is <code>theme_bw()</code>.</p></td>
   <code><a href='qplot_crosstab.html'>qplot_crosstab</a></code>, <code><a href='qplot_kAmp.html'>qplot_kAmp</a></code>,
   <code><a href='qplot_kSp.html'>qplot_kSp</a></code>, <code><a href='qplot_prediction.html'>qplot_prediction</a></code>,
   <code><a href='qplot_spRangeCenter.html'>qplot_spRangeCenter</a></code>,
-  <code>qplot_spStat</code>, <code><a href='qplot_spc.html'>qplot_spc</a></code>,
+  <code><a href='qplot_spRangeMedian.html'>qplot_spRangeMedian</a></code>,
+  <code><a href='qplot_spStat.html'>qplot_spStat</a></code>, <code><a href='qplot_spc.html'>qplot_spc</a></code>,
   <code><a href='rmExpr.html'>rmExpr</a></code>, <code><a href='rm_stripes.html'>rm_stripes</a></code>,
   <code><a href='stat_chull.html'>stat_chull</a></code></p>
 <p>Other component analysis / factorisation related functions in <span class="pkg">spHelper</span>: <code><a href='getScores.html'>getScores</a></code>,
@@ -193,29 +214,29 @@ ggtheme). Default is <code>theme_bw()</code>.</p></td>
   <code><a href='qplot_spc.html'>qplot_spc</a></code>, <code><a href='reconstructSp.html'>reconstructSp</a></code>,
   <code><a href='sortLoadings.html'>sortLoadings</a></code>, <code><a href='unipeak.html'>unipeak</a></code>,
   <code><a href='whichOutlier.html'>whichOutlier</a></code></p>
-<p>Other information dimension functions: <code><a href='infoDim.html'>infoDim</a></code></p>
+<p>Other information dimension functions: <code><a href='infoDim.html'>infoDim</a></code></p></div>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'> <span class='fu'>data</span>(<span class='no'>Spectra2</span>, <span class='kw'>package</span> <span class='kw'>=</span><span class='st'>"spHelper"</span>)
- <span class='fu'>qplot_infoDim</span>(<span class='no'>Spectra2</span>)</div><div class='img'><img src='qplot_infoDim-7.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+ <span class='fu'>qplot_infoDim</span>(<span class='no'>Spectra2</span>)</div><div class='img'><img src='qplot_infoDim-1.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># ------------------------------------------------------</span>
  <span class='no'>my_matrix</span> <span class='kw'>&lt;-</span> <span class='fu'>matrix</span>(<span class='fu'>rexp</span>(<span class='fl'>200</span>, <span class='kw'>rate</span><span class='kw'>=</span><span class='fl'>.1</span>), <span class='kw'>ncol</span><span class='kw'>=</span><span class='fl'>20</span>)
  <span class='no'>my_result</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='infoDim.html'>infoDim</a></span>(<span class='no'>my_matrix</span>)
 
  <span class='co'># Investigate the result</span>
  <span class='fu'>str</span>(<span class='no'>my_result</span>)</div><div class='output co'>#&gt; List of 5
-#&gt;  $ dim        : num 8
-#&gt;  $ exactDim   : num 7.58
-#&gt;  $ explained  : num [1:10] 0.3189 0.1655 0.1217 0.0854 0.0817 ...
-#&gt;  $ eigenvalues: num [1:10] 150.2 78 57.4 40.2 38.5 ...
+#&gt;  $ dim        : num 9
+#&gt;  $ exactDim   : num 8.16
+#&gt;  $ explained  : num [1:10] 0.2976 0.1274 0.1094 0.0981 0.0923 ...
+#&gt;  $ eigenvalues: num [1:10] 159.2 68.2 58.5 52.5 49.4 ...
 #&gt;  $ n.comp     : int [1:10] 1 2 3 4 5 6 7 8 9 10
-#&gt;  - attr(*, "class")= chr [1:2] "list" "infoDim"</div><div class='input'> <span class='no'>my_result</span>$<span class='no'>exactDim</span></div><div class='output co'>#&gt; [1] 7.579067</div><div class='input'> <span class='no'>my_result</span>$<span class='no'>dim</span></div><div class='output co'>#&gt; [1] 8</div><div class='input'>
+#&gt;  - attr(*, "class")= chr [1:2] "list" "infoDim"</div><div class='input'> <span class='no'>my_result</span>$<span class='no'>exactDim</span></div><div class='output co'>#&gt; [1] 8.161249</div><div class='input'> <span class='no'>my_result</span>$<span class='no'>dim</span></div><div class='output co'>#&gt; [1] 9</div><div class='input'>
  <span class='co'>#Plot</span>
  <span class='no'>my_plot</span> <span class='kw'>&lt;-</span> <span class='fu'>qplot_infoDim</span>(<span class='no'>my_result</span>)
- <span class='no'>my_plot</span></div><div class='img'><img src='qplot_infoDim-8.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+ <span class='no'>my_plot</span></div><div class='img'><img src='qplot_infoDim-2.png' alt='' width='700' height='433' /></div><div class='input'>
 
-<span class='fu'>qplot_infoDim</span>(<span class='no'>my_matrix</span>)</div><div class='img'><img src='qplot_infoDim-9.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+<span class='fu'>qplot_infoDim</span>(<span class='no'>my_matrix</span>)</div><div class='img'><img src='qplot_infoDim-3.png' alt='' width='700' height='433' /></div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
@@ -241,11 +262,14 @@ ggtheme). Default is <code>theme_bw()</code>.</p></td>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="http://hadley.github.io/pkgdown/">pkgdown</a>.</p>
+  <p>Site built with <a href="http://pkgdown.r-lib.org/">pkgdown</a>.</p>
 </div>
 
       </footer>
    </div>
 
+  
+
   </body>
 </html>
+

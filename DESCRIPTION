@@ -27,8 +27,10 @@ Depends:
     spMisc,
     checkmate
 Remotes:
-    github::GegznaV/spMisc
+    github::GegznaV/spMisc,
+    github::GegznaV/manyROC
 Imports:
+    manyROC,
     ALS,
     ChemometricsWithR,
     MASS,

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>[!.] Plot a cross-tabulation (classification table) � qplot_crosstab • spHelper</title>
+<title>[!.] Plot a cross-tabulation (classification table) — qplot_crosstab • spHelper</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -18,13 +18,25 @@
 <!-- Font Awesome icons -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
+<!-- clipboard.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script>
+
+<!-- sticky kit -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
-<script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-  
-  
+
+
+
+<meta property="og:title" content="[!.] Plot a cross-tabulation (classification table) — qplot_crosstab" />
+
+<meta property="og:description" content="Plot a crosstabulation (classification table)" />
+<meta name="twitter:card" content="summary" />
+
+
+
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -34,8 +46,7 @@
 <![endif]-->
 
 
-  	<link rel="icon" href="../favicon.png" />
-</head>
+  </head>
 
   <body>
     <div class="container template-reference-topic">
@@ -48,8 +59,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="../index.html">spHelper | R package</a>
+      <span class="navbar-brand">
+        <a class="navbar-link" href="../index.html">spHelper</a>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.1.189</span>
+      </span>
     </div>
+
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
@@ -63,7 +78,7 @@
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Tutorials
+    Examples and Tutorials
      
     <span class="caret"></span>
   </a>
@@ -89,6 +104,7 @@
   </a>
 </li>
       </ul>
+      
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
@@ -96,15 +112,19 @@
       
       </header>
 
-      <div class="row">
+<div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>[!.] Plot a cross-tabulation (classification table)</h1>
+    
+    <div class="hidden name"><code>qplot_crosstab.Rd</code></div>
     </div>
 
+    <div class="ref-description">
     
     <p>Plot a crosstabulation (classification table)</p>
     
+    </div>
 
     <pre class="usage"><span class='fu'>qplot_crosstab</span>(<span class='no'>obj</span>, <span class='no'>...</span>)
 
@@ -113,9 +133,9 @@
   <span class='kw'>xLabel</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>yLabel</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>subTitle</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>text.size</span> <span class='kw'>=</span> <span class='fl'>5</span>,
   <span class='kw'>sort</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>bg.color</span> <span class='kw'>=</span> <span class='st'>"skyblue1"</span>, <span class='kw'>max.color</span> <span class='kw'>=</span> <span class='st'>"gold3"</span>,
   <span class='kw'>low.color</span> <span class='kw'>=</span> <span class='st'>"grey80"</span>, <span class='kw'>decimals</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='kw'>show.max</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"max"</span>, <span class='st'>"colMax"</span>,
-  <span class='st'>"rowMax"</span>, <span class='fl'>FALSE</span>), <span class='kw'>shades</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='kw'>guide</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"legend"</span>, <span class='st'>"colorbar"</span>, <span class='fl'>FALSE</span>),
-  <span class='kw'>zero.color</span> <span class='kw'>=</span> <span class='st'>"grey60"</span>, <span class='kw'>text.color</span> <span class='kw'>=</span> <span class='st'>"black"</span>, <span class='kw'>as.percentage</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='fl'>FALSE</span>,
-  <span class='fl'>TRUE</span>, <span class='st'>"row"</span>, <span class='st'>"col"</span>), <span class='no'>...</span>)
+  <span class='st'>"rowMax"</span>, <span class='fl'>FALSE</span>), <span class='kw'>shades</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='kw'>guide</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"legend"</span>, <span class='st'>"colorbar"</span>,
+  <span class='fl'>FALSE</span>), <span class='kw'>zero.color</span> <span class='kw'>=</span> <span class='st'>"grey60"</span>, <span class='kw'>text.color</span> <span class='kw'>=</span> <span class='st'>"black"</span>,
+  <span class='kw'>as.percentage</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='fl'>FALSE</span>, <span class='fl'>TRUE</span>, <span class='st'>"row"</span>, <span class='st'>"col"</span>), <span class='no'>...</span>)
 
 <span class='co'># S3 method for numeric</span>
 <span class='fu'>qplot_crosstab</span>(<span class='no'>varX</span>, <span class='no'>varY</span>, <span class='kw'>Title</span> <span class='kw'>=</span> <span class='st'>"Cross-tabulation"</span>,
@@ -140,11 +160,11 @@
   <span class='kw'>decimals</span> <span class='kw'>=</span> <span class='fl'>2</span>, <span class='kw'>show.max</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>shades</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>guide</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)
 
 <span class='fu'>qplot_crosstab0s</span>(<span class='no'>tabl</span>, <span class='no'>...</span>, <span class='kw'>Title</span> <span class='kw'>=</span> <span class='st'>"Cross-tabulation"</span>, <span class='kw'>xLabel</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>yLabel</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>subTitle</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>text.size</span> <span class='kw'>=</span> <span class='fl'>5</span>, <span class='kw'>sort</span> <span class='kw'>=</span> <span class='st'>"maxOnDiag"</span>,
-  <span class='kw'>bg.color</span> <span class='kw'>=</span> <span class='st'>"wheat2"</span>, <span class='kw'>decimals</span> <span class='kw'>=</span> <span class='fl'>2</span>, <span class='kw'>show.max</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>shades</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>,
-  <span class='kw'>guide</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</pre>
+  <span class='kw'>yLabel</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>subTitle</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>text.size</span> <span class='kw'>=</span> <span class='fl'>5</span>,
+  <span class='kw'>sort</span> <span class='kw'>=</span> <span class='st'>"maxOnDiag"</span>, <span class='kw'>bg.color</span> <span class='kw'>=</span> <span class='st'>"wheat2"</span>, <span class='kw'>decimals</span> <span class='kw'>=</span> <span class='fl'>2</span>,
+  <span class='kw'>show.max</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>shades</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>guide</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</pre>
     
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
@@ -180,15 +200,15 @@ and in italics.</p></td>
     <tr>
       <th>sort</th>
       <td><p>Default is <code>FALSE</code> matrix is plotted as is.
-Other options: 
+Other options: <br />
        Either <code>"maxOnDiag"</code> or <code>TRUE</code> - function
        <code>sort_descOnDiag</code> is applied (rows and columns are sorted
        in so that maximum values of frequencies were on diagonal, if it's
-       possible);
-        <code>"rowSums"</code> - sort rows by row sums;
-        <code>"colSums"</code> - sort columns by column sums;
+       possible);<br />
+        <code>"rowSums"</code> - sort rows by row sums;<br />
+        <code>"colSums"</code> - sort columns by column sums;<br />
         <code>"colMax"</code>  - sort rows in respect only to maximum value in
-        each row;
+        each row;<br />
         <code>"rowMax"</code>  - sort columns in respect only to maximum value in
         each column.</p></td>
     </tr>
@@ -214,10 +234,10 @@ Other options:
     </tr>
     <tr>
       <th>show.max</th>
-      <td><p>The rule to highlighted top values. Possible entries:
-<code>"max"</code> highlight maximum of whole matrix;
-<code>"colMax"</code> (default) highlight maxima of every column ;
-<code>"rowMax"</code> highlight maxima of every row;
+      <td><p>The rule to highlighted top values. Possible entries:<br />
+<code>"max"</code> highlight maximum of whole matrix;<br />
+<code>"colMax"</code> (default) highlight maxima of every column ;<br />
+<code>"rowMax"</code> highlight maxima of every row;<br />
 <code>FALSE</code> maxima are <b>not</b> highlighted.</p></td>
     </tr>
     <tr>
@@ -237,10 +257,10 @@ is <code>FALSE</code>).</p></td>
     </tr>
     <tr>
       <th>as.percentage</th>
-      <td><p>Show result as percentage:
-<code>TRUE</code> - show as fraction of total sum;
-<code>FALSE</code> (default) - show as frequency/counts;
-<code>"col"</code> column-wise persentage (sum of values of each column is 100%);
+      <td><p>Show result as percentage:<br />
+<code>TRUE</code> - show as fraction of total sum;<br />
+<code>FALSE</code> (default) - show as frequency/counts;<br />
+<code>"col"</code> column-wise persentage (sum of values of each column is 100%);<br />
 <code>"row"</code> row-wise persentage (sum of values of each row is 100%).</p></td>
     </tr>
     <tr>
@@ -256,7 +276,7 @@ is <code>FALSE</code>).</p></td>
     
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
-    <p>To plot classification table (confusion matrix) use
+    <div class='dont-index'><p>To plot classification table (confusion matrix) use
  <code><a href='qplot_confusion.html'>qplot_confusion</a></code>.</p>
 <p>Other <span class="pkg">spHelper</span> plots: <code><a href='qplot_spRange.html'>check_palette</a></code>,
   <code><a href='qplot_spRangeMean.html'>layer_spRangeMean</a></code>,
@@ -267,9 +287,10 @@ is <code>FALSE</code>).</p></td>
   <code><a href='qplot_infoDim.html'>qplot_infoDim</a></code>, <code><a href='qplot_kAmp.html'>qplot_kAmp</a></code>,
   <code><a href='qplot_kSp.html'>qplot_kSp</a></code>, <code><a href='qplot_prediction.html'>qplot_prediction</a></code>,
   <code><a href='qplot_spRangeCenter.html'>qplot_spRangeCenter</a></code>,
-  <code>qplot_spStat</code>, <code><a href='qplot_spc.html'>qplot_spc</a></code>,
+  <code><a href='qplot_spRangeMedian.html'>qplot_spRangeMedian</a></code>,
+  <code><a href='qplot_spStat.html'>qplot_spStat</a></code>, <code><a href='qplot_spc.html'>qplot_spc</a></code>,
   <code><a href='rmExpr.html'>rmExpr</a></code>, <code><a href='rm_stripes.html'>rm_stripes</a></code>,
-  <code><a href='stat_chull.html'>stat_chull</a></code></p>
+  <code><a href='stat_chull.html'>stat_chull</a></code></p></div>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
@@ -291,9 +312,9 @@ is <code>FALSE</code>).</p></td>
 <span class='no'>Reference</span>  <span class='kw'>&lt;-</span> <span class='fu'>sample</span>(<span class='fu'>c</span>(<span class='st'>"A"</span>, <span class='st'>"B"</span>,<span class='st'>"C"</span>,<span class='st'>"D"</span>,<span class='st'>"E"</span>),<span class='no'>N</span>, <span class='kw'>replace</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)
 
 <span class='no'>tabl</span> <span class='kw'>&lt;-</span> <span class='fu'>table</span>(<span class='no'>Prediction</span>,<span class='no'>Reference</span>)
-<span class='fu'>qplot_crosstab</span>(<span class='no'>tabl</span>)</div><div class='img'><img src='qplot_crosstab-17.png' alt='' width='700' height='432.632880098887' /></div><div class='input'><span class='fu'>qplot_crosstab_sort</span>(<span class='no'>tabl</span>)   <span class='co'># different order of columns and rows</span></div><div class='img'><img src='qplot_crosstab-18.png' alt='' width='700' height='432.632880098887' /></div><div class='input'><span class='fu'>qplot_crosstab0</span>(<span class='no'>tabl</span>)       <span class='co'># no colors</span></div><div class='img'><img src='qplot_crosstab-19.png' alt='' width='700' height='432.632880098887' /></div><div class='input'><span class='fu'>qplot_crosstab0s</span>(<span class='no'>tabl</span>)      <span class='co'># no colors, different order of columns and rows</span></div><div class='img'><img src='qplot_crosstab-20.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+<span class='fu'>qplot_crosstab</span>(<span class='no'>tabl</span>)</div><div class='img'><img src='qplot_crosstab-1.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'>qplot_crosstab_sort</span>(<span class='no'>tabl</span>)   <span class='co'># different order of columns and rows</span></div><div class='img'><img src='qplot_crosstab-2.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'>qplot_crosstab0</span>(<span class='no'>tabl</span>)       <span class='co'># no colors</span></div><div class='img'><img src='qplot_crosstab-3.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'>qplot_crosstab0s</span>(<span class='no'>tabl</span>)      <span class='co'># no colors, different order of columns and rows</span></div><div class='img'><img src='qplot_crosstab-4.png' alt='' width='700' height='433' /></div><div class='input'>
 
-<span class='fu'>qplot_crosstab</span>(<span class='no'>Prediction</span>, <span class='no'>Reference</span>, <span class='kw'>as.percentage</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>sort</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</div><div class='img'><img src='qplot_crosstab-21.png' alt='' width='700' height='432.632880098887' /></div><div class='input'><span class='fu'>qplot_crosstab</span>(<span class='no'>Prediction</span>, <span class='no'>Reference</span>, <span class='kw'>as.percentage</span> <span class='kw'>=</span> <span class='st'>"row"</span>, <span class='kw'>sort</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</div><div class='img'><img src='qplot_crosstab-22.png' alt='' width='700' height='432.632880098887' /></div><div class='input'><span class='fu'>qplot_crosstab</span>(<span class='no'>Prediction</span>, <span class='no'>Reference</span>, <span class='kw'>as.percentage</span> <span class='kw'>=</span> <span class='st'>"col"</span>, <span class='kw'>sort</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</div><div class='img'><img src='qplot_crosstab-23.png' alt='' width='700' height='432.632880098887' /></div><div class='input'><span class='fu'>qplot_crosstab</span>(<span class='no'>Prediction</span>, <span class='no'>Reference</span>, <span class='kw'>as.percentage</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='kw'>sort</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</div><div class='img'><img src='qplot_crosstab-24.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+<span class='fu'>qplot_crosstab</span>(<span class='no'>Prediction</span>, <span class='no'>Reference</span>, <span class='kw'>as.percentage</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>sort</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</div><div class='img'><img src='qplot_crosstab-5.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'>qplot_crosstab</span>(<span class='no'>Prediction</span>, <span class='no'>Reference</span>, <span class='kw'>as.percentage</span> <span class='kw'>=</span> <span class='st'>"row"</span>, <span class='kw'>sort</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</div><div class='img'><img src='qplot_crosstab-6.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'>qplot_crosstab</span>(<span class='no'>Prediction</span>, <span class='no'>Reference</span>, <span class='kw'>as.percentage</span> <span class='kw'>=</span> <span class='st'>"col"</span>, <span class='kw'>sort</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</div><div class='img'><img src='qplot_crosstab-7.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'>qplot_crosstab</span>(<span class='no'>Prediction</span>, <span class='no'>Reference</span>, <span class='kw'>as.percentage</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='kw'>sort</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</div><div class='img'><img src='qplot_crosstab-8.png' alt='' width='700' height='433' /></div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
@@ -321,11 +342,14 @@ Vilmantas Gegzna
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="http://hadley.github.io/pkgdown/">pkgdown</a>.</p>
+  <p>Site built with <a href="http://pkgdown.r-lib.org/">pkgdown</a>.</p>
 </div>
 
       </footer>
    </div>
 
+  
+
   </body>
 </html>
+

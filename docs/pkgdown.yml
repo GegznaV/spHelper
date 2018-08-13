@@ -1,0 +1,8 @@
+pandoc: 2.1.1
+pkgdown: 1.1.0.9000
+pkgdown_sha: b2798656f04ce282edea3e12734ba5588c6acd6e
+articles:
+  v1_spHelper_Plotting: v1_spHelper_Plotting.html
+  v2_Other_Examples: v2_Other_Examples.html
+  v3_Plotting_Examples_gg_hy: v3_Plotting_Examples_gg_hy.html
+

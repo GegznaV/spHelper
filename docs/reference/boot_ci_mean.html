@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Bootstrapped mean and its confidence interval � boot_ci_mean • spHelper</title>
+<title>Bootstrapped mean and its confidence interval — boot_ci_mean • spHelper</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -18,13 +18,26 @@
 <!-- Font Awesome icons -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
+<!-- clipboard.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script>
+
+<!-- sticky kit -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
-<script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-  
-  
+
+
+
+<meta property="og:title" content="Bootstrapped mean and its confidence interval — boot_ci_mean" />
+
+<meta property="og:description" content="Function calculates bootstrapped mean (or other function)
+and its confidence interval for a vector x." />
+<meta name="twitter:card" content="summary" />
+
+
+
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -34,8 +47,7 @@
 <![endif]-->
 
 
-  	<link rel="icon" href="../favicon.png" />
-</head>
+  </head>
 
   <body>
     <div class="container template-reference-topic">
@@ -48,8 +60,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="../index.html">spHelper | R package</a>
+      <span class="navbar-brand">
+        <a class="navbar-link" href="../index.html">spHelper</a>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.1.189</span>
+      </span>
     </div>
+
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
@@ -63,7 +79,7 @@
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Tutorials
+    Examples and Tutorials
      
     <span class="caret"></span>
   </a>
@@ -89,6 +105,7 @@
   </a>
 </li>
       </ul>
+      
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
@@ -96,16 +113,20 @@
       
       </header>
 
-      <div class="row">
+<div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Bootstrapped mean and its confidence interval</h1>
+    
+    <div class="hidden name"><code>boot_ci_mean.Rd</code></div>
     </div>
 
+    <div class="ref-description">
     
     <p>Function calculates bootstrapped mean (or other function)
 and its confidence interval for a vector <code>x</code>.</p>
     
+    </div>
 
     <pre class="usage"><span class='fu'>boot_ci_mean</span>(<span class='no'>x</span>, <span class='kw'>conf</span> <span class='kw'>=</span> <span class='fl'>0.95</span>, <span class='kw'>R</span> <span class='kw'>=</span> <span class='fl'>1000</span>, <span class='kw'>sim</span> <span class='kw'>=</span> <span class='st'>"balanced"</span>,
   <span class='kw'>type</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"norm"</span>))
@@ -113,11 +134,11 @@ and its confidence interval for a vector <code>x</code>.</p>
 <span class='fu'>boot_ci_fun</span>(<span class='no'>x</span>, <span class='no'>FUN</span>, <span class='kw'>conf</span> <span class='kw'>=</span> <span class='fl'>0.95</span>, <span class='kw'>R</span> <span class='kw'>=</span> <span class='fl'>1000</span>, <span class='kw'>sim</span> <span class='kw'>=</span> <span class='st'>"balanced"</span>,
   <span class='kw'>type</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"norm"</span>), <span class='kw'>label</span> <span class='kw'>=</span> <span class='fu'>as.character</span>(<span class='fu'>match.call</span>()$<span class='no'>FUN</span>))
 
-<span class='fu'>boot_ci_corr</span>(<span class='no'>x</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>method</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"spearman"</span>, <span class='st'>"kendall"</span>, <span class='st'>"pearson"</span>)[<span class='fl'>1</span>],
-  <span class='kw'>use</span> <span class='kw'>=</span> <span class='st'>"everything"</span>, <span class='kw'>conf</span> <span class='kw'>=</span> <span class='fl'>0.95</span>, <span class='kw'>R</span> <span class='kw'>=</span> <span class='fl'>1000</span>, <span class='kw'>sim</span> <span class='kw'>=</span> <span class='st'>"balanced"</span>,
-  <span class='kw'>type</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"norm"</span>), <span class='kw'>label</span> <span class='kw'>=</span> <span class='st'>"corr_coef"</span>)</pre>
+<span class='fu'>boot_ci_corr</span>(<span class='no'>x</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>method</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"spearman"</span>, <span class='st'>"kendall"</span>,
+  <span class='st'>"pearson"</span>)[<span class='fl'>1</span>], <span class='kw'>use</span> <span class='kw'>=</span> <span class='st'>"everything"</span>, <span class='kw'>conf</span> <span class='kw'>=</span> <span class='fl'>0.95</span>, <span class='kw'>R</span> <span class='kw'>=</span> <span class='fl'>1000</span>,
+  <span class='kw'>sim</span> <span class='kw'>=</span> <span class='st'>"balanced"</span>, <span class='kw'>type</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"norm"</span>), <span class='kw'>label</span> <span class='kw'>=</span> <span class='st'>"corr_coef"</span>)</pre>
     
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
@@ -223,7 +244,7 @@ coefficient between vectors <code>x</code> and <code>y</code>.</p>
 <span class='fu'>set.seed</span>(<span class='fl'>1</span>)
 <span class='no'>x</span> <span class='kw'>&lt;-</span> <span class='fu'>rnorm</span>(<span class='fl'>30</span>)
 <span class='no'>y</span> <span class='kw'>&lt;-</span> <span class='no'>x</span> - <span class='fu'>rnorm</span>(<span class='fl'>30</span>) + <span class='fu'>runif</span>(<span class='fl'>30</span>,-<span class='fl'>2</span>,<span class='fl'>2</span>)
-<span class='fu'>plot</span>(<span class='no'>x</span>,<span class='no'>y</span>)</div><div class='img'><img src='boot_ci_mean-2.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+<span class='fu'>plot</span>(<span class='no'>x</span>,<span class='no'>y</span>)</div><div class='img'><img src='boot_ci_mean-1.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='fu'>set.seed</span>(<span class='fl'>1</span>)
 <span class='fu'>boot_ci_correlation</span>(<span class='no'>x</span>,<span class='no'>y</span>)</div><div class='output co'>#&gt; <span class='error'>Error in boot_ci_correlation(x, y): could not find function "boot_ci_correlation"</span></div><div class='input'>
 <span class='co'>#    ci_lower corr_coef  ci_upper</span>
@@ -258,11 +279,14 @@ coefficient between vectors <code>x</code> and <code>y</code>.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="http://hadley.github.io/pkgdown/">pkgdown</a>.</p>
+  <p>Site built with <a href="http://pkgdown.r-lib.org/">pkgdown</a>.</p>
 </div>
 
       </footer>
    </div>
 
+  
+
   </body>
 </html>
+

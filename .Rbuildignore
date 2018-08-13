@@ -8,3 +8,5 @@
 ^\.travis\.yml$
 ^man-roxygen
 ^D:\Dokumentai\R\spHelper\docs$
+^_pkgdown\.yml$
+^docs$

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>[+] Add bold title and subtitle to a plot � subt • spHelper</title>
+<title>[+] Add bold title and subtitle to a plot — subt • spHelper</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -18,13 +18,28 @@
 <!-- Font Awesome icons -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
+<!-- clipboard.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script>
+
+<!-- sticky kit -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
-<script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-  
-  
+
+
+
+<meta property="og:title" content="[+] Add bold title and subtitle to a plot — subt" />
+
+<meta property="og:description" content="Add bold title with second line in smaller font with subtitle.
+              Functions bquote and
+               atop are used to achieve
+               this effect." />
+<meta name="twitter:card" content="summary" />
+
+
+
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -34,8 +49,7 @@
 <![endif]-->
 
 
-  	<link rel="icon" href="../favicon.png" />
-</head>
+  </head>
 
   <body>
     <div class="container template-reference-topic">
@@ -48,8 +62,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="../index.html">spHelper | R package</a>
+      <span class="navbar-brand">
+        <a class="navbar-link" href="../index.html">spHelper</a>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.1.189</span>
+      </span>
     </div>
+
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
@@ -63,7 +81,7 @@
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Tutorials
+    Examples and Tutorials
      
     <span class="caret"></span>
   </a>
@@ -89,6 +107,7 @@
   </a>
 </li>
       </ul>
+      
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
@@ -96,22 +115,26 @@
       
       </header>
 
-      <div class="row">
+<div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>[+] Add bold title and subtitle to a plot</h1>
+    
+    <div class="hidden name"><code>subt.Rd</code></div>
     </div>
 
+    <div class="ref-description">
     
     <p>Add bold title with second line in smaller font with subtitle.
               Functions <code><a href='http://www.rdocumentation.org/packages/base/topics/bquote'>bquote</a></code> and
                <code><a href='http://www.rdocumentation.org/packages/grDevices/topics/plotmath'>atop</a></code> are used to achieve
                this effect.</p>
     
+    </div>
 
     <pre class="usage"><span class='fu'>subt</span>(<span class='kw'>Title</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>subTitle</span> <span class='kw'>=</span> <span class='kw'>NULL</span>)</pre>
     
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
@@ -136,10 +159,10 @@ and in italics.</p></td>
     
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
-    <p>Other <span class="pkg">spHelper</span> utilities: <code><a href='IQR_outliers.html'>IQR_outliers</a></code>,
+    <div class='dont-index'><p>Other <span class="pkg">spHelper</span> utilities: <code><a href='IQR_outliers.html'>IQR_outliers</a></code>,
   <code><a href='expr2text.html'>expr2text</a></code>, <code><a href='mad_outliers.html'>mad_outliers</a></code>,
   <code><a href='rmExpr.html'>rmExpr</a></code>, <code><a href='sd_outliers.html'>sd_outliers</a></code>,
-  <code><a href='unGroup.html'>unGroup</a></code>, <code><a href='uncall.html'>uncall</a></code></p>
+  <code><a href='unGroup.html'>unGroup</a></code>, <code><a href='uncall.html'>uncall</a></code></p></div>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
@@ -150,27 +173,27 @@ and in italics.</p></td>
 
 <span class='co'># ----------------------------------------------------------------</span>
 
-<span class='fu'>plot</span>(<span class='no'>cars</span>[,<span class='fl'>1</span>:<span class='fl'>2</span>], <span class='kw'>main</span> <span class='kw'>=</span> <span class='st'>"Cars"</span>)</div><div class='img'><img src='subt-10.png' alt='' width='700' height='432.632880098887' /></div><div class='input'><span class='fu'>plot</span>(<span class='no'>cars</span>[,<span class='fl'>1</span>:<span class='fl'>2</span>], <span class='kw'>main</span> <span class='kw'>=</span> <span class='fu'>subt</span>(<span class='st'>"Cars"</span>)) <span class='co'># the same as in previous line</span></div><div class='img'><img src='subt-11.png' alt='' width='700' height='432.632880098887' /></div><div class='input'><span class='fu'>plot</span>(<span class='no'>cars</span>[,<span class='fl'>1</span>:<span class='fl'>2</span>], <span class='kw'>main</span> <span class='kw'>=</span> <span class='fu'>subt</span>(<span class='st'>"Cars"</span>,<span class='st'>"Distance vs. speed"</span>))</div><div class='img'><img src='subt-12.png' alt='' width='700' height='432.632880098887' /></div><div class='input'><span class='fu'>plot</span>(<span class='no'>cars</span>[,<span class='fl'>1</span>:<span class='fl'>2</span>], <span class='kw'>main</span> <span class='kw'>=</span> <span class='fu'>subt</span>(<span class='kw'>subTitle</span> <span class='kw'>=</span> <span class='st'>"Distance vs. speed"</span>))</div><div class='img'><img src='subt-13.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+<span class='fu'>plot</span>(<span class='no'>cars</span>[,<span class='fl'>1</span>:<span class='fl'>2</span>], <span class='kw'>main</span> <span class='kw'>=</span> <span class='st'>"Cars"</span>)</div><div class='img'><img src='subt-1.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'>plot</span>(<span class='no'>cars</span>[,<span class='fl'>1</span>:<span class='fl'>2</span>], <span class='kw'>main</span> <span class='kw'>=</span> <span class='fu'>subt</span>(<span class='st'>"Cars"</span>)) <span class='co'># the same as in previous line</span></div><div class='img'><img src='subt-2.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'>plot</span>(<span class='no'>cars</span>[,<span class='fl'>1</span>:<span class='fl'>2</span>], <span class='kw'>main</span> <span class='kw'>=</span> <span class='fu'>subt</span>(<span class='st'>"Cars"</span>,<span class='st'>"Distance vs. speed"</span>))</div><div class='img'><img src='subt-3.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'>plot</span>(<span class='no'>cars</span>[,<span class='fl'>1</span>:<span class='fl'>2</span>], <span class='kw'>main</span> <span class='kw'>=</span> <span class='fu'>subt</span>(<span class='kw'>subTitle</span> <span class='kw'>=</span> <span class='st'>"Distance vs. speed"</span>))</div><div class='img'><img src='subt-4.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># ----------------------------------------------------------------</span>
 
 <span class='fu'>library</span>(<span class='no'>ggplot2</span>)
 
 <span class='no'>g</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/qplot'>qplot</a></span>(<span class='no'>mpg</span>, <span class='no'>wt</span>, <span class='kw'>data</span><span class='kw'>=</span><span class='no'>mtcars</span>)
-<span class='no'>g</span> + <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/labs'>ggtitle</a></span>(<span class='st'>"Cars"</span>) <span class='co'># non-bold title</span></div><div class='img'><img src='subt-14.png' alt='' width='700' height='432.632880098887' /></div><div class='input'><span class='no'>g</span> + <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/labs'>ggtitle</a></span>(<span class='fu'>subt</span>(<span class='st'>"Cars"</span>)) <span class='co'># bold title</span></div><div class='img'><img src='subt-15.png' alt='' width='700' height='432.632880098887' /></div><div class='input'><span class='no'>g</span> + <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/labs'>ggtitle</a></span>(<span class='fu'>subt</span>(<span class='st'>"Cars"</span>,<span class='st'>"Distance vs. speed"</span>))</div><div class='img'><img src='subt-16.png' alt='' width='700' height='432.632880098887' /></div><div class='input'><span class='no'>g</span> + <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/labs'>ggtitle</a></span>(<span class='fu'>subt</span>(<span class='kw'>subTitle</span> <span class='kw'>=</span> <span class='st'>"Distance vs. speed"</span>))</div><div class='img'><img src='subt-17.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+<span class='no'>g</span> + <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/labs'>ggtitle</a></span>(<span class='st'>"Cars"</span>) <span class='co'># non-bold title</span></div><div class='img'><img src='subt-5.png' alt='' width='700' height='433' /></div><div class='input'><span class='no'>g</span> + <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/labs'>ggtitle</a></span>(<span class='fu'>subt</span>(<span class='st'>"Cars"</span>)) <span class='co'># bold title</span></div><div class='img'><img src='subt-6.png' alt='' width='700' height='433' /></div><div class='input'><span class='no'>g</span> + <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/labs'>ggtitle</a></span>(<span class='fu'>subt</span>(<span class='st'>"Cars"</span>,<span class='st'>"Distance vs. speed"</span>))</div><div class='img'><img src='subt-7.png' alt='' width='700' height='433' /></div><div class='input'><span class='no'>g</span> + <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/labs'>ggtitle</a></span>(<span class='fu'>subt</span>(<span class='kw'>subTitle</span> <span class='kw'>=</span> <span class='st'>"Distance vs. speed"</span>))</div><div class='img'><img src='subt-8.png' alt='' width='700' height='433' /></div><div class='input'>
 
 <span class='co'># ----------------------------------------------------------------</span>
 
 <span class='fu'>library</span>(<span class='no'>lattice</span>)
 
-<span class='fu'><a href='http://www.rdocumentation.org/packages/lattice/topics/xyplot'>xyplot</a></span>(<span class='no'>eruptions</span>~<span class='no'>waiting</span>, <span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>faithful</span>)</div><div class='img'><img src='subt-18.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+<span class='fu'><a href='http://www.rdocumentation.org/packages/lattice/topics/xyplot'>xyplot</a></span>(<span class='no'>eruptions</span>~<span class='no'>waiting</span>, <span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>faithful</span>)</div><div class='img'><img src='subt-9.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='fu'><a href='http://www.rdocumentation.org/packages/lattice/topics/xyplot'>xyplot</a></span>(<span class='no'>eruptions</span>~<span class='no'>waiting</span>, <span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>faithful</span>,
- <span class='kw'>main</span> <span class='kw'>=</span> <span class='st'>"Old Faithful Geyser Data"</span>)</div><div class='img'><img src='subt-19.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+ <span class='kw'>main</span> <span class='kw'>=</span> <span class='st'>"Old Faithful Geyser Data"</span>)</div><div class='img'><img src='subt-10.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='fu'><a href='http://www.rdocumentation.org/packages/lattice/topics/xyplot'>xyplot</a></span>(<span class='no'>eruptions</span>~<span class='no'>waiting</span>, <span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>faithful</span>,
- <span class='kw'>main</span> <span class='kw'>=</span> <span class='fu'>subt</span>(<span class='st'>"Old Faithful Geyser Data"</span>))</div><div class='img'><img src='subt-20.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+ <span class='kw'>main</span> <span class='kw'>=</span> <span class='fu'>subt</span>(<span class='st'>"Old Faithful Geyser Data"</span>))</div><div class='img'><img src='subt-11.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='fu'><a href='http://www.rdocumentation.org/packages/lattice/topics/xyplot'>xyplot</a></span>(<span class='no'>eruptions</span>~<span class='no'>waiting</span>, <span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>faithful</span>,
- <span class='kw'>main</span> <span class='kw'>=</span> <span class='fu'>subt</span>(<span class='st'>"Old Faithful Geyser"</span>, <span class='st'>"Data"</span>))</div><div class='img'><img src='subt-21.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+ <span class='kw'>main</span> <span class='kw'>=</span> <span class='fu'>subt</span>(<span class='st'>"Old Faithful Geyser"</span>, <span class='st'>"Data"</span>))</div><div class='img'><img src='subt-12.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='fu'><a href='http://www.rdocumentation.org/packages/lattice/topics/xyplot'>xyplot</a></span>(<span class='no'>eruptions</span>~<span class='no'>waiting</span>, <span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>faithful</span>,
- <span class='kw'>main</span> <span class='kw'>=</span> <span class='fu'>subt</span>(<span class='kw'>subTitle</span> <span class='kw'>=</span> <span class='st'>"Old Faithful Geyser Data"</span>))</div><div class='img'><img src='subt-22.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+ <span class='kw'>main</span> <span class='kw'>=</span> <span class='fu'>subt</span>(<span class='kw'>subTitle</span> <span class='kw'>=</span> <span class='st'>"Old Faithful Geyser Data"</span>))</div><div class='img'><img src='subt-13.png' alt='' width='700' height='433' /></div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
@@ -200,11 +223,14 @@ Vilmantas Gegzna
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="http://hadley.github.io/pkgdown/">pkgdown</a>.</p>
+  <p>Site built with <a href="http://pkgdown.r-lib.org/">pkgdown</a>.</p>
 </div>
 
       </footer>
    </div>
 
+  
+
   </body>
 </html>
+

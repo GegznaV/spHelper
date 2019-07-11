@@ -6,14 +6,14 @@ Description: Functions that extend capabilities of package `hyperSpec` (e.g.,
             spectroscopic differences and classification results. Various
             convenience and wrapper functions, R operators as well as
             RStudio addins.
-Version: 0.1.189
-Date: 2018-08-13
+Version: 0.1.190
+Date: 2019-07-11
 Encoding: UTF-8
 Authors@R: person("Vilmantas", "Gegzna", email = "GegznaV@gmail.com", role = c("aut", "cre"))
 License: GPL (>= 3)
 LazyData: yes
 LazyLoad: yes
-RoxygenNote: 6.1.0
+RoxygenNote: 6.1.1
 VignetteBuilder: knitr
 Depends:
     R (>= 3.2),

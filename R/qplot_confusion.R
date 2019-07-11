@@ -126,14 +126,14 @@ qplot_confusion <- function(...) {
 #' @method qplot_confusion default
 #' @export
 qplot_confusion.default <- function(Prediction, Reference,
-                                    Title  = "Classification table",
-                                    xLabel = NULL,
-                                    yLabel = NULL,
-                                    subTitle = NULL,
-                                    shades = c("prop", "max", "const", "none"),
-                                    guide = FALSE,
+                                    Title     = "Classification table",
+                                    xLabel    = NULL,
+                                    yLabel    = NULL,
+                                    subTitle  = NULL,
+                                    shades    = c("prop", "max", "const", "none"),
+                                    guide     = FALSE,
                                     text.size = 5,
-                                    decimals = 2,
+                                    decimals  = 2,
                                     ...) {
 
     if (length(Prediction) != length(Reference)) {
@@ -156,22 +156,47 @@ qplot_confusion.matrix <- function(mat, ...){
 }
 #  ------------------------------------------------------------------------
 #' @rdname qplot_confusion
+#' @method qplot_confusion ResampleResult
+#' @export
+
+qplot_confusion.ResampleResult <- function(obj, ...) {
+    # for MLR
+    qplot_confusion(obj$pred, ...)
+}
+
+#  ------------------------------------------------------------------------
+#' @rdname qplot_confusion
+#' @method qplot_confusion PredictionClassif
+#' @export
+
+qplot_confusion.PredictionClassif <- function(obj, ...) {
+    # for MLR
+    with(
+        unclass(obj$data),
+        qplot_confusion(response, truth)
+    )
+}
+
+
+
+#  ------------------------------------------------------------------------
+#' @rdname qplot_confusion
 #' @method qplot_confusion table
 #' @export
 qplot_confusion.table <- function(conf,
-                                  Title  = "Classification table",
-                                  xLabel = NULL,
-                                  yLabel = NULL,
-                                  subTitle = NULL,
-                                  shades = c("prop", "max", "const", "none"),
-                                  guide  = FALSE,
+                                  Title     = "Classification table",
+                                  xLabel    = NULL,
+                                  yLabel    = NULL,
+                                  subTitle  = NULL,
+                                  shades    = c("prop", "max", "const", "none"),
+                                  guide     = FALSE,
                                   text.size = 5,
                                   decimals  = 2,
-                                  TPR.name = "<TPR>",
-                                  PPV.name = "<PPV>",
-                                  sort = c(FALSE, "diagonal", "PPV", "TPR"),
-                                  metric = c("kappa", "weighted.kappa", "meanTPR")
-                                  )
+                                  TPR.name  = "<TPR>",
+                                  PPV.name  = "<PPV>",
+                                  sort      = c(FALSE, "diagonal", "PPV", "TPR"),
+                                  metric    = c("kappa", "weighted.kappa", "meanTPR", "meanPPV")
+)
 {
     # Accuracy measures ============================================================
 
@@ -183,14 +208,15 @@ qplot_confusion.table <- function(conf,
     #
     `%if<0%` <- function(a, b) {if (length(a) > 0) a else b}
 
-    options <- c("DIAGONAL","TPR","PPV")
+    options <- c("DIAGONAL", "TPR", "PPV")
     sort <- options[pmatch(toupper(sort[1]), options, nomatch = FALSE)] %if<0% "FALSE"
-    ind <- switch(sort,
-                   DIAGONAL = conf %>% diag %>% order(decreasing = TRUE),
-                   TPR = TPR  %>% order(decreasing = TRUE),
-                   PPV = PPV  %>% order(decreasing = TRUE),
-                   # Otherwise:
-                        1:(conf %>% diag %>% length)
+    ind <- switch(
+        sort,
+        DIAGONAL = conf %>% diag %>% order(decreasing = TRUE),
+        TPR      = TPR  %>% order(decreasing = TRUE),
+        PPV      = PPV  %>% order(decreasing = TRUE),
+        # Otherwise:
+        1:(conf %>% diag %>% length)
     )
 
     # Sort appropriate values
@@ -199,27 +225,28 @@ qplot_confusion.table <- function(conf,
     PPV  <- PPV[ind]       # "Positive Predictive Value"
 
     # Select and calculate overall accuracy measure
-    switch(tolower(metric[1]),
-           kappa = {
-               K   <- psych::cohen.kappa(conf)[["kappa"]] # Cohen's Kappa
-               ACC_symbol <- 'k'
-           },
+    switch(
+        tolower(metric[1]),
+        kappa = {
+            K   <- psych::cohen.kappa(conf)[["kappa"]] # Cohen's Kappa
+            ACC_symbol <- 'k'
+        },
 
-           weighted.kappa = {
-               K   <- psych::cohen.kappa(conf)[["weighted.kappa"]] # Weighted Kappa
-               ACC_symbol <- 'w'
-           },
+        weighted.kappa = {
+            K   <- psych::cohen.kappa(conf)[["weighted.kappa"]] # Weighted Kappa
+            ACC_symbol <- 'w'
+        },
 
-           meantpr = {
-               K   <- mean(TPR)
-               ACC_symbol <- 't'
-           },
+        meantpr = {
+            K   <- mean(TPR)
+            ACC_symbol <- 't'
+        },
 
-           meanppv = {
-               K   <- mean(PPV)
-               ACC_symbol <- 'v'
-           },
-           stop(sprintf("Accuracy metric '%s' is not supported.", metric[1]))
+        meanppv = {
+            K   <- mean(PPV)
+            ACC_symbol <- 'v'
+        },
+        stop(sprintf("Accuracy metric '%s' is not supported.", metric[1]))
     )
 
     # Add accuracy measures to the main matrix/table
@@ -358,3 +385,6 @@ qplot_confusion.table <- function(conf,
 
     return(p)
 }
+
+
+

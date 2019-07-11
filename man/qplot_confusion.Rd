@@ -4,6 +4,8 @@
 \alias{qplot_confusion}
 \alias{qplot_confusion.default}
 \alias{qplot_confusion.matrix}
+\alias{qplot_confusion.ResampleResult}
+\alias{qplot_confusion.PredictionClassif}
 \alias{qplot_confusion.table}
 \title{[!+] Plot a confusion matrix (a.k.a. classification table)}
 \usage{
@@ -15,6 +17,10 @@ qplot_confusion(...)
   guide = FALSE, text.size = 5, decimals = 2, ...)
 
 \method{qplot_confusion}{matrix}(mat, ...)
+
+\method{qplot_confusion}{ResampleResult}(obj, ...)
+
+\method{qplot_confusion}{PredictionClassif}(obj, ...)
 
 \method{qplot_confusion}{table}(conf, Title = "Classification table",
   xLabel = NULL, yLabel = NULL, subTitle = NULL, shades = c("prop",

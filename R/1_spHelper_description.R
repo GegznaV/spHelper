@@ -119,3 +119,5 @@ NULL
 # \code{\link{}} \cr
 # \code{\link{}} \cr
 # @importFrom tidyr '%>%'
+
+eval_glue <- spMisc::eval_glue

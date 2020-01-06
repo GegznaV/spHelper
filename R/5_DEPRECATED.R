@@ -208,6 +208,12 @@ foldTests <- function(obj, ...){
     cvo_test_bs(obj, ...)
 }
 # =============================================================================
+#' @name deprecated
+#' @title Deprecated functions
+#' @description Deprecated functions.
+NULL
+
+#' @rdname deprecated
 #' DEPRECATED!
 #' DEPRECATED! Use \code\link{cvo_get_info}} instead.
 #' @export
@@ -215,6 +221,8 @@ cvo_info <- function(cvo, ...) {
     .Deprecated("cvo_get_info")
     cvo_get_info(cvo, ...)
 }
+
+#' @rdname deprecated
 #' DEPRECATED!
 #' DEPRECATED! Use \code\link{cvo_get_seeds}} instead.
 #' @export
@@ -222,6 +230,8 @@ cvo_seeds <- function(cvo, ...) {
     .Deprecated("cvo_get_seeds")
     cvo_get_seeds(cvo, ...)
 }
+
+#' @rdname deprecated
 #' DEPRECATED!
 #' DEPRECATED! Use \code\link{cvo_get_sample_size}} instead.
 #' @export

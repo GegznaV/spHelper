@@ -48,25 +48,3 @@ qplotc(flu[,,440])
 qplotc(flu) + geom_smooth(method = "lm",  size = .5)
 
 
-## ----qplotmap------------------------------------------------------------
-qplotmap(chondro)
-qplotmap(chondro) + scale_fill_gradientn(colours = alois.palette())
-
-## works also with discrete x or y axis:
-qplotmap(chondro,
-         mapping = aes(x = x,
-                       y = as.factor(y),
-                       fill = spc)
-         )
-
-## ----qplotmixmap---------------------------------------------------------
-chondro <- chondro - spc.fit.poly.below(chondro)
-chondro <- sweep(chondro, 1, apply(chondro, 1, mean), "/")
-chondro <- sweep(chondro, 2, apply(chondro, 2, quantile, 0.05), "-")
-
-qplotmixmap(chondro[,,c(940, 1002, 1440)],
-             purecol = c(colg = "red",
-                         Phe = "green",
-                         Lipid = "blue"))
-
-

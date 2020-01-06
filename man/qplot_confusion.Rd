@@ -11,10 +11,19 @@
 \usage{
 qplot_confusion(...)
 
-\method{qplot_confusion}{default}(Prediction, Reference,
-  Title = "Classification table", xLabel = NULL, yLabel = NULL,
-  subTitle = NULL, shades = c("prop", "max", "const", "none"),
-  guide = FALSE, text.size = 5, decimals = 2, ...)
+\method{qplot_confusion}{default}(
+  Prediction,
+  Reference,
+  Title = "Classification table",
+  xLabel = NULL,
+  yLabel = NULL,
+  subTitle = NULL,
+  shades = c("prop", "max", "const", "none"),
+  guide = FALSE,
+  text.size = 5,
+  decimals = 2,
+  ...
+)
 
 \method{qplot_confusion}{matrix}(mat, ...)
 
@@ -22,19 +31,28 @@ qplot_confusion(...)
 
 \method{qplot_confusion}{PredictionClassif}(obj, ...)
 
-\method{qplot_confusion}{table}(conf, Title = "Classification table",
-  xLabel = NULL, yLabel = NULL, subTitle = NULL, shades = c("prop",
-  "max", "const", "none"), guide = FALSE, text.size = 5,
-  decimals = 2, TPR.name = "<TPR>", PPV.name = "<PPV>",
-  sort = c(FALSE, "diagonal", "PPV", "TPR"), metric = c("kappa",
-  "weighted.kappa", "meanTPR"))
+\method{qplot_confusion}{table}(
+  conf,
+  Title = "Classification table",
+  xLabel = NULL,
+  yLabel = NULL,
+  subTitle = NULL,
+  shades = c("prop", "max", "const", "none"),
+  guide = FALSE,
+  text.size = 5,
+  decimals = 2,
+  TPR.name = "<TPR>",
+  PPV.name = "<PPV>",
+  sort = c(FALSE, "diagonal", "PPV", "TPR"),
+  metric = c("kappa", "weighted.kappa", "meanTPR", "meanPPV")
+)
 }
 \arguments{
 \item{...}{Appropriate parameters (described below).}
 
 \item{Prediction}{A factor variable with \bold{predicted} groups.}
 
-\item{Reference}{A factor variable  with \bold{reference} groups.}
+\item{Reference}{A factor variable with \bold{reference} groups.}
 
 \item{Title}{The main title for the plot.}
 
@@ -66,8 +84,8 @@ and in italics.}
 \item{decimals}{The number of decimal positions in rounding. Default is 2
 (i.e., precission is 0.01).}
 
-\item{conf, mat}{A confusion matrix (classification table): either an object of
-a class "table" or a square matrix.}
+\item{conf, mat}{A confusion matrix (classification table): either an object
+of a class "table" or a square matrix.}
 
 \item{TPR.name}{The name of the row with true positive rate (TPR).
 Default is "<TPR>". It is the same as "<Sensitivity>".}
@@ -93,20 +111,20 @@ A plot of confusion matrix and additional statistics (`ggplot` object).
 }
 \description{
 Plot a confusion matrix (classification table) with
-             additional statistics (sensitivity (Se) a.k.a. true positive
-             rate, positive predictive value (PPV) and Cohens' Kappa (k)). \cr
+additional statistics (sensitivity (Se) a.k.a. true positive
+rate, positive predictive value (PPV) and Cohens' Kappa (k)). \cr
 
-         Colors in the main matrix: \bold{diagonal} cells vary from grey to
-         \bold{green} and \bold{offdiagonal} elements vary from grey to
-         \bold{red}. The color intensity in certain cell is determined by
-         parameter \code{shades}.\cr
+Colors in the main matrix: \bold{diagonal} cells vary from grey to
+\bold{green} and \bold{offdiagonal} elements vary from grey to
+\bold{red}. The color intensity in certain cell is determined by
+parameter \code{shades}.\cr
 
-              Colors of cells with statistics Se, PPV and k vary depening on
-          values of these statistics from \bold{red} (\emph{low} values) to
-          \bold{grey} (\emph{middle} values), to \bold{green} (\emph{high} values).\cr
+Colors of cells with statistics Se, PPV and k vary depening on
+values of these statistics from \bold{red} (\emph{low} values) to
+\bold{grey} (\emph{middle} values), to \bold{green} (\emph{high} values).\cr
 
-            \bold{Exception:} when \code{shades="const"} and \code{shades="none"},
-         color intensities are constant.
+\bold{Exception:} when \code{shades="const"} and \code{shades="none"},
+color intensities are constant.
 }
 \examples{
 
@@ -160,19 +178,26 @@ qplot_confusion(conf3,shades = "none", subTitle = "shades: none")
 
 }
 \seealso{
-Other \pkg{spHelper} plots: \code{\link{check_palette}},
-  \code{\link{layer_spRangeMean}},
-  \code{\link{plot_colors}}, \code{\link{plot_hyPalette}},
-  \code{\link{plot_spCompare}}, \code{\link{plot_spDiff}},
-  \code{\link{plot_spDistribution}},
-  \code{\link{qplot_crosstab}},
-  \code{\link{qplot_infoDim}}, \code{\link{qplot_kAmp}},
-  \code{\link{qplot_kSp}}, \code{\link{qplot_prediction}},
-  \code{\link{qplot_spRangeCenter}},
-  \code{\link{qplot_spRangeMedian}},
-  \code{\link{qplot_spStat}}, \code{\link{qplot_spc}},
-  \code{\link{rmExpr}}, \code{\link{rm_stripes}},
-  \code{\link{stat_chull}}
+Other \pkg{spHelper} plots: 
+\code{\link{check_palette}()},
+\code{\link{layer_spRangeMean}()},
+\code{\link{plot_colors}()},
+\code{\link{plot_hyPalette}()},
+\code{\link{plot_spCompare}()},
+\code{\link{plot_spDiff}()},
+\code{\link{plot_spDistribution}()},
+\code{\link{qplot_crosstab}()},
+\code{\link{qplot_infoDim}()},
+\code{\link{qplot_kAmp}()},
+\code{\link{qplot_kSp}()},
+\code{\link{qplot_prediction}()},
+\code{\link{qplot_spRangeCenter}()},
+\code{\link{qplot_spRangeMedian}()},
+\code{\link{qplot_spStat}()},
+\code{\link{qplot_spc}()},
+\code{\link{rmExpr}()},
+\code{\link{rm_stripes}()},
+\code{\link{stat_chull}()}
 }
 \author{
 Vilmantas Gegzna

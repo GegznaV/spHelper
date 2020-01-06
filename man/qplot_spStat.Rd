@@ -5,18 +5,35 @@
 \alias{layer_spStat}
 \title{[+] Plot a summary statistic of spectroscopic data by group}
 \usage{
-qplot_spStat(sp, by = stop("Argument 'by' is missing."),
+qplot_spStat(
+  sp,
+  by = stop("Argument 'by' is missing."),
   FUN = stop("Argument 'FUN' is missing."),
-  Title = fCap(as.character(match.call()$FUN)), subTitle = NULL,
-  All = FALSE, fixed.colors = All, All.color = "black",
+  Title = fCap(as.character(match.call()$FUN)),
+  subTitle = NULL,
+  All = FALSE,
+  fixed.colors = All,
+  All.color = "black",
   gr.color = c(hyGet_palette(sp), RColorBrewer::brewer.pal(8, "Dark2")),
-  All.linetype = "dashed", gr.linetype = "solid", All.size = 1.1,
-  gr.size = 0.8, legend.title = element_blank(), ..., add = FALSE)
+  All.linetype = "dashed",
+  gr.linetype = "solid",
+  All.size = 1.1,
+  gr.size = 0.8,
+  legend.title = element_blank(),
+  ...,
+  add = FALSE
+)
 
-layer_spStat(sp, by = stop("Argument 'by' is missing."),
+layer_spStat(
+  sp,
+  by = stop("Argument 'by' is missing."),
   FUN = stop("Argument 'FUN' is missing."),
-  Title = fCap(as.character(match.call()$FUN)), subTitle = NULL,
-  All = FALSE, ..., add = TRUE)
+  Title = fCap(as.character(match.call()$FUN)),
+  subTitle = NULL,
+  All = FALSE,
+  ...,
+  add = TRUE
+)
 }
 \arguments{
 \item{sp}{Spectroscopic data
@@ -86,19 +103,26 @@ qplot_spRange(chondro, "clusters") +
 \seealso{
 \code{\link{spStat}}
 
-Other \pkg{spHelper} plots: \code{\link{check_palette}},
-  \code{\link{layer_spRangeMean}},
-  \code{\link{plot_colors}}, \code{\link{plot_hyPalette}},
-  \code{\link{plot_spCompare}}, \code{\link{plot_spDiff}},
-  \code{\link{plot_spDistribution}},
-  \code{\link{qplot_confusion}},
-  \code{\link{qplot_crosstab}},
-  \code{\link{qplot_infoDim}}, \code{\link{qplot_kAmp}},
-  \code{\link{qplot_kSp}}, \code{\link{qplot_prediction}},
-  \code{\link{qplot_spRangeCenter}},
-  \code{\link{qplot_spRangeMedian}},
-  \code{\link{qplot_spc}}, \code{\link{rmExpr}},
-  \code{\link{rm_stripes}}, \code{\link{stat_chull}}
+Other \pkg{spHelper} plots: 
+\code{\link{check_palette}()},
+\code{\link{layer_spRangeMean}()},
+\code{\link{plot_colors}()},
+\code{\link{plot_hyPalette}()},
+\code{\link{plot_spCompare}()},
+\code{\link{plot_spDiff}()},
+\code{\link{plot_spDistribution}()},
+\code{\link{qplot_confusion}()},
+\code{\link{qplot_crosstab}()},
+\code{\link{qplot_infoDim}()},
+\code{\link{qplot_kAmp}()},
+\code{\link{qplot_kSp}()},
+\code{\link{qplot_prediction}()},
+\code{\link{qplot_spRangeCenter}()},
+\code{\link{qplot_spRangeMedian}()},
+\code{\link{qplot_spc}()},
+\code{\link{rmExpr}()},
+\code{\link{rm_stripes}()},
+\code{\link{stat_chull}()}
 }
 \author{
 Vilmantas Gegzna

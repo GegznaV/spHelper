@@ -15,8 +15,10 @@ measure_bac(truth, response)
 Balanced accuracy (for 2 or more groups)
 }
 \seealso{
-Other measures_: \code{\link{measure_bac_2gr}},
-  \code{\link{measure_tn}}, \code{\link{measure_tpr}},
-  \code{\link{measure_tp}}
+Other measures_: 
+\code{\link{measure_bac_2gr}()},
+\code{\link{measure_tn}()},
+\code{\link{measure_tpr}()},
+\code{\link{measure_tp}()}
 }
 \concept{measures_}

@@ -17,8 +17,10 @@ measure_tpr(truth, response, level)
 Rate of correctly identified values in a certain group
 }
 \seealso{
-Other measures_: \code{\link{measure_bac_2gr}},
-  \code{\link{measure_bac}}, \code{\link{measure_tn}},
-  \code{\link{measure_tp}}
+Other measures_: 
+\code{\link{measure_bac_2gr}()},
+\code{\link{measure_bac}()},
+\code{\link{measure_tn}()},
+\code{\link{measure_tp}()}
 }
 \concept{measures_}

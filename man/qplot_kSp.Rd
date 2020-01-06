@@ -6,14 +6,28 @@
 \alias{qplot_sp}
 \title{[!+] Plot spectroscopic curves and spectral components (a.k.a. loadings)}
 \usage{
-qplot_kSp(loadings, Title = "Components", xLabel = labels(loadings,
-  ".wavelength"), yLabel = labels(loadings, "spc"), by = "cNames",
-  palette = hyGet_palette(loadings), legendName = FALSE,
-  filled = TRUE, normalize = FALSE, facets = FALSE,
-  subTitle = NULL, names.in = NULL, line_size = 1)
+qplot_kSp(
+  loadings,
+  Title = "Components",
+  xLabel = labels(loadings, ".wavelength"),
+  yLabel = labels(loadings, "spc"),
+  by = "cNames",
+  palette = hyGet_palette(loadings),
+  legendName = FALSE,
+  filled = TRUE,
+  normalize = FALSE,
+  facets = FALSE,
+  subTitle = NULL,
+  names.in = NULL,
+  line_size = 1
+)
 
-qplot_kSpFacets(..., Title = "Components (stacked)",
-  normalize = "auto", facets = TRUE)
+qplot_kSpFacets(
+  ...,
+  Title = "Components (stacked)",
+  normalize = "auto",
+  facets = TRUE
+)
 
 qplot_sp(..., Title = NULL, filled = FALSE, line_size = 0.5)
 }
@@ -122,27 +136,38 @@ qplot_sp(flu, Title = "Flu dataset", by = 'c2', legendName = "Concentration")
 
 }
 \seealso{
-Other \pkg{spHelper} plots: \code{\link{check_palette}},
-  \code{\link{layer_spRangeMean}},
-  \code{\link{plot_colors}}, \code{\link{plot_hyPalette}},
-  \code{\link{plot_spCompare}}, \code{\link{plot_spDiff}},
-  \code{\link{plot_spDistribution}},
-  \code{\link{qplot_confusion}},
-  \code{\link{qplot_crosstab}},
-  \code{\link{qplot_infoDim}}, \code{\link{qplot_kAmp}},
-  \code{\link{qplot_prediction}},
-  \code{\link{qplot_spRangeCenter}},
-  \code{\link{qplot_spRangeMedian}},
-  \code{\link{qplot_spStat}}, \code{\link{qplot_spc}},
-  \code{\link{rmExpr}}, \code{\link{rm_stripes}},
-  \code{\link{stat_chull}}
+Other \pkg{spHelper} plots: 
+\code{\link{check_palette}()},
+\code{\link{layer_spRangeMean}()},
+\code{\link{plot_colors}()},
+\code{\link{plot_hyPalette}()},
+\code{\link{plot_spCompare}()},
+\code{\link{plot_spDiff}()},
+\code{\link{plot_spDistribution}()},
+\code{\link{qplot_confusion}()},
+\code{\link{qplot_crosstab}()},
+\code{\link{qplot_infoDim}()},
+\code{\link{qplot_kAmp}()},
+\code{\link{qplot_prediction}()},
+\code{\link{qplot_spRangeCenter}()},
+\code{\link{qplot_spRangeMedian}()},
+\code{\link{qplot_spStat}()},
+\code{\link{qplot_spc}()},
+\code{\link{rmExpr}()},
+\code{\link{rm_stripes}()},
+\code{\link{stat_chull}()}
 
-Other component analysis / factorisation related functions in \pkg{spHelper}: \code{\link{getScores}},
-  \code{\link{infoDim}}, \code{\link{plot_spDiff}},
-  \code{\link{qplot_infoDim}}, \code{\link{qplot_kAmp}},
-  \code{\link{qplot_spc}}, \code{\link{reconstructSp}},
-  \code{\link{sortLoadings}}, \code{\link{unipeak}},
-  \code{\link{whichOutlier}}
+Other component analysis / factorisation related functions in \pkg{spHelper}: 
+\code{\link{getScores}()},
+\code{\link{infoDim}()},
+\code{\link{plot_spDiff}()},
+\code{\link{qplot_infoDim}()},
+\code{\link{qplot_kAmp}()},
+\code{\link{qplot_spc}()},
+\code{\link{reconstructSp}()},
+\code{\link{sortLoadings}()},
+\code{\link{unipeak}()},
+\code{\link{whichOutlier}()}
 }
 \author{
 Vilmantas Gegzna

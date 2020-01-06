@@ -5,11 +5,22 @@
 \alias{nID_nObs}
 \title{[+!] Calculate number and percentage of unique IDs and observations}
 \usage{
-nID_nSp(data = NULL, ID, gr, ID_text = "medical specimens",
-  observation_text = "spectra", decimals = 1)
+nID_nSp(
+  data = NULL,
+  ID,
+  gr,
+  ID_text = "medical specimens",
+  observation_text = "spectra",
+  decimals = 1
+)
 
-nID_nObs(data = NULL, ID, gr, ID_text = "unique IDs",
-  observation_text = "observations")
+nID_nObs(
+  data = NULL,
+  ID,
+  gr,
+  ID_text = "unique IDs",
+  observation_text = "observations"
+)
 }
 \arguments{
 \item{data}{A data frame with variables, that names are denoted by \code{ID} and \code{gr}}

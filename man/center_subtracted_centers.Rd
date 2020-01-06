@@ -4,9 +4,16 @@
 \alias{center_subtracted_centers}
 \title{[!] Calculate common center subtracted group centers of spectroscopic data}
 \usage{
-center_subtracted_centers(sp, by = stop("Argument 'by' is missing."),
-  FUN = median, Center = NULL, balanced = FALSE,
-  balance.FUN = mean, show.all = FALSE, show.balanced = FALSE)
+center_subtracted_centers(
+  sp,
+  by = stop("Argument 'by' is missing."),
+  FUN = median,
+  Center = NULL,
+  balanced = FALSE,
+  balance.FUN = mean,
+  show.all = FALSE,
+  show.balanced = FALSE
+)
 }
 \arguments{
 \item{sp}{\code{\link[=hyperSpec-class]{hyperSpec}} object.}
@@ -95,7 +102,7 @@ center_subtracted_centers(Spectra2, "gr", Center = "C")  \%>\%
 center_subtracted_centers(Spectra2, "gr", balanced = TRUE)  \%>\%
     qplot_sp(names.in = "gr")+
     ggtitle(subt("Balanced center subtraced centers (BCSCs)",
-                 "Balanced = a mean of all group centers\\n" \%++\%
+                 "Balanced = a mean of all group centers\n" \%++\%
                      "Balanced center is mean"))
 
 

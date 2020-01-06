@@ -4,9 +4,16 @@
 \alias{gg_crosstab2}
 \title{[!] Plot crosstab for 2 variables in hyperSpec object}
 \usage{
-gg_crosstab2(sp, x_var, y_var, xLabel = labels(sp, x_var),
-  yLabel = labels(sp, y_var), ID_var = "ID",
-  rotate.x.tick.labels = NULL, useNA = "ifany")
+gg_crosstab2(
+  sp,
+  x_var,
+  y_var,
+  xLabel = labels(sp, x_var),
+  yLabel = labels(sp, y_var),
+  ID_var = "ID",
+  rotate.x.tick.labels = NULL,
+  useNA = "ifany"
+)
 }
 \arguments{
 \item{sp}{\code{\link[=hyperSpec-class]{hyperSpec}} object.}

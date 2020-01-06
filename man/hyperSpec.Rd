@@ -4,8 +4,7 @@
 \alias{hyperSpec}
 \title{Initialize new hyperSpec object}
 \usage{
-hyperSpec(spc = NULL, data = NULL, wavelength = NULL,
-  labels = NULL)
+hyperSpec(spc = NULL, data = NULL, wavelength = NULL, labels = NULL)
 }
 \arguments{
 \item{spc}{the spectra matrix.

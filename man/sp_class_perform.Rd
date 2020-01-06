@@ -11,30 +11,49 @@
 \alias{class_perform_sp}
 \title{[.!] Compare spectra of groups at each wavelength}
 \usage{
-sp_class_perform(sp, by = stop("Parameter 'by' is missing."),
-  measure = c("auc", "bac", "j", "sesp", "tpr"))
+sp_class_perform(
+  sp,
+  by = stop("Parameter 'by' is missing."),
+  measure = c("auc", "bac", "j", "sesp", "tpr")
+)
 
-sp_class_perform_cv(sp, by = stop("Parameter 'by' is not specified."),
-  measure = c("sesp", "j", "tpr")[1], cvo = cvo_create_folds(sp, by,
-  seeds), seeds = NULL, sp_test = NULL)
+sp_class_perform_cv(
+  sp,
+  by = stop("Parameter 'by' is not specified."),
+  measure = c("sesp", "j", "tpr")[1],
+  cvo = cvo_create_folds(sp, by, seeds),
+  seeds = NULL,
+  sp_test = NULL
+)
 
 \method{print}{sp_class_perform_cv}(obj)
 
 \method{print}{sp_classif_performance}(obj)
 
-\method{predict}{sp_classif_performance}(object, newdata,
-  what = c("values", "performance"), ...)
+\method{predict}{sp_classif_performance}(object, newdata, what = c("values", "performance"), ...)
 
-sp_classification_performance(sp,
-  by = stop("Parameter 'by' is not specified."), measure = c("sesp",
-  "j", "tpr")[1], cvo = cvo_create_folds(sp, by, seeds), seeds = NULL,
-  ...)
+sp_classification_performance(
+  sp,
+  by = stop("Parameter 'by' is not specified."),
+  measure = c("sesp", "j", "tpr")[1],
+  cvo = cvo_create_folds(sp, by, seeds),
+  seeds = NULL,
+  ...
+)
 
-sp_compare_gr_wl(sp, by = stop("Parameter 'by' is missing."),
-  measure = c("auc", "j", "sesp", "tpr"), ...)
+sp_compare_gr_wl(
+  sp,
+  by = stop("Parameter 'by' is missing."),
+  measure = c("auc", "j", "sesp", "tpr"),
+  ...
+)
 
-class_perform_sp(sp, by = stop("Parameter 'by' is missing."),
-  measure = c("auc", "j", "sesp", "tpr"), ...)
+class_perform_sp(
+  sp,
+  by = stop("Parameter 'by' is missing."),
+  measure = c("auc", "j", "sesp", "tpr"),
+  ...
+)
 }
 \arguments{
 \item{sp}{\code{\link[=hyperSpec-class]{hyperSpec}} object.}
@@ -147,22 +166,32 @@ rez
 
 }
 \seealso{
-Other \pkg{spHelper} functions for spectroscopy and \pkg{hyperSpec}: \code{\link{IQR_outliers}},
-  \code{\link{binning}}, \code{\link{file}},
-  \code{\link{gapDer}}, \code{\link{hy2mat}},
-  \code{\link{hyAdd_Label_wl}},
-  \code{\link{hyAdd_Labels_PAP_PD_2014}},
-  \code{\link{hyAdd_Labels_TD2009}}, \code{\link{hyAdd}},
-  \code{\link{hyDrop_NA}}, \code{\link{hyGet_palette}},
-  \code{\link{hyRm_palette}}, \code{\link{mad_outliers}},
-  \code{\link{mean_Nsd}}, \code{\link{median_Nmad}},
-  \code{\link{plot_hyPalette}},
-  \code{\link{prepare_PAP_RK_2014__MATLAB_failui}},
-  \code{\link{read.OOIBase32}},
-  \code{\link{read.OceanView.header}},
-  \code{\link{read.OceanView}}, \code{\link{read.sp.csv2}},
-  \code{\link{read3csv2hy}}, \code{\link{replace_spc}},
-  \code{\link{sd_outliers}}, \code{\link{spStat}}
+Other \pkg{spHelper} functions for spectroscopy and \pkg{hyperSpec}: 
+\code{\link{IQR_outliers}()},
+\code{\link{binning}()},
+\code{\link{file}},
+\code{\link{gapDer}()},
+\code{\link{hy2mat}()},
+\code{\link{hyAdd_Label_wl}()},
+\code{\link{hyAdd_Labels_PAP_PD_2014}()},
+\code{\link{hyAdd_Labels_TD2009}()},
+\code{\link{hyAdd}()},
+\code{\link{hyDrop_NA}()},
+\code{\link{hyGet_palette}()},
+\code{\link{hyRm_palette}()},
+\code{\link{mad_outliers}()},
+\code{\link{mean_Nsd}()},
+\code{\link{median_Nmad}()},
+\code{\link{plot_hyPalette}()},
+\code{\link{prepare_PAP_RK_2014__MATLAB_failui}()},
+\code{\link{read.OOIBase32}()},
+\code{\link{read.OceanView.header}()},
+\code{\link{read.OceanView}()},
+\code{\link{read.sp.csv2}()},
+\code{\link{read3csv2hy}()},
+\code{\link{replace_spc}()},
+\code{\link{sd_outliers}()},
+\code{\link{spStat}()}
 }
 \author{
 Vilmantas Gegzna

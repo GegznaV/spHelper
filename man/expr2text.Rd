@@ -13,10 +13,14 @@ expr2text(x)
 [.] Convert `expression` and `call` to text and remove quotes
 }
 \seealso{
-Other \pkg{spHelper} utilities: \code{\link{IQR_outliers}},
-  \code{\link{mad_outliers}}, \code{\link{rmExpr}},
-  \code{\link{sd_outliers}}, \code{\link{subt}},
-  \code{\link{unGroup}}, \code{\link{uncall}}
+Other \pkg{spHelper} utilities: 
+\code{\link{IQR_outliers}()},
+\code{\link{mad_outliers}()},
+\code{\link{rmExpr}()},
+\code{\link{sd_outliers}()},
+\code{\link{subt}()},
+\code{\link{unGroup}()},
+\code{\link{uncall}()}
 }
 \author{
 Vilmantas Gegzna

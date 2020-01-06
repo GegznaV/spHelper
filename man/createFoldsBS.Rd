@@ -6,15 +6,28 @@
 \alias{createFoldsBS}
 \title{DEPRECATED!}
 \usage{
-createFolds2(data = NULL, gr = NULL, ID = NULL, k = 5,
-  returnTrain = TRUE, ...)
+createFolds2(data = NULL, gr = NULL, ID = NULL, k = 5, returnTrain = TRUE, ...)
 
-stratifiedFolds(data = NULL, gr = NULL, ID = NULL, k = 5,
-  returnTrain = TRUE, ...)
+stratifiedFolds(
+  data = NULL,
+  gr = NULL,
+  ID = NULL,
+  k = 5,
+  returnTrain = TRUE,
+  ...
+)
 
-createFoldsBS(data = NULL, stratify_by = NULL, block_by = NULL,
-  k = 5, returnTrain = TRUE, times = 1, seeds = NULL,
-  gr = stratify_by, ID = block_by)
+createFoldsBS(
+  data = NULL,
+  stratify_by = NULL,
+  block_by = NULL,
+  k = 5,
+  returnTrain = TRUE,
+  times = 1,
+  seeds = NULL,
+  gr = stratify_by,
+  ID = block_by
+)
 }
 \arguments{
 \item{data}{A data frame, that contains variables which names are denoted

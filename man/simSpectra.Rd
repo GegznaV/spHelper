@@ -4,8 +4,15 @@
 \alias{simSpectra}
 \title{[!] Simulate spectroscopic data}
 \usage{
-simSpectra(x = 300:800, nGr = 2, nInGr = c(50, 50, 50),
-  N = sum(nInGr), nDim = 4, w.possile = 5:150, plots = FALSE)
+simSpectra(
+  x = 300:800,
+  nGr = 2,
+  nInGr = c(50, 50, 50),
+  N = sum(nInGr),
+  nDim = 4,
+  w.possile = 5:150,
+  plots = FALSE
+)
 }
 \arguments{
 \item{x}{Values for x axis ("wavelengths").}

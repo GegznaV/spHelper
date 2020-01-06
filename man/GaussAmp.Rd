@@ -54,7 +54,8 @@ plot(Obj, col = 1:nrow(Obj)); grid()
 
 }
 \seealso{
-Other curves in\pkg{spHelper}: \code{\link{unipeak}}
+Other curves in\pkg{spHelper}: 
+\code{\link{unipeak}()}
 }
 \author{
 Vilmantas Gegzna

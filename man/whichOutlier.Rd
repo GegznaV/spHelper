@@ -32,12 +32,17 @@ whichOutlier(Scores2,3)
 
 }
 \seealso{
-Other component analysis / factorisation related functions in \pkg{spHelper}: \code{\link{getScores}},
-  \code{\link{infoDim}}, \code{\link{plot_spDiff}},
-  \code{\link{qplot_infoDim}}, \code{\link{qplot_kAmp}},
-  \code{\link{qplot_kSp}}, \code{\link{qplot_spc}},
-  \code{\link{reconstructSp}}, \code{\link{sortLoadings}},
-  \code{\link{unipeak}}
+Other component analysis / factorisation related functions in \pkg{spHelper}: 
+\code{\link{getScores}()},
+\code{\link{infoDim}()},
+\code{\link{plot_spDiff}()},
+\code{\link{qplot_infoDim}()},
+\code{\link{qplot_kAmp}()},
+\code{\link{qplot_kSp}()},
+\code{\link{qplot_spc}()},
+\code{\link{reconstructSp}()},
+\code{\link{sortLoadings}()},
+\code{\link{unipeak}()}
 }
 \author{
 Vilmantas Gegzna

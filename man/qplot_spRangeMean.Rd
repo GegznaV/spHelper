@@ -5,13 +5,32 @@
 \alias{qplot_spRangeMean}
 \title{[!] Plot mean and range of spectroscopic data intensities}
 \usage{
-layer_spRangeMean(sp, by = NULL, percent = NULL, probs = NULL,
-  palette = hyGet_palette(sp), ..., lty = 2, lwd_mean = 1,
-  alpha = 0.2, add = TRUE, name_if_by_is_NULL = "All Data")
+layer_spRangeMean(
+  sp,
+  by = NULL,
+  percent = NULL,
+  probs = NULL,
+  palette = hyGet_palette(sp),
+  ...,
+  lty = 2,
+  lwd_mean = 1,
+  alpha = 0.2,
+  add = TRUE,
+  name_if_by_is_NULL = "All Data"
+)
 
-qplot_spRangeMean(sp, by = NULL, percent = NULL, probs = NULL,
-  palette = hyGet_palette(sp), ..., lwd_mean = 1, alpha = 0.2,
-  add = FALSE, name_if_by_is_NULL = "All Data")
+qplot_spRangeMean(
+  sp,
+  by = NULL,
+  percent = NULL,
+  probs = NULL,
+  palette = hyGet_palette(sp),
+  ...,
+  lwd_mean = 1,
+  alpha = 0.2,
+  add = FALSE,
+  name_if_by_is_NULL = "All Data"
+)
 }
 \arguments{
 \item{sp}{\code{\link[=hyperSpec-class]{hyperSpec}} object.}
@@ -31,24 +50,6 @@ of length \code{nrow(sp)}.}
 \item{alpha}{(numeric from 0 to 1) transperency.}
 
 \item{add}{(logical) add plot to an existing ggplot object?}
-
-\item{sp}{\code{\link[=hyperSpec-class]{hyperSpec}} object.}
-
-\item{by}{A vector (factor variable) with indicated groups for each case:
-either variable name inside the object \code{sp}, or a vector
-of length \code{nrow(sp)}.}
-
-\item{percent}{Numeric value between 0 and 100 that indicates
-\emph{percentage} of samples nearest to median be plotted as a ribbon.}
-
-\item{probs}{verctor of size 2 with values between 0 and 1 that indicates
-\emph{probabilities} at which percentiles should be plotted.}
-
-\item{add}{(logical) add plot to an existing ggplot object?}
-
-\item{alpha}{(numeric from 0 to 1) transperency.}
-
-\item{...}{further arguments to \code{\link[ggplot2]{geom_ribon}}.}
 }
 \value{
 A \code{\link[ggplot2]{ggplot}} object.
@@ -95,33 +96,47 @@ qplot_spRangeMean(Spectra2, "gr", probs = c(.25, .75))
 ggplotly_tidy()
 }
 \seealso{
-Other \pkg{spHelper} plots: \code{\link{check_palette}},
-  \code{\link{plot_colors}}, \code{\link{plot_hyPalette}},
-  \code{\link{plot_spCompare}}, \code{\link{plot_spDiff}},
-  \code{\link{plot_spDistribution}},
-  \code{\link{qplot_confusion}},
-  \code{\link{qplot_crosstab}},
-  \code{\link{qplot_infoDim}}, \code{\link{qplot_kAmp}},
-  \code{\link{qplot_kSp}}, \code{\link{qplot_prediction}},
-  \code{\link{qplot_spRangeCenter}},
-  \code{\link{qplot_spRangeMedian}},
-  \code{\link{qplot_spStat}}, \code{\link{qplot_spc}},
-  \code{\link{rmExpr}}, \code{\link{rm_stripes}},
-  \code{\link{stat_chull}}
+Other \pkg{spHelper} plots: 
+\code{\link{check_palette}()},
+\code{\link{plot_colors}()},
+\code{\link{plot_hyPalette}()},
+\code{\link{plot_spCompare}()},
+\code{\link{plot_spDiff}()},
+\code{\link{plot_spDistribution}()},
+\code{\link{qplot_confusion}()},
+\code{\link{qplot_crosstab}()},
+\code{\link{qplot_infoDim}()},
+\code{\link{qplot_kAmp}()},
+\code{\link{qplot_kSp}()},
+\code{\link{qplot_prediction}()},
+\code{\link{qplot_spRangeCenter}()},
+\code{\link{qplot_spRangeMedian}()},
+\code{\link{qplot_spStat}()},
+\code{\link{qplot_spc}()},
+\code{\link{rmExpr}()},
+\code{\link{rm_stripes}()},
+\code{\link{stat_chull}()}
 
-Other \pkg{spHelper} plots: \code{\link{check_palette}},
-  \code{\link{plot_colors}}, \code{\link{plot_hyPalette}},
-  \code{\link{plot_spCompare}}, \code{\link{plot_spDiff}},
-  \code{\link{plot_spDistribution}},
-  \code{\link{qplot_confusion}},
-  \code{\link{qplot_crosstab}},
-  \code{\link{qplot_infoDim}}, \code{\link{qplot_kAmp}},
-  \code{\link{qplot_kSp}}, \code{\link{qplot_prediction}},
-  \code{\link{qplot_spRangeCenter}},
-  \code{\link{qplot_spRangeMedian}},
-  \code{\link{qplot_spStat}}, \code{\link{qplot_spc}},
-  \code{\link{rmExpr}}, \code{\link{rm_stripes}},
-  \code{\link{stat_chull}}
+Other \pkg{spHelper} plots: 
+\code{\link{check_palette}()},
+\code{\link{plot_colors}()},
+\code{\link{plot_hyPalette}()},
+\code{\link{plot_spCompare}()},
+\code{\link{plot_spDiff}()},
+\code{\link{plot_spDistribution}()},
+\code{\link{qplot_confusion}()},
+\code{\link{qplot_crosstab}()},
+\code{\link{qplot_infoDim}()},
+\code{\link{qplot_kAmp}()},
+\code{\link{qplot_kSp}()},
+\code{\link{qplot_prediction}()},
+\code{\link{qplot_spRangeCenter}()},
+\code{\link{qplot_spRangeMedian}()},
+\code{\link{qplot_spStat}()},
+\code{\link{qplot_spc}()},
+\code{\link{rmExpr}()},
+\code{\link{rm_stripes}()},
+\code{\link{stat_chull}()}
 }
 \author{
 Vilmantas Gegzna

@@ -4,9 +4,15 @@
 \alias{plot_LOF_MDS}
 \title{Plot MDS of LOF_obj data}
 \usage{
-plot_LOF_MDS(obj, type = c("data", "differences", "centers"),
-  LOF_threshold = 10, x = "topright", y = NULL, colors = c("black",
-  "red"), LOF = NULL)
+plot_LOF_MDS(
+  obj,
+  type = c("data", "differences", "centers"),
+  LOF_threshold = 10,
+  x = "topright",
+  y = NULL,
+  colors = c("black", "red"),
+  LOF = NULL
+)
 }
 \arguments{
 \item{obj}{- either "LOF_obj" object or "hyperspec" object.}
@@ -34,8 +40,10 @@ plot_LOF_MDS(obj, "centers",     x = NULL)
 
 }
 \seealso{
-Other LOF_obj: \code{\link{get_LOF_by_class}},
-  \code{\link{plot_LOF_hist}}, \code{\link{plot_LOF_sp}},
-  \code{\link{plot_stacked}}
+Other LOF_obj: 
+\code{\link{get_LOF_by_class}()},
+\code{\link{plot_LOF_hist}()},
+\code{\link{plot_LOF_sp}()},
+\code{\link{plot_stacked}()}
 }
 \concept{LOF_obj}

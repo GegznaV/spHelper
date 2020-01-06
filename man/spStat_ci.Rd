@@ -6,13 +6,24 @@
 \alias{ggplot_ci_rez}
 \title{Calculate a statistic}
 \usage{
-spStat_ci(obj, FUN = mean, label = as.character(match.call()$FUN)
-  \%if_null_or_len0\% "mean")
+spStat_ci(
+  obj,
+  FUN = mean,
+  label = as.character(match.call()$FUN) \%if_null_or_len0\% "mean"
+)
 
-spStat_ci_corr(obj, y = NULL, FUN = mean, method = c("spearman",
-  "kendall", "pearson")[1], use = "everything", conf = 0.95,
-  R = 1000, sim = "balanced", type = c("norm"),
-  label = paste0(spMisc::fCap(method), "'s corr. coeff."))
+spStat_ci_corr(
+  obj,
+  y = NULL,
+  FUN = mean,
+  method = c("spearman", "kendall", "pearson")[1],
+  use = "everything",
+  conf = 0.95,
+  R = 1000,
+  sim = "balanced",
+  type = c("norm"),
+  label = paste0(spMisc::fCap(method), "'s corr. coeff.")
+)
 
 ggplot_ci_rez(rez, linetype = 1)
 }
@@ -69,6 +80,9 @@ e.g., mean, median, etc.}
   }
 
 \item{rez}{a rezult of function \code{spStat_ci_corr} or \code{spStat_ci}}
+}
+\value{
+
 }
 \description{
 ### NEBAIGTA ###

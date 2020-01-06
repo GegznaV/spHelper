@@ -5,19 +5,42 @@
 \alias{qplot_proximity}
 \title{[!!!] Proximity plot created using multi-dimensiolal scaling (MDS)}
 \usage{
-qplot_prediction(scores, Prediction, Reference,
-  xLabel = paste("Projection", xproj), yLabel = paste("Projection",
-  yproj), Title = "Proximity of Groups", subTitle = NULL,
-  palette = hyGet_palette(scores), type = c("Prediction", "Reference"),
-  stat = c("chull", "ellipse", "none"), type.stat = type,
-  MDS = c("metric", "isoMDS"), plot.scatter = TRUE, alpha = 0.5,
-  k = 2, xproj = 1, yproj = 2)
+qplot_prediction(
+  scores,
+  Prediction,
+  Reference,
+  xLabel = paste("Projection", xproj),
+  yLabel = paste("Projection", yproj),
+  Title = "Proximity of Groups",
+  subTitle = NULL,
+  palette = hyGet_palette(scores),
+  type = c("Prediction", "Reference"),
+  stat = c("chull", "ellipse", "none"),
+  type.stat = type,
+  MDS = c("metric", "isoMDS"),
+  plot.scatter = TRUE,
+  alpha = 0.5,
+  k = 2,
+  xproj = 1,
+  yproj = 2
+)
 
-qplot_proximity(scores, by, xLabel = paste("Projection", xproj),
-  yLabel = paste("Projection", yproj), Title = "Proximity of Groups",
-  subTitle = NULL, palette = hyGet_palette(scores), stat = c("chull",
-  "ellipse", "none"), MDS = c("metric", "isoMDS"), plot.scatter = TRUE,
-  alpha = 0.5, k = 2, xproj = 1, yproj = 2)
+qplot_proximity(
+  scores,
+  by,
+  xLabel = paste("Projection", xproj),
+  yLabel = paste("Projection", yproj),
+  Title = "Proximity of Groups",
+  subTitle = NULL,
+  palette = hyGet_palette(scores),
+  stat = c("chull", "ellipse", "none"),
+  MDS = c("metric", "isoMDS"),
+  plot.scatter = TRUE,
+  alpha = 0.5,
+  k = 2,
+  xproj = 1,
+  yproj = 2
+)
 }
 \arguments{
 \item{scores}{Components' amplitudes (scores) as either a matrix or a
@@ -102,20 +125,26 @@ qplot_proximity(sc, "class",  plot.scatter = FALSE) + geom_text(aes(label = sc$I
 
 }
 \seealso{
-Other \pkg{spHelper} plots: \code{\link{check_palette}},
-  \code{\link{layer_spRangeMean}},
-  \code{\link{plot_colors}}, \code{\link{plot_hyPalette}},
-  \code{\link{plot_spCompare}}, \code{\link{plot_spDiff}},
-  \code{\link{plot_spDistribution}},
-  \code{\link{qplot_confusion}},
-  \code{\link{qplot_crosstab}},
-  \code{\link{qplot_infoDim}}, \code{\link{qplot_kAmp}},
-  \code{\link{qplot_kSp}},
-  \code{\link{qplot_spRangeCenter}},
-  \code{\link{qplot_spRangeMedian}},
-  \code{\link{qplot_spStat}}, \code{\link{qplot_spc}},
-  \code{\link{rmExpr}}, \code{\link{rm_stripes}},
-  \code{\link{stat_chull}}
+Other \pkg{spHelper} plots: 
+\code{\link{check_palette}()},
+\code{\link{layer_spRangeMean}()},
+\code{\link{plot_colors}()},
+\code{\link{plot_hyPalette}()},
+\code{\link{plot_spCompare}()},
+\code{\link{plot_spDiff}()},
+\code{\link{plot_spDistribution}()},
+\code{\link{qplot_confusion}()},
+\code{\link{qplot_crosstab}()},
+\code{\link{qplot_infoDim}()},
+\code{\link{qplot_kAmp}()},
+\code{\link{qplot_kSp}()},
+\code{\link{qplot_spRangeCenter}()},
+\code{\link{qplot_spRangeMedian}()},
+\code{\link{qplot_spStat}()},
+\code{\link{qplot_spc}()},
+\code{\link{rmExpr}()},
+\code{\link{rm_stripes}()},
+\code{\link{stat_chull}()}
 }
 \author{
 Vilmantas Gegzna

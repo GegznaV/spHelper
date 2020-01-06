@@ -68,30 +68,45 @@ title("IQR based distances")
 Read about boxplots and outliers
 (\href{http://www.physics.csbsju.edu/stats/box2.html}{Box Plot: Display of Distribution})
 
-Other \pkg{spHelper} utilities: \code{\link{expr2text}},
-  \code{\link{mad_outliers}}, \code{\link{rmExpr}},
-  \code{\link{sd_outliers}}, \code{\link{subt}},
-  \code{\link{unGroup}}, \code{\link{uncall}}
+Other \pkg{spHelper} utilities: 
+\code{\link{expr2text}()},
+\code{\link{mad_outliers}()},
+\code{\link{rmExpr}()},
+\code{\link{sd_outliers}()},
+\code{\link{subt}()},
+\code{\link{unGroup}()},
+\code{\link{uncall}()}
 
-Other \pkg{spHelper} functions for spectroscopy and \pkg{hyperSpec}: \code{\link{binning}},
-  \code{\link{file}}, \code{\link{gapDer}},
-  \code{\link{hy2mat}}, \code{\link{hyAdd_Label_wl}},
-  \code{\link{hyAdd_Labels_PAP_PD_2014}},
-  \code{\link{hyAdd_Labels_TD2009}}, \code{\link{hyAdd}},
-  \code{\link{hyDrop_NA}}, \code{\link{hyGet_palette}},
-  \code{\link{hyRm_palette}}, \code{\link{mad_outliers}},
-  \code{\link{mean_Nsd}}, \code{\link{median_Nmad}},
-  \code{\link{plot_hyPalette}},
-  \code{\link{prepare_PAP_RK_2014__MATLAB_failui}},
-  \code{\link{read.OOIBase32}},
-  \code{\link{read.OceanView.header}},
-  \code{\link{read.OceanView}}, \code{\link{read.sp.csv2}},
-  \code{\link{read3csv2hy}}, \code{\link{replace_spc}},
-  \code{\link{sd_outliers}}, \code{\link{spStat}},
-  \code{\link{sp_class_perform}}
+Other \pkg{spHelper} functions for spectroscopy and \pkg{hyperSpec}: 
+\code{\link{binning}()},
+\code{\link{file}},
+\code{\link{gapDer}()},
+\code{\link{hy2mat}()},
+\code{\link{hyAdd_Label_wl}()},
+\code{\link{hyAdd_Labels_PAP_PD_2014}()},
+\code{\link{hyAdd_Labels_TD2009}()},
+\code{\link{hyAdd}()},
+\code{\link{hyDrop_NA}()},
+\code{\link{hyGet_palette}()},
+\code{\link{hyRm_palette}()},
+\code{\link{mad_outliers}()},
+\code{\link{mean_Nsd}()},
+\code{\link{median_Nmad}()},
+\code{\link{plot_hyPalette}()},
+\code{\link{prepare_PAP_RK_2014__MATLAB_failui}()},
+\code{\link{read.OOIBase32}()},
+\code{\link{read.OceanView.header}()},
+\code{\link{read.OceanView}()},
+\code{\link{read.sp.csv2}()},
+\code{\link{read3csv2hy}()},
+\code{\link{replace_spc}()},
+\code{\link{sd_outliers}()},
+\code{\link{spStat}()},
+\code{\link{sp_class_perform}()}
 
-Other outlier detection functions in \pkg{spHelper}: \code{\link{mad_outliers}},
-  \code{\link{sd_outliers}}
+Other outlier detection functions in \pkg{spHelper}: 
+\code{\link{mad_outliers}()},
+\code{\link{sd_outliers}()}
 }
 \author{
 Vilmantas Gegzna

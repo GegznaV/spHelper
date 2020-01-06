@@ -4,8 +4,14 @@
 \alias{getScores}
 \title{[+] Calculate amplitudes of spectroscopic components (a.k.a. scores) and label the resulting object}
 \usage{
-getScores(sp, loadings = NULL, xLabel = "Component",
-  yLabel = "Amplitude", names.var = "cNames", scores = NULL)
+getScores(
+  sp,
+  loadings = NULL,
+  xLabel = "Component",
+  yLabel = "Amplitude",
+  names.var = "cNames",
+  scores = NULL
+)
 }
 \arguments{
 \item{sp}{Spectroscopic data
@@ -62,12 +68,17 @@ qplot_scores(sc)
 \seealso{
 \code{\link{qplot_scores}}
 
-Other component analysis / factorisation related functions in \pkg{spHelper}: \code{\link{infoDim}},
-  \code{\link{plot_spDiff}}, \code{\link{qplot_infoDim}},
-  \code{\link{qplot_kAmp}}, \code{\link{qplot_kSp}},
-  \code{\link{qplot_spc}}, \code{\link{reconstructSp}},
-  \code{\link{sortLoadings}}, \code{\link{unipeak}},
-  \code{\link{whichOutlier}}
+Other component analysis / factorisation related functions in \pkg{spHelper}: 
+\code{\link{infoDim}()},
+\code{\link{plot_spDiff}()},
+\code{\link{qplot_infoDim}()},
+\code{\link{qplot_kAmp}()},
+\code{\link{qplot_kSp}()},
+\code{\link{qplot_spc}()},
+\code{\link{reconstructSp}()},
+\code{\link{sortLoadings}()},
+\code{\link{unipeak}()},
+\code{\link{whichOutlier}()}
 }
 \author{
 Vilmantas Gegzna

@@ -4,8 +4,7 @@
 \alias{median_CI}
 \title{Confidence interval for median}
 \usage{
-median_CI(x = NULL, MEDIAN = median(x), n = length(x),
-  IQR = IQR(x))
+median_CI(x = NULL, MEDIAN = median(x), n = length(x), IQR = IQR(x))
 }
 \arguments{
 \item{x}{data}
@@ -25,7 +24,9 @@ median_CI(x)
 
 }
 \seealso{
-Other statistical functions: \code{\link{normal_var_CI}},
-  \code{\link{poisson_lambda_CI}}, \code{\link{quartiles}}
+Other statistical functions: 
+\code{\link{normal_var_CI}()},
+\code{\link{poisson_lambda_CI}()},
+\code{\link{quartiles}()}
 }
 \concept{statistical functions}

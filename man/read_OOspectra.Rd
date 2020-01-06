@@ -4,8 +4,13 @@
 \alias{read_OOspectra}
 \title{Read OceanOptics spectra}
 \usage{
-read_OOspectra(path, pattern = ".*", read_fun = c("auto", "ascii",
-  "ts", "base32", "a FUNCTION")[1], recursive = FALSE, ...)
+read_OOspectra(
+  path,
+  pattern = ".*",
+  read_fun = c("auto", "ascii", "ts", "base32", "a FUNCTION")[1],
+  recursive = FALSE,
+  ...
+)
 }
 \arguments{
 \item{path}{(string)}

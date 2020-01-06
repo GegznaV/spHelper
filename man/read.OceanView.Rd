@@ -12,30 +12,53 @@
 \alias{read.OceanView.ts0}
 \title{[!v0.3] Read spectroscopic OceanView file}
 \usage{
-read.OceanView(file, dec = ".", parse_filename = NULL,
-  ignore.case = FALSE, xlab = NULL, ylab = "I, a.u.",
+read.OceanView(
+  file,
+  dec = ".",
+  parse_filename = NULL,
+  ignore.case = FALSE,
+  xlab = NULL,
+  ylab = "I, a.u.",
   last_headerline_text = ">>>>>Begin Spectral Data<<<<<",
-  software = "OceanView", version_ = "1.5.2", n = 17,
-  file_format = c("auto", "ascii", "ts", "timeseries")[1])
+  software = "OceanView",
+  version_ = "1.5.2",
+  n = 17,
+  file_format = c("auto", "ascii", "ts", "timeseries")[1]
+)
 
 read.OceanView2(file, dec = ",", ..., file_format = "auto")
 
-read.OceanView0(file, dec = ".", ..., file_format = "auto",
-  parse_filename = parser_1)
+read.OceanView0(
+  file,
+  dec = ".",
+  ...,
+  file_format = "auto",
+  parse_filename = parser_1
+)
 
 read.OceanView.ascii(file, dec = ".", ..., file_format = "ascii")
 
 read.OceanView.ascii2(file, dec = ",", ..., file_format = "ascii")
 
-read.OceanView.ascii0(file, dec = ".", ..., file_format = "ascii",
-  parse_filename = parser_1)
+read.OceanView.ascii0(
+  file,
+  dec = ".",
+  ...,
+  file_format = "ascii",
+  parse_filename = parser_1
+)
 
 read.OceanView.ts(file, dec = ".", ..., file_format = "ts")
 
 read.OceanView.ts2(file, dec = ",", ..., file_format = "ts")
 
-read.OceanView.ts0(file, dec = ".", ..., file_format = "ts",
-  parse_filename = parser_1)
+read.OceanView.ts0(
+  file,
+  dec = ".",
+  ...,
+  file_format = "ts",
+  parse_filename = parser_1
+)
 }
 \arguments{
 \item{file}{(string) A name of OcenView file .}
@@ -140,26 +163,37 @@ read.OOIBase32(file.Scope)$..  \%>\% head
 }}
 }
 \seealso{
-Other functions to read spectroscopic data: \code{\link{file}},
-  \code{\link{read.OOIBase32}},
-  \code{\link{read.OceanView.header}}
+Other functions to read spectroscopic data: 
+\code{\link{file}},
+\code{\link{read.OOIBase32}()},
+\code{\link{read.OceanView.header}()}
 
-Other \pkg{spHelper} functions for spectroscopy and \pkg{hyperSpec}: \code{\link{IQR_outliers}},
-  \code{\link{binning}}, \code{\link{file}},
-  \code{\link{gapDer}}, \code{\link{hy2mat}},
-  \code{\link{hyAdd_Label_wl}},
-  \code{\link{hyAdd_Labels_PAP_PD_2014}},
-  \code{\link{hyAdd_Labels_TD2009}}, \code{\link{hyAdd}},
-  \code{\link{hyDrop_NA}}, \code{\link{hyGet_palette}},
-  \code{\link{hyRm_palette}}, \code{\link{mad_outliers}},
-  \code{\link{mean_Nsd}}, \code{\link{median_Nmad}},
-  \code{\link{plot_hyPalette}},
-  \code{\link{prepare_PAP_RK_2014__MATLAB_failui}},
-  \code{\link{read.OOIBase32}},
-  \code{\link{read.OceanView.header}},
-  \code{\link{read.sp.csv2}}, \code{\link{read3csv2hy}},
-  \code{\link{replace_spc}}, \code{\link{sd_outliers}},
-  \code{\link{spStat}}, \code{\link{sp_class_perform}}
+Other \pkg{spHelper} functions for spectroscopy and \pkg{hyperSpec}: 
+\code{\link{IQR_outliers}()},
+\code{\link{binning}()},
+\code{\link{file}},
+\code{\link{gapDer}()},
+\code{\link{hy2mat}()},
+\code{\link{hyAdd_Label_wl}()},
+\code{\link{hyAdd_Labels_PAP_PD_2014}()},
+\code{\link{hyAdd_Labels_TD2009}()},
+\code{\link{hyAdd}()},
+\code{\link{hyDrop_NA}()},
+\code{\link{hyGet_palette}()},
+\code{\link{hyRm_palette}()},
+\code{\link{mad_outliers}()},
+\code{\link{mean_Nsd}()},
+\code{\link{median_Nmad}()},
+\code{\link{plot_hyPalette}()},
+\code{\link{prepare_PAP_RK_2014__MATLAB_failui}()},
+\code{\link{read.OOIBase32}()},
+\code{\link{read.OceanView.header}()},
+\code{\link{read.sp.csv2}()},
+\code{\link{read3csv2hy}()},
+\code{\link{replace_spc}()},
+\code{\link{sd_outliers}()},
+\code{\link{spStat}()},
+\code{\link{sp_class_perform}()}
 }
 \author{
 Vilmantas Gegzna

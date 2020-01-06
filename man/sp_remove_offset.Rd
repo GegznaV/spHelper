@@ -4,8 +4,13 @@
 \alias{sp_remove_offset}
 \title{Remove offset}
 \usage{
-sp_remove_offset(sp, in_range = min ~ max, offset = 0,
-  method = "not_used_yet", at = NULL)
+sp_remove_offset(
+  sp,
+  in_range = min ~ max,
+  offset = 0,
+  method = "not_used_yet",
+  at = NULL
+)
 }
 \arguments{
 \item{sp}{\code{hyperSpec} object.}

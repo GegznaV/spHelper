@@ -29,8 +29,10 @@ plot_stacked(Spectra2,"gr")
 
 }
 \seealso{
-Other LOF_obj: \code{\link{get_LOF_by_class}},
-  \code{\link{plot_LOF_MDS}}, \code{\link{plot_LOF_hist}},
-  \code{\link{plot_LOF_sp}}
+Other LOF_obj: 
+\code{\link{get_LOF_by_class}()},
+\code{\link{plot_LOF_MDS}()},
+\code{\link{plot_LOF_hist}()},
+\code{\link{plot_LOF_sp}()}
 }
 \concept{LOF_obj}

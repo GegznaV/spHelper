@@ -44,14 +44,20 @@ The function calculates a measure, called "information dimension".
       Biol Direct, 2, 2 (2007), \url{http://dx.doi.org/10.1186/1745-6150-2-2}
 }
 \seealso{
-Other information dimension functions: \code{\link{qplot_infoDim}}
+Other information dimension functions: 
+\code{\link{qplot_infoDim}()}
 
-Other component analysis / factorisation related functions in \pkg{spHelper}: \code{\link{getScores}},
-  \code{\link{plot_spDiff}}, \code{\link{qplot_infoDim}},
-  \code{\link{qplot_kAmp}}, \code{\link{qplot_kSp}},
-  \code{\link{qplot_spc}}, \code{\link{reconstructSp}},
-  \code{\link{sortLoadings}}, \code{\link{unipeak}},
-  \code{\link{whichOutlier}}
+Other component analysis / factorisation related functions in \pkg{spHelper}: 
+\code{\link{getScores}()},
+\code{\link{plot_spDiff}()},
+\code{\link{qplot_infoDim}()},
+\code{\link{qplot_kAmp}()},
+\code{\link{qplot_kSp}()},
+\code{\link{qplot_spc}()},
+\code{\link{reconstructSp}()},
+\code{\link{sortLoadings}()},
+\code{\link{unipeak}()},
+\code{\link{whichOutlier}()}
 }
 \author{
 Vilmantas Gegzna

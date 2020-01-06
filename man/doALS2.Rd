@@ -4,9 +4,20 @@
 \alias{doALS2}
 \title{[!.] Wrapper function for alternating least squares multivariate curve resolution (MCR-ALS)}
 \usage{
-doALS2(Xl, PureS, maxiter = 100, normS = 0.5, uniC = FALSE,
-  uniS = FALSE, nonnegS = TRUE, nonnegC = TRUE, optS1st = FALSE,
-  baseline = FALSE, closureC = list(), ...)
+doALS2(
+  Xl,
+  PureS,
+  maxiter = 100,
+  normS = 0.5,
+  uniC = FALSE,
+  uniS = FALSE,
+  nonnegS = TRUE,
+  nonnegC = TRUE,
+  optS1st = FALSE,
+  baseline = FALSE,
+  closureC = list(),
+  ...
+)
 }
 \arguments{
 \item{Xl}{a list of (numerical) data matrices. Missing values are not

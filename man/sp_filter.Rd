@@ -16,6 +16,9 @@ If n = 0, SG filter is not applied.}
 
 \item{p}{filter order for a Savitzky-Golay smoothing filter}
 }
+\value{
+
+}
 \description{
 Function first applies median and then Savitzky-Golay smoothing filters for
 each spectroscopic curve individually.

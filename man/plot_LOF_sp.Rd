@@ -4,9 +4,16 @@
 \alias{plot_LOF_sp}
 \title{Plot spectra colored by LOF values}
 \usage{
-plot_LOF_sp(obj, type = c("data", "differences", "centers"),
-  stacked = TRUE, LOF_threshold = 10, x = "topleft", y = NULL,
-  colors = c("black", "red"), LOF = obj$LOF)
+plot_LOF_sp(
+  obj,
+  type = c("data", "differences", "centers"),
+  stacked = TRUE,
+  LOF_threshold = 10,
+  x = "topleft",
+  y = NULL,
+  colors = c("black", "red"),
+  LOF = obj$LOF
+)
 }
 \arguments{
 \item{obj}{- \code{LOF_obj} object created with function \code{\link{get_LOF_by_class}}.}
@@ -37,8 +44,10 @@ plot_LOF_sp(obj, "centers", "gr")
 
 }
 \seealso{
-Other LOF_obj: \code{\link{get_LOF_by_class}},
-  \code{\link{plot_LOF_MDS}}, \code{\link{plot_LOF_hist}},
-  \code{\link{plot_stacked}}
+Other LOF_obj: 
+\code{\link{get_LOF_by_class}()},
+\code{\link{plot_LOF_MDS}()},
+\code{\link{plot_LOF_hist}()},
+\code{\link{plot_stacked}()}
 }
 \concept{LOF_obj}

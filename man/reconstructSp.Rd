@@ -2,6 +2,7 @@
 % Please edit documentation in R/reconstructSp.R
 \name{reconstructSp}
 \alias{reconstructSp}
+\alias{getReconstructed}
 \title{[+] Reconstruct spectra from loadings and scores (i.e. components and amplitudes)}
 \usage{
 reconstructSp(loadings, scores, sp = NULL)
@@ -38,12 +39,17 @@ reconstructSp(Loadings2, Scores2, Spectra2)
          \code{\link[ChemometricsWithR]{project}} in \pkg{ChemometricsWithR},\cr
          \code{\link[Rssa]{reconstruct}} in \pkg{Rssa}
 
-Other component analysis / factorisation related functions in \pkg{spHelper}: \code{\link{getScores}},
-  \code{\link{infoDim}}, \code{\link{plot_spDiff}},
-  \code{\link{qplot_infoDim}}, \code{\link{qplot_kAmp}},
-  \code{\link{qplot_kSp}}, \code{\link{qplot_spc}},
-  \code{\link{sortLoadings}}, \code{\link{unipeak}},
-  \code{\link{whichOutlier}}
+Other component analysis / factorisation related functions in \pkg{spHelper}: 
+\code{\link{getScores}()},
+\code{\link{infoDim}()},
+\code{\link{plot_spDiff}()},
+\code{\link{qplot_infoDim}()},
+\code{\link{qplot_kAmp}()},
+\code{\link{qplot_kSp}()},
+\code{\link{qplot_spc}()},
+\code{\link{sortLoadings}()},
+\code{\link{unipeak}()},
+\code{\link{whichOutlier}()}
 }
 \author{
 Vilmantas Gegzna

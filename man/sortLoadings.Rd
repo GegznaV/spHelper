@@ -4,8 +4,14 @@
 \alias{sortLoadings}
 \title{[!+] Process (Sort, flip, name, etc.) spectra of components (a.k.a. loadings)}
 \usage{
-sortLoadings(loadings, sp = NULL, PCA.flip = FALSE, sort = TRUE,
-  label.spc = "Comp. spectra", wl.units = "nm")
+sortLoadings(
+  loadings,
+  sp = NULL,
+  PCA.flip = FALSE,
+  sort = TRUE,
+  label.spc = "Comp. spectra",
+  wl.units = "nm"
+)
 }
 \arguments{
 \item{loadings}{Components' spectra (loadings) as either a matrix or a
@@ -87,12 +93,17 @@ class(L2)
 \seealso{
 \code{\link[hyperSpec]{decomposition}}
 
-Other component analysis / factorisation related functions in \pkg{spHelper}: \code{\link{getScores}},
-  \code{\link{infoDim}}, \code{\link{plot_spDiff}},
-  \code{\link{qplot_infoDim}}, \code{\link{qplot_kAmp}},
-  \code{\link{qplot_kSp}}, \code{\link{qplot_spc}},
-  \code{\link{reconstructSp}}, \code{\link{unipeak}},
-  \code{\link{whichOutlier}}
+Other component analysis / factorisation related functions in \pkg{spHelper}: 
+\code{\link{getScores}()},
+\code{\link{infoDim}()},
+\code{\link{plot_spDiff}()},
+\code{\link{qplot_infoDim}()},
+\code{\link{qplot_kAmp}()},
+\code{\link{qplot_kSp}()},
+\code{\link{qplot_spc}()},
+\code{\link{reconstructSp}()},
+\code{\link{unipeak}()},
+\code{\link{whichOutlier}()}
 }
 \author{
 Vilmantas Gegzna

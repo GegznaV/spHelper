@@ -4,8 +4,7 @@
 \alias{spStat_ldf}
 \title{Calculate a summary statistic and return long-format data frame}
 \usage{
-spStat_ldf(sp, by, FUN, ..., var_names = NULL,
-  name_if_by_is_NULL = "All Data")
+spStat_ldf(sp, by, FUN, ..., var_names = NULL, name_if_by_is_NULL = "All Data")
 }
 \arguments{
 \item{sp}{\code{\link[=hyperSpec-class]{hyperSpec}} object.}

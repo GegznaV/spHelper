@@ -48,10 +48,14 @@ table(gr,newGr, useNA = "ifany")
 
 }
 \seealso{
-Other \pkg{spHelper} utilities: \code{\link{IQR_outliers}},
-  \code{\link{expr2text}}, \code{\link{mad_outliers}},
-  \code{\link{rmExpr}}, \code{\link{sd_outliers}},
-  \code{\link{subt}}, \code{\link{uncall}}
+Other \pkg{spHelper} utilities: 
+\code{\link{IQR_outliers}()},
+\code{\link{expr2text}()},
+\code{\link{mad_outliers}()},
+\code{\link{rmExpr}()},
+\code{\link{sd_outliers}()},
+\code{\link{subt}()},
+\code{\link{uncall}()}
 }
 \author{
 Vilmantas Gegzna

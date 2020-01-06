@@ -4,8 +4,7 @@
 \alias{has_enough_IDs}
 \title{Get names of groups that has enough unique cases.}
 \usage{
-has_enough_IDs(OBJ, Var = colnames(OBJ)[1], ID = "ID", n_min = 5,
-  na.rm = TRUE)
+has_enough_IDs(OBJ, Var = colnames(OBJ)[1], ID = "ID", n_min = 5, na.rm = TRUE)
 }
 \arguments{
 \item{OBJ}{hyperSpec object}
@@ -31,7 +30,8 @@ has_enough_IDs(Spectra2, "class", ID = "gr", n_min = 2)
 
 }
 \seealso{
-Other count spectra functions: \code{\link{count_spectra}},
-  \code{\link{has_too_few_IDs}}
+Other count spectra functions: 
+\code{\link{count_spectra}()},
+\code{\link{has_too_few_IDs}()}
 }
 \concept{count spectra functions}

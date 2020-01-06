@@ -9,15 +9,21 @@
 \usage{
 check_palette(palette, Groups)
 
-qplot_spRange(sp, by = NULL, percent = NULL, probs = NULL,
-  palette = hyGet_palette(sp), ..., alpha = 0.2, add = FALSE,
-  name_if_by_is_NULL = "All Data")
+qplot_spRange(
+  sp,
+  by = NULL,
+  percent = NULL,
+  probs = NULL,
+  palette = hyGet_palette(sp),
+  ...,
+  alpha = 0.2,
+  add = FALSE,
+  name_if_by_is_NULL = "All Data"
+)
 
-layer_spRange(sp, by = NULL, percent = NULL, probs = NULL, ...,
-  alpha = 0.2)
+layer_spRange(sp, by = NULL, percent = NULL, probs = NULL, ..., alpha = 0.2)
 
-gg_spRange(sp, by = NULL, percent = NULL, probs = NULL, ...,
-  alpha = 0.2)
+gg_spRange(sp, by = NULL, percent = NULL, probs = NULL, ..., alpha = 0.2)
 }
 \arguments{
 \item{sp}{\code{\link[=hyperSpec-class]{hyperSpec}} object.}
@@ -74,19 +80,26 @@ Error is expected, if added to existing ggplot:
      ggplotly_tidy()
 }
 \seealso{
-Other \pkg{spHelper} plots: \code{\link{layer_spRangeMean}},
-  \code{\link{plot_colors}}, \code{\link{plot_hyPalette}},
-  \code{\link{plot_spCompare}}, \code{\link{plot_spDiff}},
-  \code{\link{plot_spDistribution}},
-  \code{\link{qplot_confusion}},
-  \code{\link{qplot_crosstab}},
-  \code{\link{qplot_infoDim}}, \code{\link{qplot_kAmp}},
-  \code{\link{qplot_kSp}}, \code{\link{qplot_prediction}},
-  \code{\link{qplot_spRangeCenter}},
-  \code{\link{qplot_spRangeMedian}},
-  \code{\link{qplot_spStat}}, \code{\link{qplot_spc}},
-  \code{\link{rmExpr}}, \code{\link{rm_stripes}},
-  \code{\link{stat_chull}}
+Other \pkg{spHelper} plots: 
+\code{\link{layer_spRangeMean}()},
+\code{\link{plot_colors}()},
+\code{\link{plot_hyPalette}()},
+\code{\link{plot_spCompare}()},
+\code{\link{plot_spDiff}()},
+\code{\link{plot_spDistribution}()},
+\code{\link{qplot_confusion}()},
+\code{\link{qplot_crosstab}()},
+\code{\link{qplot_infoDim}()},
+\code{\link{qplot_kAmp}()},
+\code{\link{qplot_kSp}()},
+\code{\link{qplot_prediction}()},
+\code{\link{qplot_spRangeCenter}()},
+\code{\link{qplot_spRangeMedian}()},
+\code{\link{qplot_spStat}()},
+\code{\link{qplot_spc}()},
+\code{\link{rmExpr}()},
+\code{\link{rm_stripes}()},
+\code{\link{stat_chull}()}
 }
 \author{
 Vilmantas Gegzna

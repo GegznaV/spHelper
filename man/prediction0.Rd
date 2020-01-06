@@ -4,8 +4,7 @@
 \alias{prediction0}
 \title{[!] Function to create prediction objects}
 \usage{
-prediction0(predictions, labels, label.ordering = NULL,
-  neg.smaller = NULL)
+prediction0(predictions, labels, label.ordering = NULL, neg.smaller = NULL)
 }
 \arguments{
 \item{predictions}{A vector, matrix, list, or data frame containing

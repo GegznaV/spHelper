@@ -46,8 +46,11 @@ plot(alr(Spectra, ind))
 \seealso{
 \code{\link[compositions]{alr}}
 
-Other row-wise transformations: \code{\link{apt}},
-  \code{\link{clr}}, \code{\link{cpt}}, \code{\link{ilr}},
-  \code{\link{ipt}}
+Other row-wise transformations: 
+\code{\link{apt}()},
+\code{\link{clr}()},
+\code{\link{cpt}()},
+\code{\link{ilr}()},
+\code{\link{ipt}()}
 }
 \concept{row-wise transformations}

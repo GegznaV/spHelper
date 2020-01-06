@@ -10,8 +10,10 @@ measure_tp(truth, response, positive)
 Calculate number of true positives
 }
 \seealso{
-Other measures_: \code{\link{measure_bac_2gr}},
-  \code{\link{measure_bac}}, \code{\link{measure_tn}},
-  \code{\link{measure_tpr}}
+Other measures_: 
+\code{\link{measure_bac_2gr}()},
+\code{\link{measure_bac}()},
+\code{\link{measure_tn}()},
+\code{\link{measure_tpr}()}
 }
 \concept{measures_}

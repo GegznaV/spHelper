@@ -5,8 +5,13 @@
 \alias{foldTests}
 \title{DEPRECATED!}
 \usage{
-test_folds_BS(obj, data = NULL, stratify_by = NULL, block_by = NULL,
-  nColShow = 10)
+test_folds_BS(
+  obj,
+  data = NULL,
+  stratify_by = NULL,
+  block_by = NULL,
+  nColShow = 10
+)
 
 foldTests(obj, ...)
 }

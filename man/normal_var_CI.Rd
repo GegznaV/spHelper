@@ -4,8 +4,7 @@
 \alias{normal_var_CI}
 \title{Confidence interval for variance (parameter sigma squared) of Noral distribution}
 \usage{
-normal_var_CI(x = NULL, var = var(x), n = length(x),
-  conf.level = 0.95)
+normal_var_CI(x = NULL, var = var(x), n = length(x), conf.level = 0.95)
 }
 \arguments{
 \item{x}{data}
@@ -33,7 +32,9 @@ normal_var_CI(var = 10, n = 20)
 
 }
 \seealso{
-Other statistical functions: \code{\link{median_CI}},
-  \code{\link{poisson_lambda_CI}}, \code{\link{quartiles}}
+Other statistical functions: 
+\code{\link{median_CI}()},
+\code{\link{poisson_lambda_CI}()},
+\code{\link{quartiles}()}
 }
 \concept{statistical functions}

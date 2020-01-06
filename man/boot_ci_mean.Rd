@@ -6,15 +6,29 @@
 \alias{boot_ci_corr}
 \title{Bootstrapped mean and its confidence interval}
 \usage{
-boot_ci_mean(x, conf = 0.95, R = 1000, sim = "balanced",
-  type = c("norm"))
+boot_ci_mean(x, conf = 0.95, R = 1000, sim = "balanced", type = c("norm"))
 
-boot_ci_fun(x, FUN, conf = 0.95, R = 1000, sim = "balanced",
-  type = c("norm"), label = as.character(match.call()$FUN))
+boot_ci_fun(
+  x,
+  FUN,
+  conf = 0.95,
+  R = 1000,
+  sim = "balanced",
+  type = c("norm"),
+  label = as.character(match.call()$FUN)
+)
 
-boot_ci_corr(x, y = NULL, method = c("spearman", "kendall",
-  "pearson")[1], use = "everything", conf = 0.95, R = 1000,
-  sim = "balanced", type = c("norm"), label = "corr_coef")
+boot_ci_corr(
+  x,
+  y = NULL,
+  method = c("spearman", "kendall", "pearson")[1],
+  use = "everything",
+  conf = 0.95,
+  R = 1000,
+  sim = "balanced",
+  type = c("norm"),
+  label = "corr_coef"
+)
 }
 \arguments{
 \item{x}{a vector.}

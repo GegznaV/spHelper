@@ -8,11 +8,21 @@
 \usage{
 hyRm_palette(sp = NULL)
 
-hyAdd_palette(sp = NULL, by, palette = c(RColorBrewer::brewer.pal(9,
-  "Set1")), label = NULL, ...)
+hyAdd_palette(
+  sp = NULL,
+  by,
+  palette = c(RColorBrewer::brewer.pal(9, "Set1")),
+  label = NULL,
+  ...
+)
 
-hyAdd_color(sp = NULL, by, palette = c(RColorBrewer::brewer.pal(9,
-  "Set1")), label = NULL, ...)
+hyAdd_color(
+  sp = NULL,
+  by,
+  palette = c(RColorBrewer::brewer.pal(9, "Set1")),
+  label = NULL,
+  ...
+)
 }
 \arguments{
 \item{sp}{\code{\link[=hyperSpec-class]{hyperSpec}} object.}
@@ -49,7 +59,7 @@ colnames(Spectra1)
 
 # Default labels
 labels(Spectra1,".color")
-   #>  [1] "Colors for \\"class\\""
+   #>  [1] "Colors for \"class\""
 
 hyGet_palette(Spectra1)
    #>  "#377EB8" "#4DAF4A" "#984EA3" "#FF7F00"
@@ -72,22 +82,32 @@ labels(Spectra1,".color")
 
 }
 \seealso{
-Other \pkg{spHelper} functions for spectroscopy and \pkg{hyperSpec}: \code{\link{IQR_outliers}},
-  \code{\link{binning}}, \code{\link{file}},
-  \code{\link{gapDer}}, \code{\link{hy2mat}},
-  \code{\link{hyAdd_Label_wl}},
-  \code{\link{hyAdd_Labels_PAP_PD_2014}},
-  \code{\link{hyAdd_Labels_TD2009}}, \code{\link{hyAdd}},
-  \code{\link{hyDrop_NA}}, \code{\link{hyGet_palette}},
-  \code{\link{mad_outliers}}, \code{\link{mean_Nsd}},
-  \code{\link{median_Nmad}}, \code{\link{plot_hyPalette}},
-  \code{\link{prepare_PAP_RK_2014__MATLAB_failui}},
-  \code{\link{read.OOIBase32}},
-  \code{\link{read.OceanView.header}},
-  \code{\link{read.OceanView}}, \code{\link{read.sp.csv2}},
-  \code{\link{read3csv2hy}}, \code{\link{replace_spc}},
-  \code{\link{sd_outliers}}, \code{\link{spStat}},
-  \code{\link{sp_class_perform}}
+Other \pkg{spHelper} functions for spectroscopy and \pkg{hyperSpec}: 
+\code{\link{IQR_outliers}()},
+\code{\link{binning}()},
+\code{\link{file}},
+\code{\link{gapDer}()},
+\code{\link{hy2mat}()},
+\code{\link{hyAdd_Label_wl}()},
+\code{\link{hyAdd_Labels_PAP_PD_2014}()},
+\code{\link{hyAdd_Labels_TD2009}()},
+\code{\link{hyAdd}()},
+\code{\link{hyDrop_NA}()},
+\code{\link{hyGet_palette}()},
+\code{\link{mad_outliers}()},
+\code{\link{mean_Nsd}()},
+\code{\link{median_Nmad}()},
+\code{\link{plot_hyPalette}()},
+\code{\link{prepare_PAP_RK_2014__MATLAB_failui}()},
+\code{\link{read.OOIBase32}()},
+\code{\link{read.OceanView.header}()},
+\code{\link{read.OceanView}()},
+\code{\link{read.sp.csv2}()},
+\code{\link{read3csv2hy}()},
+\code{\link{replace_spc}()},
+\code{\link{sd_outliers}()},
+\code{\link{spStat}()},
+\code{\link{sp_class_perform}()}
 }
 \author{
 Vilmantas Gegzna

@@ -73,10 +73,14 @@ xyplot(eruptions~waiting, data = faithful,
 
 }
 \seealso{
-Other \pkg{spHelper} utilities: \code{\link{IQR_outliers}},
-  \code{\link{expr2text}}, \code{\link{mad_outliers}},
-  \code{\link{rmExpr}}, \code{\link{sd_outliers}},
-  \code{\link{unGroup}}, \code{\link{uncall}}
+Other \pkg{spHelper} utilities: 
+\code{\link{IQR_outliers}()},
+\code{\link{expr2text}()},
+\code{\link{mad_outliers}()},
+\code{\link{rmExpr}()},
+\code{\link{sd_outliers}()},
+\code{\link{unGroup}()},
+\code{\link{uncall}()}
 }
 \author{
 Vilmantas Gegzna

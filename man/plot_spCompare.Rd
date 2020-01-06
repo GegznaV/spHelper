@@ -4,10 +4,18 @@
 \alias{plot_spCompare}
 \title{[!] Compare 2 spectroscopic signals}
 \usage{
-plot_spCompare(sp1, sp2, row = 1, colors = c("green4", "blue3", "red"),
-  show.legend = TRUE, legend.title = "Spectra",
+plot_spCompare(
+  sp1,
+  sp2,
+  row = 1,
+  colors = c("green4", "blue3", "red"),
+  show.legend = TRUE,
+  legend.title = "Spectra",
   legend.text = c(match.call()$sp1, match.call()$sp2, "Difference"),
-  x = "topright", lwd = 1, ...)
+  x = "topright",
+  lwd = 1,
+  ...
+)
 }
 \arguments{
 \item{sp1, sp2}{hyperSpec objects of the same size}
@@ -51,20 +59,26 @@ plot_spCompare(Spectra2, sp_filt, row = 2,legend.text  = c("Original","Filtered"
 
 }
 \seealso{
-Other \pkg{spHelper} plots: \code{\link{check_palette}},
-  \code{\link{layer_spRangeMean}},
-  \code{\link{plot_colors}}, \code{\link{plot_hyPalette}},
-  \code{\link{plot_spDiff}},
-  \code{\link{plot_spDistribution}},
-  \code{\link{qplot_confusion}},
-  \code{\link{qplot_crosstab}},
-  \code{\link{qplot_infoDim}}, \code{\link{qplot_kAmp}},
-  \code{\link{qplot_kSp}}, \code{\link{qplot_prediction}},
-  \code{\link{qplot_spRangeCenter}},
-  \code{\link{qplot_spRangeMedian}},
-  \code{\link{qplot_spStat}}, \code{\link{qplot_spc}},
-  \code{\link{rmExpr}}, \code{\link{rm_stripes}},
-  \code{\link{stat_chull}}
+Other \pkg{spHelper} plots: 
+\code{\link{check_palette}()},
+\code{\link{layer_spRangeMean}()},
+\code{\link{plot_colors}()},
+\code{\link{plot_hyPalette}()},
+\code{\link{plot_spDiff}()},
+\code{\link{plot_spDistribution}()},
+\code{\link{qplot_confusion}()},
+\code{\link{qplot_crosstab}()},
+\code{\link{qplot_infoDim}()},
+\code{\link{qplot_kAmp}()},
+\code{\link{qplot_kSp}()},
+\code{\link{qplot_prediction}()},
+\code{\link{qplot_spRangeCenter}()},
+\code{\link{qplot_spRangeMedian}()},
+\code{\link{qplot_spStat}()},
+\code{\link{qplot_spc}()},
+\code{\link{rmExpr}()},
+\code{\link{rm_stripes}()},
+\code{\link{stat_chull}()}
 }
 \author{
 Vilmantas Gegzna

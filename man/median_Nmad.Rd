@@ -4,10 +4,15 @@
 \alias{median_Nmad}
 \title{[!] Find spectra that represent median +/- n median absolute deviations (MAD)}
 \usage{
-median_Nmad(sp, n = 2, plus.minus = TRUE, var_fun = mad,
+median_Nmad(
+  sp,
+  n = 2,
+  plus.minus = TRUE,
+  var_fun = mad,
   center_fun = median,
   center_name = as.character(match.call()$center_fun),
-  var_name = as.character(match.call()$var_fun))
+  var_name = as.character(match.call()$var_fun)
+)
 }
 \arguments{
 \item{sp}{\code{\link[=hyperSpec-class]{hyperSpec}} object.}
@@ -65,22 +70,32 @@ qplotspc(Spectra2, spc.nmax = nrow(Spectra2),
 \link[hyperSpec]{scale},  \link{outside_mean_pm_Nsd},
   \link[hyperSpec]{mean_sd}
 
-Other \pkg{spHelper} functions for spectroscopy and \pkg{hyperSpec}: \code{\link{IQR_outliers}},
-  \code{\link{binning}}, \code{\link{file}},
-  \code{\link{gapDer}}, \code{\link{hy2mat}},
-  \code{\link{hyAdd_Label_wl}},
-  \code{\link{hyAdd_Labels_PAP_PD_2014}},
-  \code{\link{hyAdd_Labels_TD2009}}, \code{\link{hyAdd}},
-  \code{\link{hyDrop_NA}}, \code{\link{hyGet_palette}},
-  \code{\link{hyRm_palette}}, \code{\link{mad_outliers}},
-  \code{\link{mean_Nsd}}, \code{\link{plot_hyPalette}},
-  \code{\link{prepare_PAP_RK_2014__MATLAB_failui}},
-  \code{\link{read.OOIBase32}},
-  \code{\link{read.OceanView.header}},
-  \code{\link{read.OceanView}}, \code{\link{read.sp.csv2}},
-  \code{\link{read3csv2hy}}, \code{\link{replace_spc}},
-  \code{\link{sd_outliers}}, \code{\link{spStat}},
-  \code{\link{sp_class_perform}}
+Other \pkg{spHelper} functions for spectroscopy and \pkg{hyperSpec}: 
+\code{\link{IQR_outliers}()},
+\code{\link{binning}()},
+\code{\link{file}},
+\code{\link{gapDer}()},
+\code{\link{hy2mat}()},
+\code{\link{hyAdd_Label_wl}()},
+\code{\link{hyAdd_Labels_PAP_PD_2014}()},
+\code{\link{hyAdd_Labels_TD2009}()},
+\code{\link{hyAdd}()},
+\code{\link{hyDrop_NA}()},
+\code{\link{hyGet_palette}()},
+\code{\link{hyRm_palette}()},
+\code{\link{mad_outliers}()},
+\code{\link{mean_Nsd}()},
+\code{\link{plot_hyPalette}()},
+\code{\link{prepare_PAP_RK_2014__MATLAB_failui}()},
+\code{\link{read.OOIBase32}()},
+\code{\link{read.OceanView.header}()},
+\code{\link{read.OceanView}()},
+\code{\link{read.sp.csv2}()},
+\code{\link{read3csv2hy}()},
+\code{\link{replace_spc}()},
+\code{\link{sd_outliers}()},
+\code{\link{spStat}()},
+\code{\link{sp_class_perform}()}
 }
 \author{
 Vilmantas Gegzna

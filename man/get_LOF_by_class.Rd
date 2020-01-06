@@ -49,8 +49,10 @@ str(obj0)
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 }
 \seealso{
-Other LOF_obj: \code{\link{plot_LOF_MDS}},
-  \code{\link{plot_LOF_hist}}, \code{\link{plot_LOF_sp}},
-  \code{\link{plot_stacked}}
+Other LOF_obj: 
+\code{\link{plot_LOF_MDS}()},
+\code{\link{plot_LOF_hist}()},
+\code{\link{plot_LOF_sp}()},
+\code{\link{plot_stacked}()}
 }
 \concept{LOF_obj}

@@ -42,26 +42,38 @@ Find examples in \code{\link[prospectr]{binning}}.
 \seealso{
 \code{\link[prospectr]{binning}}
 
-Other methods for \code{\link[=hyperSpec-class]{hyperSpec}} in \pkg{spHelper}: \code{\link{gapDer}}
+Other methods for \code{\link[=hyperSpec-class]{hyperSpec}} in \pkg{spHelper}: 
+\code{\link{gapDer}()}
 
-Other \pkg{prospectr} function for \pkg{hyperSpec}: \code{\link{gapDer}}
+Other \pkg{prospectr} function for \pkg{hyperSpec}: 
+\code{\link{gapDer}()}
 
-Other \pkg{spHelper} functions for spectroscopy and \pkg{hyperSpec}: \code{\link{IQR_outliers}},
-  \code{\link{file}}, \code{\link{gapDer}},
-  \code{\link{hy2mat}}, \code{\link{hyAdd_Label_wl}},
-  \code{\link{hyAdd_Labels_PAP_PD_2014}},
-  \code{\link{hyAdd_Labels_TD2009}}, \code{\link{hyAdd}},
-  \code{\link{hyDrop_NA}}, \code{\link{hyGet_palette}},
-  \code{\link{hyRm_palette}}, \code{\link{mad_outliers}},
-  \code{\link{mean_Nsd}}, \code{\link{median_Nmad}},
-  \code{\link{plot_hyPalette}},
-  \code{\link{prepare_PAP_RK_2014__MATLAB_failui}},
-  \code{\link{read.OOIBase32}},
-  \code{\link{read.OceanView.header}},
-  \code{\link{read.OceanView}}, \code{\link{read.sp.csv2}},
-  \code{\link{read3csv2hy}}, \code{\link{replace_spc}},
-  \code{\link{sd_outliers}}, \code{\link{spStat}},
-  \code{\link{sp_class_perform}}
+Other \pkg{spHelper} functions for spectroscopy and \pkg{hyperSpec}: 
+\code{\link{IQR_outliers}()},
+\code{\link{file}},
+\code{\link{gapDer}()},
+\code{\link{hy2mat}()},
+\code{\link{hyAdd_Label_wl}()},
+\code{\link{hyAdd_Labels_PAP_PD_2014}()},
+\code{\link{hyAdd_Labels_TD2009}()},
+\code{\link{hyAdd}()},
+\code{\link{hyDrop_NA}()},
+\code{\link{hyGet_palette}()},
+\code{\link{hyRm_palette}()},
+\code{\link{mad_outliers}()},
+\code{\link{mean_Nsd}()},
+\code{\link{median_Nmad}()},
+\code{\link{plot_hyPalette}()},
+\code{\link{prepare_PAP_RK_2014__MATLAB_failui}()},
+\code{\link{read.OOIBase32}()},
+\code{\link{read.OceanView.header}()},
+\code{\link{read.OceanView}()},
+\code{\link{read.sp.csv2}()},
+\code{\link{read3csv2hy}()},
+\code{\link{replace_spc}()},
+\code{\link{sd_outliers}()},
+\code{\link{spStat}()},
+\code{\link{sp_class_perform}()}
 }
 \author{
 Antoine Stevens & Leonardo Ramirez-Lopez (function \code{prospectr::binning})\cr

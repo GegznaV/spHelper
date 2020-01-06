@@ -34,8 +34,11 @@ plot(apt(Spectra2))
 \seealso{
 \code{\link[compositions]{apt}}
 
-Other row-wise transformations: \code{\link{alr}},
-  \code{\link{clr}}, \code{\link{cpt}}, \code{\link{ilr}},
-  \code{\link{ipt}}
+Other row-wise transformations: 
+\code{\link{alr}()},
+\code{\link{clr}()},
+\code{\link{cpt}()},
+\code{\link{ilr}()},
+\code{\link{ipt}()}
 }
 \concept{row-wise transformations}

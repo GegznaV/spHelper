@@ -52,24 +52,35 @@ mapping = aes(x = .wavelength,
 
 }
 \seealso{
-Other \pkg{spHelper} plots: \code{\link{check_palette}},
-  \code{\link{layer_spRangeMean}},
-  \code{\link{plot_colors}}, \code{\link{plot_hyPalette}},
-  \code{\link{plot_spCompare}}, \code{\link{plot_spDiff}},
-  \code{\link{plot_spDistribution}},
-  \code{\link{qplot_confusion}},
-  \code{\link{qplot_crosstab}},
-  \code{\link{qplot_infoDim}}, \code{\link{qplot_kAmp}},
-  \code{\link{qplot_kSp}}, \code{\link{qplot_prediction}},
-  \code{\link{qplot_spRangeCenter}},
-  \code{\link{qplot_spRangeMedian}},
-  \code{\link{qplot_spStat}}, \code{\link{qplot_spc}},
-  \code{\link{rm_stripes}}, \code{\link{stat_chull}}
+Other \pkg{spHelper} plots: 
+\code{\link{check_palette}()},
+\code{\link{layer_spRangeMean}()},
+\code{\link{plot_colors}()},
+\code{\link{plot_hyPalette}()},
+\code{\link{plot_spCompare}()},
+\code{\link{plot_spDiff}()},
+\code{\link{plot_spDistribution}()},
+\code{\link{qplot_confusion}()},
+\code{\link{qplot_crosstab}()},
+\code{\link{qplot_infoDim}()},
+\code{\link{qplot_kAmp}()},
+\code{\link{qplot_kSp}()},
+\code{\link{qplot_prediction}()},
+\code{\link{qplot_spRangeCenter}()},
+\code{\link{qplot_spRangeMedian}()},
+\code{\link{qplot_spStat}()},
+\code{\link{qplot_spc}()},
+\code{\link{rm_stripes}()},
+\code{\link{stat_chull}()}
 
-Other \pkg{spHelper} utilities: \code{\link{IQR_outliers}},
-  \code{\link{expr2text}}, \code{\link{mad_outliers}},
-  \code{\link{sd_outliers}}, \code{\link{subt}},
-  \code{\link{unGroup}}, \code{\link{uncall}}
+Other \pkg{spHelper} utilities: 
+\code{\link{IQR_outliers}()},
+\code{\link{expr2text}()},
+\code{\link{mad_outliers}()},
+\code{\link{sd_outliers}()},
+\code{\link{subt}()},
+\code{\link{unGroup}()},
+\code{\link{uncall}()}
 }
 \author{
 Vilmantas Gegzna

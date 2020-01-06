@@ -6,9 +6,16 @@
 \alias{qplot_scree}
 \title{[+] Scree plot with indicated information dimension (ggplot2)}
 \usage{
-qplot_infoDim(obj, n.comp.SHOW = 20, selected = NA,
-  Title = "Scree Plot", y.log = TRUE, show.legend = TRUE,
-  legend.position = c(0.8, 0.8), ggtheme = theme_bw())
+qplot_infoDim(
+  obj,
+  n.comp.SHOW = 20,
+  selected = NA,
+  Title = "Scree Plot",
+  y.log = TRUE,
+  show.legend = TRUE,
+  legend.position = c(0.8, 0.8),
+  ggtheme = theme_bw()
+)
 
 qplot_screeplot(obj, ...)
 
@@ -74,28 +81,41 @@ qplot_infoDim(my_matrix)
 
 }
 \seealso{
-Other \pkg{spHelper} plots: \code{\link{check_palette}},
-  \code{\link{layer_spRangeMean}},
-  \code{\link{plot_colors}}, \code{\link{plot_hyPalette}},
-  \code{\link{plot_spCompare}}, \code{\link{plot_spDiff}},
-  \code{\link{plot_spDistribution}},
-  \code{\link{qplot_confusion}},
-  \code{\link{qplot_crosstab}}, \code{\link{qplot_kAmp}},
-  \code{\link{qplot_kSp}}, \code{\link{qplot_prediction}},
-  \code{\link{qplot_spRangeCenter}},
-  \code{\link{qplot_spRangeMedian}},
-  \code{\link{qplot_spStat}}, \code{\link{qplot_spc}},
-  \code{\link{rmExpr}}, \code{\link{rm_stripes}},
-  \code{\link{stat_chull}}
+Other \pkg{spHelper} plots: 
+\code{\link{check_palette}()},
+\code{\link{layer_spRangeMean}()},
+\code{\link{plot_colors}()},
+\code{\link{plot_hyPalette}()},
+\code{\link{plot_spCompare}()},
+\code{\link{plot_spDiff}()},
+\code{\link{plot_spDistribution}()},
+\code{\link{qplot_confusion}()},
+\code{\link{qplot_crosstab}()},
+\code{\link{qplot_kAmp}()},
+\code{\link{qplot_kSp}()},
+\code{\link{qplot_prediction}()},
+\code{\link{qplot_spRangeCenter}()},
+\code{\link{qplot_spRangeMedian}()},
+\code{\link{qplot_spStat}()},
+\code{\link{qplot_spc}()},
+\code{\link{rmExpr}()},
+\code{\link{rm_stripes}()},
+\code{\link{stat_chull}()}
 
-Other component analysis / factorisation related functions in \pkg{spHelper}: \code{\link{getScores}},
-  \code{\link{infoDim}}, \code{\link{plot_spDiff}},
-  \code{\link{qplot_kAmp}}, \code{\link{qplot_kSp}},
-  \code{\link{qplot_spc}}, \code{\link{reconstructSp}},
-  \code{\link{sortLoadings}}, \code{\link{unipeak}},
-  \code{\link{whichOutlier}}
+Other component analysis / factorisation related functions in \pkg{spHelper}: 
+\code{\link{getScores}()},
+\code{\link{infoDim}()},
+\code{\link{plot_spDiff}()},
+\code{\link{qplot_kAmp}()},
+\code{\link{qplot_kSp}()},
+\code{\link{qplot_spc}()},
+\code{\link{reconstructSp}()},
+\code{\link{sortLoadings}()},
+\code{\link{unipeak}()},
+\code{\link{whichOutlier}()}
 
-Other information dimension functions: \code{\link{infoDim}}
+Other information dimension functions: 
+\code{\link{infoDim}()}
 }
 \concept{\pkg{spHelper} plots}
 \concept{component analysis / factorisation related functions in \pkg{spHelper}}

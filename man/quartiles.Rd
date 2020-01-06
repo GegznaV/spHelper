@@ -4,8 +4,12 @@
 \alias{quartiles}
 \title{Median and quantiles}
 \usage{
-quartiles(x = NULL, MEDIAN = median(x), Q1 = quantile(x, 0.25),
-  Q3 = quantile(x, 0.75))
+quartiles(
+  x = NULL,
+  MEDIAN = median(x),
+  Q1 = quantile(x, 0.25),
+  Q3 = quantile(x, 0.75)
+)
 }
 \arguments{
 \item{x}{data}
@@ -28,8 +32,9 @@ quartiles(x)
 
 }
 \seealso{
-Other statistical functions: \code{\link{median_CI}},
-  \code{\link{normal_var_CI}},
-  \code{\link{poisson_lambda_CI}}
+Other statistical functions: 
+\code{\link{median_CI}()},
+\code{\link{normal_var_CI}()},
+\code{\link{poisson_lambda_CI}()}
 }
 \concept{statistical functions}

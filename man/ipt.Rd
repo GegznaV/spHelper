@@ -37,8 +37,11 @@ plot(ipt(Spectra))
 \seealso{
 \code{\link[compositions]{ipt}}, \code{\link[compositions]{ilrBase}}
 
-Other row-wise transformations: \code{\link{alr}},
-  \code{\link{apt}}, \code{\link{clr}}, \code{\link{cpt}},
-  \code{\link{ilr}}
+Other row-wise transformations: 
+\code{\link{alr}()},
+\code{\link{apt}()},
+\code{\link{clr}()},
+\code{\link{cpt}()},
+\code{\link{ilr}()}
 }
 \concept{row-wise transformations}

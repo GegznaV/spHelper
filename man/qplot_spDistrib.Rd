@@ -4,8 +4,13 @@
 \alias{qplot_spDistrib}
 \title{[!] Plot distributions of spectroscopic data}
 \usage{
-qplot_spDistrib(sp, by = stop("`by` is missing"), percent = NULL,
-  probs = NULL, palette = hyGet_palette(sp))
+qplot_spDistrib(
+  sp,
+  by = stop("`by` is missing"),
+  percent = NULL,
+  probs = NULL,
+  palette = hyGet_palette(sp)
+)
 }
 \arguments{
 \item{sp}{\code{\link[=hyperSpec-class]{hyperSpec}} object.}

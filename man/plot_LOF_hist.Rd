@@ -4,8 +4,14 @@
 \alias{plot_LOF_hist}
 \title{Plot histogram of LOF values}
 \usage{
-plot_LOF_hist(LOF, LOF_threshold = 10, breaks = "Sturges",
-  col = "tomato3", x = "topright", y = NULL)
+plot_LOF_hist(
+  LOF,
+  LOF_threshold = 10,
+  breaks = "Sturges",
+  col = "tomato3",
+  x = "topright",
+  y = NULL
+)
 }
 \arguments{
 \item{LOF}{- either "LOF_obj" object or vector with LOF values.}
@@ -36,8 +42,10 @@ plot_LOF_hist(LOF, LOF_threshold = 10, breaks = "Sturges",
 Plot histogram of LOF values
 }
 \seealso{
-Other LOF_obj: \code{\link{get_LOF_by_class}},
-  \code{\link{plot_LOF_MDS}}, \code{\link{plot_LOF_sp}},
-  \code{\link{plot_stacked}}
+Other LOF_obj: 
+\code{\link{get_LOF_by_class}()},
+\code{\link{plot_LOF_MDS}()},
+\code{\link{plot_LOF_sp}()},
+\code{\link{plot_stacked}()}
 }
 \concept{LOF_obj}

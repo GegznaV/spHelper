@@ -8,9 +8,14 @@
 \alias{make_3D}
 \title{[.] Plot 3D scatterplot}
 \usage{
-plot_3D(data, by = NULL, text = NULL, title = "3D scatterplot",
-  add.space = 0.2, scene = list(camera = list(eye = list(x = 1.1, y =
-  -1.1, z = 1))))
+plot_3D(
+  data,
+  by = NULL,
+  text = NULL,
+  title = "3D scatterplot",
+  add.space = 0.2,
+  scene = list(camera = list(eye = list(x = 1.1, y = -1.1, z = 1)))
+)
 
 mds2mat(fit)
 

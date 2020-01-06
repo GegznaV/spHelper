@@ -5,11 +5,21 @@
 \alias{qplot_scores}
 \title{[!+] Plot amplitudes (a.k.a scores) of spectroscopic components}
 \usage{
-qplot_kAmp(scores, Title = "Component amplitudes", subTitle = NULL,
-  xLabel = labels(scores, ".wavelength"), yLabel = labels(scores,
-  "spc"), by = "gr", palette = hyGet_palette(scores),
-  add.violin = TRUE, add.jitter = FALSE, add.boxplot = TRUE,
-  violin.alpha = 0.25, jitter.alpha = 0.3, jitter.size = 1)
+qplot_kAmp(
+  scores,
+  Title = "Component amplitudes",
+  subTitle = NULL,
+  xLabel = labels(scores, ".wavelength"),
+  yLabel = labels(scores, "spc"),
+  by = "gr",
+  palette = hyGet_palette(scores),
+  add.violin = TRUE,
+  add.jitter = FALSE,
+  add.boxplot = TRUE,
+  violin.alpha = 0.25,
+  jitter.alpha = 0.3,
+  jitter.size = 1
+)
 
 qplot_scores(..., by = NULL, add.violin = FALSE)
 }
@@ -87,27 +97,38 @@ p + theme_bw()
 
 }
 \seealso{
-Other \pkg{spHelper} plots: \code{\link{check_palette}},
-  \code{\link{layer_spRangeMean}},
-  \code{\link{plot_colors}}, \code{\link{plot_hyPalette}},
-  \code{\link{plot_spCompare}}, \code{\link{plot_spDiff}},
-  \code{\link{plot_spDistribution}},
-  \code{\link{qplot_confusion}},
-  \code{\link{qplot_crosstab}},
-  \code{\link{qplot_infoDim}}, \code{\link{qplot_kSp}},
-  \code{\link{qplot_prediction}},
-  \code{\link{qplot_spRangeCenter}},
-  \code{\link{qplot_spRangeMedian}},
-  \code{\link{qplot_spStat}}, \code{\link{qplot_spc}},
-  \code{\link{rmExpr}}, \code{\link{rm_stripes}},
-  \code{\link{stat_chull}}
+Other \pkg{spHelper} plots: 
+\code{\link{check_palette}()},
+\code{\link{layer_spRangeMean}()},
+\code{\link{plot_colors}()},
+\code{\link{plot_hyPalette}()},
+\code{\link{plot_spCompare}()},
+\code{\link{plot_spDiff}()},
+\code{\link{plot_spDistribution}()},
+\code{\link{qplot_confusion}()},
+\code{\link{qplot_crosstab}()},
+\code{\link{qplot_infoDim}()},
+\code{\link{qplot_kSp}()},
+\code{\link{qplot_prediction}()},
+\code{\link{qplot_spRangeCenter}()},
+\code{\link{qplot_spRangeMedian}()},
+\code{\link{qplot_spStat}()},
+\code{\link{qplot_spc}()},
+\code{\link{rmExpr}()},
+\code{\link{rm_stripes}()},
+\code{\link{stat_chull}()}
 
-Other component analysis / factorisation related functions in \pkg{spHelper}: \code{\link{getScores}},
-  \code{\link{infoDim}}, \code{\link{plot_spDiff}},
-  \code{\link{qplot_infoDim}}, \code{\link{qplot_kSp}},
-  \code{\link{qplot_spc}}, \code{\link{reconstructSp}},
-  \code{\link{sortLoadings}}, \code{\link{unipeak}},
-  \code{\link{whichOutlier}}
+Other component analysis / factorisation related functions in \pkg{spHelper}: 
+\code{\link{getScores}()},
+\code{\link{infoDim}()},
+\code{\link{plot_spDiff}()},
+\code{\link{qplot_infoDim}()},
+\code{\link{qplot_kSp}()},
+\code{\link{qplot_spc}()},
+\code{\link{reconstructSp}()},
+\code{\link{sortLoadings}()},
+\code{\link{unipeak}()},
+\code{\link{whichOutlier}()}
 }
 \author{
 Vilmantas Gegzna

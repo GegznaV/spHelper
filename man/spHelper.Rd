@@ -3,7 +3,6 @@
 \docType{package}
 \name{spHelper}
 \alias{spHelper}
-\alias{spHelper-package}
 \title{Extension for `hyperSpec` and convenience functions}
 \description{
 [+] - function is well described. \cr

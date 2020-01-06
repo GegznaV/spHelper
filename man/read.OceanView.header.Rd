@@ -4,10 +4,16 @@
 \alias{read.OceanView.header}
 \title{[!] Read header lines of OceanView file}
 \usage{
-read.OceanView.header(file = NULL, dec = ".", n = 17,
-  software = "OceanView", version_ = "1.5.2",
+read.OceanView.header(
+  file = NULL,
+  dec = ".",
+  n = 17,
+  software = "OceanView",
+  version_ = "1.5.2",
   software_info = paste(software, version_),
-  last_headerline_text = ">>>>>Begin Spectral Data<<<<<", text)
+  last_headerline_text = ">>>>>Begin Spectral Data<<<<<",
+  text
+)
 }
 \arguments{
 \item{file}{(string) A name of OcenView file .}
@@ -113,26 +119,37 @@ print(DF)
 
 }
 \seealso{
-Other \pkg{spHelper} functions for spectroscopy and \pkg{hyperSpec}: \code{\link{IQR_outliers}},
-  \code{\link{binning}}, \code{\link{file}},
-  \code{\link{gapDer}}, \code{\link{hy2mat}},
-  \code{\link{hyAdd_Label_wl}},
-  \code{\link{hyAdd_Labels_PAP_PD_2014}},
-  \code{\link{hyAdd_Labels_TD2009}}, \code{\link{hyAdd}},
-  \code{\link{hyDrop_NA}}, \code{\link{hyGet_palette}},
-  \code{\link{hyRm_palette}}, \code{\link{mad_outliers}},
-  \code{\link{mean_Nsd}}, \code{\link{median_Nmad}},
-  \code{\link{plot_hyPalette}},
-  \code{\link{prepare_PAP_RK_2014__MATLAB_failui}},
-  \code{\link{read.OOIBase32}},
-  \code{\link{read.OceanView}}, \code{\link{read.sp.csv2}},
-  \code{\link{read3csv2hy}}, \code{\link{replace_spc}},
-  \code{\link{sd_outliers}}, \code{\link{spStat}},
-  \code{\link{sp_class_perform}}
+Other \pkg{spHelper} functions for spectroscopy and \pkg{hyperSpec}: 
+\code{\link{IQR_outliers}()},
+\code{\link{binning}()},
+\code{\link{file}},
+\code{\link{gapDer}()},
+\code{\link{hy2mat}()},
+\code{\link{hyAdd_Label_wl}()},
+\code{\link{hyAdd_Labels_PAP_PD_2014}()},
+\code{\link{hyAdd_Labels_TD2009}()},
+\code{\link{hyAdd}()},
+\code{\link{hyDrop_NA}()},
+\code{\link{hyGet_palette}()},
+\code{\link{hyRm_palette}()},
+\code{\link{mad_outliers}()},
+\code{\link{mean_Nsd}()},
+\code{\link{median_Nmad}()},
+\code{\link{plot_hyPalette}()},
+\code{\link{prepare_PAP_RK_2014__MATLAB_failui}()},
+\code{\link{read.OOIBase32}()},
+\code{\link{read.OceanView}()},
+\code{\link{read.sp.csv2}()},
+\code{\link{read3csv2hy}()},
+\code{\link{replace_spc}()},
+\code{\link{sd_outliers}()},
+\code{\link{spStat}()},
+\code{\link{sp_class_perform}()}
 
-Other functions to read spectroscopic data: \code{\link{file}},
-  \code{\link{read.OOIBase32}},
-  \code{\link{read.OceanView}}
+Other functions to read spectroscopic data: 
+\code{\link{file}},
+\code{\link{read.OOIBase32}()},
+\code{\link{read.OceanView}()}
 }
 \author{
 Vilmantas Gegzna

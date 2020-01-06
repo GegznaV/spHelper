@@ -22,10 +22,14 @@ first element is an object of class "name", that can be dropped.
 This algorithm can loose some text elements.
 }
 \seealso{
-Other \pkg{spHelper} utilities: \code{\link{IQR_outliers}},
-  \code{\link{expr2text}}, \code{\link{mad_outliers}},
-  \code{\link{rmExpr}}, \code{\link{sd_outliers}},
-  \code{\link{subt}}, \code{\link{unGroup}}
+Other \pkg{spHelper} utilities: 
+\code{\link{IQR_outliers}()},
+\code{\link{expr2text}()},
+\code{\link{mad_outliers}()},
+\code{\link{rmExpr}()},
+\code{\link{sd_outliers}()},
+\code{\link{subt}()},
+\code{\link{unGroup}()}
 }
 \author{
 Vilmantas Gegzna

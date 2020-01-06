@@ -29,7 +29,7 @@ y0NEW <- unipeak(y0)
 # Plot the results
 par(mfrow = c(1,1))
 plot( x, y0,    type = "l", lty = 3,
-        main = "'unipeak' keeps positive part \\n of highest peak only" );
+        main = "'unipeak' keeps positive part \n of highest peak only" );
 lines(x, y0NEW, type = "l", lty = 1, lwd = 3);
 legend("topleft", legend = c("Before","After"), lty = c(3,1))
 
@@ -51,7 +51,7 @@ abline(h = 0)
 
 # plot 2
 matplot(x,yNEW, type = "l", lty = 1,lwd = 3,
-        main = "B - Only the highest positive\\n peaks per curve");
+        main = "B - Only the highest positive\n peaks per curve");
 abline(h = 0)
 
 # plot 3: both plots together
@@ -64,14 +64,20 @@ par(op)
 
 }
 \seealso{
-Other curves in\pkg{spHelper}: \code{\link{GaussAmp}}
+Other curves in\pkg{spHelper}: 
+\code{\link{GaussAmp}()}
 
-Other component analysis / factorisation related functions in \pkg{spHelper}: \code{\link{getScores}},
-  \code{\link{infoDim}}, \code{\link{plot_spDiff}},
-  \code{\link{qplot_infoDim}}, \code{\link{qplot_kAmp}},
-  \code{\link{qplot_kSp}}, \code{\link{qplot_spc}},
-  \code{\link{reconstructSp}}, \code{\link{sortLoadings}},
-  \code{\link{whichOutlier}}
+Other component analysis / factorisation related functions in \pkg{spHelper}: 
+\code{\link{getScores}()},
+\code{\link{infoDim}()},
+\code{\link{plot_spDiff}()},
+\code{\link{qplot_infoDim}()},
+\code{\link{qplot_kAmp}()},
+\code{\link{qplot_kSp}()},
+\code{\link{qplot_spc}()},
+\code{\link{reconstructSp}()},
+\code{\link{sortLoadings}()},
+\code{\link{whichOutlier}()}
 }
 \author{
 Vilmantas Gegzna

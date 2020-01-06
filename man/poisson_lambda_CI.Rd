@@ -4,8 +4,13 @@
 \alias{poisson_lambda_CI}
 \title{Confidence interval for parameter lambda of Poisson distribution}
 \usage{
-poisson_lambda_CI(x = NULL, lambda = mean(x), n = length(x),
-  Sn = sum(x), conf.level = 0.95)
+poisson_lambda_CI(
+  x = NULL,
+  lambda = mean(x),
+  n = length(x),
+  Sn = sum(x),
+  conf.level = 0.95
+)
 }
 \arguments{
 \item{x}{data}
@@ -28,7 +33,9 @@ poisson_lambda_CI(x)
 
 }
 \seealso{
-Other statistical functions: \code{\link{median_CI}},
-  \code{\link{normal_var_CI}}, \code{\link{quartiles}}
+Other statistical functions: 
+\code{\link{median_CI}()},
+\code{\link{normal_var_CI}()},
+\code{\link{quartiles}()}
 }
 \concept{statistical functions}

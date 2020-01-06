@@ -8,11 +8,9 @@
 \usage{
 ilrBase(x = NULL, z = NULL, D = NULL, method = "basic")
 
-\method{ilrBase}{default}(x = NULL, z = NULL, D = NULL,
-  method = "basic")
+\method{ilrBase}{default}(x = NULL, z = NULL, D = NULL, method = "basic")
 
-\method{ilrBase}{hyperSpec}(x = NULL, z = NULL, D = NULL,
-  method = "basic")
+\method{ilrBase}{hyperSpec}(x = NULL, z = NULL, D = NULL, method = "basic")
 }
 \arguments{
 \item{x}{ optional dataset or vector of compositions}

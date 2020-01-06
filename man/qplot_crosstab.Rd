@@ -14,36 +14,86 @@
 \usage{
 qplot_crosstab(obj, ...)
 
-\method{qplot_crosstab}{table}(tabl, Title = "Cross-tabulation",
-  xLabel = NULL, yLabel = NULL, subTitle = NULL, text.size = 5,
-  sort = FALSE, bg.color = "skyblue1", max.color = "gold3",
-  low.color = "grey80", decimals = 1, show.max = c("max", "colMax",
-  "rowMax", FALSE), shades = TRUE, guide = c("legend", "colorbar",
-  FALSE), zero.color = "grey60", text.color = "black",
-  as.percentage = c(FALSE, TRUE, "row", "col"), ...)
+\method{qplot_crosstab}{table}(
+  tabl,
+  Title = "Cross-tabulation",
+  xLabel = NULL,
+  yLabel = NULL,
+  subTitle = NULL,
+  text.size = 5,
+  sort = FALSE,
+  bg.color = "skyblue1",
+  max.color = "gold3",
+  low.color = "grey80",
+  decimals = 1,
+  show.max = c("max", "colMax", "rowMax", FALSE),
+  shades = TRUE,
+  guide = c("legend", "colorbar", FALSE),
+  zero.color = "grey60",
+  text.color = "black",
+  as.percentage = c(FALSE, TRUE, "row", "col"),
+  ...
+)
 
-\method{qplot_crosstab}{numeric}(varX, varY, Title = "Cross-tabulation",
-  xLabel = match.call()$varX, yLabel = match.call()$varY, ...)
+\method{qplot_crosstab}{numeric}(
+  varX,
+  varY,
+  Title = "Cross-tabulation",
+  xLabel = match.call()$varX,
+  yLabel = match.call()$varY,
+  ...
+)
 
-\method{qplot_crosstab}{hyperSpec}(obj, varX, varY,
-  Title = "Cross-tabulation", xLabel = NULL, yLabel = NULL, ...)
+\method{qplot_crosstab}{hyperSpec}(
+  obj,
+  varX,
+  varY,
+  Title = "Cross-tabulation",
+  xLabel = NULL,
+  yLabel = NULL,
+  ...
+)
 
-\method{qplot_crosstab}{data.frame}(obj, varX, varY,
-  Title = "Cross-tabulation", xLabel = match.call()$varX,
-  yLabel = match.call()$varY, ...)
+\method{qplot_crosstab}{data.frame}(
+  obj,
+  varX,
+  varY,
+  Title = "Cross-tabulation",
+  xLabel = match.call()$varX,
+  yLabel = match.call()$varY,
+  ...
+)
 
 \method{qplot_crosstab}{matrix}(obj, Title = NULL, ...)
 
-qplot_crosstab_sort(..., sort = "maxOnDiag", show.max = TRUE,
-  shades = TRUE)
+qplot_crosstab_sort(..., sort = "maxOnDiag", show.max = TRUE, shades = TRUE)
 
-qplot_crosstab0(tabl, ..., sort = FALSE, bg.color = "wheat2",
-  decimals = 2, show.max = FALSE, shades = FALSE, guide = FALSE)
+qplot_crosstab0(
+  tabl,
+  ...,
+  sort = FALSE,
+  bg.color = "wheat2",
+  decimals = 2,
+  show.max = FALSE,
+  shades = FALSE,
+  guide = FALSE
+)
 
-qplot_crosstab0s(tabl, ..., Title = "Cross-tabulation", xLabel = NULL,
-  yLabel = NULL, subTitle = NULL, text.size = 5,
-  sort = "maxOnDiag", bg.color = "wheat2", decimals = 2,
-  show.max = FALSE, shades = FALSE, guide = FALSE)
+qplot_crosstab0s(
+  tabl,
+  ...,
+  Title = "Cross-tabulation",
+  xLabel = NULL,
+  yLabel = NULL,
+  subTitle = NULL,
+  text.size = 5,
+  sort = "maxOnDiag",
+  bg.color = "wheat2",
+  decimals = 2,
+  show.max = FALSE,
+  shades = FALSE,
+  guide = FALSE
+)
 }
 \arguments{
 \item{...}{(The same parameters as above).}
@@ -152,19 +202,26 @@ qplot_crosstab(Prediction, Reference, as.percentage = TRUE, sort = TRUE)
 To plot classification table (confusion matrix) use
  \code{\link{qplot_confusion}}.
 
-Other \pkg{spHelper} plots: \code{\link{check_palette}},
-  \code{\link{layer_spRangeMean}},
-  \code{\link{plot_colors}}, \code{\link{plot_hyPalette}},
-  \code{\link{plot_spCompare}}, \code{\link{plot_spDiff}},
-  \code{\link{plot_spDistribution}},
-  \code{\link{qplot_confusion}},
-  \code{\link{qplot_infoDim}}, \code{\link{qplot_kAmp}},
-  \code{\link{qplot_kSp}}, \code{\link{qplot_prediction}},
-  \code{\link{qplot_spRangeCenter}},
-  \code{\link{qplot_spRangeMedian}},
-  \code{\link{qplot_spStat}}, \code{\link{qplot_spc}},
-  \code{\link{rmExpr}}, \code{\link{rm_stripes}},
-  \code{\link{stat_chull}}
+Other \pkg{spHelper} plots: 
+\code{\link{check_palette}()},
+\code{\link{layer_spRangeMean}()},
+\code{\link{plot_colors}()},
+\code{\link{plot_hyPalette}()},
+\code{\link{plot_spCompare}()},
+\code{\link{plot_spDiff}()},
+\code{\link{plot_spDistribution}()},
+\code{\link{qplot_confusion}()},
+\code{\link{qplot_infoDim}()},
+\code{\link{qplot_kAmp}()},
+\code{\link{qplot_kSp}()},
+\code{\link{qplot_prediction}()},
+\code{\link{qplot_spRangeCenter}()},
+\code{\link{qplot_spRangeMedian}()},
+\code{\link{qplot_spStat}()},
+\code{\link{qplot_spc}()},
+\code{\link{rmExpr}()},
+\code{\link{rm_stripes}()},
+\code{\link{stat_chull}()}
 }
 \author{
 Vilmantas Gegzna

@@ -4,10 +4,19 @@
 \alias{qplot_spRangeMedian}
 \title{[!] Plot Median and range of spectroscopic data intensities}
 \usage{
-qplot_spRangeMedian(sp, by = NULL, percent = NULL, probs = NULL,
-  palette = hyGet_palette(sp), ..., lwd_median = 1,
-  legend_title = by, alpha = 0.2, add = FALSE,
-  name_if_by_is_NULL = "All Data")
+qplot_spRangeMedian(
+  sp,
+  by = NULL,
+  percent = NULL,
+  probs = NULL,
+  palette = hyGet_palette(sp),
+  ...,
+  lwd_median = 1,
+  legend_title = by,
+  alpha = 0.2,
+  add = FALSE,
+  name_if_by_is_NULL = "All Data"
+)
 }
 \arguments{
 \item{sp}{\code{\link[=hyperSpec-class]{hyperSpec}} object.}
@@ -55,19 +64,26 @@ qplot_spRangeMedian(Spectra2, "gr", probs = c(.25, .75))
 ggplotly_tidy()
 }
 \seealso{
-Other \pkg{spHelper} plots: \code{\link{check_palette}},
-  \code{\link{layer_spRangeMean}},
-  \code{\link{plot_colors}}, \code{\link{plot_hyPalette}},
-  \code{\link{plot_spCompare}}, \code{\link{plot_spDiff}},
-  \code{\link{plot_spDistribution}},
-  \code{\link{qplot_confusion}},
-  \code{\link{qplot_crosstab}},
-  \code{\link{qplot_infoDim}}, \code{\link{qplot_kAmp}},
-  \code{\link{qplot_kSp}}, \code{\link{qplot_prediction}},
-  \code{\link{qplot_spRangeCenter}},
-  \code{\link{qplot_spStat}}, \code{\link{qplot_spc}},
-  \code{\link{rmExpr}}, \code{\link{rm_stripes}},
-  \code{\link{stat_chull}}
+Other \pkg{spHelper} plots: 
+\code{\link{check_palette}()},
+\code{\link{layer_spRangeMean}()},
+\code{\link{plot_colors}()},
+\code{\link{plot_hyPalette}()},
+\code{\link{plot_spCompare}()},
+\code{\link{plot_spDiff}()},
+\code{\link{plot_spDistribution}()},
+\code{\link{qplot_confusion}()},
+\code{\link{qplot_crosstab}()},
+\code{\link{qplot_infoDim}()},
+\code{\link{qplot_kAmp}()},
+\code{\link{qplot_kSp}()},
+\code{\link{qplot_prediction}()},
+\code{\link{qplot_spRangeCenter}()},
+\code{\link{qplot_spStat}()},
+\code{\link{qplot_spc}()},
+\code{\link{rmExpr}()},
+\code{\link{rm_stripes}()},
+\code{\link{stat_chull}()}
 }
 \author{
 Vilmantas Gegzna

@@ -15,8 +15,10 @@ measure_bac_2gr(truth, response, negative, positive)
 # This function is based on function `measureBAC` from `mlr` package
 }
 \seealso{
-Other measures_: \code{\link{measure_bac}},
-  \code{\link{measure_tn}}, \code{\link{measure_tpr}},
-  \code{\link{measure_tp}}
+Other measures_: 
+\code{\link{measure_bac}()},
+\code{\link{measure_tn}()},
+\code{\link{measure_tpr}()},
+\code{\link{measure_tp}()}
 }
 \concept{measures_}

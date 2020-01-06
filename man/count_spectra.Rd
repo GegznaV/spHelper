@@ -4,9 +4,16 @@
 \alias{count_spectra}
 \title{Summary statistics of factor variable in a hypecSpec object by ID}
 \usage{
-count_spectra(OBJ, Var = NULL, ID = "ID", decimals = 1,
-  include_na = TRUE, na_level = "(Missing)", na.rm = TRUE,
-  total = FALSE)
+count_spectra(
+  OBJ,
+  Var = NULL,
+  ID = "ID",
+  decimals = 1,
+  include_na = TRUE,
+  na_level = "(Missing)",
+  na.rm = TRUE,
+  total = FALSE
+)
 }
 \arguments{
 \item{OBJ}{hyperSpec object}
@@ -39,7 +46,8 @@ count_spectra(OBJ = Spectra2, Var = "class", ID = "gr")
 
 }
 \seealso{
-Other count spectra functions: \code{\link{has_enough_IDs}},
-  \code{\link{has_too_few_IDs}}
+Other count spectra functions: 
+\code{\link{has_enough_IDs}()},
+\code{\link{has_too_few_IDs}()}
 }
 \concept{count spectra functions}

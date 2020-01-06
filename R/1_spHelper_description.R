@@ -107,6 +107,7 @@
 #'                       assert_set_equal assert_string assert_subset
 #'                       assert_class
 #' @import parallelMap
+#' @import ggplot2
 NULL
 #> NULL
 

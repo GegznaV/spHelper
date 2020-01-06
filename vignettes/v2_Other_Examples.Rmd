@@ -16,19 +16,19 @@ vignette: >
 ---
 
 
-```{r options, echo = FALSE, message = FALSE, warning = FALSE}
+```{r settings, echo=FALSE, message=FALSE, warning=FALSE}
 optDEF <- knitr::opts_chunk$get()
 knitr::opts_chunk$set(collapse = FALSE, comment = "#>")
-
 knitr::opts_chunk$set(fig.width = 6, fig.align = 'center')
 
+library(spHelper)
+library(dplyr)
 ```
 
 Load packages
 
-```{r Load packages, include = FALSE, message = FALSE, warning = FALSE}
+```{r Load packages, include=TRUE, message=FALSE, warning=FALSE}
 library(spHelper)
-
 library(dplyr)
 ```
 
@@ -101,84 +101,84 @@ Capture several types of files:
 
 
 
-`stratifiedFolds`, `createFolds2` and `foldTests`
-================================================
+<!-- `stratifiedFolds`, `createFolds2` and `foldTests` -->
+<!-- ================================================ -->
 
-```{r}
-clear()
+<!-- ```{r} -->
+<!-- clear() -->
 
-# Load data
-data("DataSet1")
+<!-- # Load data -->
+<!-- data("DataSet1") -->
 
-# Set parameters
-nFolds = 5
+<!-- # Set parameters -->
+<!-- nFolds = 5 -->
 
-# Explore data
-str(DataSet1)
+<!-- # Explore data -->
+<!-- str(DataSet1) -->
 
-# table(DataSet1[,c("gr","ID")])
-# summary(DataSet1)
-```
+<!-- # table(DataSet1[,c("gr","ID")]) -->
+<!-- # summary(DataSet1) -->
+<!-- ``` -->
 
-`createFolds2` and `stratifiedFolds` is the same function with different names
-```{r}
+<!-- `createFolds2` and `stratifiedFolds` is the same function with different names -->
+<!-- ```{r} -->
 
-set.seed(1)
-cvo_create_folds(block_by = DataSet1$ID, k = nFolds)
-```
+<!-- set.seed(1) -->
+<!-- cvo_create_folds(block_by = DataSet1$ID, k = nFolds) -->
+<!-- ``` -->
 
-When variable names from data frame are provided:
-```{r}
-Folds1_a <- cvo_create_folds(data = DataSet1,
-                             stratify_by = "gr",
-                             block_by = "ID",
-                             nFolds,
-                             returnTrain = FALSE)
-# str(Folds1_a)
-cvo_test_bs(Folds1_a,
-            stratify_by = "gr",
-            block_by = "ID",
-            data = DataSet1)
+<!-- When variable names from data frame are provided: -->
+<!-- ```{r} -->
+<!-- Folds1_a <- cvo_create_folds(data = DataSet1, -->
+<!--                              stratify_by = "gr", -->
+<!--                              block_by = "ID", -->
+<!--                              nFolds, -->
+<!--                              returnTrain = FALSE) -->
+<!-- # str(Folds1_a) -->
+<!-- cvo_test_bs(Folds1_a, -->
+<!--             stratify_by = "gr", -->
+<!--             block_by = "ID", -->
+<!--             data = DataSet1) -->
 
-```
+<!-- ``` -->
 
-When "free" variables are provided:
-```{r}
-Folds1_b <- cvo_create_folds(stratify_by = DataSet1$gr,
-                             block_by = DataSet1$ID,
-                             k = nFolds,
-                             returnTrain = FALSE)
-# str(Folds1_b)
-cvo_test_bs(Folds1_b,
-            stratify_by = "gr",
-            block_by = "ID",
-            data = DataSet1
-)
-```
+<!-- When "free" variables are provided: -->
+<!-- ```{r} -->
+<!-- Folds1_b <- cvo_create_folds(stratify_by = DataSet1$gr, -->
+<!--                              block_by = DataSet1$ID, -->
+<!--                              k = nFolds, -->
+<!--                              returnTrain = FALSE) -->
+<!-- # str(Folds1_b) -->
+<!-- cvo_test_bs(Folds1_b, -->
+<!--             stratify_by = "gr", -->
+<!--             block_by = "ID", -->
+<!--             data = DataSet1 -->
+<!-- ) -->
+<!-- ``` -->
 
-Not blocked but stratified:
-```{r}
-Folds1_c <- cvo_create_folds(stratify_by = DataSet1$gr,
-                             k = nFolds,
-                             returnTrain = FALSE)
-# str(Folds1_c)
-cvo_test_bs(Folds1_c, 
-            stratify_by = "gr",
-            block_by = "ID",
-            data = DataSet1)
-```
+<!-- Not blocked but stratified: -->
+<!-- ```{r} -->
+<!-- Folds1_c <- cvo_create_folds(stratify_by = DataSet1$gr, -->
+<!--                              k = nFolds, -->
+<!--                              returnTrain = FALSE) -->
+<!-- # str(Folds1_c) -->
+<!-- cvo_test_bs(Folds1_c,  -->
+<!--             stratify_by = "gr", -->
+<!--             block_by = "ID", -->
+<!--             data = DataSet1) -->
+<!-- ``` -->
 
-Blocked but not stratified:
-```{r}
-Folds1_d <- cvo_create_folds(block_by = DataSet1$ID,
-                             k = nFolds,
-                             returnTrain = FALSE)
-# str(Folds1_d)
-cvo_test_bs(Folds1_d,
-            stratify_by = "gr",
-            block_by = "ID",
-            DataSet1)
-```
+<!-- Blocked but not stratified: -->
+<!-- ```{r} -->
+<!-- Folds1_d <- cvo_create_folds(block_by = DataSet1$ID, -->
+<!--                              k = nFolds, -->
+<!--                              returnTrain = FALSE) -->
+<!-- # str(Folds1_d) -->
+<!-- cvo_test_bs(Folds1_d, -->
+<!--             stratify_by = "gr", -->
+<!--             block_by = "ID", -->
+<!--             DataSet1) -->
+<!-- ``` -->
 
 `which.in` family functions 
 ==============================
@@ -210,7 +210,6 @@ which.in(triupp, m1)
 r1 <- which.in(trilow, m1)
 r2 <- which.in.trilow(m1)
 identical(r1, r2)
- 
 ```
 
 `corr_vec2mat`

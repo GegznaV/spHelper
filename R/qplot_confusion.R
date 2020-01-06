@@ -4,27 +4,28 @@
 #'
 #' @title [!+] Plot a confusion matrix (a.k.a. classification table)
 #'
-#' @description Plot a confusion matrix (classification table) with
-#'              additional statistics (sensitivity (Se) a.k.a. true positive
-#'              rate, positive predictive value (PPV) and Cohens' Kappa (k)). \cr
+#' @description
+#' Plot a confusion matrix (classification table) with
+#' additional statistics (sensitivity (Se) a.k.a. true positive
+#' rate, positive predictive value (PPV) and Cohens' Kappa (k)). \cr
 #'
-#'          Colors in the main matrix: \bold{diagonal} cells vary from grey to
-#'          \bold{green} and \bold{offdiagonal} elements vary from grey to
-#'          \bold{red}. The color intensity in certain cell is determined by
-#'          parameter \code{shades}.\cr
+#' Colors in the main matrix: \bold{diagonal} cells vary from grey to
+#' \bold{green} and \bold{offdiagonal} elements vary from grey to
+#' \bold{red}. The color intensity in certain cell is determined by
+#' parameter \code{shades}.\cr
 #'
-#'               Colors of cells with statistics Se, PPV and k vary depening on
-#'           values of these statistics from \bold{red} (\emph{low} values) to
-#'           \bold{grey} (\emph{middle} values), to \bold{green} (\emph{high} values).\cr
+#' Colors of cells with statistics Se, PPV and k vary depening on
+#' values of these statistics from \bold{red} (\emph{low} values) to
+#' \bold{grey} (\emph{middle} values), to \bold{green} (\emph{high} values).\cr
 #'
-#'             \bold{Exception:} when \code{shades="const"} and \code{shades="none"},
-#'          color intensities are constant.
+#' \bold{Exception:} when \code{shades="const"} and \code{shades="none"},
+#' color intensities are constant.
 #'
 #' @param ... Appropriate parameters (described below).
-#' @param conf,mat A confusion matrix (classification table): either an object of
-#'             a class "table" or a square matrix.
+#' @param conf,mat A confusion matrix (classification table): either an object
+#'        of a class "table" or a square matrix.
 #' @param Prediction A factor variable with \bold{predicted} groups.
-#' @param Reference A factor variable  with \bold{reference} groups.
+#' @param Reference  A factor variable with \bold{reference} groups.
 #' @template labels
 #' @template subtitle
 #' @param shades A function how intensities of cell colors in the main confsion
@@ -139,7 +140,7 @@ qplot_confusion.default <- function(Prediction, Reference,
     if (length(Prediction) != length(Reference)) {
         stop("Lengths of vectors `Prediction` and `Reference` must be equal.")
     }
-    conf <- table(Prediction,Reference)
+    conf <- table(Prediction, Reference)
     qplot_confusion(conf,
                     Title, xLabel, yLabel, subTitle, shades, guide, text.size,
                     decimals,...)
@@ -152,7 +153,7 @@ qplot_confusion.matrix <- function(mat, ...){
     dims <- dim(mat)
     if (dims[1] != dims[2]) stop("Matrix 'mat' must be square.")
     conf <- as.table(mat)
-    qplot_confusion(conf,...)
+    qplot_confusion(conf, ...)
 }
 #  ------------------------------------------------------------------------
 #' @rdname qplot_confusion
@@ -173,10 +174,9 @@ qplot_confusion.PredictionClassif <- function(obj, ...) {
     # for MLR
     with(
         unclass(obj$data),
-        qplot_confusion(response, truth)
+        qplot_confusion(response, truth, ...)
     )
 }
-
 
 
 #  ------------------------------------------------------------------------

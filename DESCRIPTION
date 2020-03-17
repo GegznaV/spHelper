@@ -15,6 +15,10 @@ LazyData: yes
 LazyLoad: yes
 RoxygenNote: 7.1.0
 VignetteBuilder: knitr
+biocViews:
+Remotes:
+    github::GegznaV/spMisc,
+    github::GegznaV/manyROC
 Depends:
     R (>= 3.2),
     magrittr,
@@ -26,10 +30,6 @@ Depends:
     ROCR,
     spMisc,
     checkmate
-biocViews:
-Remotes:
-    github::GegznaV/spMisc,
-    github::GegznaV/manyROC
 Imports:
     manyROC,
     ALS,

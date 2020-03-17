@@ -113,6 +113,7 @@
 #' @import plotly
 #' @import ROCR
 #' @import spMisc
+#' @import data.table
 
 NULL
 #> NULL

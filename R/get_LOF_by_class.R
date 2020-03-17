@@ -21,8 +21,8 @@
 #'
 #' @examples
 #' library(spHelper)
-#' obj0 <- get_LOF_by_class(Spectra2, "gr")
-#' str(obj0)
+#' obj0 <- get_LOF_by_class(obj = Spectra2, by = "gr")
+#' str(obj0, max.level = 1)
 #'
 #' # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #' #  Unit tests:
@@ -45,7 +45,7 @@
 #'
 get_LOF_by_class <- function(obj, by, FUN = median){
     # Check validity of inputs
-    require(hyperSpec)
+    # require(hyperSpec)
     chk.hy(obj)
     if (!is.character(by) | (length(by) != 1))
         stop("`by` must be character vector of length 1")
@@ -55,21 +55,21 @@ get_LOF_by_class <- function(obj, by, FUN = median){
     LABELS <- labels(obj)
 
     # Calculate centers
-    require(data.table)
+    # require(data.table)
     centers_by_CLASS_for_every_row <-
     (merge( # merge two datatables:
             # (x - vector of classes and y mean of each class) to create
             # matrix of the size as original obj$spc.
             x = data.table(by_val),
-            y = (obj[,c(by, "spc")] %>% # subset only necessary variables
+            y = (obj[, c(by, "spc")] %>% # subset only necessary variables
                      as.wide.df() %>%   # convert hyperSpec to appropriate DF
-                     data.table()       # convert to data table
+                     data.table(check.names = TRUE) # convert to data table
             )[, lapply(.SD, FUN), by], # calculate expected value of each class
             by.x = "by_val",
             by.y = by,
             sort = FALSE           # do not sort to keep the structure of rows;
         )[, by_val := NULL] # keep numeric variables only.
-    ) %>% as.matrix
+    ) %>% as.matrix()
 
     # Make a hyperSpec with centers in `$spc`
     center_of_every_CLASS <- decomposition(obj,

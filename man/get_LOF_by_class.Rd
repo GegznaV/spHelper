@@ -28,8 +28,8 @@ Calculate lack_of_fit (LOF) for spectroscopic data by class
 }
 \examples{
 library(spHelper)
-obj0 <- get_LOF_by_class(Spectra2, "gr")
-str(obj0)
+obj0 <- get_LOF_by_class(obj = Spectra2, by = "gr")
+str(obj0, max.level = 1)
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #  Unit tests:

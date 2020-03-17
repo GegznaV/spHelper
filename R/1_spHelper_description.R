@@ -100,14 +100,20 @@
 #' plotc(ObjectName[,,500],model = spc~Integration_time)
 #' }}
 #'
-#' @importFrom magrittr '%>%'
-#' @importFrom spMisc regexp2df
 #' @importFrom checkmate assert_choice assert_numeric assert_vector
 #'                       assert_factor assert_flag assert_character
 #'                       assert_set_equal assert_string assert_subset
 #'                       assert_class
 #' @import parallelMap
+#' @import magrittr
+#' @import hyperSpec
+#' @import grDevices
 #' @import ggplot2
+#' @import ggspectra
+#' @import plotly
+#' @import ROCR
+#' @import spMisc
+
 NULL
 #> NULL
 
@@ -122,3 +128,8 @@ NULL
 # @importFrom tidyr '%>%'
 
 eval_glue <- spMisc::eval_glue
+
+
+#' @importFrom magrittr '%>%'
+#' @export
+magrittr::`%>%`

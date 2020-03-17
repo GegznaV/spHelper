@@ -13,7 +13,7 @@ Authors@R: person("Vilmantas", "Gegzna", email = "GegznaV@gmail.com", role = c("
 License: GPL (>= 3)
 LazyData: yes
 LazyLoad: yes
-RoxygenNote: 7.0.2.9000
+RoxygenNote: 7.1.0
 VignetteBuilder: knitr
 Depends:
     R (>= 3.2),

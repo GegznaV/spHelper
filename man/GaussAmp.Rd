@@ -32,6 +32,10 @@ The number of curves is determined by maximal number of elements in
  parameters vectors are recycled as ilustrated in example 2 (see parameter "A").
 }
 \examples{
+library(hyperSpec)
+library(spHelper)
+
+
 # Example 1
 x <- seq(-9.9, 10, 0.2)
 y <- GaussAmp(x)

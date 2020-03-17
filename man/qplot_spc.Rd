@@ -95,7 +95,7 @@ Before using as an argument \code{sp},
          which converts it to \code{\link[=hyperSpec-class]{hyperSpec}} object.
 }
 \examples{
-library(spHepler)
+library(spHelper)
 library(spPlot)
 
 

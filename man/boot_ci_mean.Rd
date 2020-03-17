@@ -89,7 +89,7 @@ Function calculates bootstrapped mean (or other function)
 and its confidence interval for a vector \code{x}.
 }
 \details{
-\code{boot_ci_correlation} calculates confidence interval for correlation
+\code{boot_ci_corr} calculates confidence interval for correlation
 coefficient between vectors \code{x} and \code{y}.
 }
 \examples{
@@ -115,7 +115,7 @@ boot_ci_fun(x, IQR)
 set.seed(1)
 
 MeDiAn <- median
-boot_ci_fun(x, MeDiAn, name = "m")
+boot_ci_fun(x, MeDiAn, label = "m")
 
 #     ci_lower    median ci_upper
 # 1 0.4900485 0.4964676 0.502184
@@ -125,16 +125,16 @@ y <- x - rnorm(30) + runif(30,-2,2)
 plot(x,y)
 
 set.seed(1)
-boot_ci_correlation(x,y)
+boot_ci_corr(x, y)
 
-#    ci_lower corr_coef  ci_upper
-#   0.4263133 0.6258065 0.8571043
+#    ci_lower   corr_coef  ci_upper
+#   -0.1051065  0.243604   0.6067977
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-df <- data.frame(x,y)
+df <- data.frame(x, y)
 set.seed(1)
-boot_ci_correlation(df)
+boot_ci_corr(df)
 
 }

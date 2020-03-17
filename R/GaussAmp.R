@@ -24,6 +24,10 @@
 #' @author Vilmantas Gegzna
 #'
 #' @examples
+#' library(hyperSpec)
+#' library(spHelper)
+#'
+#'
 #' # Example 1
 #' x <- seq(-9.9, 10, 0.2)
 #' y <- GaussAmp(x)
@@ -61,3 +65,4 @@ GaussAmp <- function(x, c = 0, w = 1, A = 1, y0 = 0){
     # Output
     return(y)
 }
+

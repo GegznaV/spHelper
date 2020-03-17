@@ -61,7 +61,7 @@ tSNE2mat   <- function(fit){fit$Y}
 
 
 # FUNCTION for 3D plots ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-library(plotly)
+# library(plotly)
 
 #' @param df A data frame with variables named $x, $y, $z, $x,
 #'          $text, $group.

@@ -59,7 +59,7 @@
 #' @template ggplot
 #'
 #' @examples
-#' library(spHepler)
+#' library(spHelper)
 #' library(spPlot)
 #'
 #'

@@ -10,3 +10,5 @@
 ^D:\Dokumentai\R\spHelper\docs$
 ^_pkgdown\.yml$
 ^docs$
+^_pkgdown\.yaml$
+^roc_object\.RDS$

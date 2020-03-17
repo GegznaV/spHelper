@@ -26,6 +26,7 @@ Depends:
     ROCR,
     spMisc,
     checkmate
+biocViews:
 Remotes:
     github::GegznaV/spMisc,
     github::GegznaV/manyROC

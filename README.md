@@ -18,11 +18,11 @@
 [![CRAN
 version](http://www.r-pkg.org/badges/version/spHelper)](http://cran.rstudio.com/web/packages/spHelper/index.html)
 [![GitHub
-version](https://img.shields.io/badge/GitHub-v0.1.190-brightgreen.svg)](https://github.com/GegznaV/spHelper)
+version](https://img.shields.io/badge/GitHub-v0.1.191-brightgreen.svg)](https://github.com/GegznaV/spHelper)
 [![Travis build
 status](https://travis-ci.com/GegznaV/spHelper.svg?branch=master)](https://travis-ci.com/GegznaV/spHelper)
 [![codecov.io](https://codecov.io/github/GegznaV/spHelper/coverage.svg?branch=master)](https://codecov.io/github/GegznaV/spHelper?branch=master)
-[![Last-update](https://img.shields.io/badge/last%20update-2020--03--17-yellowgreen.svg)](/commits/master)
+[![Documentation](https://img.shields.io/badge/Documentation-2020--03--17-yellowgreen.svg)](/commits/master)
 <!-- badges: end -->
 
 -----
@@ -50,8 +50,8 @@ Meaning of symbols in function descriptions:
 Install package:
 
 ``` r
-library(devtools)
-install_github("GegznaV/spHelper")
+if (!require("remotes")) install.packages("remotes")
+remotes::install_github("GegznaV/spHelper")
 ```
 
 -----

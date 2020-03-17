@@ -30,7 +30,7 @@ knitr::opts_chunk$set(
 [![GitHub version](https://img.shields.io/badge/GitHub-v`r packageVersion("spHelper")`-brightgreen.svg)](https://github.com/GegznaV/spHelper)
 [![Travis build status](https://travis-ci.com/GegznaV/spHelper.svg?branch=master)](https://travis-ci.com/GegznaV/spHelper)
 [![codecov.io](https://codecov.io/github/GegznaV/spHelper/coverage.svg?branch=master)](https://codecov.io/github/GegznaV/spHelper?branch=master)
-[![Last-update](https://img.shields.io/badge/last%20update-`r gsub('-', '--', Sys.Date())`-yellowgreen.svg)](/commits/master)
+[![Documentation](https://img.shields.io/badge/Documentation-`r gsub('-', '--', Sys.Date())`-yellowgreen.svg)](/commits/master)
 <!-- badges: end -->
 
 ***
@@ -65,8 +65,8 @@ Meaning of symbols in function descriptions:
 Install package:
 
 ```{r Install package, eval=FALSE}
-library(devtools)
-install_github("GegznaV/spHelper")
+if (!require("remotes")) install.packages("remotes")
+remotes::install_github("GegznaV/spHelper")
 ```
 
 

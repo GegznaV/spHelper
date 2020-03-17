@@ -6,7 +6,7 @@ Description: Functions that extend capabilities of package `hyperSpec` (e.g.,
             spectroscopic differences and classification results. Various
             convenience and wrapper functions, R operators as well as
             RStudio addins.
-Version: 0.1.190
+Version: 0.1.191
 Date: 2019-07-11
 Encoding: UTF-8
 Authors@R: person("Vilmantas", "Gegzna", email = "GegznaV@gmail.com", role = c("aut", "cre"))

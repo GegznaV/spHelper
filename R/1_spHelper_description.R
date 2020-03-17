@@ -133,3 +133,7 @@ eval_glue <- spMisc::eval_glue
 #' @importFrom magrittr '%>%'
 #' @export
 magrittr::`%>%`
+
+#' @importFrom spMisc '%++%'
+#' @export
+spMisc::`%++%`

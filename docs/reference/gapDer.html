@@ -54,7 +54,8 @@ vector or hyperSpec object." />
 
 
 
-  </head>
+  	<link rel="icon" href="../favicon.png" />
+</head>
 
   <body>
     <div class="container template-reference-topic">
@@ -70,7 +71,7 @@ vector or hyperSpec object." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">spHelper</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.190</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.191</span>
       </span>
     </div>
 
@@ -142,29 +143,23 @@ vector or hyperSpec object." />
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>X</th>
-      <td><p>numeric <code>matrix</code> , <code>data.frame</code> or
-  <code>vector</code> to transform</p></td>
+      <td><p>a numeric <code>matrix</code> , <code>data.frame</code> or <code>vector</code> to transform.</p></td>
     </tr>
     <tr>
       <th>m</th>
-      <td><p>order of the derivative, between 1 and 4
-  (default = 1)</p></td>
+      <td><p>the order of the derivative, between 1 and 4 (default = 1).</p></td>
     </tr>
     <tr>
       <th>w</th>
-      <td><p>filter length (should be odd and &gt;=1), i.e. the
-  spacing between points over which the derivative is
-  computed</p></td>
+      <td><p>the filter length (should be odd and &gt;=1), i.e. the spacing between points over which the derivative is computed.</p></td>
     </tr>
     <tr>
       <th>s</th>
-      <td><p>segment size, i.e. the range over which the
-  points are averaged (default = 1, i.e. no smoothing
-  corresponding to 'Norris' Gap Derivative)</p></td>
+      <td><p>sthe egment size, i.e. the range over which the points are averaged (default = 1, i.e. no smoothing corresponding to 'Norris' Gap Derivative).</p></td>
     </tr>
     <tr>
       <th>delta.wav</th>
-      <td><p>sampling interval (or band spacing)</p></td>
+      <td><p>the sampling interval (or band spacing).</p></td>
     </tr>
     </table>
 

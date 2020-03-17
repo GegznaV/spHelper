@@ -85,14 +85,13 @@ qplotc(flu) + geom_smooth(method = "lm",  size = .5)
 qplotmap(chondro)
 qplotmap(chondro) + scale_fill_gradientn(colours = alois.palette())
 
-## works also with discrete x or y axis:
-qplotmap(chondro,
-         mapping = aes(x = x,
-                       y = as.factor(y),
-                       fill = spc)
-         )
 ```
 
+```{r eval=FALSE}
+## works also with discrete x or y axis:
+qplotmap(chondro,
+         mapping = aes(x = x, y = y, fill = spc))
+```
 
 `qplotmixmap`
 ===============
@@ -112,4 +111,6 @@ qplotmixmap(chondro[,,c(940, 1002, 1440)],
 ```
 
 
+```{r}
 
+```

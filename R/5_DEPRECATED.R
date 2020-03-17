@@ -75,48 +75,48 @@ stratifiedFolds <- function(data = NULL,
 #'  \strong{(b)} blocked.
 #' @export
 #'
-#' @examples
-#' library(spHelper)
-#'
-#' data(DataSet1)
-#' obj <- createFoldsBS(data = DataSet1,
-#'                      stratify_by = "gr", block_by = "ID",
-#'                      returnTrain = FALSE)
-#'
-#' cvo_test_bs(obj, DataSet1, stratify_by = "gr", block_by = "ID")
-#'
-#' #>  ************************************************************
-#' #>      Test for STRATIFICATION
-#' #>
-#' #>        A B C D      <<<     >>>              A    B    C    D
-#' #>  Fold1 2 2 2 2  <-Counts | Proportions->  0.25 0.25 0.25 0.25
-#' #>  Fold2 2 2 2 2  <-Counts | Proportions->  0.25 0.25 0.25 0.25
-#' #>  Fold3 2 2 2 2  <-Counts | Proportions->  0.25 0.25 0.25 0.25
-#' #>  Fold4 2 2 2 2  <-Counts | Proportions->  0.25 0.25 0.25 0.25
-#' #>  Fold5 2 2 2 2  <-Counts | Proportions->  0.25 0.25 0.25 0.25
-#' #>
-#' #>  If stratified, the proportions of each group in each fold
-#' #>  (row) should be (approximately) equal and with no zero values.
-#' #>  ____________________________________________________________
-#' #>  Test for BLOCKING: BLOCKED
-#' #>
-#' #>        1 2 3 4 5 6 7 8 9 10 ..
-#' #>  Fold1 0 0 0 0 2 0 0 2 0  0 ..
-#' #>  Fold2 2 0 0 0 0 2 0 0 0  0 ..
-#' #>  Fold3 0 0 2 0 0 0 0 0 2  0 ..
-#' #>  Fold4 0 0 0 2 0 0 2 0 0  0 ..
-#' #>  Fold5 0 2 0 0 0 0 0 0 0  2 ..
-#' #>
-#' #>  Number of unique IDs in each fold (first 10 columns).
-#' #>  If blocked, the same ID appears just in one fold.
-#' #>  ************************************************************
-#'
-#'
-#'
-#'
-#'
-#' @author Vilmantas Gegzna
-#'
+# @examples
+# library(spHelper)
+#
+# data(DataSet1)
+# obj <- createFoldsBS(data = DataSet1,
+#                      stratify_by = "gr", block_by = "ID",
+#                      returnTrain = FALSE)
+#
+# cvo_test_bs(obj, DataSet1, stratify_by = "gr", block_by = "ID")
+#
+# #>  ************************************************************
+# #>      Test for STRATIFICATION
+# #>
+# #>        A B C D      <<<     >>>              A    B    C    D
+# #>  Fold1 2 2 2 2  <-Counts | Proportions->  0.25 0.25 0.25 0.25
+# #>  Fold2 2 2 2 2  <-Counts | Proportions->  0.25 0.25 0.25 0.25
+# #>  Fold3 2 2 2 2  <-Counts | Proportions->  0.25 0.25 0.25 0.25
+# #>  Fold4 2 2 2 2  <-Counts | Proportions->  0.25 0.25 0.25 0.25
+# #>  Fold5 2 2 2 2  <-Counts | Proportions->  0.25 0.25 0.25 0.25
+# #>
+# #>  If stratified, the proportions of each group in each fold
+# #>  (row) should be (approximately) equal and with no zero values.
+# #>  ____________________________________________________________
+# #>  Test for BLOCKING: BLOCKED
+# #>
+# #>        1 2 3 4 5 6 7 8 9 10 ..
+# #>  Fold1 0 0 0 0 2 0 0 2 0  0 ..
+# #>  Fold2 2 0 0 0 0 2 0 0 0  0 ..
+# #>  Fold3 0 0 2 0 0 0 0 0 2  0 ..
+# #>  Fold4 0 0 0 2 0 0 2 0 0  0 ..
+# #>  Fold5 0 2 0 0 0 0 0 0 0  2 ..
+# #>
+# #>  Number of unique IDs in each fold (first 10 columns).
+# #>  If blocked, the same ID appears just in one fold.
+# #>  ************************************************************
+#
+#
+#
+#
+#
+# @author Vilmantas Gegzna
+#
 test_folds_BS <- function(obj, data = NULL,
                           stratify_by = NULL,
                           block_by = NULL,

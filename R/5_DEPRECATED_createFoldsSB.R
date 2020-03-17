@@ -60,48 +60,48 @@
 #'         \code{\link[caret]{createFolds}()}.
 #'
 #' @export
-#' @examples
-#' library(spHelper)
-#'
-#' # Load data
-#'      data("DataSet1")
-#'
-#' # Explore data
-#'      str(DataSet1)
-#'      table(DataSet1[,c("gr","ID")])
-#'      summary(DataSet1)
-#'
-#' # Explore functions
-#'      nFolds = 5
-#'
-#' # If variables of data frame are provided:
-#'      Folds1_a <- createFoldsBS(data = DataSet1,
-#'                               stratify_by = "gr", block_by = "ID",
-#'                                k = nFolds, returnTrain = FALSE)
-#'      # str(Folds1_a)
-#'      cvo_test_bs(Folds1_a, DataSet1, "gr", "ID")
-#'
-#' # If "free" variables are provided:
-#'      Folds1_b <- createFoldsBS(gr = DataSet1$gr, ID = DataSet1$ID,
-#'                                 k = nFolds, returnTrain = FALSE)
-#'      # str(Folds1_b)
-#'      cvo_test_bs(Folds1_b, DataSet1, "gr", "ID")
-#'
-#' # Not blocked but stratified
-#'      Folds1_c <- createFoldsBS(gr = DataSet1$gr, k=nFolds, returnTrain=FALSE)
-#'      # str(Folds1_c)
-#'      cvo_test_bs(Folds1_c, DataSet1, "gr", "ID")
-#'
-#' # Blocked but not stratified
-#'      Folds1_d <- createFoldsBS(block_by = DataSet1$ID, k = nFolds, returnTrain = FALSE)
-#'      # str(Folds1_d)
-#'      cvo_test_bs(Folds1_d, DataSet1, "gr", "ID")
-#'
-#'
 #' @seealso \code{\link[caret]{createFolds}}\cr
 #' Test if folds are blocked and stratified \code{\link{cvo_test_bs}}
 #' @author Vilmantas Gegzna
 
+# @examples
+# library(spHelper)
+#
+# # Load data
+#      data("DataSet1")
+#
+# # Explore data
+#      str(DataSet1)
+#      table(DataSet1[,c("gr","ID")])
+#      summary(DataSet1)
+#
+# # Explore functions
+#      nFolds = 5
+#
+# # If variables of data frame are provided:
+#      Folds1_a <- createFoldsBS(data = DataSet1,
+#                               stratify_by = "gr", block_by = "ID",
+#                                k = nFolds, returnTrain = FALSE)
+#      # str(Folds1_a)
+#      cvo_test_bs(Folds1_a, DataSet1, "gr", "ID")
+#
+# # If "free" variables are provided:
+#      Folds1_b <- createFoldsBS(gr = DataSet1$gr, ID = DataSet1$ID,
+#                                 k = nFolds, returnTrain = FALSE)
+#      # str(Folds1_b)
+#      cvo_test_bs(Folds1_b, DataSet1, "gr", "ID")
+#
+# # Not blocked but stratified
+#      Folds1_c <- createFoldsBS(gr = DataSet1$gr, k=nFolds, returnTrain=FALSE)
+#      # str(Folds1_c)
+#      cvo_test_bs(Folds1_c, DataSet1, "gr", "ID")
+#
+# # Blocked but not stratified
+#      Folds1_d <- createFoldsBS(block_by = DataSet1$ID, k = nFolds, returnTrain = FALSE)
+#      # str(Folds1_d)
+#      cvo_test_bs(Folds1_d, DataSet1, "gr", "ID")
+#
+#
 # @param times An integer, indicating how many times crossvalidation should be repeated.
 # @param seeds \link[base]{set.seed}
 

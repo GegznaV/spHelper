@@ -13,14 +13,17 @@
 
 -----
 
+<!-- badges: start -->
+
 [![CRAN
 version](http://www.r-pkg.org/badges/version/spHelper)](http://cran.rstudio.com/web/packages/spHelper/index.html)
 [![GitHub
-version](https://img.shields.io/badge/GitHub-v0.1.189-brightgreen.svg)](https://github.com/GegznaV/spHelper)
-[![Travis-CI Build
-Status](https://travis-ci.org/GegznaV/spHelper.svg?branch=master)](https://travis-ci.org/GegznaV/spHelper)
+version](https://img.shields.io/badge/GitHub-v0.1.190-brightgreen.svg)](https://github.com/GegznaV/spHelper)
+[![Travis build
+status](https://travis-ci.com/GegznaV/spHelper.svg?branch=master)](https://travis-ci.com/GegznaV/spHelper)
 [![codecov.io](https://codecov.io/github/GegznaV/spHelper/coverage.svg?branch=master)](https://codecov.io/github/GegznaV/spHelper?branch=master)
-[![Last-update](https://img.shields.io/badge/last%20update-2018--08--13-yellowgreen.svg)](/commits/master)
+[![Last-update](https://img.shields.io/badge/last%20update-2020--03--17-yellowgreen.svg)](/commits/master)
+<!-- badges: end -->
 
 -----
 

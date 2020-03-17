@@ -4,12 +4,14 @@
 \name{DataSet1}
 \alias{DataSet1}
 \title{[+] Dataset: a data frame for illustrations}
-\format{A data frame with 40 rows and 3 variables:
+\format{
+A data frame with 40 rows and 3 variables:
 \describe{
   \item{ID}{An identification code.}
   \item{gr}{A factor variable with 4 groups.}
   \item{.row}{A row number.}
-}}
+}
+}
 \source{
 Artificially generated in R.
 }

@@ -13,7 +13,8 @@
 \alias{Spectra3}
 \alias{Spectra4}
 \title{[+] Datasets of simulated spectroscopic data}
-\format{\code{\link[=hyperSpec-class]{hyperSpec}} objects with spectroscopic
+\format{
+\code{\link[=hyperSpec-class]{hyperSpec}} objects with spectroscopic
 data and additional variables.
 
 Additional variables for \code{Spectra..} and \code{Scores..}:
@@ -28,7 +29,24 @@ Additional variables for \code{Loadings..}:
   \item{PeakAt}{Position of components top peak.}
   \item{cNames}{Names of components.}
   \item{order.of.rows}{Original order of components before sorting.}
-}}
+}
+
+An object of class \code{hyperSpec} of dimension 5 x 4 x 501.
+
+An object of class \code{hyperSpec} of dimension 4 x 4 x 501.
+
+An object of class \code{hyperSpec} of dimension 150 x 3 x 5.
+
+An object of class \code{hyperSpec} of dimension 150 x 3 x 5.
+
+An object of class \code{hyperSpec} of dimension 150 x 3 x 4.
+
+An object of class \code{hyperSpec} of dimension 150 x 3 x 501.
+
+An object of class \code{hyperSpec} of dimension 150 x 3 x 501.
+
+An object of class \code{hyperSpec} of dimension 150 x 3 x 501.
+}
 \source{
 Artificially generated in R.
 }

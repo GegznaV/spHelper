@@ -13,12 +13,11 @@ binning(X, bins, bin.size)
 \method{binning}{hyperSpec}(X, ...)
 }
 \arguments{
-\item{X}{numeric \code{data.frame}, \code{matrix} or
-  \code{vector} to process}
+\item{X}{a numeric \code{data.frame}, \code{matrix} or \code{vector} to process.}
 
-\item{bins}{number of bins}
+\item{bins}{the number of bins.}
 
-\item{bin.size}{desired size of the bins}
+\item{bin.size}{the desired size of the bins.}
 }
 \value{
 A \code{matrix}, \code{vector} or \code{hyperSpec} object with

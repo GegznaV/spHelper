@@ -4,7 +4,9 @@
 \name{palette_PAP}
 \alias{palette_PAP}
 \title{[+] Color palette}
-\format{An object of class \code{character} of length 8.}
+\format{
+An object of class \code{character} of length 8.
+}
 \usage{
 palette_PAP
 }

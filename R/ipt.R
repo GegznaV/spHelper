@@ -15,10 +15,10 @@
 #' @family row-wise transformations
 #'
 #' @examples
-#' ipt(Spectra)
+#' ipt(Spectra2)
 #'
-#' plot(Spectra)
-#' plot(ipt(Spectra))
+#' plot(Spectra2)
+#' plot(ipt(Spectra2))
 #'
 ipt <- function(x, V = ilrBase(x), ...) {
     UseMethod("ipt")
@@ -26,14 +26,12 @@ ipt <- function(x, V = ilrBase(x), ...) {
 
 
 #' @rdname ipt
-#' @method ipt default
 #' @export
 ipt.default <- function(x, V = ilrBase(x), ...) {
     compositions::ipt(x = x, V = V, ...)
 }
 
 #' @rdname ipt
-#' @method ipt hyperSpec
 #' @export
 ipt.hyperSpec <- function (x, V = ilrBase(x), ...)
 {

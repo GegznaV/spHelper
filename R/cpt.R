@@ -22,12 +22,10 @@
 cpt <- function(x, ...) {UseMethod("cpt")}
 
 #' @rdname cpt
-#' @method cpt default
 #' @export
 cpt.default <- function(x,...) {compositions::cpt(x,...)}
 
 #' @rdname cpt
-#' @method cpt hyperSpec
 #' @export
 cpt.hyperSpec <- function(x, ...)
 {

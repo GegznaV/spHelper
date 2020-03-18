@@ -124,7 +124,6 @@ qplot_confusion <- function(...) {
 
 #  ------------------------------------------------------------------------
 #' @rdname qplot_confusion
-#' @method qplot_confusion default
 #' @export
 qplot_confusion.default <- function(Prediction, Reference,
                                     Title     = "Classification table",
@@ -147,7 +146,6 @@ qplot_confusion.default <- function(Prediction, Reference,
 }
 #  ------------------------------------------------------------------------
 #' @rdname qplot_confusion
-#' @method qplot_confusion matrix
 #' @export
 qplot_confusion.matrix <- function(mat, ...){
     dims <- dim(mat)
@@ -157,7 +155,6 @@ qplot_confusion.matrix <- function(mat, ...){
 }
 #  ------------------------------------------------------------------------
 #' @rdname qplot_confusion
-#' @method qplot_confusion ResampleResult
 #' @export
 
 qplot_confusion.ResampleResult <- function(obj, ...) {
@@ -167,7 +164,6 @@ qplot_confusion.ResampleResult <- function(obj, ...) {
 
 #  ------------------------------------------------------------------------
 #' @rdname qplot_confusion
-#' @method qplot_confusion PredictionClassif
 #' @export
 
 qplot_confusion.PredictionClassif <- function(obj, ...) {
@@ -181,7 +177,6 @@ qplot_confusion.PredictionClassif <- function(obj, ...) {
 
 #  ------------------------------------------------------------------------
 #' @rdname qplot_confusion
-#' @method qplot_confusion table
 #' @export
 qplot_confusion.table <- function(conf,
                                   Title     = "Classification table",

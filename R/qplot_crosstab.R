@@ -96,7 +96,6 @@ qplot_crosstab <- function(obj,...){
 #  ------------------------------------------------------------------------
 
 #' @rdname qplot_crosstab
-#' @method qplot_crosstab table
 #' @export
 qplot_crosstab.table <- function(tabl,
                                  Title  = "Cross-tabulation",
@@ -274,7 +273,6 @@ qplot_crosstab.table <- function(tabl,
 
 #  ============================================================================
 #' @rdname qplot_crosstab
-#' @method qplot_crosstab numeric
 #' @export
 qplot_crosstab.numeric <- function(varX, varY,
                                       Title  = "Cross-tabulation",
@@ -294,7 +292,6 @@ qplot_crosstab.numeric <- function(varX, varY,
 }
 
 #' @rdname qplot_crosstab
-#' @method qplot_crosstab hyperSpec
 #' @export
 qplot_crosstab.hyperSpec <- function(obj, varX, varY,
                                       Title  = "Cross-tabulation",
@@ -321,7 +318,6 @@ qplot_crosstab.hyperSpec <- function(obj, varX, varY,
 }
 
 #' @rdname qplot_crosstab
-#' @method qplot_crosstab data.frame
 #' @export
 qplot_crosstab.data.frame <- function(obj, varX, varY,
                                       Title  = "Cross-tabulation",
@@ -342,7 +338,6 @@ qplot_crosstab.data.frame <- function(obj, varX, varY,
 }
 
 #' @rdname qplot_crosstab
-#' @method qplot_crosstab matrix
 #' @export
 qplot_crosstab.matrix <- function(obj, Title  = NULL, ...){
     # Transpose, at it will be again transposed in .table method

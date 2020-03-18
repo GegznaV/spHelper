@@ -5,7 +5,7 @@
 #'
 #' @template sp-hy
 #' @param n Number of MADs.
-#' @param plus.minus Logical. If \code{TRUE}, two spectra representing \code{±n}
+#' @param plus.minus Logical. If \code{TRUE}, two spectra representing \code{\u00B1 n}
 #' are calculated. Otherwise only one spectrum representing \code{n} is calculated.
 #' @param center_fun Function that calculates center tendency. Default is
 #'        \code{center_fun = median}.
@@ -16,7 +16,7 @@
 #' @param var_name A string with the name for measure of variability
 #' (will be used to create a row name in \code{.name}).
 #'
-#' @return A \code{hyperSpec} object with spectra at \code{median(sp) ± n*MAD(sp)}.
+#' @return A \code{hyperSpec} object with spectra at \code{median(sp) \u00B1 n*MAD(sp)}.
 #'
 #' @export
 #'
@@ -58,7 +58,7 @@ median_Nmad <- function(sp, n = 2, plus.minus = TRUE,
 
     if (plus.minus == TRUE) {
         coef = c(-1, 1)
-        pm <- "±"
+        pm <- "\u00B1"
     } else {
         coef = 1
         pm <- if (sign(n) < 0) NULL else "+"
@@ -73,7 +73,7 @@ median_Nmad <- function(sp, n = 2, plus.minus = TRUE,
     variation  <- hyDrop_NA(apply(sp ,2, var_fun));
 
     sp_at_nSD <- (n * coef * variation) + center
-    sp_at_nSD$.name <- factor(paste(center_name, pm, n, "×", var_name))
+    sp_at_nSD$.name <- factor(paste(center_name, pm, n, "\u00D7", var_name))
 
     return(sp_at_nSD)
 }

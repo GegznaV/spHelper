@@ -27,7 +27,7 @@ sd_outliers <- function(x, n = 2) {
     RowLogical <- apply(logicalMatrix, 1, any)    # iRow <- which(RowLogical)
     return(list(matrix = logicalMatrix, rows = RowLogical))
 }
-# +/- is code for ±
+# +/- is code for \u00B1
 
 
 #  ------------------------------------------------------------------------

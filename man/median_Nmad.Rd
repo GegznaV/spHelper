@@ -19,7 +19,7 @@ median_Nmad(
 
 \item{n}{Number of MADs.}
 
-\item{plus.minus}{Logical. If \code{TRUE}, two spectra representing \code{±n}
+\item{plus.minus}{Logical. If \code{TRUE}, two spectra representing \code{\u00B1 n}
 are calculated. Otherwise only one spectrum representing \code{n} is calculated.}
 
 \item{var_fun}{Function that calculates variability measure. Default is
@@ -35,7 +35,7 @@ are calculated. Otherwise only one spectrum representing \code{n} is calculated.
 (will be used to create a row name in \code{.name}).}
 }
 \value{
-A \code{hyperSpec} object with spectra at \code{median(sp) ± n*MAD(sp)}.
+A \code{hyperSpec} object with spectra at \code{median(sp) \u00B1 n*MAD(sp)}.
 }
 \description{
 Function finds spectra that represent mean +/- n MADs

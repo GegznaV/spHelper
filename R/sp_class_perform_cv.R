@@ -131,7 +131,6 @@ sp_class_perform_cv <- function(
 
 # ===========================================================================
 #' @rdname sp_class_perform
-#' @method print sp_class_perform_cv
 #' @export
 print.sp_class_perform_cv <- function(obj){
 
@@ -158,7 +157,6 @@ print.sp_class_perform_cv <- function(obj){
 
 # ===========================================================================
 #' @rdname sp_class_perform
-#' @method print sp_classif_performance
 #' @export
 print.sp_classif_performance <- function(obj){
 
@@ -186,7 +184,6 @@ print.sp_classif_performance <- function(obj){
 
 # =============================================================================
 #' @rdname sp_class_perform
-#' @method predict sp_classif_performance
 #' @export
 
 # # pridėt apsauga tam atvejui, kai nėra nei vieno tos grupės atvejo

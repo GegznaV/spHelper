@@ -11,11 +11,11 @@ mean_Nsd(sp, n = 2, plus.minus = TRUE)
 
 \item{n}{Number of standard deviations, i.e. value of z-score.}
 
-\item{plus.minus}{Logical. If \code{TRUE}, two spectra representing \code{±z}
+\item{plus.minus}{Logical. If \code{TRUE}, two spectra representing \code{\u00B1z}
 are calculated. Otherwise only one spectrum representing \code{n} is calculated.}
 }
 \value{
-A \code{hyperSpec} object with spectra at \code{mean(sp) ± n*sd(sp)}.
+A \code{hyperSpec} object with spectra at \code{mean(sp) \u00B1 n*sd(sp)}.
 }
 \description{
 Function finds spectra that represent mean +/- n standard deiations

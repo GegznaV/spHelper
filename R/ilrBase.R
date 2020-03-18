@@ -17,7 +17,6 @@ ilrBase <- function(x=NULL, z=NULL, D = NULL,
 
 
 #' @rdname ilrBase
-#' @method ilrBase default
 #' @export
 #'
 ilrBase.default <- function(x = NULL, z = NULL,D = NULL, method = "basic") {
@@ -27,9 +26,8 @@ ilrBase.default <- function(x = NULL, z = NULL,D = NULL, method = "basic") {
     compositions::ilrBase(x = x, z = z, method = method)
 }
 #' @rdname ilrBase
-#' @method ilrBase hyperSpec
 #' @export
-ilrBase.hyperSpec <- function (x = NULL, z = NULL, D = NULL, method = "basic"){
+ilrBase.hyperSpec <- function(x = NULL, z = NULL, D = NULL, method = "basic"){
     compositions::ilrBase(x = x@data$spc,
                           z = z,
                           method = method)

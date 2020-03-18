@@ -35,7 +35,6 @@ binning <- function(X, bins, bin.size){
 }
 
 #' @rdname binning
-#' @method binning default
 #' @export
 
 binning.default <- function(X,...){
@@ -43,7 +42,6 @@ binning.default <- function(X,...){
 }
 
 #' @rdname binning
-#' @method binning hyperSpec
 #' @export
 binning.hyperSpec <- function(X, ...){
     chk.hy(X)

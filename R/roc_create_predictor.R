@@ -9,7 +9,6 @@ roc_extract_info <- function(obj, ...) {
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #' @rdname roc_extract_info
-#' @method roc_extract_info manyroc_result
 #' @export
 roc_extract_info.manyroc_result <- function(obj, ...) {
 

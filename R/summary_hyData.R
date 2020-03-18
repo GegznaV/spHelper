@@ -78,7 +78,6 @@ summary_hyData <- function(object,...){
 
 #' @rdname summary_hyData
 #' @export
-#' @method summary_hyData default
 summary_hyData.default <- function(object,...) {
     # Make summary
     summary_ <- summary(object,...)
@@ -97,7 +96,6 @@ summary_hyData.default <- function(object,...) {
 #' that contain ID numbers (to select only the first rows with
 #' unique ID) or \code{FALSE} (default) to use all rows.
 #' @export
-#' @method summary_hyData hyperSpec
 summary_hyData.hyperSpec <- function(sp, ... , unique_ID = FALSE) {
     chk.hy(sp)
 

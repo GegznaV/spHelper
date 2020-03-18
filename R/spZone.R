@@ -21,7 +21,6 @@ spZone <- function(xmin, xmax, fill="red", alpha=0.2,...) {
 }
 
 #' @rdname spZone
-#' @method spZone default
 #' @export
 spZone.default <- function(xmin, xmax, fill="red", alpha=0.2,...) {
     annotate("rect",
@@ -31,7 +30,6 @@ spZone.default <- function(xmin, xmax, fill="red", alpha=0.2,...) {
 }
 
 #' @rdname spZone
-#' @method spZone formula
 #' @export
 spZone.formula <- function(x, fill="red", alpha=0.2,...) {
     X <- as.character(x)[-1] %>% as.numeric()

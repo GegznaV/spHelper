@@ -22,12 +22,10 @@
 clr <- function(x, ...) {UseMethod("clr")}
 
 #' @rdname clr
-#' @method clr default
 #' @export
 clr.default <- function(x,...) {compositions::clr(x,...)}
 
 #' @rdname clr
-#' @method clr hyperSpec
 #' @export
 clr.hyperSpec <- function(x, ...)
 {

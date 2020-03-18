@@ -26,9 +26,9 @@ sp_class_perform_cv(
   sp_test = NULL
 )
 
-\method{print}{sp_class_perform_cv}(obj)
+print.sp_class_perform_cv(obj)
 
-\method{print}{sp_classif_performance}(obj)
+print.sp_classif_performance(obj)
 
 \method{predict}{sp_classif_performance}(object, newdata, what = c("values", "performance"), ...)
 

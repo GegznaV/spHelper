@@ -28,10 +28,10 @@ Compute the isometric planar transform of a (dataset of) composition(s).
 \code{\link[compositions]{ipt}} from package \pkg{compositions}.
 }
 \examples{
-ipt(Spectra)
+ipt(Spectra2)
 
-plot(Spectra)
-plot(ipt(Spectra))
+plot(Spectra2)
+plot(ipt(Spectra2))
 
 }
 \seealso{

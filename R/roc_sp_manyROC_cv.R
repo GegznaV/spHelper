@@ -125,7 +125,6 @@ sp_manyROC_cv <-
 
 # ===========================================================================
 #' @rdname sp_manyROC
-#' @method print sp_manyROC_cv
 #' @export
 print.sp_manyROC_cv <- function(x) {
 
@@ -151,7 +150,6 @@ print.sp_manyROC_cv <- function(x) {
 
 # =============================================================================
 #' @rdname sp_manyROC
-#' @method predict manyROC_performance
 #' @export
 
 # # pridėt apsauga tam atvejui, kai nėra nei vieno tos grupės atvejo

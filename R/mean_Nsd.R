@@ -6,10 +6,10 @@
 #'
 #' @template sp-hy
 #' @param n Number of standard deviations, i.e. value of z-score.
-#' @param plus.minus Logical. If \code{TRUE}, two spectra representing \code{±z}
+#' @param plus.minus Logical. If \code{TRUE}, two spectra representing \code{\u00B1z}
 #' are calculated. Otherwise only one spectrum representing \code{n} is calculated.
 #'
-#' @return A \code{hyperSpec} object with spectra at \code{mean(sp) ± n*sd(sp)}.
+#' @return A \code{hyperSpec} object with spectra at \code{mean(sp) \u00B1 n*sd(sp)}.
 #' @export
 #'
 #' @examples
@@ -47,14 +47,14 @@ mean_Nsd <- function(sp, n = 2, plus.minus = TRUE) {
 
     if (plus.minus == TRUE) {
         coef = c(-1, 1)
-        pm <- "±"
+        pm <- "\u00B1"
     } else {
         coef = 1
         pm <- if (sign(n) < 0) NULL else "+"
     }
 
     sp_at_nSD <- (n * coef * SD) + MEAN
-    sp_at_nSD$.name <- factor(paste("Mean", pm, n, "×", "st.dev."))
+    sp_at_nSD$.name <- factor(paste("Mean", pm, n, "\u00D7", "st.dev."))
 
     return(sp_at_nSD)
 }

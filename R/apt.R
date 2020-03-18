@@ -21,12 +21,10 @@
 apt <- function(x, ...) {UseMethod("apt")}
 
 #' @rdname apt
-#' @method apt default
 #' @export
 apt.default <- function(x,...) {compositions::apt(x,...)}
 
 #' @rdname apt
-#' @method apt hyperSpec
 #' @export
 apt.hyperSpec <- function(x, ...)
 {

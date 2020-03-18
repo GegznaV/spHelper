@@ -32,12 +32,10 @@ alr <- function(x, ...) {UseMethod("alr")}
 
 
 #' @rdname alr
-#' @method alr default
 #' @export
 alr.default <- function(x, ivar = ncol(x),...) {compositions::alr(x, ivar,...)}
 
 #' @rdname alr
-#' @method alr hyperSpec
 #' @export
 alr.hyperSpec <-     function (x, ivar = ncol(x$spc), ...)
 {

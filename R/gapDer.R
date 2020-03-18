@@ -35,21 +35,17 @@
 #' @family \pkg{prospectr} function for \pkg{hyperSpec}
 #' @family \pkg{spHelper} functions for spectroscopy and \pkg{hyperSpec}
 
-
 gapDer <- function(X, m = 1, w = 1, s = 1, delta.wav){
     UseMethod("gapDer")
 }
 
 #' @rdname gapDer
-#' @method gapDer default
 #' @export
-
 gapDer.default <- function(X, m = 1, w = 1, s = 1, ...){
     prospectr::gapDer(X, m, w, s, ...)
 }
 
 #' @rdname gapDer
-#' @method gapDer hyperSpec
 #' @export
 gapDer.hyperSpec <- function(X, m = 1, w = 1, s = 1, ...){
     chk.hy(X)

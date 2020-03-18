@@ -15,10 +15,12 @@
 #' @family row-wise transformations
 #'
 #' @examples
-#' ilr(Spectra)
+#' library(spHelper)
+#' data("Spectra2")
+#' ilr(Spectra2)
 #'
-#' plot(Spectra)
-#' plot(ilr(Spectra))
+#' plot(Spectra2)
+#' plot(ilr(Spectra2))
 #'
 ilr <- function(x, V = ilrBase(x), ...) {
     UseMethod("ilr")
@@ -26,19 +28,16 @@ ilr <- function(x, V = ilrBase(x), ...) {
 
 
 #' @rdname ilr
-#' @method ilr default
 #' @export
 ilr.default <- function(x, V = ilrBase(x), ...) {
     compositions::ilr(x = x, V = V, ...)
     }
 
 #' @rdname ilr
-#' @method ilr hyperSpec
 #' @export
-ilr.hyperSpec <- function (x, V = ilrBase(x), ...)
-{
-    .local <- function (x, ...)
-    {
+ilr.hyperSpec <- function(x, V = ilrBase(x), ...) {
+    .local <- function(x, ...) {
+
         m <- compositions::ilr(x = x@data$spc, V = V, ...)
 
         decomposition(x, m,

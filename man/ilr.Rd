@@ -28,10 +28,12 @@ Compute the isometric log ratio transform of a (dataset of) composition(s).
 \code{\link[compositions]{ilr}} from package \pkg{compositions}.
 }
 \examples{
-ilr(Spectra)
+library(spHelper)
+data("Spectra2")
+ilr(Spectra2)
 
-plot(Spectra)
-plot(ilr(Spectra))
+plot(Spectra2)
+plot(ilr(Spectra2))
 
 }
 \seealso{

@@ -54,8 +54,8 @@ Outlier detection with median absolute deviation (MAD) based distances, defined 
 
 outl <- mad_outliers(Spectra2)
 
-plot(outl$outer, col = NA, )
-plot(Spectra, add = TRUE, spc.nmax = nrow(Spectra2))
+plot(outl$outer, col = NA)
+plot(Spectra2, add = TRUE, spc.nmax = nrow(Spectra2))
 plot(outl$outer, add = TRUE, col = "red",    lines.args = list(lwd = 3))
 plot(outl$inner,  add = TRUE, col = "orange", lines.args = list(lwd = 3))
 legend("topright",legend=c("Outer limit", "Inner limit", "Spectra"),

@@ -77,8 +77,8 @@ hyGet_palette(Spectra1)
     #>  "#377EB8" "#4DAF4A" "#984EA3" "#FF7F00"
 
 # Overwrite labels/ color palette (operator `$<-`):
-Spectra2a$.color[1] <- "red"
-hyGet_palette(Spectra1)
+# Spectra2a$.color[1] <- "red"
+# hyGet_palette(Spectra2a)
     #>  Warning message:
     #>  In hyGet_palette(Spectra2a) : Values of pallete do not exist.
     #>  Most probably they are overwriten by operation `$.color<-`.

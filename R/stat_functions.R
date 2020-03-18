@@ -107,7 +107,7 @@ normal_var_CI <- function(x = NULL, var = var(x), n  = length(x), conf.level = 0
 #' library(spHelper)
 #'
 #' x <- c(3,0,2,1,0,4,3,2,1,2)
-#' median_CI(x)
+#' # median_CI(x)
 #'
 
 

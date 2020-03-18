@@ -20,7 +20,7 @@ CI for case where variance of population is unknown.
 library(spHelper)
 
 x <- c(3,0,2,1,0,4,3,2,1,2)
-median_CI(x)
+# median_CI(x)
 
 }
 \seealso{
